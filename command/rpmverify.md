@@ -1,0 +1,15 @@
+**rpmverify命令**用来验证已安装的[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")软件包的正确性。
+
+### 语法  
+
+```
+rpmverify(选项)
+```
+
+### 选项  
+
+```
+-Va：验证所有软件包；
+-V<软件包>f：验证指定软件包；
+--nomd5：不验证软件包的md5摘要。
+```

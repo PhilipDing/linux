@@ -1,0 +1,15 @@
+**ftptop命令**类似于[top](https://philipding.github.io/linux-command/top "top命令")命令的显示风格显示proftpd服务器的连接状态。
+
+### 语法  
+
+```
+ftptop(选项)
+```
+
+### 选项  
+
+```
+-D：过滤正在下载的会话；
+-S：仅显示指定虚拟主机的连接状态；
+-d：指定屏幕刷新时间，默认
+```

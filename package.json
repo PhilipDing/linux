@@ -1,0 +1,25 @@
+{
+  "name": "linux-command",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilipDing/linux-command.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhilipDing/linux-command/issues"
+  },
+  "homepage": "https://github.com/PhilipDing/linux-command#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "crawler": "^1.0.5",
+    "to-markdown": "^3.1.0"
+  }
+}
