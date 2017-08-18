@@ -1,9 +1,9 @@
 <template>
     <div class="container">
 
-        <h1 class="logo">
+        <a class="logo" href="/">
             <img src="../assets/logo.svg">
-        </h1>
+        </a>
 
         <form class="search">
             <input
@@ -16,7 +16,7 @@
                 @focus="onFocus">
             <button @click="onEnter">搜索</button>
 
-            <ul class="search-list" v-if="displaySearchList">
+            <ul class="search-list" v-show="displaySearchList">
                 <li
                     v-for="(item, index) in filtered"
                     :key="index"
@@ -29,13 +29,16 @@
 
         <div class="box">
             <div class="category" v-for="(cat, index) in category" :key="index">
-                <div class="title">{{cat.title}}</div>
-                <a v-for="(sub, index) in cat.category"
-                   class="subcategory"
-                   :href="categoryUrl(cat.title, sub.title)"
-                   :key="index">
-                    {{sub.title}}
-                </a>
+                <input name="category" type="radio" :checked="index === 0" class="title" :id="index" :value="cat.title">
+                <label class="title" :for="index">{{cat.title}}</label>
+                <div class="subcategory">
+                    <a v-for="(sub, index) in cat.category"
+                    class="subcategory-link"
+                    :href="categoryUrl(cat.title, sub.title)"
+                    :key="index">
+                        {{sub.title}}
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -55,7 +58,7 @@ export default {
             command,
             filtered: [],
             displaySearchList: false,
-            selectedIndex: -1
+            selectedIndex: -1,
         }
     },
     methods: {
@@ -127,31 +130,43 @@ export default {
     padding: 0 10px;
 
     .logo {
+        display: block;
         text-align: center;
         padding: 50px;
-        margin: 0;
     }
 
     .search {
-        width: 100%;
         text-align: center;
         max-width: 550px;
         position: relative;
         margin: 0 auto;
         display: flex;
         color: #333;
+        height: 38px;
 
-        input {
+        input, button {
             -webkit-appearance: none;
             outline: none;
             border: 1px solid #e5e5e5;
-            height: 40px;
+            background: #fff;
+        }
+        input {
             flex: 1;
             padding: 10px;
             border-radius: 5px 0 0 5px;
 
-            &:focus, &:active {
+            &:hover, &:focus, &:active {
                 border-color: #488fcd;
+            }
+        }
+
+        button {
+            padding: 0 14px;
+            border-radius: 0 5px 5px 0;
+            border-left: none;
+
+            &:hover {
+                background: #eee;
             }
         }
 
@@ -163,7 +178,8 @@ export default {
             background: #fff;
             padding: 0;
             width: 100%;
-            margin-top: 40px;
+            left: 0;
+            top: 40px;
             max-height: 500px;
             overflow: auto;
             border: 1px solid #e5e5e5;
@@ -172,29 +188,10 @@ export default {
             li {
                 padding: 10px;
                 margin: 4px;
-                &:hover {
+                &:hover, &.selected {
                     background: #eee;
                 }
             }
-        }
-
-        button {
-            -webkit-appearance: none;
-            outline: none;
-            border: 1px solid #d5d5d5;
-            height: 40px;
-            background: #fff;
-            padding: 0 20px;
-            border-radius: 0 10px 10px 0;
-            border-left: none;
-
-            &:hover {
-                background: #eee;
-            }
-        }
-
-        .selected {
-            background: #eee;
         }
     }
 
@@ -209,22 +206,43 @@ export default {
             margin: 10px;
         }
 
-        .title {
+        input.title {
+            display: none;
+        }
+        label.title {
             font-size: 16px;
             font-weight: bold;
             margin-bottom: 10px;
             color: #000;
         }
-        .subcategory {
+        .subcategory-link {
             display: block;
-        }
-        a {
             text-decoration: none;
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 480px) {
         .box {
+            margin-top: 66px !important;
+        }
+        .category {
+            width: 100%;
+        }
+        label.title {
+            display: block;
+            border: 1px solid #e5e5e5;
+            padding-left: 10px;
+            cursor: pointer;
+            &:before {
+                content: '☞';
+                margin-right: 5px;
+            }
+        }
+        input.title:checked~.subcategory{
+            display: block;
+        }
+        .subcategory {
+            padding-left: 10px;
             display: none;
         }
     }

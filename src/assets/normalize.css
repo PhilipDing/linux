@@ -456,3 +456,7 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+h1, ul {
+    margin: 0;
+}
