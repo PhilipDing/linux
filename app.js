@@ -91,11 +91,15 @@ const crawlSubCategory = () => {
         c.queue(links);
 
         c.on('drain', function() {
-            console.log('end crawl sub category. command\'s count:' + commands.length);
+            let filename  = path.join(__dirname, 'command', 'category.js');
+            let str = `export default ${JSON.stringify(linuxCommand)}`;
+            str = str.replace(/http:\/\/man.linuxde.net\//gi, '');
+            fs.writeFileSync(filename, str);
+            console.log(`create category.js → OK!`);
 
-            const filename  = path.join(__dirname, 'command', 'data.json');
-            fs.writeFileSync(filename, JSON.stringify(commands, null, 4));
-            console.log(`create data.json → OK!`);
+            filename  = path.join(__dirname, 'command', 'command.js');
+            fs.writeFileSync(filename, `export default ${JSON.stringify(commands)}`);
+            console.log(`create command.js → OK!`);
 
             resolve();
         })
