@@ -90,7 +90,6 @@ export default {
         }
         .subcategory-link {
             display: block;
-            text-decoration: none;
         }
     }
 

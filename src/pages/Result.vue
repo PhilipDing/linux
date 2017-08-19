@@ -5,6 +5,7 @@
                 <img class="logo" src="../assets/logo.svg">
             </a>
             <c-input
+                class="search"
                 :command="command"
                 :auto-complete="showDetail"
                 :default-value="$route.params.command"
@@ -43,10 +44,14 @@ export default {
             this.searchKey = value;
         },
         onItemSelected({ command }) {
+            if (!command) {
+                return
+            }
+
             this.$router.push({ name: 'detail', params: { command } })
         },
         loadContent() {
-            const findOne = command.find(c => c.title === this.$route.params.command)
+            const findOne = this.command.find(c => c.title === this.$route.params.command)
             this.showDetail = !!findOne;
         }
     },
@@ -73,12 +78,13 @@ export default {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        padding: 10px 20px;
         border-bottom: 1px solid #e5e5e5;
 
         .logo {
             width: 130px;
             padding: 5px 10px;
+            outline: none;
         }
 
         .search {
@@ -91,7 +97,7 @@ export default {
     }
 
     .content {
-        padding: 30px;
+        padding: 20px 30px;
     }
 
 

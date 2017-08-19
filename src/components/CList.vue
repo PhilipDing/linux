@@ -1,10 +1,12 @@
 <template>
-    <ul class="search-result">
+    <ul class="c-list">
         <li v-for="(item, index) in filtered" :key="index">
             <router-link :to="item.title">
                 <strong v-html="kPoint(item.title)"></strong> - {{item.desc}}
             </router-link>
         </li>
+
+        <li class="hint" v-show="!filtered || !filtered.length">请尝试输入一些字符，进行搜索！</li>
     </ul>
 </template>
 
@@ -29,14 +31,15 @@ export default {
 }
 </script>
 
-<style lang="less">
-.search-result {
+<style lang="less" scoped>
+.c-list {
     list-style-type: none;
     font-size: 16px;
     padding: 0;
+    color: #333;
 
-    a {
-        text-decoration: none;
+    .hint {
+        font-size: 14px;
     }
 
     li {

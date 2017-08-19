@@ -1,5 +1,5 @@
 <template>
-    <div class="search">
+    <div class="c-input">
         <input
             v-model.trim="searchKey"
             autofocus
@@ -20,6 +20,8 @@
                 <span v-html="kPoint(item.title)"></span>
                 <span v-show="item.desc">- {{item.desc}}</span>
             </li>
+
+            <li v-show="!filtered || !filtered.length">{{noResultHint}}</li>
         </ul>
     </div>
 </template>
@@ -95,10 +97,6 @@ export default {
             const selected = this.filtered[index];
             const command = selected ? selected.title : this.searchKey;
 
-            if (command === this.noResultHint) {
-                return
-            }
-
             this.searchKey = command;
 
             Vue.nextTick(() => {
@@ -109,11 +107,6 @@ export default {
         },
         kPoint(val) {
             val = val || '';
-
-            if (val === this.noResultHint) {
-                return val;
-            }
-
             const rest = val.substr(this.searchKey.length);
             return `<span style="color:#f00;">${this.searchKey}</span>${rest}`;
         },
@@ -121,12 +114,11 @@ export default {
     watch: {
         searchKey: function(value) {
             this.$emit('changed', { value });
+            this.selectedIndex = -1;
 
             if (!this.autoComplete) {
                 return
             }
-
-            this.selectedIndex = -1;
 
             if (!value) {
                 this.displaySearchList = false;
@@ -136,16 +128,13 @@ export default {
 
             this.displaySearchList = true;
             this.filtered = this.command.filter(c => c.title.indexOf(value) === 0);
-            if (!this.filtered || this.filtered.length === 0) {
-                this.filtered = [{ title: this.noResultHint }]
-            }
         }
     }
 }
 </script>
 
 <style lang="less" scoped>
-.search {
+.c-input {
     text-align: center;
     max-width: 550px;
     position: relative;

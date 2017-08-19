@@ -1,5 +1,5 @@
 <template>
-    <div class="markdown-body">
+    <div class="c-detail">
         <h1>{{command}}</h1>
         <div v-html="content"></div>
     </div>
@@ -15,25 +15,24 @@ export default {
         }
     },
     methods: {
-        loadContent(command) {
-            command = command.replace('/', '_');
-            this.content = require('../../command/' + command + '.md')
+        loadContent() {
+            const temp = this.command.replace('/', '_');
+            this.content = require('../../command/' + temp + '.md')
         }
     },
     mounted() {
-        this.loadContent(this.command);
+        this.loadContent();
     },
     watch: {
-        command(val) {
-            this.loadContent(val)
+        command() {
+            this.loadContent()
         }
     }
 }
 </script>
 
-
 <style lang="less">
-.markdown-body {
+.c-detail {
     font-size: 14px;
     line-height: 1.4;
 
@@ -52,7 +51,7 @@ export default {
         border-radius: 3px;
 
         code {
-            padding: .7em;
+            padding: 0.7em;
             overflow: auto;
             max-height: 35em;
             display: block;
