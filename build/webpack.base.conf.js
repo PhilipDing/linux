@@ -60,6 +60,12 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.(md|markdown)$/,
+        loader: 'html-loader!markdown-loader',
+        enforce: 'pre',
+        include: [path.resolve(__dirname, '../command')],
       }
     ]
   }
