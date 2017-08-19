@@ -1,7 +1,7 @@
 <template>
     <ul class="c-list">
         <li v-for="(item, index) in filtered" :key="index">
-            <router-link :to="item.title">
+            <router-link :to="{ name: 'detail', params: { command: item.title }}">
                 <strong v-html="kPoint(item.title)"></strong> - {{item.desc}}
             </router-link>
         </li>

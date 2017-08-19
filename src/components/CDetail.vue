@@ -17,6 +17,7 @@ export default {
     methods: {
         loadContent() {
             const temp = this.command.replace('/', '_');
+            // 需要优化：该处导致JS文件很大
             this.content = require('../../command/' + temp + '.md')
         }
     },

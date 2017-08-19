@@ -18,3 +18,7 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+console.log(`★★★★★数据爬自http://man.linuxde.net/★★★★★
+★★★★★UI仿自https://jaywcjlove.github.io/linux-command/★★★★★
+`);

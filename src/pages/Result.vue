@@ -72,40 +72,15 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@import '../assets/header.less';
+
 .container {
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        border-bottom: 1px solid #e5e5e5;
-
-        .logo {
-            width: 130px;
-            padding: 5px 10px;
-            outline: none;
-        }
-
-        .search {
-            flex-grow: 2;
-        }
-
-        .placeholder {
-            flex-grow: 1;
-        }
-    }
-
     .content {
         padding: 20px 30px;
     }
 
 
     @media (max-width: 480px) {
-        .placeholder {
-            display: none;
-        }
-
         .content {
             padding: 15px;
         }

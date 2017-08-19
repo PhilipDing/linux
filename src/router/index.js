@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Search from '@/pages/Search'
-import Detail from '@/pages/Result'
 
 Vue.use(Router)
 
@@ -10,10 +8,14 @@ export default new Router({
     routes: [{
         path: '/',
         name: 'search',
-        component: Search
+        component: (resolve) => require(['@/pages/Search'], resolve)
     }, {
         path: '/:command',
         name: 'detail',
-        component: Detail
+        component: (resolve) => require(['@/pages/Result'], resolve)
+    }, {
+        path: '/:category/:subcategory',
+        name: 'category',
+        component: (resolve) => require(['@/pages/Category'], resolve)
     }]
 })

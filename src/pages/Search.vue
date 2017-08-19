@@ -18,12 +18,13 @@
                 <input name="category" type="radio" :checked="index === 0" class="title" :id="index" :value="cat.title">
                 <label class="title" :for="index">{{cat.title}}</label>
                 <div class="subcategory">
-                    <a v-for="(sub, index) in cat.category"
-                    class="subcategory-link"
-                    :href="categoryUrl(cat.title, sub.title)"
-                    :key="index">
+                    <router-link
+                        v-for="(sub, index) in cat.category"
+                        class="subcategory-link"
+                        :to="{name: 'category', params: { category: cat.title, subcategory: sub.title }}"
+                        :key="index">
                         {{sub.title}}
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -43,9 +44,6 @@ export default {
         }
     },
     methods: {
-        categoryUrl(catTitle, subTitle) {
-            return catTitle + '/' + subTitle;
-        },
         onItemSelected({ command }) {
             this.$router.push({ name: 'detail', params: { command } })
         }
