@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="logo">
-            <a href="/">
+            <router-link :to="{ name: 'home' }">
                 <img src="../assets/logo.svg">
-            </a>
+            </router-link>
         </div>
 
         <form class="search">

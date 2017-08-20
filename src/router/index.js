@@ -3,11 +3,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const base = process.env.NODE_ENV === 'production' ? '/linux-command' : '/';
+
 export default new Router({
-    mode: 'history',
+    base,
     routes: [{
         path: '/',
-        name: 'search',
+        name: 'home',
         component: (resolve) => require(['@/pages/Search'], resolve)
     }, {
         path: '/:command',

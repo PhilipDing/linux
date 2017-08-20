@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <header>
-            <a href="/">
+            <router-link :to="{ name: 'home' }">
                 <img class="logo" src="../assets/logo.svg">
-            </a>
+            </router-link>
             <c-input
                 class="search"
                 :command="command"

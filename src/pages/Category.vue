@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <header>
-            <a href="/">
+            <router-link :to="{ name: 'home' }">
                 <img class="logo" src="../assets/logo.svg">
-            </a>
+            </router-link>
             <c-input class="search" :command="command" @selected="onItemSelected"></c-input>
             <div class="placeholder"></div>
         </header>
@@ -14,12 +14,10 @@
             <ul>
                 <li v-for="(item, index) in list"
                     :key="index">
-                    <router-link
-                        class="title"
-                        :to="{ name: 'detail', params: { command: item.title }}">
-                        {{item.title}}
+                    <router-link class="item" :to="{ name: 'detail', params: { command: item.title }}">
+                        <div class="title">{{item.title}}</div>
+                        <div class="desc">{{item.desc}}</div>
                     </router-link>
-                    <div class="desc">{{item.desc}}</div>
                 </li>
             </ul>
         </div>
@@ -107,12 +105,18 @@ export default {
                 }
             }
 
+            .item {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+            }
+
             .title {
-                display: block;
                 font-size: 16px;
             }
 
             .desc {
+                color: #333;
                 margin-top: 5px;
                 font-size: 12px;
             }
