@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import './assets/normalize.css'
 
+import LCPlugin from '../command/component';
+Vue.use(LCPlugin);
+
 Vue.config.productionTip = false
 
 Vue.config.errorHandler = function (err, vm, info) {
@@ -19,6 +22,5 @@ new Vue({
   components: { App }
 })
 
-console.log(`★★★★★数据爬自http://man.linuxde.net/★★★★★
-★★★★★UI仿自https://jaywcjlove.github.io/linux-command/★★★★★
-`);
+console.log(`★★★★★数据来源于http://man.linuxde.net/★★★★★
+★★★★★界面仿自https://jaywcjlove.github.io/linux-command/★★★★★`);

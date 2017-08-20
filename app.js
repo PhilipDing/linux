@@ -121,6 +121,7 @@ const crawlCommand = () => {
 
                     const $ = res.$;
                     const title = res.request.path.substr(1);
+                    $('.post_bd.post .content-index').remove()
                     const content = $('.post_bd.post').html();
 
                     $('.post_bd.post img').each(function() {
@@ -193,10 +194,34 @@ const crawlImages = () => {
     });
 }
 
+const createComponents = () => {
+    return new Promise((resolve, reject) => {
+        console.log('start create component.');
+
+        const names = commands.map(c => c.title.replace('/', '_'));
+        let componentStr = 'var LCPlugin = {};\r\n';
+        componentStr += 'LCPlugin.install = function (Vue, options) {\r\n';
+
+        names.forEach(name => {
+            componentStr += `Vue.component('lc-${name}', function (resolve, reject) { require(['./${name}.md'], resolve) })\r\n`
+        });
+        componentStr += '}\r\n';
+        componentStr += 'export default LCPlugin';
+
+        const filename  = path.join(__dirname, 'command', `component.js`);
+        fs.writeFileSync(filename, componentStr);
+        console.log('create component → OK!');
+
+        console.log('end create component.');
+        resolve();
+    })
+}
+
 crawlCategory()
     .then(() => crawlSubCategory())
     .then(() => crawlCommand())
     .then(() => crawlImages())
+    .then(() => createComponents())
     .catch(e => {
         console.log(e);
     });

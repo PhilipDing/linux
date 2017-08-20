@@ -1,17 +1,3 @@
-<div id="content-index" class="content-index" style="float:right;">
-
-<div class="content-index-title">本文索引</div>
-
-[[隐藏](javascript:content_index_toggleToc())] <script type="text/javascript" language="javascript">window.content_index_showTocToggle=true;function content_index_toggleToc(){var tts="显示";var tth="隐藏";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}</script>
-
-*   [安装inotify-tools](#/inotifywait#安装inotify-tools "安装inotify-tools")
-*   [inotify相关参数](#/inotifywait#inotify相关参数 "inotify相关参数")
-*   [inotifywait命令使用](#/inotifywait#inotifywait命令使用 "inotifywait命令使用")
-*   [inotifywait命令参数](#/inotifywait#inotifywait命令参数 "inotifywait命令参数")
-    *   [可监听的事件](#/inotifywait#可监听的事件 "可监听的事件")
-
-</div>
-
 **Inotify**一种强大的、细粒度的、异步文件系统监控机制，它满足各种各样的文件监控需要，可以监控文件系统的访问属性、读写属性、权限属性、删除创建、移动等操作，也就是可以监控文件发生的一切变化。。
 
 **inotify-tools**是一个C库和一组命令行的工作提供Linux下inotify的简单接口。inotify-tools安装后会得到`inotifywait`和`inotifywatch`这两条命令：
@@ -34,7 +20,7 @@ total 0
 
 ```
 
-### 安装inotify-tools  
+### 安装inotify-tools
 
 *   inotify-tools项目地址：[https://github.com/rvoicilas/inotify-tools](https://github.com/rvoicilas/inotify-tools)
 *   inotify-tools下载地址：[http://github.com/downloads/rvoicilas/inotify-tools/inotify-tools-3.14.tar.gz](http://github.com/downloads/rvoicilas/inotify-tools/inotify-tools-3.14.tar.gz)
@@ -50,7 +36,7 @@ make [install](#/install "install命令")
 
 其他Linux发行版安装方法可以参见：[https://github.com/rvoicilas/inotify-tools/wiki#wiki-getting](https://github.com/rvoicilas/inotify-tools/wiki#wiki-getting)
 
-### inotify相关参数  
+### inotify相关参数
 
 inotify定义了下列的接口参数，可以用来限制inotify消耗kernel memory的大小。由于这些参数都是内存参数，因此，可以根据应用需求，实时的调节其大小：
 
@@ -68,7 +54,7 @@ echo 'echo 104857600 > /proc/sys/fs/inotify/max_user_watches' >> /etc/rc.local
 如果遇到以下错误：
 
 ```
-inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot open shared object [file](#/file "file命令"): No such file or directory 
+inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot open shared object [file](#/file "file命令"): No such file or directory
 ```
 
 ```
@@ -77,7 +63,7 @@ inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot 
 64位系统：ln -s /usr/local/lib/libinotifytools.so.0 /usr/lib64/libinotifytools.so.0
 ```
 
-### inotifywait命令使用  
+### inotifywait命令使用
 
 ```
 #!/bin/bash
@@ -106,7 +92,7 @@ path=$1
 
 ```
 
-### inotifywait命令参数  
+### inotifywait命令参数
 
 *   `-m`是要持续监视变化。
 *   `-r`使用递归形式监视目录。
@@ -115,7 +101,7 @@ path=$1
 *   `--timefmt`是指定时间的输出格式。
 *   `--format`指定文件变化的详细信息。
 
-#### 可监听的事件  
+#### 可监听的事件
 
 <table border="0" height="193" style="width: 100%;" width="74">
 

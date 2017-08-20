@@ -62,10 +62,8 @@ module.exports = {
         }
       },
       {
-        test: /\.(md|markdown)$/,
-        loader: 'html-loader!markdown-loader',
-        enforce: 'pre',
-        include: [path.resolve(__dirname, '../command')],
+        test: /\.md$/,
+        loader: 'vue-markdown-loader'
       }
     ]
   }

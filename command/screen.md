@@ -10,13 +10,13 @@
 
 GNU's Screen 官方站点：[http://www.gnu.org/software/screen/](http://www.gnu.org/software/screen/)
 
-### 语法  
+### 语法
 
 ```
 # screen [-AmRvx -[ls](#/ls "ls命令") -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
 ```
 
-### 选项  
+### 选项
 
 ```
 -A 　将所有的视窗都调整为目前终端机的大小。
@@ -33,7 +33,7 @@ GNU's Screen 官方站点：[http://www.gnu.org/software/screen/](http://www.gnu
 -wipe 　检查目前所有的screen作业，并删除已经无法使用的screen作业。
 ```
 
-### 常用screen参数  
+### 常用screen参数
 
 ```
 screen -S yourname -> 新建一个叫yourname的session
@@ -48,32 +48,32 @@ screen -d -r yourname -> 结束当前session并回到yourname这个session
 ```
 C-a ? -> 显示所有键绑定信息
 C-a c -> 创建一个新的运行shell的窗口并切换到该窗口
-C-a n -> Next，切换到下一个 window 
-C-a p -> Previous，切换到前一个 window 
+C-a n -> Next，切换到下一个 window
+C-a p -> Previous，切换到前一个 window
 C-a 0..9 -> 切换到第 0..9 个 window
 Ctrl+a [Space] -> 由视窗0循序切换到视窗9
-C-a C-a -> 在两个最近使用的 window 间切换 
+C-a C-a -> 在两个最近使用的 window 间切换
 C-a x -> 锁住当前的 window，需用用户密码解锁
-C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里，每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 [logout](#/logout "logout命令") 也不影响。 
+C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里，每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 [logout](#/logout "logout命令") 也不影响。
 C-a z -> 把当前session放到后台执行，用 shell 的 [fg](#/fg "fg命令") 命令则可回去。
 C-a [w](#/w "w命令") -> 显示所有窗口列表
-C-a t -> [time](#/time "time命令")，显示当前时间，和系统的 load 
+C-a t -> [time](#/time "time命令")，显示当前时间，和系统的 load
 C-a k -> [kill](#/kill "kill命令") window，强行关闭当前的 window
 C-a [ -> 进入 copy mode，在 copy mode 下可以回滚、搜索、复制就像用使用 [vi](#/vi "vi命令") 一样
-    C-b Backward，PageUp 
-    C-f Forward，PageDown 
-    H(大写) High，将光标移至左上角 
-    L Low，将光标移至左下角 
-    0 移到行首 
-    $ 行末 
-    w forward one word，以字为单位往前移 
-    b backward one word，以字为单位往后移 
-    Space 第一次按为标记区起点，第二次按为终点 
-    Esc 结束 copy mode 
+    C-b Backward，PageUp
+    C-f Forward，PageDown
+    H(大写) High，将光标移至左上角
+    L Low，将光标移至左下角
+    0 移到行首
+    $ 行末
+    w forward one word，以字为单位往前移
+    b backward one word，以字为单位往后移
+    Space 第一次按为标记区起点，第二次按为终点
+    Esc 结束 copy mode
 C-a ] -> [paste](#/paste "paste命令")，把刚刚在 copy mode 选定的内容贴上
 ```
 
-### 使用 screen  
+### 使用 screen
 
 **安装screen**
 
@@ -91,7 +91,7 @@ screen-4.0.3-4.el5
 安装完成后，直接敲命令screen就可以启动它。但是这样启动的screen会话没有名字，实践上推荐为每个screen会话取一个名字，方便分辨：
 
 ```
-[root@TS-DEV ~]# screen -S david 
+[root@TS-DEV ~]# screen -S david
 ```
 
 screen启动后，会创建第一个窗口，也就是窗口No. 0，并在其中打开一个系统默认的shell，一般都会是bash。所以你敲入命令screen之后，会立刻又返回到命令提示符，仿佛什么也没有发生似的，其实你已经进入Screen的世界了。当然，也可以在screen命令之后加入你喜欢的参数，使之直接打开你指定的程序，例如：
@@ -107,7 +107,7 @@ screen创建一个执行vi david.txt的单窗口会话，退出vi 将退出该�
 打开多个窗口后，可以使用快捷键C-a w列出当前所有窗口。如果使用文本终端，这个列表会列在屏幕左下角，如果使用X环境下的终端模拟器，这个列表会列在标题栏里。窗口列表的样子一般是这样：
 
 ```
-0$ bash  1-$ bash  2*$ bash  
+0$ bash  1-$ bash  2*$ bash
 ```
 
 这个例子中我开启了三个窗口，其中*号表示当前位于窗口2，-号表示上一次切换窗口时位于窗口1。
@@ -162,7 +162,7 @@ Screen默认会为窗口命名为编号和窗口中运行程序名的组合，�
 
 除了依次退出/杀死当前Screen会话中所有窗口这种方法之外，还可以使用快捷键C-a :，然后输入quit命令退出Screen会话。需要注意的是，这样退出会杀死所有窗口并退出其中运行的所有程序。其实C-a :这个快捷键允许用户直接输入的命令有很多，包括分屏可以输入[split](#/split "split命令")等，这也是实现Screen功能的一个途径，不过个人认为还是快捷键比较方便些。
 
-### screen 高级应用   
+### screen 高级应用 
 
 **会话共享**
 
@@ -192,7 +192,7 @@ Screen允许使用快捷键C-a s锁定会话。锁定以后，再进行任何输
 
 **屏幕分割**
 
-现在显示器那么大，将一个屏幕分割成不同区域显示不同的Screen窗口显然是个很酷的事情。可以使用快捷键C-a S将显示器水平分割，Screen 4.00.03版本以后，也支持垂直分屏，快捷键是C-a |。分屏以后，可以使用C-a <tab>在各个区块间切换，每一区块上都可以创建窗口并在其中运行进程。
+现在显示器那么大，将一个屏幕分割成不同区域显示不同的Screen窗口显然是个很酷的事情。可以使用快捷键C-a S将显示器水平分割，Screen 4.00.03版本以后，也支持垂直分屏，快捷键是C-a |。分屏以后，可以使用C-a &lt;tab&gt;在各个区块间切换，每一区块上都可以创建窗口并在其中运行进程。
 
 可以用C-a X快捷键关闭当前焦点所在的屏幕区块，也可以用C-a Q关闭除当前区块之外其他的所有区块。关闭的区块中的窗口并不会关闭，还可以通过窗口切换找到它。
 
@@ -200,7 +200,7 @@ Screen允许使用快捷键C-a s锁定会话。锁定以后，再进行任何输
 
 **C/P模式和操作**
 
-screen的另一个很强大的功能就是可以在不同窗口之间进行复制粘贴了。使用快捷键C-a <Esc>或者C-a [可以进入copy/paste模式，这个模式下可以像在vi中一样移动光标，并可以使用空格键设置标记。其实在这个模式下有很多类似vi的操作，譬如使用/进行搜索，使用y快速标记一行，使用w快速标记一个单词等。关于C/P模式下的高级操作，其文档的这一部分有比较详细的说明。
+screen的另一个很强大的功能就是可以在不同窗口之间进行复制粘贴了。使用快捷键C-a &lt;Esc&gt;或者C-a [可以进入copy/paste模式，这个模式下可以像在vi中一样移动光标，并可以使用空格键设置标记。其实在这个模式下有很多类似vi的操作，譬如使用/进行搜索，使用y快速标记一行，使用w快速标记一个单词等。关于C/P模式下的高级操作，其文档的这一部分有比较详细的说明。
 
 一般情况下，可以移动光标到指定位置，按下空格设置一个开头标记，然后移动光标到结尾位置，按下空格设置第二个标记，同时会将两个标记之间的部分储存在copy/paste buffer中，并退出copy/paste模式。在正常模式下，可以使用快捷键C-a ]将储存在buffer中的内容粘贴到当前窗口。
 

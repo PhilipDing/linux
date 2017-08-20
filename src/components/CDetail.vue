@@ -1,7 +1,7 @@
 <template>
     <div class="c-detail">
         <h1>{{command}}</h1>
-        <div v-html="content"></div>
+        <component :is="name"></component>
     </div>
 </template>
 
@@ -11,14 +11,12 @@ export default {
     props: ['command'],
     data() {
         return {
-            content: ''
+            name: ''
         }
     },
     methods: {
         loadContent() {
-            const temp = this.command.replace('/', '_');
-            // 需要优化：该处导致JS文件很大
-            this.content = require('../../command/' + temp + '.md')
+            this.name = 'lc-' + this.command.replace('/', '_');
         }
     },
     mounted() {
