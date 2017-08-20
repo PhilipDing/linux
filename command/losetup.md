@@ -3,7 +3,7 @@
 ### 语法  
 
 ```
-losetup [ -e encryption ] [ -o offset ] loop_device [file](https://philipding.github.io/linux-command/file "file命令")
+losetup [ -e encryption ] [ -o offset ] loop_device [file](#/file "file命令")
 losetup [ -d ] loop_device
 ```
 
@@ -24,9 +24,9 @@ losetup [ -d ] loop_device
 
 ### loop设备介绍  
 
-在类 UNIX 系统里，loop 设备是一种伪设备(pseudo-device)，或者也可以说是仿真设备。它能使我们像块设备一样访问一个文件。在使用之前，一个 loop 设备必须要和一个文件进行连接。这种结合方式给用户提供了一个替代块特殊文件的接口。因此，如果这个文件包含有一个完整的文件系统，那么这个文件就可以像一个磁盘设备一样被 [mount](https://philipding.github.io/linux-command/mount "mount命令") 起来。
+在类 UNIX 系统里，loop 设备是一种伪设备(pseudo-device)，或者也可以说是仿真设备。它能使我们像块设备一样访问一个文件。在使用之前，一个 loop 设备必须要和一个文件进行连接。这种结合方式给用户提供了一个替代块特殊文件的接口。因此，如果这个文件包含有一个完整的文件系统，那么这个文件就可以像一个磁盘设备一样被 [mount](#/mount "mount命令") 起来。
 
-上面说的文件格式，我们经常见到的是 [cd](https://philipding.github.io/linux-command/cd "cd命令") 或 DVD 的 ISO 光盘镜像文件或者是软盘(硬盘)的 *.img 镜像文件。通过这种 loop mount (回环mount)的方式，这些镜像文件就可以被 mount 到当前文件系统的一个目录下。
+上面说的文件格式，我们经常见到的是 [cd](#/cd "cd命令") 或 DVD 的 ISO 光盘镜像文件或者是软盘(硬盘)的 *.img 镜像文件。通过这种 loop mount (回环mount)的方式，这些镜像文件就可以被 mount 到当前文件系统的一个目录下。
 
 至此，顺便可以再理解一下 loop 之含义：对于第一层文件系统，它直接安装在我们计算机的物理设备之上；而对于这种被 mount 起来的镜像文件(它也包含有文件系统)，它是建立在第一层文件系统之上，这样看来，它就像是在第一层文件系统之上再绕了一圈的文件系统，所以称为 loop。
 
@@ -35,7 +35,7 @@ losetup [ -d ] loop_device
 创建空的磁盘镜像文件，这里创建一个1.44M的软盘：
 
 ```
-[dd](https://philipding.github.io/linux-command/dd "dd命令") if=/dev/zero of=floppy.img bs=512 count=2880
+[dd](#/dd "dd命令") if=/dev/zero of=floppy.img bs=512 count=2880
 ```
 
 使用 losetup将磁盘镜像文件虚拟成快设备：
@@ -55,6 +55,6 @@ mount /dev/loop0 /tmp
 卸载loop设备：
 
 ```
-[umount](https://philipding.github.io/linux-command/umount "umount命令") /tmp
+[umount](#/umount "umount命令") /tmp
 losetup -d /dev/loop1
 ```

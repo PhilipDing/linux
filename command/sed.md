@@ -4,35 +4,35 @@
 
 [[隐藏](javascript:content_index_toggleToc())] <script type="text/javascript" language="javascript">window.content_index_showTocToggle=true;function content_index_toggleToc(){var tts="显示";var tth="隐藏";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}</script>
 
-*   [sed的选项、命令、替换标记](https://philipding.github.io/linux-command/sed#sed的选项、命令、替换标记 "sed的选项、命令、替换标记")
-    *   [选项](https://philipding.github.io/linux-command/sed#选项 "选项")
-    *   [参数](https://philipding.github.io/linux-command/sed#参数 "参数")
-    *   [sed命令](https://philipding.github.io/linux-command/sed#sed命令 "sed命令")
-    *   [sed替换标记](https://philipding.github.io/linux-command/sed#sed替换标记 "sed替换标记")
-    *   [sed元字符集](https://philipding.github.io/linux-command/sed#sed元字符集 "sed元字符集")
-*   [sed用法实例](https://philipding.github.io/linux-command/sed#sed用法实例 "sed用法实例")
-    *   [替换操作：s命令](https://philipding.github.io/linux-command/sed#替换操作：s命令 "替换操作：s命令")
-    *   [全面替换标记g](https://philipding.github.io/linux-command/sed#全面替换标记g "全面替换标记g")
-    *   [定界符](https://philipding.github.io/linux-command/sed#定界符 "定界符")
-    *   [删除操作：d命令](https://philipding.github.io/linux-command/sed#删除操作：d命令 "删除操作：d命令")
-    *   [已匹配字符串标记&](https://philipding.github.io/linux-command/sed#已匹配字符串标记& "已匹配字符串标记&")
-    *   [子串匹配标记\1](https://philipding.github.io/linux-command/sed#子串匹配标记\1 "子串匹配标记\1")
-    *   [组合多个表达式](https://philipding.github.io/linux-command/sed#组合多个表达式 "组合多个表达式")
-    *   [引用](https://philipding.github.io/linux-command/sed#引用 "引用")
-    *   [选定行的范围：,（逗号）](https://philipding.github.io/linux-command/sed#选定行的范围：,（逗号） "选定行的范围：,（逗号）")
-    *   [多点编辑：e命令](https://philipding.github.io/linux-command/sed#多点编辑：e命令 "多点编辑：e命令")
-    *   [从文件读入：r命令](https://philipding.github.io/linux-command/sed#从文件读入：r命令 "从文件读入：r命令")
-    *   [写入文件：w命令  ](https://philipding.github.io/linux-command/sed#写入文件：w命令   "写入文件：w命令  ")
-    *   [追加（行下）：a\命令](https://philipding.github.io/linux-command/sed#追加（行下）：a\命令 "追加（行下）：a\命令")
-    *   [插入（行上）：i\命令](https://philipding.github.io/linux-command/sed#插入（行上）：i\命令 "插入（行上）：i\命令")
-    *   [下一个：n命令](https://philipding.github.io/linux-command/sed#下一个：n命令 "下一个：n命令")
-    *   [变形：y命令](https://philipding.github.io/linux-command/sed#变形：y命令 "变形：y命令")
-    *   [退出：q命令](https://philipding.github.io/linux-command/sed#退出：q命令 "退出：q命令")
-    *   [保持和获取：h命令和G命令](https://philipding.github.io/linux-command/sed#保持和获取：h命令和G命令 "保持和获取：h命令和G命令")
-    *   [保持和互换：h命令和x命令](https://philipding.github.io/linux-command/sed#保持和互换：h命令和x命令 "保持和互换：h命令和x命令")
-    *   [脚本scriptfile](https://philipding.github.io/linux-command/sed#脚本scriptfile "脚本scriptfile")
-    *   [打印奇数行或偶数行](https://philipding.github.io/linux-command/sed#打印奇数行或偶数行 "打印奇数行或偶数行")
-    *   [打印匹配字符串的下一行](https://philipding.github.io/linux-command/sed#打印匹配字符串的下一行 "打印匹配字符串的下一行")
+*   [sed的选项、命令、替换标记](#/sed#sed的选项、命令、替换标记 "sed的选项、命令、替换标记")
+    *   [选项](#/sed#选项 "选项")
+    *   [参数](#/sed#参数 "参数")
+    *   [sed命令](#/sed#sed命令 "sed命令")
+    *   [sed替换标记](#/sed#sed替换标记 "sed替换标记")
+    *   [sed元字符集](#/sed#sed元字符集 "sed元字符集")
+*   [sed用法实例](#/sed#sed用法实例 "sed用法实例")
+    *   [替换操作：s命令](#/sed#替换操作：s命令 "替换操作：s命令")
+    *   [全面替换标记g](#/sed#全面替换标记g "全面替换标记g")
+    *   [定界符](#/sed#定界符 "定界符")
+    *   [删除操作：d命令](#/sed#删除操作：d命令 "删除操作：d命令")
+    *   [已匹配字符串标记&](#/sed#已匹配字符串标记& "已匹配字符串标记&")
+    *   [子串匹配标记\1](#/sed#子串匹配标记\1 "子串匹配标记\1")
+    *   [组合多个表达式](#/sed#组合多个表达式 "组合多个表达式")
+    *   [引用](#/sed#引用 "引用")
+    *   [选定行的范围：,（逗号）](#/sed#选定行的范围：,（逗号） "选定行的范围：,（逗号）")
+    *   [多点编辑：e命令](#/sed#多点编辑：e命令 "多点编辑：e命令")
+    *   [从文件读入：r命令](#/sed#从文件读入：r命令 "从文件读入：r命令")
+    *   [写入文件：w命令  ](#/sed#写入文件：w命令   "写入文件：w命令  ")
+    *   [追加（行下）：a\命令](#/sed#追加（行下）：a\命令 "追加（行下）：a\命令")
+    *   [插入（行上）：i\命令](#/sed#插入（行上）：i\命令 "插入（行上）：i\命令")
+    *   [下一个：n命令](#/sed#下一个：n命令 "下一个：n命令")
+    *   [变形：y命令](#/sed#变形：y命令 "变形：y命令")
+    *   [退出：q命令](#/sed#退出：q命令 "退出：q命令")
+    *   [保持和获取：h命令和G命令](#/sed#保持和获取：h命令和G命令 "保持和获取：h命令和G命令")
+    *   [保持和互换：h命令和x命令](#/sed#保持和互换：h命令和x命令 "保持和互换：h命令和x命令")
+    *   [脚本scriptfile](#/sed#脚本scriptfile "脚本scriptfile")
+    *   [打印奇数行或偶数行](#/sed#打印奇数行或偶数行 "打印奇数行或偶数行")
+    *   [打印匹配字符串的下一行](#/sed#打印匹配字符串的下一行 "打印匹配字符串的下一行")
 
 </div>
 
@@ -43,7 +43,7 @@
 **命令格式**
 
 ```
-sed [options] '[command](https://philipding.github.io/linux-command/command "command命令")' [file](https://philipding.github.io/linux-command/file "file命令")(s)
+sed [options] '[command](#/command "command命令")' [file](#/file "file命令")(s)
 sed [options] -f scriptfile file(s)
 ```
 
@@ -52,7 +52,7 @@ sed [options] -f scriptfile file(s)
 ```
 -e<script>或--expression=<script>：以选项中的指定的script来处理输入的文本文件；
 -f<script文件>或--file=<script文件>：以选项中指定的script文件来处理输入的文本文件；
--h或--[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+-h或--[help](#/help "help命令")：显示帮助；
 -n或--quiet或——silent：仅显示script处理后的结果；
 -V或--version：显示版本信息。
 ```
@@ -84,7 +84,7 @@ sed [options] -f scriptfile file(s)
 **r file** 从file中读行。
 **t label** if分支，从最后一行开始，条件一旦满足或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾。
 **T label** 错误分支，从最后一行开始，一旦发生错误或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾。
-**[w](https://philipding.github.io/linux-command/w "w命令") file** 写并追加模板块到file末尾。  
+**[w](#/w "w命令") file** 写并追加模板块到file末尾。  
 **W file** 写并追加模板块的第一行到file末尾。  
 **!** 表示后面的命令对所有没有被选定的行发生作用。  
 **=** 打印当前行号码。  
@@ -110,7 +110,7 @@ sed [options] -f scriptfile file(s)
 **$** 匹配行结束，如：/sed$/匹配所有以sed结尾的行。
 **.** 匹配一个非换行符的任意字符，如：/s.d/匹配s后接一个任意字符，最后是d。
 ***** 匹配0个或多个字符，如：/*sed/匹配所有模板是一个或多个空格后紧跟sed的行。
-**[]** 匹配一个指定范围内的字符，如/[[ss](https://philipding.github.io/linux-command/ss "ss命令")][ed](https://philipding.github.io/linux-command/ed "ed命令")/匹配sed和Sed。  
+**[]** 匹配一个指定范围内的字符，如/[[ss](#/ss "ss命令")][ed](#/ed "ed命令")/匹配sed和Sed。  
 **[^]** 匹配一个不在指定范围内的字符，如：/[^A-RT-Z]ed/匹配不包含A-R和T-Z的一个字母开头，紧跟ed的行。
 **\(..\)** 匹配子串，保存匹配的字符，如s/\(love\)able/\1rs，loveable被替换成lovers。
 **&** 保存搜索字符用来替换其他字符，如s/love/**&**/，love这成**love**。
@@ -133,7 +133,7 @@ sed 's/book/books/' file
 
 **-n选项**和**p命令**一起使用表示只打印那些发生替换的行：
 
-sed -n 's/[test](https://philipding.github.io/linux-command/test "test命令")/TEST/p' file
+sed -n 's/[test](#/test "test命令")/TEST/p' file
 
 直接编辑文件**选项-i**，会匹配file文件中每一行的第一个book替换为books：
 
@@ -152,7 +152,7 @@ sed 's/book/books/g' file
 当需要从第N处匹配开始替换时，可以使用 /Ng：
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") sksksksksksk | sed 's/sk/SK/2g'
+[echo](#/echo "echo命令") sksksksksksk | sed 's/sk/SK/2g'
 skSKSKSKSKSK
 
 echo sksksksksksk | sed 's/sk/SK/3g'
@@ -418,8 +418,8 @@ sed -n '2~2p' test.txt  #偶数行
 ### 打印匹配字符串的下一行  
 
 ```
-[grep](https://philipding.github.io/linux-command/grep "grep命令") -A 1 SCC URFILE
+[grep](#/grep "grep命令") -A 1 SCC URFILE
 sed -n '/SCC/{n;p}' URFILE
-[awk](https://philipding.github.io/linux-command/awk "awk命令") '/SCC/{getline; print}' URFILE
+[awk](#/awk "awk命令") '/SCC/{getline; print}' URFILE
 
 ```

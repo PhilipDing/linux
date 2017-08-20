@@ -1,6 +1,6 @@
 **jobs命令**用于显示Linux中的任务列表及任务状态，包括后台运行的任务。该命令可以显示任务号及其对应的进程号。其中，任务号是以普通用户的角度进行的，而进程号则是从系统管理员的角度来看的。一个任务可以对应于一个或者多个进程号。
 
-在Linux系统中执行某些操作时候，有时需要将当前任务暂停调至后台，或有时须将后台暂停的任务重启开启并调至前台，这一序列的操作将会使用到 jobs、[bg](https://philipding.github.io/linux-command/bg "bg命令")、和 [fg](https://philipding.github.io/linux-command/fg "fg命令") 三个命令以及两个快捷键来完成。
+在Linux系统中执行某些操作时候，有时需要将当前任务暂停调至后台，或有时须将后台暂停的任务重启开启并调至前台，这一序列的操作将会使用到 jobs、[bg](#/bg "bg命令")、和 [fg](#/fg "fg命令") 三个命令以及两个快捷键来完成。
 
 ### 语法  
 
@@ -33,7 +33,7 @@ jobs -l               #显示当前系统的任务列表
 上面的命令执行后，将显示出当前系统下的任务列表信息，具体如下所示：
 
 ```
-[1] + 1903 运行中          [find](https://philipding.github.io/linux-command/find "find命令") / -name password &
+[1] + 1903 运行中          [find](#/find "find命令") / -name password &
 ```
 
 注意：要得到以上输出信息，必须在执行jobs命令之前执行命令`find / -name password &`。否则，执行jobs命令不会显示任何信息。

@@ -23,10 +23,10 @@ swapon(选项)(参数)
 ### 实例  
 
 ```
-[mkswap](https://philipding.github.io/linux-command/mkswap "mkswap命令") -c /dev/hdb4 （-c是检查有无坏块）
+[mkswap](#/mkswap "mkswap命令") -c /dev/hdb4 （-c是检查有无坏块）
 swapon -v /dev/hdb4
 swapon -s
-Filename                                [type](https://philipding.github.io/linux-command/type "type命令")            Size    Used    Priority
+Filename                                [type](#/type "type命令")            Size    Used    Priority
 /dev/hda5                               partition       506008 96      -1
 /dev/hdb4                               partition       489972 0       -2
 ```

@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-query命令**是Debian Linux中软件包的查询工具，它从dpkg软件包数据库中查询并辨识软件包的信息。
+**[dpkg](#/dpkg "dpkg命令")-query命令**是Debian Linux中软件包的查询工具，它从dpkg软件包数据库中查询并辨识软件包的信息。
 
 ### 语法  
 
@@ -13,7 +13,7 @@ dpkg-query(选项)(参数)
 -s：查询软件包的状态信息；
 -L：显示软件包所安装的文件列表；
 -S：从安装的软件包中查询文件；
--[w](https://philipding.github.io/linux-command/w "w命令")：显示软件包信息；
+-[w](#/w "w命令")：显示软件包信息；
 -c：显示软件包的控制文件路径；
 -p：显示软件包的细节。
 ```
@@ -57,5 +57,5 @@ dpkg-query -l
 查看软件包的确切状态（是否安装）以及版本号：
 
 ```
-dpkg-query -W -f='${Status} ${Version}\n' apache-[perl](https://philipding.github.io/linux-command/perl "perl命令")
+dpkg-query -W -f='${Status} ${Version}\n' apache-[perl](#/perl "perl命令")
 ```

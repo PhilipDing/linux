@@ -9,15 +9,15 @@ cpio(选项)
 ### 选项  
 
 ```
--0或--null：接受新增列控制字符，通常配合[find](https://philipding.github.io/linux-command/find "find命令")指令的“-print0”参数使用；
--a或--rest-access-[time](https://philipding.github.io/linux-command/time "time命令")：重新设置文件的存取时间；
+-0或--null：接受新增列控制字符，通常配合[find](#/find "find命令")指令的“-print0”参数使用；
+-a或--rest-access-[time](#/time "time命令")：重新设置文件的存取时间；
 -A或--append：附加到已存在的备份文档中，且这个备份文档必须存放在磁盘上，而不能放置于磁带机里；
--b或--awap：此参数的效果和同时指定“-[ss](https://philipding.github.io/linux-command/ss "ss命令")”参数相同；
+-b或--awap：此参数的效果和同时指定“-[ss](#/ss "ss命令")”参数相同；
 -B：将输入/输出的区块大小改成5210Bytes；
 -c：使用旧ASCII备份格式；
 -C<区块大小>或--io-size=<区块大小>：设置输入/输出的区块大小，单位是Byte；
--d或--[make](https://philipding.github.io/linux-command/make "make命令")-directories：如有需要cpio会自行建立目录；
--E<范本文件>或--pattern-[file](https://philipding.github.io/linux-command/file "file命令")=<范本文件>：指定范本文件，其内含有一个或多个范本样式，让cpio解开符合范本条件的文件，格式为每列一个范本样式；
+-d或--[make](#/make "make命令")-directories：如有需要cpio会自行建立目录；
+-E<范本文件>或--pattern-[file](#/file "file命令")=<范本文件>：指定范本文件，其内含有一个或多个范本样式，让cpio解开符合范本条件的文件，格式为每列一个范本样式；
 -f或--nonmatching：让cpio解开所有不符合范本条件的文件；
 -F<备份档>或--file=<备份档>：指定备份档的名称，用来取代标准输入或输出，也能借此通过网络使用另一台主机的保存设备存取备份档；
 -H<备份格式>：指定备份时欲使用的文件格式；
@@ -32,7 +32,7 @@ cpio(选项)
 -o或--create：执行copy-out模式，建立备份档；
 -O<备份档>：指定备份档的名称，用来取代标准输出，也能借此通过网络使用另一台主机的保存设备存放备份档；
 -p或--pass-through：执行copy-pass模式，略过备份步骤，直接将文件复制到目的目录；
--r或--[rename](https://philipding.github.io/linux-command/rename "rename命令")：当有文件名称需要更改时，采用互动模式；
+-r或--[rename](#/rename "rename命令")：当有文件名称需要更改时，采用互动模式；
 -R<拥有者><:/.><所属群组>或----owner<拥有者><:/.><所属群组>   在copy-in模式还原备份档，或copy-pass模式复制文件时，可指定这些备份，复制的文件的拥有者与所属群组；
 -s或--swap-bytes：交换每队字节的内容；
 -S或--swap-halfwords：交换每半个字节的内容；
@@ -42,7 +42,7 @@ cpio(选项)
 -V或--dot：执行指令时。在每个文件的执行程序前面加上“.”号；
 --block-size=<区块大小>：设置输入/输出的区块大小，假如设置数值为5，则区块大小为2500，若设置成10，则区块大小为5120，以此类推；
 --force-local：强制将备份档存放在本地主机；
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+--[help](#/help "help命令")：在线帮助；
 --no-absolute-filenames：使用相对路径建立文件名称；
 --no-preserve-owner：不保留文件的拥有者，谁解开了备份档，那些文件就归谁所有；
 -only-verify-crc：当备份档采用CRC备份格式时，可使用这项参数检查备份档内的每个文件是否正确无误；
@@ -56,7 +56,7 @@ cpio(选项)
 **将`/etc`下的所有普通文件都备份到`/opt/etc.cpio`，使用以下命令：**
 
 ```
-find /etc –[type](https://philipding.github.io/linux-command/type "type命令") f | cpio –ocvB >/opt/etc.cpio
+find /etc –[type](#/type "type命令") f | cpio –ocvB >/opt/etc.cpio
 ```
 
 **将系统上所有资料备份到磁带机内，使用以下命令：**

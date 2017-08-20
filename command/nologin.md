@@ -10,12 +10,12 @@ nologin
 
 Linux禁止用户登录：
 
-禁止用户登录后，用户不能登录系统，但可以登录[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")、SAMBA等。我们在Linux下做系统维护的时候，希望个别用户或者所有用户不能登录系统，保证系统在维护期间正常运行。这个时候我们就要禁止用户登录。  
+禁止用户登录后，用户不能登录系统，但可以登录[ftp](#/ftp "ftp命令")、SAMBA等。我们在Linux下做系统维护的时候，希望个别用户或者所有用户不能登录系统，保证系统在维护期间正常运行。这个时候我们就要禁止用户登录。  
 
 1、禁止个别用户登录，比如禁止lynn用户登录。
 
 ```
-[passwd](https://philipding.github.io/linux-command/passwd "passwd命令") -l lynn
+[passwd](#/passwd "passwd命令") -l lynn
 ```
 
 这就话的意思是锁定lynn用户，这样该用户就不能登录了。  
@@ -29,7 +29,7 @@ passwd -u lynn
 2、我们通过修改`/etc/passwd`文件中用户登录的shell
 
 ```
-[vi](https://philipding.github.io/linux-command/vi "vi命令") /etc/passwd
+[vi](#/vi "vi命令") /etc/passwd
 ```
 
 更改为：
@@ -43,7 +43,7 @@ lynn:x:500:500::/home/lynn:/sbin/nologin
 3、禁止所有用户登录。
 
 ```
-[touch](https://philipding.github.io/linux-command/touch "touch命令") /etc/nologin
+[touch](#/touch "touch命令") /etc/nologin
 ```
 
 除root以外的用户不能登录了。

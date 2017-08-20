@@ -48,10 +48,10 @@ umount: /mnt/mymount: device is busy
 umount: /mnt/mymount: device is busy
 ```
 
-有时，导致设备忙的原因并不好找。碰到这种情况时，可以用[lsof](https://philipding.github.io/linux-command/lsof "lsof命令")列出已打开文件，然后搜索列表查找待卸载的挂载点：
+有时，导致设备忙的原因并不好找。碰到这种情况时，可以用[lsof](#/lsof "lsof命令")列出已打开文件，然后搜索列表查找待卸载的挂载点：
 
 ```
-lsof | [grep](https://philipding.github.io/linux-command/grep "grep命令") mymount         查找mymount分区里打开的文件
+lsof | [grep](#/grep "grep命令") mymount         查找mymount分区里打开的文件
 bash   9341  francois  cwd   DIR   8,1   1024    2 /mnt/mymount
 ```
 
@@ -63,7 +63,7 @@ bash   9341  francois  cwd   DIR   8,1   1024    2 /mnt/mymount
 umount -vl /mnt/mymount/     执行延迟卸载
 ```
 
-延迟卸载（lazy unmount）会立即卸载目录树里的文件系统，等到设备不再繁忙时才清理所有相关资源。卸载可移动存储介质还可以用eject命令。下面这条命令会卸载[cd](https://philipding.github.io/linux-command/cd "cd命令")并弹出CD：
+延迟卸载（lazy unmount）会立即卸载目录树里的文件系统，等到设备不再繁忙时才清理所有相关资源。卸载可移动存储介质还可以用eject命令。下面这条命令会卸载[cd](#/cd "cd命令")并弹出CD：
 
 ```
 eject /dev/cdrom      卸载并弹出CD 

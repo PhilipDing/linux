@@ -10,7 +10,7 @@ dig(选项)(参数)
 
 ```
 @<服务器地址>：指定进行域名解析的域名服务器；
--b<[ip](https://philipding.github.io/linux-command/ip "ip命令")地址>：当主机具有多个IP地址，指定使用本机的哪个IP地址向域名服务器发送域名查询请求；
+-b<[ip](#/ip "ip命令")地址>：当主机具有多个IP地址，指定使用本机的哪个IP地址向域名服务器发送域名查询请求；
 -f<文件名称>：指定dig以批处理的方式运行，指定的文件中保存着需要批处理查询的DNS任务信息；
 -P：指定域名服务器所使用端口号；
 -t<类型>：指定要查询的DNS数据类型；
@@ -35,21 +35,21 @@ dig(选项)(参数)
 ; <<>> DiG 9.3.6-P1-RedHat-9.3.6-20.P1.el5_8.1 <<>> www.linuxde.net
 ;; global options:  printcmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, [id](https://philipding.github.io/linux-command/id "id命令"): 2115
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, [id](#/id "id命令"): 2115
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 2, ADDITIONAL: 0
 
 ;; QUESTION SECTION:
 ;www.linuxde.net.               IN      A
 
 ;; ANSWER SECTION:
-www.linuxde.net.        0       IN      CNAME   [host](https://philipding.github.io/linux-command/host "host命令").1.linuxde.net.
+www.linuxde.net.        0       IN      CNAME   [host](#/host "host命令").1.linuxde.net.
 host.1.linuxde.net.     0       IN      A       100.42.212.8
 
 ;; AUTHORITY SECTION:
 linuxde.net.            8       IN      NS      f1g1ns2.dnspod.net.
 linuxde.net.            8       IN      NS      f1g1ns1.dnspod.net.
 
-;; Query [time](https://philipding.github.io/linux-command/time "time命令"): 0 msec
+;; Query [time](#/time "time命令"): 0 msec
 ;; SERVER: 202.96.104.15#53(202.96.104.15)
 ;; WHEN: Thu Dec 26 11:14:37 2013
 ;; MSG SIZE  rcvd: 121

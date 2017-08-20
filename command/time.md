@@ -15,8 +15,8 @@ time(参数)
 当测试一个程序或比较不同算法时，执行时间是非常重要的，一个好的算法应该是用时最短的。所有类UNIX系统都包含time命令，使用这个命令可以统计时间消耗。例如：
 
 ```
-[root@localhost ~]# time [ls](https://philipding.github.io/linux-command/ls "ls命令")
-anaconda-ks.cfg  [install](https://philipding.github.io/linux-command/install "install命令").log  install.log.syslog  satools  text
+[root@localhost ~]# time [ls](#/ls "ls命令")
+anaconda-ks.cfg  [install](#/install "install命令").log  install.log.syslog  satools  text
 
 real    0m0.009s
 user    0m0.002s
@@ -125,7 +125,7 @@ shell内建也有一个time命令，当运行time时候是调用的系统内建�
 
 <tr>
 
-<td>%[w](https://philipding.github.io/linux-command/w "w命令")</td>
+<td>%[w](#/w "w命令")</td>
 
 <td>进程被交换出主存的次数。</td>
 

@@ -1,4 +1,4 @@
-**stat命令**用于显示文件的状态信息。stat命令的输出信息比[ls](https://philipding.github.io/linux-command/ls "ls命令")命令的输出信息要更详细。
+**stat命令**用于显示文件的状态信息。stat命令的输出信息比[ls](#/ls "ls命令")命令的输出信息要更详细。
 
 ### 语法  
 
@@ -12,7 +12,7 @@ stat(选项)(参数)
 -L：支持符号连接；
 -f：显示文件系统状态而非文件状态；
 -t：以简洁方式输出信息；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示指令的帮助信息；
+--[help](#/help "help命令")：显示指令的帮助信息；
 --version：显示指令的版本信息。
 ```
 
@@ -27,7 +27,7 @@ stat(选项)(参数)
 -rw-r--r-- 1 root root 0 2010-10-09 myfile
 
 [root@localhost ~]# stat myfile
-[file](https://philipding.github.io/linux-command/file "file命令"): “myfile”
+[file](#/file "file命令"): “myfile”
 Size: 0               Blocks: 8          IO Block: 4096   一般空文件
 Device: fd00h/64768d    Inode: 194805815   Links: 1
 Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
@@ -37,9 +37,9 @@ Change: 2010-10-09 20:44:21.000000000 +0800
 
 [root@localhost ~]# stat -f myfile
 File: "myfile"
-[id](https://philipding.github.io/linux-command/id "id命令"): 0        Namelen: 255     [type](https://philipding.github.io/linux-command/type "type命令"): ext2/ext3
+[id](#/id "id命令"): 0        Namelen: 255     [type](#/type "type命令"): ext2/ext3
 Block size: 4096       Fundamental block size: 4096
-Blocks: Total: 241555461  [free](https://philipding.github.io/linux-command/free "free命令"): 232910771  Available: 220442547
+Blocks: Total: 241555461  [free](#/free "free命令"): 232910771  Available: 220442547
 Inodes: Total: 249364480  Free: 249139691
 
 [root@localhost ~]# stat -t myfile

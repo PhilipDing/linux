@@ -10,7 +10,7 @@ mkbootdisk(选项)(参数)
 
 ```
 --device<设备>：指定设备；
---mkinitrdargs<参数>：设置[mkinitrd](https://philipding.github.io/linux-command/mkinitrd "mkinitrd命令")的参数；
+--mkinitrdargs<参数>：设置[mkinitrd](#/mkinitrd "mkinitrd命令")的参数；
 --noprompt：不会提示用户插入磁盘；
 --verbose：执行时显示详细的信息；
 --version：显示版本信息。
@@ -23,7 +23,7 @@ mkbootdisk(选项)(参数)
 ### 实例  
 
 ```
-mkbootdisk --device /dev/fd0 `[uname](https://philipding.github.io/linux-command/uname "uname命令") -r`
+mkbootdisk --device /dev/fd0 `[uname](#/uname "uname命令") -r`
 ```
 
 其中，``uname -r``是目前Linux 系统所使用的核心版本，如果你有多个核心版本的话，你以可以直接输入核心版本。例如在这个网页中所使用的核心有两个版本，一个是2.2.12-20，另一个是2.2.18，若要以2.2.18设定开机的话，可以使用：

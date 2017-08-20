@@ -17,7 +17,7 @@ chcon [选项]... --reference=参考文件 文件...
 -v, --verbose：为处理的所有文件显示诊断信息。
 -u, --user=用户：设置指定用户的目标安全环境。
 -r, --role=角色：设置指定角色的目标安全环境。
--t, --[type](https://philipding.github.io/linux-command/type "type命令")=类型：设置指定类型的目标安全环境。
+-t, --[type](#/type "type命令")=类型：设置指定类型的目标安全环境。
 -l, --range=范围：设置指定范围的目标安全环境。
 ```
 
@@ -27,13 +27,13 @@ chcon [选项]... --reference=参考文件 文件...
 -H：如果命令行参数是一个通到目录的符号链接，则遍历符号链接。
 -L：遍历每一个遇到的通到目录的符号链接。
 -P：不遍历任何符号链接（默认）。
---[help](https://philipding.github.io/linux-command/help "help命令")：显示此帮助信息并退出。
+--[help](#/help "help命令")：显示此帮助信息并退出。
 --version：显示版本信息并退出。
 ```
 
 ### 实例  
 
-如果你想把这个[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")共享给匿名用户的话，需要开启以下：
+如果你想把这个[ftp](#/ftp "ftp命令")共享给匿名用户的话，需要开启以下：
 
 ```
 chcon -R -t public_content_t /var/ftp
@@ -48,7 +48,7 @@ chcon -t public_content_rw_t /var/ftp/incoming
 允许用户HHTP访问其家目录，该设定限仅于用户的家目录主页：
 
 ```
-[setsebool](https://philipding.github.io/linux-command/setsebool "setsebool命令") -P httpd_enable_homedirs 1
+[setsebool](#/setsebool "setsebool命令") -P httpd_enable_homedirs 1
 chcon -R -t httpd_sys_content_t ~user/public_html
 ```
 
@@ -58,7 +58,7 @@ chcon -R -t httpd_sys_content_t ~user/public_html
 chcon -t samba_share_t /directory
 ```
 
-共享[rsync](https://philipding.github.io/linux-command/rsync "rsync命令")目录时：
+共享[rsync](#/rsync "rsync命令")目录时：
 
 ```
 chcon -t public_content_t /directories

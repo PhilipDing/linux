@@ -8,7 +8,7 @@ newusers(参数)
 
 ### 参数  
 
-用户文件：指定包含用户信息的文本文件，文件的格式要与`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`相同。
+用户文件：指定包含用户信息的文本文件，文件的格式要与`/etc/[passwd](#/passwd "passwd命令")`相同。
 
 ### 实例  
 
@@ -23,12 +23,12 @@ newusers(参数)
 举例：
 
 ```
-jingang0:x:520:520::/home/jingang0:/sbin/[nologin](https://philipding.github.io/linux-command/nologin "nologin命令")
+jingang0:x:520:520::/home/jingang0:/sbin/[nologin](#/nologin "nologin命令")
 jingang1:x:521:521::/home/jingang1:/sbin/nologin
 ......
 ```
 
-值得一提的是关于SHELL类型，查看主机上所有SHELL，可以通过[chsh](https://philipding.github.io/linux-command/chsh "chsh命令")来查看：
+值得一提的是关于SHELL类型，查看主机上所有SHELL，可以通过[chsh](#/chsh "chsh命令")来查看：
 
 ```
 [root@localhost beinan]# chsh --list

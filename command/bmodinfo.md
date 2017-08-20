@@ -34,7 +34,7 @@ license:    GPL
 version:    3.5.31 B0B0CB1BB59F0669A1F0D6B
 parm:      def_reserved_size:size of buffer reserved for each fd
 parm:      allow_dio:allow direct I/O (default: 0 (disallow))
-[alias](https://philipding.github.io/linux-command/alias "alias命令"):     char-major-21-*
-vermagic:    2.6.9-42.ELsmp SMP 686 REGPARM 4KSTACKS [gcc](https://philipding.github.io/linux-command/gcc "gcc命令")-3.4
+[alias](#/alias "alias命令"):     char-major-21-*
+vermagic:    2.6.9-42.ELsmp SMP 686 REGPARM 4KSTACKS [gcc](#/gcc "gcc命令")-3.4
 depends:    scsi_mod
 ```

@@ -1,4 +1,4 @@
-**lftp命令**是一款优秀的文件客户端程序，它支持[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")、SETP、HTTP和FTPs等多种文件传输协议。lftp支持tab自动补全，记不得命令双击tab键，就可以看到可能的选项了。
+**lftp命令**是一款优秀的文件客户端程序，它支持[ftp](#/ftp "ftp命令")、SETP、HTTP和FTPs等多种文件传输协议。lftp支持tab自动补全，记不得命令双击tab键，就可以看到可能的选项了。
 
 ### 语法  
 
@@ -11,13 +11,13 @@ lftp(选项)(参数)
 ```
 -f：指定lftp指令要执行的脚本文件；
 -c：执行指定的命令后退出；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助信息；
+--[help](#/help "help命令")：显示帮助信息；
 --version：显示指令的版本号。
 ```
 
 ### 参数  
 
-站点：要访问的站点的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或者域名。
+站点：要访问的站点的[ip](#/ip "ip命令")地址或者域名。
 
 ### 实例  
 
@@ -27,13 +27,13 @@ lftp(选项)(参数)
 lftp 用户名:密码@ftp地址:传送端口（默认21）
 ```
 
-也可以先不带用户名登录，然后在接口界面下用[login](https://philipding.github.io/linux-command/login "login命令")命令来用指定账号登录，密码不显示。
+也可以先不带用户名登录，然后在接口界面下用[login](#/login "login命令")命令来用指定账号登录，密码不显示。
 
 **查看文件与改变目录**
 
 ```
-[ls](https://philipding.github.io/linux-command/ls "ls命令")
-[cd](https://philipding.github.io/linux-command/cd "cd命令") 对应ftp目录
+[ls](#/ls "ls命令")
+[cd](#/cd "cd命令") 对应ftp目录
 ```
 
 **下载**
@@ -43,7 +43,7 @@ get当然是可以的，还可以：
 ```
 mget -c *.pdf    #把所有的pdf文件以允许断点续传的方式下载。
 mirror aaa/      #将aaa目录整个的下载下来，子目录也会自动复制。
-pget -c -n 10 [file](https://philipding.github.io/linux-command/file "file命令").dat   #以最多10个线程以允许断点续传的方式下载file.dat，可以通过设置pget:default-n的值而使用默认值。
+pget -c -n 10 [file](#/file "file命令").dat   #以最多10个线程以允许断点续传的方式下载file.dat，可以通过设置pget:default-n的值而使用默认值。
 ```
 
 **上传**
@@ -59,7 +59,7 @@ mirror -R 本地目录名
 **模式设置**
 
 ```
-[set](https://philipding.github.io/linux-command/set "set命令") ftp:charset gbk
+[set](#/set "set命令") ftp:charset gbk
 ```
 
 远程ftp site用gbk编码，对应的要设置为utf8,只要替换gbk为utf8即可。

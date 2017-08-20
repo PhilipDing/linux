@@ -4,8 +4,9 @@ const Promise = require('bluebird');
 const fs = require('fs');
 const path = require('path');
 
-const linuxCommand = [];
+const categories = [];
 const commands = [];
+const images = [];
 
 const crawlCategory = () => {
     return new Promise((resolve, reject)=> {
@@ -28,7 +29,7 @@ const crawlCategory = () => {
                             })
                         });
 
-                        linuxCommand.push({
+                        categories.push({
                             title,
                             category
                         })
@@ -71,7 +72,7 @@ const crawlSubCategory = () => {
                         commands.push(cmd);
                     });
 
-                    for (let lc of linuxCommand) {
+                    for (let lc of categories) {
                         const cat = lc.category.find(c => c.link === link);
                         if (cat) {
                             cat.category = category;
@@ -84,7 +85,7 @@ const crawlSubCategory = () => {
             }
         });
 
-        const links = linuxCommand.reduce((accumulator, currentValue) => {
+        const links = categories.reduce((accumulator, currentValue) => {
             return accumulator.concat(currentValue.category);
         }, []).map(v => encodeURI(v.link));
 
@@ -92,13 +93,12 @@ const crawlSubCategory = () => {
 
         c.on('drain', function() {
             let filename  = path.join(__dirname, 'command', 'category.js');
-            let str = `export default ${JSON.stringify(linuxCommand)}`;
-            str = str.replace(/http:\/\/man.linuxde.net\//gi, '');
+            let str = `export default ${JSON.stringify(categories, null, 4)}`;
             fs.writeFileSync(filename, str);
             console.log(`create category.js → OK!`);
 
             filename  = path.join(__dirname, 'command', 'command.js');
-            fs.writeFileSync(filename, `export default ${JSON.stringify(commands)}`);
+            fs.writeFileSync(filename, `export default ${JSON.stringify(commands, null, 4)}`);
             console.log(`create command.js → OK!`);
 
             resolve();
@@ -122,12 +122,18 @@ const crawlCommand = () => {
                     const $ = res.$;
                     const title = res.request.path.substr(1);
                     const content = $('.post_bd.post').html();
+
+                    $('.post_bd.post img').each(function() {
+                        images.push($(this).attr('src'));
+                    });
+
                     let mdStr = toMarkdown(content);
                     mdStr = mdStr.replace(/<pre>/gi,'```\n')
                                  .replace(/<\/pre>/gi,'\n```')
                                  .replace(/<span.*?>/gi,'')
                                  .replace(/<\/span>/gi,'')
-                                 .replace(/http:\/\/man.linuxde.net\//gi, 'https://philipding.github.io/linux-command/')
+                                 .replace(/http:\/\/man.linuxde.net\//gi, '#/')
+                                 .replace(/#\/wp-content.*\/(.*\.*)/gi, './images/$1')
 
                     const filename  = path.join(__dirname, 'command', `${title}.md`);
                     fs.writeFileSync(filename, mdStr);
@@ -148,9 +154,49 @@ const crawlCommand = () => {
     });
 }
 
+const crawlImages = () => {
+    return new Promise(() => {
+        console.log('start crawl images.');
+
+        const c = new Crawler({
+            gzip: false,
+            encoding: null,
+            jQuery: false,
+            callback: function (error, res, done) {
+                if (error) {
+                    console.log('crawl images => error');
+
+                    reject();
+                } else {
+                    const index = res.request.uri.href.lastIndexOf('/');
+                    const name = res.request.uri.href.substr(index + 1);
+                    const filename  = path.join(__dirname, 'command', 'images', name);
+                    fs.writeFile(filename, res.body, function (err) {
+                        if (err) {
+                            console.log(`create ${name} → error`);
+                        } else {
+                            console.log(`create ${name} → OK!`);
+                        }
+                    });
+                }
+
+                done();
+            }
+        });
+
+        c.queue(images);
+        c.on('drain', function() {
+            console.log('end crawl images.');
+
+            resolve();
+        })
+    });
+}
+
 crawlCategory()
     .then(() => crawlSubCategory())
     .then(() => crawlCommand())
+    .then(() => crawlImages())
     .catch(e => {
         console.log(e);
     });

@@ -1,4 +1,4 @@
-**zipinfo命令**用来列出压缩文件信息。执行zipinfo指令可得知[zip](https://philipding.github.io/linux-command/zip "zip命令")压缩文件的详细信息。
+**zipinfo命令**用来列出压缩文件信息。执行zipinfo指令可得知[zip](#/zip "zip命令")压缩文件的详细信息。
 
 ### 语法  
 
@@ -14,8 +14,8 @@ zipinfo(选项)(参数)
 -h：只列出压缩文件的文件名称；
 -l：此参数的效果和指定“-m”参数类似，但会列出原始文件的大小而非每个文件的压缩率；
 -m：此参数的效果和指定“-s”参数类似，但多会列出每个文件的压缩率；
--M：若信息内容超过一个画面，则采用类似[more](https://philipding.github.io/linux-command/more "more命令")指令的方式列出信息；
--s：用类似执行“[ls](https://philipding.github.io/linux-command/ls "ls命令")-l”指令的效果列出压缩文件内容；
+-M：若信息内容超过一个画面，则采用类似[more](#/more "more命令")指令的方式列出信息；
+-s：用类似执行“[ls](#/ls "ls命令")-l”指令的效果列出压缩文件内容；
 -t：只列出压缩文件内所包含的文件数目，压缩前后的文件大小及压缩率；
 -T：将压缩文件内每个文件的日期时间用年，月，日，时，分，秒的顺序列出；
 -v：详细显示压缩文件内每一个文件的信息；

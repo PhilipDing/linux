@@ -31,6 +31,6 @@ vgdisplay(选项)(参数)
   --- Volume group ---  
   VG Name               vg1000  
 ......省略部分输出内容......  
-  [free](https://philipding.github.io/linux-command/free "free命令")  PE / Size       50 / 200.00 MB  
+  [free](#/free "free命令")  PE / Size       50 / 200.00 MB  
   VG UUID  ICprwg-ZmhA-JKYF-WYuy-jNHa-AyCN-ZS5F7B
 ```

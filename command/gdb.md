@@ -1,4 +1,4 @@
-**gdb命令**包含在GNU的[gcc](https://philipding.github.io/linux-command/gcc "gcc命令")开发套件中，是功能强大的程序调试器。GDB中的命令固然很多，但我们只需掌握其中十个左右的命令，就大致可以完成日常的基本的程序调试工作。
+**gdb命令**包含在GNU的[gcc](#/gcc "gcc命令")开发套件中，是功能强大的程序调试器。GDB中的命令固然很多，但我们只需掌握其中十个左右的命令，就大致可以完成日常的基本的程序调试工作。
 
 <table border="0" cellpadding="0" cellspacing="0">
 
@@ -16,7 +16,7 @@
 
 <tr>
 
-<td>[file](https://philipding.github.io/linux-command/file "file命令") <文件名></td>
+<td>[file](#/file "file命令") <文件名></td>
 
 <td>加载被调试的可执行程序文件。  
 因为一般都在被调试程序所在目录下执行GDB，因而文本名不需要带路径。</td>
@@ -115,7 +115,7 @@ n 相当于其它调试器中的“Step Over (单步跟踪)”。 这两个命�
 
 <td>i</td>
 
-<td>[info](https://philipding.github.io/linux-command/info "info命令")的简写，用于显示各类信息，详情请查阅“[help](https://philipding.github.io/linux-command/help "help命令") i”。</td>
+<td>[info](#/info "info命令")的简写，用于显示各类信息，详情请查阅“[help](#/help "help命令") i”。</td>
 
 <td>(gdb) i r</td>
 
@@ -155,7 +155,7 @@ gdb(选项)(参数)
 ### 选项  
 
 ```
--[cd](https://philipding.github.io/linux-command/cd "cd命令")：设置工作目录；
+-[cd](#/cd "cd命令")：设置工作目录；
 -q：安静模式，不打印介绍信息和版本信息；
 -d：添加文件查找路径；
 -x：从指定文件中执行GDB指令；
@@ -176,7 +176,7 @@ int nGlobalVar = 0;
 
 int tempFunction(int a, int b)
 {
-    [printf](https://philipding.github.io/linux-command/printf "printf命令")("tempFunction is called, a = %d, b = %d /n", a, b);
+    [printf](#/printf "printf命令")("tempFunction is called, a = %d, b = %d /n", a, b);
     return (a + b);
 }
 
@@ -211,12 +211,12 @@ gcc gdb-sample.c -o gdb-sample -g
 
 ```
 GNU gdb Red Hat Linux (5.3post-0.20021129.18rh)
-Copyright 2003 [free](https://philipding.github.io/linux-command/free "free命令") Software Foundation, Inc.
+Copyright 2003 [free](#/free "free命令") Software Foundation, Inc.
 GDB is free software, covered by the GNU General Public License, and you are
 welcome to change it and/or distribute copies of it under certain conditions.
-[type](https://philipding.github.io/linux-command/type "type命令") "show copying" to see the conditions.
+[type](#/type "type命令") "show copying" to see the conditions.
 There is absolutely no warranty for GDB. Type "show warranty" for details.
-This GDB was configured [as](https://philipding.github.io/linux-command/as "as命令") "i386-redhat-linux-gnu".
+This GDB was configured [as](#/as "as命令") "i386-redhat-linux-gnu".
 (gdb)
 ```
 
@@ -246,7 +246,7 @@ Program exited normally.
 
 ```
 (gdb) b main
-Breakpoint 1 [at](https://philipding.github.io/linux-command/at "at命令") 0x804835c: file gdb-sample.c, line 19.
+Breakpoint 1 [at](#/at "at命令") 0x804835c: file gdb-sample.c, line 19.
 ```
 
 上面最后一行提示已经成功设置断点，并给出了该断点信息：在源文件 gdb-sample.c 第19行处设置断点；这是本程序的第一个断点（序号为1）；断点处的代码地址为 0x804835c（此值可能仅在本次调试过程中有效）。回过头去看源代码，第19行中的代码为“n = 1”，恰好是 main 函数中的第一个可执行语句（前面的“int n;”为变量定义语句，并非可执行语句）。
@@ -429,7 +429,7 @@ edi 0x80483f0 134513648
 eip 0x8048366 0x8048366
 eflags 0x386 902
 cs 0x23 35
-[ss](https://philipding.github.io/linux-command/ss "ss命令") 0x2b 43
+[ss](#/ss "ss命令") 0x2b 43
 ds 0x2b 43
 es 0x2b 43
 fs 0x0 0
@@ -447,5 +447,5 @@ eax 0xbffff6a4 -1073744220
 
 ```
 (gdb) q
-The program is running. [exit](https://philipding.github.io/linux-command/exit "exit命令") anyway? (y or n)
+The program is running. [exit](#/exit "exit命令") anyway? (y or n)
 ```

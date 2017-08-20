@@ -1,19 +1,19 @@
-**dstat命令**是一个用来替换[vmstat](https://philipding.github.io/linux-command/vmstat "vmstat命令")、[iostat](https://philipding.github.io/linux-command/iostat "iostat命令")、[netstat](https://philipding.github.io/linux-command/netstat "netstat命令")、[nfsstat](https://philipding.github.io/linux-command/nfsstat "nfsstat命令")和[ifstat](https://philipding.github.io/linux-command/ifstat "ifstat命令")这些命令的工具，是一个全能系统信息统计工具。与sysstat相比，dstat拥有一个彩色的界面，在手动观察性能状况时，数据比较显眼容易观察；而且dstat支持即时刷新，譬如输入`dstat 3`即每三秒收集一次，但最新的数据都会每秒刷新显示。和sysstat相同的是，dstat也可以收集指定的性能资源，譬如`dstat -c`即显示CPU的使用情况。
+**dstat命令**是一个用来替换[vmstat](#/vmstat "vmstat命令")、[iostat](#/iostat "iostat命令")、[netstat](#/netstat "netstat命令")、[nfsstat](#/nfsstat "nfsstat命令")和[ifstat](#/ifstat "ifstat命令")这些命令的工具，是一个全能系统信息统计工具。与sysstat相比，dstat拥有一个彩色的界面，在手动观察性能状况时，数据比较显眼容易观察；而且dstat支持即时刷新，譬如输入`dstat 3`即每三秒收集一次，但最新的数据都会每秒刷新显示。和sysstat相同的是，dstat也可以收集指定的性能资源，譬如`dstat -c`即显示CPU的使用情况。
 
 ### 下载安装  
 
 **方法一**
 
 ```
-[yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") -y dstat
+[yum](#/yum "yum命令") [install](#/install "install命令") -y dstat
 ```
 
 **方法二**
 
-官网下载地址：http://dag.wieers.com/[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")/packages/dstat
+官网下载地址：http://dag.wieers.com/[rpm](#/rpm "rpm命令")/packages/dstat
 
 ```
-[wget](https://philipding.github.io/linux-command/wget "wget命令") http://dag.wieers.com/rpm/packages/dstat/dstat-0.6.7-1.rh7.rf.noarch.rpm
+[wget](#/wget "wget命令") http://dag.wieers.com/rpm/packages/dstat/dstat-0.6.7-1.rh7.rf.noarch.rpm
 rpm -ivh dstat-0.6.7-1.rh7.rf.noarch.rpm
 ```
 
@@ -26,7 +26,7 @@ rpm -ivh dstat-0.6.7-1.rh7.rf.noarch.rpm
 ```
 [root@iZ23uulau1tZ ~]# dstat
 ----total-cpu-usage---- -dsk/total- -net/total- ---paging-- ---system--
-usr sys idl wai hiq siq| [read](https://philipding.github.io/linux-command/read "read命令")  writ| recv  send|  in   out | int   csw
+usr sys idl wai hiq siq| [read](#/read "read命令")  writ| recv  send|  in   out | int   csw
   0   0  99   0   0   0|7706B  164k|   0     0 |   0     0 | 189   225
   0   0 100   0   0   0|   0     0 |4436B  826B|   0     0 | 195   248
   1   0  99   0   0   0|   0     0 |4744B  346B|   0     0 | 203   242
@@ -72,7 +72,7 @@ dstat [-afv] [options..] [delay [count]]
 --output 文件：此选项也比较有用，可以把状态信息以csv的格式重定向到指定的文件中，以便日后查看。例：dstat --output /root/dstat.csv & 此时让程序默默的在后台运行并把结果输出到/root/dstat.csv文件中。
 ```
 
-当然dstat还有很多更高级的用法，常用的基本这些选项，更高级的用法可以结合[man](https://philipding.github.io/linux-command/man "man命令")文档。
+当然dstat还有很多更高级的用法，常用的基本这些选项，更高级的用法可以结合[man](#/man "man命令")文档。
 
 ### 实例  
 
@@ -81,7 +81,7 @@ dstat [-afv] [options..] [delay [count]]
 ```
 [root@iZ23uulau1tZ ~]# dstat -tsp --socket --fs
 ----system---- ----swap--- ---procs--- ------sockets------ --filesystem-
-  [date](https://philipding.github.io/linux-command/date "date命令")/[time](https://philipding.github.io/linux-command/time "time命令")   | used  [free](https://philipding.github.io/linux-command/free "free命令")|run blk new|tot tcp udp raw frg|files  inodes
+  [date](#/date "date命令")/[time](#/time "time命令")   | used  [free](#/free "free命令")|run blk new|tot tcp udp raw frg|files  inodes
 26-07 09:23:48|   0     0 |  0   0 0.0|104   8   5   0   0|  704   6488
 26-07 09:23:49|   0     0 |  0   0   0|104   8   5   0   0|  704   6488
 26-07 09:23:50|   0     0 |  0   0   0|104   8   5   0   0|  704   6489
@@ -106,7 +106,7 @@ dstat [-afv] [options..] [delay [count]]
 
 这样生成的csv文件可以用excel打开，然后生成图表。
 
-通过`dstat --list`可以查看dstat能使用的所有参数，其中上面internal是dstat本身自带的一些监控参数，下面`/usr/share/dstat`中是dstat的插件，这些插件可以扩展dstat的功能，如可以监控电源（battery）、[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")等。
+通过`dstat --list`可以查看dstat能使用的所有参数，其中上面internal是dstat本身自带的一些监控参数，下面`/usr/share/dstat`中是dstat的插件，这些插件可以扩展dstat的功能，如可以监控电源（battery）、[mysql](#/mysql "mysql命令")等。
 
 下面这些插件并不是都可以直接使用的，有的还依赖其他包，如想监控mysql，必须要装python连接mysql的一些包。
 
@@ -116,7 +116,7 @@ internal:
         aio, cpu, cpu24, disk, disk24, disk24old, epoch, fs, int, int24, io, ipc, load, lock, mem, net, page, page24, proc, raw, socket, swap, swapold, sys, tcp, time, udp, unix, vm
 /usr/share/dstat:
         battery, battery-remain, cpufreq, dbus, disk-util, fan, freespace, gpfs, gpfs-ops, helloworld, innodb-buffer, innodb-io, innodb-ops, lustre, memcache-hits, mysql-io, mysql-keys, mysql5-cmds, mysql5-conn, mysql5-io, mysql5-keys,
-        net-packets, nfs3, nfs3-ops, nfsd3, nfsd3-ops, ntp, postfix, power, proc-count, rpc, rpcd, [sendmail](https://philipding.github.io/linux-command/sendmail "sendmail命令"), snooze, thermal, [top](https://philipding.github.io/linux-command/top "top命令")-bio, top-cpu, top-cputime, top-cputime-avg, top-io, top-latency, top-latency-avg, top-mem, top-oom, utmp,
+        net-packets, nfs3, nfs3-ops, nfsd3, nfsd3-ops, ntp, postfix, power, proc-count, rpc, rpcd, [sendmail](#/sendmail "sendmail命令"), snooze, thermal, [top](#/top "top命令")-bio, top-cpu, top-cputime, top-cputime-avg, top-io, top-latency, top-latency-avg, top-mem, top-oom, utmp,
         vm-memctl, vmk-hba, vmk-int, vmk-nic, vz-cpu, vz-io, vz-ubc, wifi
 ```
 

@@ -23,7 +23,7 @@ ip(选项)(参数)
 ```
 网络对象：指定要管理的网络对象；
 具体操作：对指定的网络对象完成具体操作；
-[help](https://philipding.github.io/linux-command/help "help命令")：显示网络对象支持的操作命令的帮助信息。
+[help](#/help "help命令")：显示网络对象支持的操作命令的帮助信息。
 ```
 
 ### 实例  
@@ -67,7 +67,7 @@ ip(选项)(参数)
 **显示核心路由表**
 
 ```
-[root@localhost ~]# ip [route](https://philipding.github.io/linux-command/route "route命令") list 
+[root@localhost ~]# ip [route](#/route "route命令") list 
 112.124.12.0/22 dev eth1  proto kernel  scope link  src 112.124.15.130
 10.160.0.0/20 dev eth0  proto kernel  scope link  src 10.160.7.81
 192.168.0.0/16 via 10.160.15.247 dev eth0

@@ -1,7 +1,7 @@
 **trap命令**用于指定在接收到信号后将要采取的动作，常见的用途是在脚本程序被中断时完成清理工作。当shell接收到sigspec指定的信号时，arg参数（命令）将会被读取，并被执行。例如：
 
 ```
-trap "[exit](https://philipding.github.io/linux-command/exit "exit命令") 1" HUP INT PIPE QUIT TERM
+trap "[exit](#/exit "exit命令") 1" HUP INT PIPE QUIT TERM
 ```
 
 表示当shell收到HUP INT PIPE QUIT TERM这几个命令时，当前执行的程序会读取参数“exit 1”，并将它作为命令执行。
@@ -9,7 +9,7 @@ trap "[exit](https://philipding.github.io/linux-command/exit "exit命令") 1" HU
 ### 语法  
 
 ```
-trap [-[lp](https://philipding.github.io/linux-command/lp "lp命令")] [[arg] sigspec ...]
+trap [-[lp](#/lp "lp命令")] [[arg] sigspec ...]
 ```
 
 ### 选项参数说明  
@@ -24,7 +24,7 @@ trap [-[lp](https://philipding.github.io/linux-command/lp "lp命令")] [[arg] si
 
 `-l`选项的作用是让shell打印一个命令名称和其相对应的编号的列表。
 
-每个sigspec信号都是是以名字或者编号的形式定义在signal.h头文件中，信号的名字是不区分大小写的，其前缀SIG是可选的，如果某个信号是 EXIT（0），那么arg指定的命令将会在shell上执行退出命令时执行（If a sigspec is EXIT (0) the [command](https://philipding.github.io/linux-command/command "command命令") arg is executed on exit from the shell），如果sigspec是DEBUG，那么arg指定的命令将会在以下每个命令执行之前执行：
+每个sigspec信号都是是以名字或者编号的形式定义在signal.h头文件中，信号的名字是不区分大小写的，其前缀SIG是可选的，如果某个信号是 EXIT（0），那么arg指定的命令将会在shell上执行退出命令时执行（If a sigspec is EXIT (0) the [command](#/command "command命令") arg is executed on exit from the shell），如果sigspec是DEBUG，那么arg指定的命令将会在以下每个命令执行之前执行：
 
 简单命令，for语句，case语句，select命令，算法命令，在函数内的第一条命令。
 
@@ -126,7 +126,7 @@ trap [-[lp](https://philipding.github.io/linux-command/lp "lp命令")] [[arg] si
 
 <td>15</td>
 
-<td>程序结束(terminate)信号, 与SIGKILL不同的是该信号可以被阻塞和处理. 通常用来要求程序自己正常退出. shell命令[kill](https://philipding.github.io/linux-command/kill "kill命令")缺省产生这个信号。</td>
+<td>程序结束(terminate)信号, 与SIGKILL不同的是该信号可以被阻塞和处理. 通常用来要求程序自己正常退出. shell命令[kill](#/kill "kill命令")缺省产生这个信号。</td>
 
 </tr>
 
@@ -156,7 +156,7 @@ $ trap commands signals
 trap命令作为一个例子，下面展示了如何可以删除一些文件，然后退出，如果有人试图从终端中止程序：
 
 ```
-trap "[rm](https://philipding.github.io/linux-command/rm "rm命令") -f $WORKDIR/work1$ $WORKDIR/dataout$; exit" 2
+trap "[rm](#/rm "rm命令") -f $WORKDIR/work1$ $WORKDIR/dataout$; exit" 2
 ```
 
 执行shell程序，这个陷阱的角度，这两个文件work1$$ 和 dataout$$将被自动删除，如果程序接收信号数为2。

@@ -25,11 +25,11 @@ setpci(选项)(参数)
 
 Linux下调节笔记本屏幕亮度方法：
 
-首先进入终端输入[lspci](https://philipding.github.io/linux-command/lspci "lspci命令")命令，列出各种设备的地址：
+首先进入终端输入[lspci](#/lspci "lspci命令")命令，列出各种设备的地址：
 
 ```
 lspci
-00:00.0 [host](https://philipding.github.io/linux-command/host "host命令") bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub ([rev](https://philipding.github.io/linux-command/rev "rev命令") 03)
+00:00.0 [host](#/host "host命令") bridge: Intel Corporation Mobile 945GM/PM/GMS, 943/940GML and 945GT Express Memory Controller Hub ([rev](#/rev "rev命令") 03)
 00:02.0 VGA compatible controller: Intel Corporation Mobile 945GM/GMS, 943/940GML Express Integrated Graphics Controller (rev 03)
 00:02.1 Display controller: Intel Corporation Mobile 945GM/GMS/GME, 943/940GML Express Integrated Graphics Controller (rev 03)
 00:1b.0 Audio device: Intel Corporation N10/ICH 7 Family High Definition Audio Controller (rev 02)
@@ -41,7 +41,7 @@ lspci
 发现00:02.0是VGA设备，于是我们修改它的属性：
 
 ```
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") setpci -s 00:02.0 F4.B=FF
+[sudo](#/sudo "sudo命令") setpci -s 00:02.0 F4.B=FF
 ```
 
 解释一下：
@@ -50,7 +50,7 @@ lspci
 *   **-s** 表示接下来输入的是设备的地址。
 *   **00:02.0** VGA设备地址（<总线>:<接口>.<功能>）。
 *   **F4** 要修改的属性的地址，这里应该表示“亮度”。
-*   **.B** 修改的长度（B应该是字节（Byte），还有[w](https://philipding.github.io/linux-command/w "w命令")（应该是Word，两个字节）、L（应该是Long，4个字节））。
+*   **.B** 修改的长度（B应该是字节（Byte），还有[w](#/w "w命令")（应该是Word，两个字节）、L（应该是Long，4个字节））。
 *   **=FF** 要修改的值（可以改）。
 
 我这里00是最暗，FF是最亮，不同的电脑可能不一样。比如说我嫌FF太闪眼了，我就可以：

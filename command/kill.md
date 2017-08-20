@@ -1,4 +1,4 @@
-**kill命令**用来删除执行中的程序或工作。kill可将指定的信息送至程序。预设的信息为SIGTERM(15),可将指定程序终止。若仍无法终止该程序，可使用SIGKILL(9)信息尝试强制删除程序。程序或工作的编号可利用[ps](https://philipding.github.io/linux-command/ps "ps命令")指令或job指令查看。
+**kill命令**用来删除执行中的程序或工作。kill可将指定的信息送至程序。预设的信息为SIGTERM(15),可将指定程序终止。若仍无法终止该程序，可使用SIGKILL(9)信息尝试强制删除程序。程序或工作的编号可利用[ps](#/ps "ps命令")指令或job指令查看。
 
 ### 语法  
 
@@ -52,15 +52,15 @@ INT     2    中断（同 Ctrl + C）
 QUIT    3    退出（同 Ctrl + \）
 TERM   15    终止
 KILL    9    强制终止
-CONT   18    继续（与STOP相反， [fg](https://philipding.github.io/linux-command/fg "fg命令")/[bg](https://philipding.github.io/linux-command/bg "bg命令")命令）
+CONT   18    继续（与STOP相反， [fg](#/fg "fg命令")/[bg](#/bg "bg命令")命令）
 STOP   19    暂停（同 Ctrl + Z）
 ```
 
 先用ps查找进程，然后用kill杀掉：
 
 ```
-ps -ef | [grep](https://philipding.github.io/linux-command/grep "grep命令") vim
-root      3268  2884  0 16:21 pts/1    00:00:00 vim [install](https://philipding.github.io/linux-command/install "install命令").log
+ps -ef | [grep](#/grep "grep命令") vim
+root      3268  2884  0 16:21 pts/1    00:00:00 vim [install](#/install "install命令").log
 root      3370  2822  0 16:21 pts/0    00:00:00 grep vim
 
 kill 3268

@@ -8,20 +8,20 @@
 -n，--no-mask：不要重新计算有效权限。setfacl默认会重新计算ACL mask，除非mask被明确的制定。
 --mask：重新计算有效权限，即使ACL mask被明确指定。
 -d，--default：设定默认的acl规则。
---[restore](https://philipding.github.io/linux-command/restore "restore命令")=[file](https://philipding.github.io/linux-command/file "file命令")：从文件恢复备份的acl规则（这些文件可由getfacl -R产生）。通过这种机制可以恢复整个目录树的acl规则。此参数不能和除--[test](https://philipding.github.io/linux-command/test "test命令")以外的任何参数一同执行。
+--[restore](#/restore "restore命令")=[file](#/file "file命令")：从文件恢复备份的acl规则（这些文件可由getfacl -R产生）。通过这种机制可以恢复整个目录树的acl规则。此参数不能和除--[test](#/test "test命令")以外的任何参数一同执行。
 --test：测试模式，不会改变任何文件的acl规则，操作后的acl规格将被列出。
 -R，--recursive：递归的对所有文件及目录进行操作。
 -L，--logical：跟踪符号链接，默认情况下只跟踪符号链接文件，跳过符号链接目录。
 -P，--physical：跳过所有符号链接，包括符号链接文件。
 --version：输出setfacl的版本号并退出。
---[help](https://philipding.github.io/linux-command/help "help命令")：输出帮助信息。
+--[help](#/help "help命令")：输出帮助信息。
 --：标识命令行参数结束，其后的所有参数都将被认为是文件名
 -：如果文件名是-，则setfacl将从标准输入读取文件名。
 
 ```
 
 *   选项`-m`和`-x`后边跟以acl规则。多条acl规则以逗号(,)隔开。选项`-M`和`-X`用来从文件或标准输入读取acl规则。
-*   选项`--[set](https://philipding.github.io/linux-command/set "set命令")`和`--set-file`用来设置文件或目录的acl规则，先前的设定将被覆盖。
+*   选项`--[set](#/set "set命令")`和`--set-file`用来设置文件或目录的acl规则，先前的设定将被覆盖。
 *   选项`-m(--modify)`和`-M(--modify-file)`选项修改文件或目录的acl规则。
 *   选项`-x(--remove)`和`-X(--remove-file)`选项删除acl规则。
 
@@ -44,7 +44,7 @@ setfacl命令可以识别以下的规则格式：
 [d[efault]:] o[ther] [:perms]       其他的权限
 ```
 
-恰当的acl规则被用在修改和设定的操作中，对于uid和gid，可以指定一个数字，也可指定一个名字。perms域是一个代表各种权限的字母的组合：读`-r`写`-[w](https://philipding.github.io/linux-command/w "w命令")`执行`-x`，执行只适合目录和一些可执行的文件。pers域也可设置为八进制格式。
+恰当的acl规则被用在修改和设定的操作中，对于uid和gid，可以指定一个数字，也可指定一个名字。perms域是一个代表各种权限的字母的组合：读`-r`写`-[w](#/w "w命令")`执行`-x`，执行只适合目录和一些可执行的文件。pers域也可设置为八进制格式。
 
 **自动创建的规则**
 
@@ -56,9 +56,9 @@ setfacl命令可以识别以下的规则格式：
 
 **ACL的名词定义**
 
-先来看看在ACL里面每一个名词的定义，这些名词我大多从[man](https://philipding.github.io/linux-command/man "man命令") page上摘下来虽然有些枯燥,但是对于理解下面的内容还是很有帮助的。
+先来看看在ACL里面每一个名词的定义，这些名词我大多从[man](#/man "man命令") page上摘下来虽然有些枯燥,但是对于理解下面的内容还是很有帮助的。
 
-ACL是由一系列的Access Entry所组成的，每一条Access Entry定义了特定的类别可以对文件拥有的操作权限。Access Entry有三个组成部分：Entry tag [type](https://philipding.github.io/linux-command/type "type命令"), qualifier (optional), permission。
+ACL是由一系列的Access Entry所组成的，每一条Access Entry定义了特定的类别可以对文件拥有的操作权限。Access Entry有三个组成部分：Entry tag [type](#/type "type命令"), qualifier (optional), permission。
 
 我们先来看一下最重要的Entry tag type，它有以下几个类型：
 
@@ -88,7 +88,7 @@ mask::rw- other::r--
 前面三个以#开头的定义了文件名，file owner和group。这些信息没有太大的作用，接下来我们可以用`--omit-header`来省略掉。
 
 ```
-user::rw-       定义了ACL_USER_OBJ, 说明file owner拥有[read](https://philipding.github.io/linux-command/read "read命令") and [write](https://philipding.github.io/linux-command/write "write命令") permission
+user::rw-       定义了ACL_USER_OBJ, 说明file owner拥有[read](#/read "read命令") and [write](#/write "write命令") permission
 user:john:rw-   定义了ACL_USER,这样用户john就拥有了对文件的读写权限,实现了我们一开始要达到的目的
 group::rw-      定义了ACL_GROUP_OBJ,说明文件的group拥有read and write permission
 group:dev:r--   定义了ACL_GROUP,使得dev组拥有了对文件的read permission
@@ -116,7 +116,7 @@ other  对应了ACL_OTHER
 一开始文件没有ACL的额外属性：
 
 ```
-[root@localhost ~]# [ls](https://philipding.github.io/linux-command/ls "ls命令") -l
+[root@localhost ~]# [ls](#/ls "ls命令") -l
 -rw-rw-r-- 1 root admin 0 Jul 3 22:06 test.txt
 
 [root@localhost ~]# getfacl --omit-header ./test.txt
@@ -220,7 +220,7 @@ other::r--
 同样我们来做一个试验说明，比如现在root用户建立了一个dir目录：
 
 ```
-[root@localhost ~]# [mkdir](https://philipding.github.io/linux-command/mkdir "mkdir命令") dir
+[root@localhost ~]# [mkdir](#/mkdir "mkdir命令") dir
 ```
 
 他希望所有在此目录下建立的文件都可以被john用户所访问，那么我们就应该对dir目录设置Default ACL。
@@ -241,7 +241,7 @@ default: other::r-x
 这里我们可以看到ACL定义了default选项，john用户拥有了default的read, write, excute/search permission。所有没有定义的default都将从file permission里copy过来，现在root用户在dir下建立一个test.txt文件。
 
 ```
-[root@localhost ~]# [touch](https://philipding.github.io/linux-command/touch "touch命令") ./dir/test.txt
+[root@localhost ~]# [touch](#/touch "touch命令") ./dir/test.txt
 [root@localhost ~]# ls -l ./dir/test.txt
 -rw-rw-r--+ 1 root root 0 Jul 3 23:46 ./dir/test.txt
 
@@ -257,16 +257,16 @@ other::r--
 
 **ACL相关命令**
 
-前面的例子中我们都注意到了getfacl命令是用来读取文件的ACL，setfacl是用来设定文件的Acess ACL。这里还有一个chacl是用来改变文件和目录的Access ACL and Default ACL，它的具体参数大家可以去看man page。我只想提及一下`chacl -B`。它可以彻底删除文件或者目录的ACL属性(包括Default ACL)，比如你即使用了`setfacl -x`删除了所有文件的ACL属性，那个+号还是会出现在文件的末尾，所以正确的删除方法应该是用`chacl -B`用[cp](https://philipding.github.io/linux-command/cp "cp命令")来复制文件的时候我们现在可以加上`-p`选项。这样在拷贝文件的时候也将拷贝文件的ACL属性，对于不能拷贝的ACL属性将给出警告。
+前面的例子中我们都注意到了getfacl命令是用来读取文件的ACL，setfacl是用来设定文件的Acess ACL。这里还有一个chacl是用来改变文件和目录的Access ACL and Default ACL，它的具体参数大家可以去看man page。我只想提及一下`chacl -B`。它可以彻底删除文件或者目录的ACL属性(包括Default ACL)，比如你即使用了`setfacl -x`删除了所有文件的ACL属性，那个+号还是会出现在文件的末尾，所以正确的删除方法应该是用`chacl -B`用[cp](#/cp "cp命令")来复制文件的时候我们现在可以加上`-p`选项。这样在拷贝文件的时候也将拷贝文件的ACL属性，对于不能拷贝的ACL属性将给出警告。
 
-[mv](https://philipding.github.io/linux-command/mv "mv命令")命令将会默认地移动文件的ACL属性，同样如果操作不允许的情况下会给出警告。
+[mv](#/mv "mv命令")命令将会默认地移动文件的ACL属性，同样如果操作不允许的情况下会给出警告。
 
 **需要注意的几点**
 
-如果你的文件系统不支持ACL的话，你也许需要重新[mount](https://philipding.github.io/linux-command/mount "mount命令")你的file system：
+如果你的文件系统不支持ACL的话，你也许需要重新[mount](#/mount "mount命令")你的file system：
 
 ```
 mount -o remount, acl [mount point]
 ```
 
-如果用[chmod](https://philipding.github.io/linux-command/chmod "chmod命令")命令改变Linux file permission的时候相应的ACL值也会改变，反之改变ACL的值，相应的file permission也会改变。
+如果用[chmod](#/chmod "chmod命令")命令改变Linux file permission的时候相应的ACL值也会改变，反之改变ACL的值，相应的file permission也会改变。

@@ -18,7 +18,7 @@ ftp(选项)(参数)
 
 ### 参数  
 
-主机：指定要连接的FTP服务器的主机名或[ip](https://philipding.github.io/linux-command/ip "ip命令")地址。
+主机：指定要连接的FTP服务器的主机名或[ip](#/ip "ip命令")地址。
 
 ### 实例  
 
@@ -28,29 +28,29 @@ FTP>bell: 每完成一次文件传送,报警提示.
 FTP>binary: 设定以二进制方式传送文件.
 FTP>bye: 终止主机FTP进程,并退出FTP管理方式.
 FTP>case: 当为ON时,用MGET命令拷贝的文件名到本地机器中,全部转换为小写字母.
-FTP>[cd](https://philipding.github.io/linux-command/cd "cd命令"): 同UNIX的CD命令.
+FTP>[cd](#/cd "cd命令"): 同UNIX的CD命令.
 FTP>cdup: 返回上一级目录.
-FTP>[chmod](https://philipding.github.io/linux-command/chmod "chmod命令"): 改变远端主机的文件权限.
+FTP>[chmod](#/chmod "chmod命令"): 改变远端主机的文件权限.
 FTP>close: 终止远端的FTP进程,返回到FTP命令状态, 所有的宏定义都被删除.
 FTP>delete: 删除远端主机中的文件.
-FTP>dir [remote-directory] [local-[file](https://philipding.github.io/linux-command/file "file命令")] 列出当前远端主机目录中的文件.如果有本地文件,就将结果写至本地文件.
+FTP>dir [remote-directory] [local-[file](#/file "file命令")] 列出当前远端主机目录中的文件.如果有本地文件,就将结果写至本地文件.
 FTP>get [remote-file] [local-file] 从远端主机中传送至本地主机中.
-FTP>[help](https://philipding.github.io/linux-command/help "help命令") [[command](https://philipding.github.io/linux-command/command "command命令")] 输出命令的解释.
+FTP>[help](#/help "help命令") [[command](#/command "command命令")] 输出命令的解释.
 FTP>lcd: 改变当前本地主机的工作目录,如果缺省,就转到当前用户的HOME目录.
-FTP>[ls](https://philipding.github.io/linux-command/ls "ls命令") [remote-directory] [local-file] 同DIR.
+FTP>[ls](#/ls "ls命令") [remote-directory] [local-file] 同DIR.
 FTP>macdef: 定义宏命令.
 FTP>mdelete [remote-files] 删除一批文件.
 FTP>mget [remote-files] 从远端主机接收一批文件至本地主机.
-FTP>[mkdir](https://philipding.github.io/linux-command/mkdir "mkdir命令") directory-name 在远端主机中建立目录.
+FTP>[mkdir](#/mkdir "mkdir命令") directory-name 在远端主机中建立目录.
 FTP>mput local-files 将本地主机中一批文件传送至远端主机.
-FTP>open [host](https://philipding.github.io/linux-command/host "host命令") [port] 重新建立一个新的连接.
+FTP>open [host](#/host "host命令") [port] 重新建立一个新的连接.
 FTP>prompt: 交互提示模式.
 FTP>put local-file [remote-file] 将本地一个文件传送至远端主机中.
-FTP>[pwd](https://philipding.github.io/linux-command/pwd "pwd命令"): 列出当前远端主机目录.
+FTP>[pwd](#/pwd "pwd命令"): 列出当前远端主机目录.
 FTP>quit: 同BYE.
 FTP>recv remote-file [local-file] 同GET.
-FTP>[rename](https://philipding.github.io/linux-command/rename "rename命令") [from] [to] 改变远端主机中的文件名.
-FTP>[rmdir](https://philipding.github.io/linux-command/rmdir "rmdir命令") directory-name 删除远端主机中的目录.
+FTP>[rename](#/rename "rename命令") [from] [to] 改变远端主机中的文件名.
+FTP>[rmdir](#/rmdir "rmdir命令") directory-name 删除远端主机中的目录.
 FTP>send local-file [remote-file] 同PUT.
 FTP>status: 显示当前FTP的状态.
 FTP>system: 显示远端主机系统类型.

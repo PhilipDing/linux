@@ -15,10 +15,10 @@ hwclock(选项)
 --debug：显示hwclock执行时详细的信息；
 --directisa：hwclock预设从/dev/rtc设备来存取硬件时钟。若无法存取时，可用此参数直接以I/O指令来存取硬件时钟；
 --hctosys：将系统时钟调整为与目前的硬件时钟一致；
---[set](https://philipding.github.io/linux-command/set "set命令") --[date](https://philipding.github.io/linux-command/date "date命令")=<日期与时间>：设定硬件时钟；
+--[set](#/set "set命令") --[date](#/date "date命令")=<日期与时间>：设定硬件时钟；
 --show：显示硬件时钟的时间与日期；
 --systohc：将硬件时钟调整为与目前的系统时钟一致；
---[test](https://philipding.github.io/linux-command/test "test命令")：仅测试程序，而不会实际更改硬件时钟；
+--[test](#/test "test命令")：仅测试程序，而不会实际更改硬件时钟；
 --utc：若要使用格林威治时间，请加入此参数，hwclock会执行转换的工作；
 --version：显示版本信息。
 ```
@@ -41,8 +41,8 @@ hwclock
 查看clock文件，确认是否设置了UTC：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") /etc/default/rcS 
-UTC=[yes](https://philipding.github.io/linux-command/yes "yes命令")
+[cat](#/cat "cat命令") /etc/default/rcS 
+UTC=[yes](#/yes "yes命令")
 ```
 
 在其他一些版本的Linux（如RebHat）中可以这样查看：

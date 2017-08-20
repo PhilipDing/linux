@@ -15,14 +15,14 @@ ab(选项)(参数)
 -g：将测试结果输出为“gnuolot”文件；
 -h：显示帮助信息；
 -H：为请求追加一个额外的头；
--i：使用“[head](https://philipding.github.io/linux-command/head "head命令")”请求方式；
+-i：使用“[head](#/head "head命令")”请求方式；
 -k：激活HTTP中的“keepAlive”特性；
 -n：指定测试会话使用的请求数；
 -p：指定包含数据的文件；
 -q：不显示进度百分比；
 -T：使用POST数据时，设置内容类型头；
 -v：设置详细模式等级；
--[w](https://philipding.github.io/linux-command/w "w命令")：以HTML表格方式打印结果；
+-[w](#/w "w命令")：以HTML表格方式打印结果；
 -x：以表格方式输出时，设置表格的属性；
 -X：使用指定的代理服务器发送请求；
 -y：以表格方式输出时，设置表格属性。

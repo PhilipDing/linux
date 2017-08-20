@@ -1,4 +1,4 @@
-**quotaon命令**用于激活Linux内核中指定文件系统的磁盘配额功能。执行quotaon指令可开启用户和群组的才磅秒年空间限制，各分区的文件系统根目录必须有[quota](https://philipding.github.io/linux-command/quota "quota命令").user和quota.group配置文件。
+**quotaon命令**用于激活Linux内核中指定文件系统的磁盘配额功能。执行quotaon指令可开启用户和群组的才磅秒年空间限制，各分区的文件系统根目录必须有[quota](#/quota "quota命令").user和quota.group配置文件。
 
 ### 语法  
 

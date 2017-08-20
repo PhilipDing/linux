@@ -1,4 +1,4 @@
-**getsebool命令**是用来查询SElinux策略内各项规则的布尔值。SELinux的策略与规则管理相关命令：[seinfo](https://philipding.github.io/linux-command/seinfo "seinfo命令")命令、[sesearch](https://philipding.github.io/linux-command/sesearch "sesearch命令")命令、getsebool命令、[setsebool](https://philipding.github.io/linux-command/setsebool "setsebool命令")命令、[semanage](https://philipding.github.io/linux-command/semanage "semanage命令")命令。
+**getsebool命令**是用来查询SElinux策略内各项规则的布尔值。SELinux的策略与规则管理相关命令：[seinfo](#/seinfo "seinfo命令")命令、[sesearch](#/sesearch "sesearch命令")命令、getsebool命令、[setsebool](#/setsebool "setsebool命令")命令、[semanage](#/semanage "semanage命令")命令。
 
 ### 语法  
 

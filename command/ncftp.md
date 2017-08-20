@@ -1,4 +1,4 @@
-**ncftp命令**是增强的的[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")工具，比传统的FTP指令更加强大。FTP让用户得以下载存放于服务器主机的文件，也能将文件上传到远端主机放置。ncftp是文字模式FTP程序的佼佼者，它具备多样特色，包括显示传输速率，下载进度，自动续传，标住书签，可通过防火墙和代理服务器等。
+**ncftp命令**是增强的的[ftp](#/ftp "ftp命令")工具，比传统的FTP指令更加强大。FTP让用户得以下载存放于服务器主机的文件，也能将文件上传到远端主机放置。ncftp是文字模式FTP程序的佼佼者，它具备多样特色，包括显示传输速率，下载进度，自动续传，标住书签，可通过防火墙和代理服务器等。
 
 ### 语法  
 
@@ -18,16 +18,16 @@ ncftp(选项)(参数)
 
 ### 参数  
 
-FTP服务器：指定远程FTP服务器的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或主机名。
+FTP服务器：指定远程FTP服务器的[ip](#/ip "ip命令")地址或主机名。
 
 ### 安装  
 
 ```
-[wget](https://philipding.github.io/linux-command/wget "wget命令") ftp://ftp.ncftp.com/ncftp/ncftp-3.2.3-src.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz
+[wget](#/wget "wget命令") ftp://ftp.ncftp.com/ncftp/ncftp-3.2.3-src.[tar](#/tar "tar命令").gz
 tar zxvf ncftp-3.2.3-src.tar.gz
-[cd](https://philipding.github.io/linux-command/cd "cd命令") ncftp-3.2.3/
+[cd](#/cd "cd命令") ncftp-3.2.3/
 ./configure --prefix=/usr/local/ncftp
-[make](https://philipding.github.io/linux-command/make "make命令") && make [install](https://philipding.github.io/linux-command/install "install命令")
+[make](#/make "make命令") && make [install](#/install "install命令")
 ```
 
 ### 实例  
@@ -40,7 +40,7 @@ tar zxvf ncftp-3.2.3-src.tar.gz
 
 **指令说明**
 
-ncftp的基本命令和普通ftp一样，可以输入[help](https://philipding.github.io/linux-command/help "help命令")获得命令列表。对于所有的命令，都可以使用help <命令>的格式获得详细帮助。l开头的就是对本地执行的命令，其它的就是对登入的ftp服务目录的操作命令。
+ncftp的基本命令和普通ftp一样，可以输入[help](#/help "help命令")获得命令列表。对于所有的命令，都可以使用help <命令>的格式获得详细帮助。l开头的就是对本地执行的命令，其它的就是对登入的ftp服务目录的操作命令。
 
 增加的本地文件系统的操作命令：
 

@@ -27,7 +27,7 @@
 **利用htpasswd命令添加用户**
 
 ```
-htpasswd -[bc](https://philipding.github.io/linux-command/bc "bc命令") .[passwd](https://philipding.github.io/linux-command/passwd "passwd命令") www.linuxde.net [php](https://philipding.github.io/linux-command/php "php命令")
+htpasswd -[bc](#/bc "bc命令") .[passwd](#/passwd "passwd命令") www.linuxde.net [php](#/php "php命令")
 ```
 
 在bin目录下生成一个.passwd文件，用户名www.linuxde.net，密码：php，默认采用MD5加密方式。

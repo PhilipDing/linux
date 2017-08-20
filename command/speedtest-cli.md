@@ -7,7 +7,7 @@ speedtest-cli需要在python 2.4-3.4的环境下，安装方法都很简单，�
 **pip方式**
 
 ```
-＃ pip [install](https://philipding.github.io/linux-command/install "install命令") speedtest－cli
+＃ pip [install](#/install "install命令") speedtest－cli
 ```
 
 **easy_install方式**
@@ -32,14 +32,14 @@ speedtest-cli需要在python 2.4-3.4的环境下，安装方法都很简单，�
 **下载脚本方式**
 
 ```
-＃ [wget](https://philipding.github.io/linux-command/wget "wget命令") -O speedtest-cli https://raw.github.com/sivel/spe ... er/speedtest_cli.py
-＃ [chmod](https://philipding.github.io/linux-command/chmod "chmod命令") +x speedtest-cli
+＃ [wget](#/wget "wget命令") -O speedtest-cli https://raw.github.com/sivel/spe ... er/speedtest_cli.py
+＃ [chmod](#/chmod "chmod命令") +x speedtest-cli
 ```
 
 或者
 
 ```
-＃ [curl](https://philipding.github.io/linux-command/curl "curl命令") -o speedtest-cli https://raw.github.com/sivel/spe ... er/speedtest_cli.py
+＃ [curl](#/curl "curl命令") -o speedtest-cli https://raw.github.com/sivel/spe ... er/speedtest_cli.py
 ＃ chmod +x speedtest-cli
 ```
 
@@ -48,13 +48,13 @@ speedtest-cli需要在python 2.4-3.4的环境下，安装方法都很简单，�
 ### 用法  
 
 ```
--h, --[help](https://philipding.github.io/linux-command/help "help命令")       show this help message and [exit](https://philipding.github.io/linux-command/exit "exit命令")
+-h, --[help](#/help "help命令")       show this help message and [exit](#/exit "exit命令")
 --share          分享你的网速，该命令会在speedtest网站上生成网速测试结果的图片。
 --simple         Suppress verbose output, only show basic information
 --list           根据距离显示speedtest.net的测试服务器列表。
---server=SERVER  指定列表中[id](https://philipding.github.io/linux-command/id "id命令")的服务器来做测试。
+--server=SERVER  指定列表中[id](#/id "id命令")的服务器来做测试。
 --mini=MINI      URL of the Speedtest Mini server
---source=SOURCE  Source [ip](https://philipding.github.io/linux-command/ip "ip命令") address to [bind](https://philipding.github.io/linux-command/bind "bind命令") to
+--source=SOURCE  Source [ip](#/ip "ip命令") address to [bind](#/bind "bind命令") to
 --version        Show the version number and exit
 ```
 
@@ -63,12 +63,12 @@ speedtest-cli需要在python 2.4-3.4的环境下，安装方法都很简单，�
 列出所有在中国的测试服务器：
 
 ```
-[root@li229-122 ~]# speedtest-cli --list | [grep](https://philipding.github.io/linux-command/grep "grep命令") China
+[root@li229-122 ~]# speedtest-cli --list | [grep](#/grep "grep命令") China
 1185) China Unicom (Changchun, China) [10534.35 km]
 3784) China Mobile (Urumqi, China) [10581.15 km]
 2667) Beijing Normal University (Beijing, China) [11117.03 km]
 2529) Beijing Normal University (Beijing, China) [11117.03 km]
-2816) Capital Online Data [service](https://philipding.github.io/linux-command/service "service命令") (Beijing, China) [11117.03 km]
+2816) Capital Online Data [service](#/service "service命令") (Beijing, China) [11117.03 km]
 4354) SXmobile (Taiyuan, China) [11383.17 km]
 3973) China Telecom (Lanzhou, China) [11615.43 km]
 3633) China Telecom (Shanghai, China) [11983.37 km]

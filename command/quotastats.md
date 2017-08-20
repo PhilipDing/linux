@@ -12,7 +12,7 @@ quotastats
 
 ```
 [root@localhost ~]# quotastats
-Kernel [quota](https://philipding.github.io/linux-command/quota "quota命令") version: 6.5.1
+Kernel [quota](#/quota "quota命令") version: 6.5.1
 Number of dquot lookups: 0
 Number of dquot drops: 0
 Number of dquot reads: 0
@@ -20,6 +20,6 @@ Number of dquot writes: 0
 Number of quotafile syncs: 21
 Number of dquot cache hits: 0
 Number of allocated dquots: 0
-Number of [free](https://philipding.github.io/linux-command/free "free命令") dquots: 0
+Number of [free](#/free "free命令") dquots: 0
 Number of in use dquot entries (user/group): 0
 ```

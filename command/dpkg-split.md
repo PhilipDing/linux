@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-[split](https://philipding.github.io/linux-command/split "split命令")命令**用来将Debian Linux中的大软件包分割成小软件包，它还能够将已分割的文件进行合并。
+**[dpkg](#/dpkg "dpkg命令")-[split](#/split "split命令")命令**用来将Debian Linux中的大软件包分割成小软件包，它还能够将已分割的文件进行合并。
 
 ### 语法  
 

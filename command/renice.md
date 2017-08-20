@@ -9,7 +9,7 @@ renice(选项)(参数)
 ### 选项  
 
 ```
--g：指定进程组[id](https://philipding.github.io/linux-command/id "id命令")；
+-g：指定进程组[id](#/id "id命令")；
 -p<程序识别码>：改变该程序的优先权等级，此参数为预设值。
 -u：指定开启进程的用户名。
 ```

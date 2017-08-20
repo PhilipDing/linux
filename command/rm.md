@@ -25,7 +25,7 @@ rm (选项)(参数)
 
 ### 实例  
 
-交互式删除当前目录下的文件[test](https://philipding.github.io/linux-command/test "test命令")和example
+交互式删除当前目录下的文件[test](#/test "test命令")和example
 
 ```
 rm -i test example

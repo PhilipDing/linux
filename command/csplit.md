@@ -1,4 +1,4 @@
-**csplit命令**用于将一个大文件分割成小的碎片，并且将分割后的每个碎片保存成一个文件。碎片文件的命名类似“xx00”，“xx01”。csplit命令是[split](https://philipding.github.io/linux-command/split "split命令")的一个变体，split只能够根据文件大小或行数来分割，但csplit能够根据文件本身特点来分割文件。
+**csplit命令**用于将一个大文件分割成小的碎片，并且将分割后的每个碎片保存成一个文件。碎片文件的命名类似“xx00”，“xx01”。csplit命令是[split](#/split "split命令")的一个变体，split只能够根据文件大小或行数来分割，但csplit能够根据文件本身特点来分割文件。
 
 ### 语法  
 
@@ -27,7 +27,7 @@ csplit(选项)(参数)
 示例测试文件 server.log
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") server.log
+[cat](#/cat "cat命令") server.log
 SERVER-1
 [con] 10.10.10.1 suc
 [con] 10.10.10.2 fai
@@ -48,8 +48,8 @@ SERVER-3
 需要将server.log分割成server1.log、server2.log、server3.log，这些文件的内容分别取自原文件中不同的SERVER部分：
 
 ```
-[root@localhost split]# csplit server.log /SERVER/ -n2 -s {*} -f server -b "%02d.log"; [rm](https://philipding.github.io/linux-command/rm "rm命令") server00.log
-[root@localhost split]# [ls](https://philipding.github.io/linux-command/ls "ls命令")
+[root@localhost split]# csplit server.log /SERVER/ -n2 -s {*} -f server -b "%02d.log"; [rm](#/rm "rm命令") server00.log
+[root@localhost split]# [ls](#/ls "ls命令")
 server01.log  server02.log  server03.log  server.log
 ```
 
@@ -61,6 +61,6 @@ server01.log  server02.log  server03.log  server.log
 -s      #静默模式，不打印其他信息。
 -n      #指定分割后的文件名后缀的数字个数。比如01、02、03等。
 -f      #指定分割后的文件名前缀。
--b      #指定后缀格式。比如%02d.log，类似于C语言中的[printf](https://philipding.github.io/linux-command/printf "printf命令")参数格式。
+-b      #指定后缀格式。比如%02d.log，类似于C语言中的[printf](#/printf "printf命令")参数格式。
 rm server00.log    #是删除第一个文件，因为分割后的的第一个文件没有内容，匹配的单词就位于文件的第一行中。
 ```

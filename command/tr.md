@@ -25,7 +25,7 @@ tr(选项)(参数)
 将输入字符由大写转换为小写：
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") "HELLO WORLD" | tr 'A-Z' 'a-z'
+[echo](#/echo "echo命令") "HELLO WORLD" | tr 'A-Z' 'a-z'
 hello world
 
 ```
@@ -42,7 +42,7 @@ hello  world
 将制表符转换为空格：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") text | tr '\t' ' '
+[cat](#/cat "cat命令") text | tr '\t' ' '
 ```
 
 字符集补集，从输入文本中将不在补集中的所有字符删除：
@@ -65,14 +65,14 @@ this is a text line.
 巧妙使用tr做数字相加操作：
 
 ```
-echo 1 2 3 4 5 6 7 8 9 | [xargs](https://philipding.github.io/linux-command/xargs "xargs命令") -n1 | echo $[ $(tr '\n' '+') 0 ]
+echo 1 2 3 4 5 6 7 8 9 | [xargs](#/xargs "xargs命令") -n1 | echo $[ $(tr '\n' '+') 0 ]
 
 ```
 
 删除Windows文件“造成”的'^M'字符：
 
 ```
-cat [file](https://philipding.github.io/linux-command/file "file命令") | tr -s "\r" "\n" > new_file
+cat [file](#/file "file命令") | tr -s "\r" "\n" > new_file
 或
 cat file | tr -d "\r" > new_file
 ```

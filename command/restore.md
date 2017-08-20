@@ -1,4 +1,4 @@
-**restore命令**是[dump](https://philipding.github.io/linux-command/dump "dump命令")命令的逆过程，用于还原dump命令生成的备份文件。倾倒操作可用来备份文件，而还原操作则是写回这些已备份的文件。
+**restore命令**是[dump](#/dump "dump命令")命令的逆过程，用于还原dump命令生成的备份文件。倾倒操作可用来备份文件，而还原操作则是写回这些已备份的文件。
 
 ### 语法  
 

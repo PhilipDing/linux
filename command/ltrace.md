@@ -3,7 +3,7 @@
 ### 语法  
 
 ```
-ltrace [option ...] [[command](https://philipding.github.io/linux-command/command "command命令") [arg ...]]
+ltrace [option ...] [[command](#/command "command命令") [arg ...]]
 ```
 
 ### 选项  
@@ -19,15 +19,15 @@ ltrace [option ...] [[command](https://philipding.github.io/linux-command/comman
 -i 打印指令指针，当库调用时。
 -l 只打印某个库中的调用。
 -L 不打印库调用。
--n, --[indent](https://philipding.github.io/linux-command/indent "indent命令")=NR 对每个调用级别嵌套以NR个空格进行缩进输出。
--o, --output=[file](https://philipding.github.io/linux-command/file "file命令") 把输出定向到文件。
+-n, --[indent](#/indent "indent命令")=NR 对每个调用级别嵌套以NR个空格进行缩进输出。
+-o, --output=[file](#/file "file命令") 把输出定向到文件。
 -p PID 附着在值为PID的进程号上进行ltrace。
 -r 打印相对时间戳。
 -s STRLEN 设置打印的字符串最大长度。
 -S 显示系统调用。
 -t, -tt, -ttt 打印绝对时间戳。
 -T 输出每个调用过程的时间开销。
--u USERNAME 使用某个用户[id](https://philipding.github.io/linux-command/id "id命令")或组ID来运行命令。
+-u USERNAME 使用某个用户[id](#/id "id命令")或组ID来运行命令。
 -V, --version 打印版本信息，然后退出。
 -x NAME treat the global NAME like a library subroutine.（求翻译）
 ```
@@ -39,7 +39,7 @@ ltrace [option ...] [[command](https://philipding.github.io/linux-command/comman
 ```
 [guest@localhost tmp]$ ltrace ./a.out
 __libc_start_main(0x80484aa, 1, 0xbfc07744, 0x8048550, 0x8048540 <unfinished ...>
-[printf](https://philipding.github.io/linux-command/printf "printf命令")("no1:%d \t no2:%d \t [diff](https://philipding.github.io/linux-command/diff "diff命令"):%d\n", 10, 6, 4no1:10 no2:6 diff:4 ) = 24
+[printf](#/printf "printf命令")("no1:%d \t no2:%d \t [diff](#/diff "diff命令"):%d\n", 10, 6, 4no1:10 no2:6 diff:4 ) = 24
 printf("no1:%d \t no2:%d \t diff:%d\n", 9, 7, 2no1:9 no2:7 diff:2 ) = 23
 printf("no1:%d \t no2:%d \t diff:%d\n", 8, 8, 0no1:8 no2:8 diff:0 ) = 23
 --- SIGFPE (Floating point exception) ---
@@ -64,7 +64,7 @@ printf("no1:%d \t no2:%d \t diff:%d\n", 8, 8, 0no1:8 no2:8 diff:0 ) = 23 <0.0001
 [guest@localhost tmp]$ ltrace -S ./a.out
 SYS_brk(NULL) = 0x9e20000
 SYS_access(0xa4710f, 4, 0xa4afc0, 0, 0xa4b644) = 0
-SYS_open("/etc/[ld](https://philipding.github.io/linux-command/ld "ld命令").so.preload", 0, 02) = 3
+SYS_open("/etc/[ld](#/ld "ld命令").so.preload", 0, 02) = 3
 SYS_fstat64(3, 0xbfbd7a94, 0xa4afc0, -1, 3) = 0
 SYS_mmap2(0, 17, 3, 2, 3) = 0xb7f2a000
 SYS_close(3) = 0

@@ -33,7 +33,7 @@ linux的文件系统损坏会导致linux不正常关机，出错的时候如果�
 fsck -y /dev/hda2
 ```
 
-结束后使用[reboot](https://philipding.github.io/linux-command/reboot "reboot命令")命令重启系统这样就好了！
+结束后使用[reboot](#/reboot "reboot命令")命令重启系统这样就好了！
 
 如果不知道时哪个地方出了问题，可以直接：
 

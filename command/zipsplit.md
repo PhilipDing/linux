@@ -1,4 +1,4 @@
-**zipsplit命令**用于将较大的“[zip](https://philipding.github.io/linux-command/zip "zip命令")”压缩包分割成各个较小的“zip”压缩包。
+**zipsplit命令**用于将较大的“[zip](#/zip "zip命令")”压缩包分割成各个较小的“zip”压缩包。
 
 ### 语法  
 

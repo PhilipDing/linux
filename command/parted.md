@@ -1,4 +1,4 @@
-**parted命令**是由GNU组织开发的一款功能强大的磁盘分区和分区大小调整工具，与[fdisk](https://philipding.github.io/linux-command/fdisk "fdisk命令")不同，它支持调整分区的大小。作为一种设计用于Linux的工具，它没有构建成处理与fdisk关联的多种分区类型，但是，它可以处理最常见的分区格式，包括：ext2、ext3、fat16、fat32、NTFS、ReiserFS、JFS、XFS、UFS、HFS以及Linux交换分区。
+**parted命令**是由GNU组织开发的一款功能强大的磁盘分区和分区大小调整工具，与[fdisk](#/fdisk "fdisk命令")不同，它支持调整分区的大小。作为一种设计用于Linux的工具，它没有构建成处理与fdisk关联的多种分区类型，但是，它可以处理最常见的分区格式，包括：ext2、ext3、fat16、fat32、NTFS、ReiserFS、JFS、XFS、UFS、HFS以及Linux交换分区。
 
 ### 语法  
 
@@ -38,7 +38,7 @@ parted(选项)(参数)
 Disk /dev/sda: 35.8 GB, 35862976512 bytes
 255 heads, 63 sectors/track, 4360 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes
-   Device Boot      Start         End      Blocks   [id](https://philipding.github.io/linux-command/id "id命令")  System
+   Device Boot      Start         End      Blocks   [id](#/id "id命令")  System
 /dev/sda1   *           1          13      104391   83  Linux
 /dev/sda2              14         144     1052257+  82  Linux swap
 /dev/sda3             145        4360    33865020   83  Linux
@@ -50,11 +50,11 @@ Disk /dev/sdb doesn't contain a valid partition table
 
 ```
 [root@localhost ~]# parted /dev/sdb
-GNU Parted Copyright (C) 1998 - 2004 [free](https://philipding.github.io/linux-command/free "free命令") Software Foundation, Inc.
+GNU Parted Copyright (C) 1998 - 2004 [free](#/free "free命令") Software Foundation, Inc.
 This program is free software, covered by the GNU General Public License.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU General Public License for [more](https://philipding.github.io/linux-command/more "more命令") details.
+PARTICULAR PURPOSE.  See the GNU General Public License for [more](#/more "more命令") details.
 使用/dev/sdb
 (parted)mklabel gpt
 (parted)print
@@ -96,17 +96,17 @@ Partition 1 has different physical/logical endings:
 ```
 
 ```
-[root@localhost ~]# [mkfs](https://philipding.github.io/linux-command/mkfs "mkfs命令").ext3 /dev/sdb1
-[mke2fs](https://philipding.github.io/linux-command/mke2fs "mke2fs命令") 1.35 (28-Feb-2004)
+[root@localhost ~]# [mkfs](#/mkfs "mkfs命令").ext3 /dev/sdb1
+[mke2fs](#/mke2fs "mke2fs命令") 1.35 (28-Feb-2004)
 Filesystem label=
-OS [type](https://philipding.github.io/linux-command/type "type命令"): Linux
+OS [type](#/type "type命令"): Linux
 Block size=4096 (log=2)
 Fragment size=4096 (log=2)
 262144 inodes, 524279 blocks
 26213 blocks (5.00%) reserved for the super user
 First data block=0
 Maximum filesystem blocks=536870912
-16 block [groups](https://philipding.github.io/linux-command/groups "groups命令")
+16 block [groups](#/groups "groups命令")
 32768 blocks per group, 32768 fragments per group
 16384 inodes per group
 Superblock backups stored on blocks:
@@ -115,12 +115,12 @@ Writing inode tables: done
 Creating journal (8192 blocks): done
 Writing superblocks and filesystem accounting information: done
 This filesystem will be automatically checked every 28 mounts or
-180 days, whichever comes first.  Use [tune2fs](https://philipding.github.io/linux-command/tune2fs "tune2fs命令") -c or -i to override.
+180 days, whichever comes first.  Use [tune2fs](#/tune2fs "tune2fs命令") -c or -i to override.
 ```
 
 ```
-[root@localhost ~]# [mount](https://philipding.github.io/linux-command/mount "mount命令") /dev/sdb1 /mnt
-[root@localhost ~]# [df](https://philipding.github.io/linux-command/df "df命令") -h
+[root@localhost ~]# [mount](#/mount "mount命令") /dev/sdb1 /mnt
+[root@localhost ~]# [df](#/df "df命令") -h
 Filesystem            容量  已用 可用 已用% 挂载点
 /dev/sda3              <?xml:namespace prefix = st1 />32G  2.6G   28G   9% /
 /dev/sda1              99M   12M   82M  13% /boot

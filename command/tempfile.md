@@ -23,7 +23,7 @@ $RANDOM是一个返回随机数的环境变量。
 如果没有tempfile命令的Linux发行版，也可以使用自己的临时文件名：
 
 ```
-temp_file_name="/tmp/[file](https://philipding.github.io/linux-command/file "file命令").$"
+temp_file_name="/tmp/[file](#/file "file命令").$"
 ```
 
-`$$`是系统预定义变量，显示当前所在进程的进程号，用`.$$`作为添加的后缀会被扩展成当前运行脚本的进程[id](https://philipding.github.io/linux-command/id "id命令")。
+`$$`是系统预定义变量，显示当前所在进程的进程号，用`.$$`作为添加的后缀会被扩展成当前运行脚本的进程[id](#/id "id命令")。

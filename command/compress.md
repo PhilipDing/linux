@@ -1,4 +1,4 @@
-**compress命令**使用“Lempress-Ziv”编码压缩数据文件。compress是个历史悠久的压缩程序，文件经它压缩后，其名称后面会多出".Z"的扩展名。当要解压缩时，可执行[uncompress](https://philipding.github.io/linux-command/uncompress "uncompress命令")指令。事实上uncompress是指向compress的符号连接，因此不论是压缩或解压缩，都可通过compress指令单独完成。
+**compress命令**使用“Lempress-Ziv”编码压缩数据文件。compress是个历史悠久的压缩程序，文件经它压缩后，其名称后面会多出".Z"的扩展名。当要解压缩时，可执行[uncompress](#/uncompress "uncompress命令")指令。事实上uncompress是指向compress的符号连接，因此不论是压缩或解压缩，都可通过compress指令单独完成。
 
 ### 语法  
 
@@ -24,13 +24,13 @@ compress(选项)(参数)
 
 ### 实例  
 
-将`/etc/[man](https://philipding.github.io/linux-command/man "man命令").config`复到`/tmp` ，并加以压缩
+将`/etc/[man](#/man "man命令").config`复到`/tmp` ，并加以压缩
 
 ```
-[root@localhost ~]# [cd](https://philipding.github.io/linux-command/cd "cd命令") /tmp
-[root@localhost tmp]# [cp](https://philipding.github.io/linux-command/cp "cp命令") /etc/man.config .
+[root@localhost ~]# [cd](#/cd "cd命令") /tmp
+[root@localhost tmp]# [cp](#/cp "cp命令") /etc/man.config .
 [root@localhost tmp]# compress man.config
-[root@localhost tmp]# [ls](https://philipding.github.io/linux-command/ls "ls命令") -l
+[root@localhost tmp]# [ls](#/ls "ls命令") -l
 ```
 
 ```
@@ -55,4 +55,4 @@ compress(选项)(参数)
 -rw-r--r-- 1 root root 2605 Jul 27 11:46 man.config.back.Z
 ```
 
-这个`-c`的选项比较有趣！会将压缩过程的资料输出到屏幕上，而不是写入成为[file](https://philipding.github.io/linux-command/file "file命令").Z文件。所以，我们可以透过资料流重导向的方法将资料输出成为另一个档名。
+这个`-c`的选项比较有趣！会将压缩过程的资料输出到屏幕上，而不是写入成为[file](#/file "file命令").Z文件。所以，我们可以透过资料流重导向的方法将资料输出成为另一个档名。

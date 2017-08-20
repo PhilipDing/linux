@@ -33,8 +33,8 @@ ping(选项)(参数)
 
 ```
 [root@AY1307311912260196fcZ ~]# ping www.linuxde.net
-PING [host](https://philipding.github.io/linux-command/host "host命令").1.linuxde.net (100.42.212.8) 56(84) bytes of data.
-64 bytes from 100-42-212-8.static.webnx.com (100.42.212.8): icmp_seq=1 ttl=50 [time](https://philipding.github.io/linux-command/time "time命令")=177 ms
+PING [host](#/host "host命令").1.linuxde.net (100.42.212.8) 56(84) bytes of data.
+64 bytes from 100-42-212-8.static.webnx.com (100.42.212.8): icmp_seq=1 ttl=50 [time](#/time "time命令")=177 ms
 64 bytes from 100-42-212-8.static.webnx.com (100.42.212.8): icmp_seq=2 ttl=50 time=178 ms
 64 bytes from 100-42-212-8.static.webnx.com (100.42.212.8): icmp_seq=3 ttl=50 time=174 ms
 64 bytes from 100-42-212-8.static.webnx.com (100.42.212.8): icmp_seq=4 ttl=50 time=177 ms

@@ -1,4 +1,4 @@
-**jed命令**是由Slang所开发，其主要用用途是编辑程序的源代码。它支持彩色语法加亮显示，可以模拟[emacs](https://philipding.github.io/linux-command/emacs "emacs命令")，EDT，wordstar和Brief编辑器。
+**jed命令**是由Slang所开发，其主要用用途是编辑程序的源代码。它支持彩色语法加亮显示，可以模拟[emacs](#/emacs "emacs命令")，EDT，wordstar和Brief编辑器。
 
 ### 语法  
 
@@ -10,7 +10,7 @@ jed(选项)(参数)
 
 ```
 -2：显示上下两个编辑区；
--[batch](https://philipding.github.io/linux-command/batch "batch命令")：以批处理模式来执行；
+-[batch](#/batch "batch命令")：以批处理模式来执行；
 -f<函数>：执行Slang函数；
 -g<行数>：移到缓冲区中指定的行数；
 -i<文件>：将指定的文件载入缓冲区；

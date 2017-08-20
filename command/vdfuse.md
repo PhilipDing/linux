@@ -7,13 +7,13 @@ VirtualBox是一款功能强大的x86虚拟机软件，它不仅具有丰富的�
 **在Ubuntu中安装vdfuse，打开终端，输入：**
 
 ```
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") [apt-get](https://philipding.github.io/linux-command/apt-get "apt-get命令") [install](https://philipding.github.io/linux-command/install "install命令") virtualbox-fuse
+[sudo](#/sudo "sudo命令") [apt-get](#/apt-get "apt-get命令") [install](#/install "install命令") virtualbox-fuse
 ```
 
 ### 语法  
 
 ```
-vdfuse [options] -f image-[file](https://philipding.github.io/linux-command/file "file命令") [mountpoint](https://philipding.github.io/linux-command/mountpoint "mountpoint命令")
+vdfuse [options] -f image-[file](#/file "file命令") [mountpoint](#/mountpoint "mountpoint命令")
 ```
 
 ### 选项  
@@ -24,7 +24,7 @@ vdfuse [options] -f image-[file](https://philipding.github.io/linux-command/file
 -t 类型 (VDI, VMDK, VHD, or raw; default: auto)
 -f 镜像文件
 -a 允许所有用户读取
--[w](https://philipding.github.io/linux-command/w "w命令") 允许所有用户都写
+-[w](#/w "w命令") 允许所有用户都写
 -g 前台运行
 -v 输出反馈
 -d debug模式
@@ -43,7 +43,7 @@ sudo vdfuse -f /path/to/file.vdi /path/to/mountpoint
 `/path/to/mountpoint`应该包含如下文件EntireDisk、Partition1等，如果只有一个文件，你可能需要这样挂载：
 
 ```
-[mount](https://philipding.github.io/linux-command/mount "mount命令") /path/to/mountpoint/Partition1 /path/to/someother/mountpoint
+[mount](#/mount "mount命令") /path/to/mountpoint/Partition1 /path/to/someother/mountpoint
 ```
 
 文件系统就挂载到`/path/to/someother/mountpoint`了。

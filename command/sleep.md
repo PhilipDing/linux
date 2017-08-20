@@ -22,9 +22,9 @@ sleep(参数)
 b=''
 for ((i=0;$i<=100;i++))
  do
- [printf](https://philipding.github.io/linux-command/printf "printf命令") "Progress:[%-100s]%d%%\r" $b $i
+ [printf](#/printf "printf命令") "Progress:[%-100s]%d%%\r" $b $i
  sleep 0.1
  b=#$b
  done
-[echo](https://philipding.github.io/linux-command/echo "echo命令")
+[echo](#/echo "echo命令")
 ```

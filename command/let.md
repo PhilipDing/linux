@@ -17,7 +17,7 @@ let arg [arg ...]    #arg代表运算式
 ```
 #!/bin/bash
 let a=5+4 b=9-3
-[echo](https://philipding.github.io/linux-command/echo "echo命令") $a $b
+[echo](#/echo "echo命令") $a $b
 ```
 
 ```

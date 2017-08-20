@@ -42,7 +42,7 @@ c：切换显示命令名称和完整命令行；
 M：根据驻留内存大小进行排序；
 P：根据CPU使用百分比大小进行排序；
 T：根据时间/累计时间进行排序；
-[w](https://philipding.github.io/linux-command/w "w命令")：将当前设置写入~/.toprc文件中。
+[w](#/w "w命令")：将当前设置写入~/.toprc文件中。
 ```
 
 ### 实例  
@@ -50,8 +50,8 @@ T：根据时间/累计时间进行排序；
 ```
 top - 09:44:56 up 16 days, 21:23,  1 user,  load average: 9.59, 4.75, 1.92
 Tasks: 145 total,   2 running, 143 sleeping,   0 stopped,   0 zombie
-Cpu(s): 99.8%us,  0.1%sy,  0.0%ni,  0.2%[id](https://philipding.github.io/linux-command/id "id命令"),  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
-Mem:   4147888k total,  2493092k used,  1654796k [free](https://philipding.github.io/linux-command/free "free命令"),   158188k buffers
+Cpu(s): 99.8%us,  0.1%sy,  0.0%ni,  0.2%[id](#/id "id命令"),  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   4147888k total,  2493092k used,  1654796k [free](#/free "free命令"),   158188k buffers
 Swap:  5144568k total,       56k used,  5144512k free,  2013180k cached
 ```
 

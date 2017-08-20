@@ -1,4 +1,4 @@
-**bzdiff命令**用于直接比较两个“.bz2”压缩包中文件的不同，省去了解压缩后再调用[diff](https://philipding.github.io/linux-command/diff "diff命令")命令的过程。
+**bzdiff命令**用于直接比较两个“.bz2”压缩包中文件的不同，省去了解压缩后再调用[diff](#/diff "diff命令")命令的过程。
 
 ### 语法  
 

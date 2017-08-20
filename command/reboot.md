@@ -10,10 +10,10 @@ reboot(选项)
 
 ```
 -d：重新开机时不把数据写入记录文件/var/tmp/wtmp。本参数具有“-n”参数效果；
--f：强制重新开机，不调用[shutdown](https://philipding.github.io/linux-command/shutdown "shutdown命令")指令的功能；
+-f：强制重新开机，不调用[shutdown](#/shutdown "shutdown命令")指令的功能；
 -i：在重开机之前，先关闭所有网络界面；
 -n：重开机之前不检查是否有未结束的程序；
--[w](https://philipding.github.io/linux-command/w "w命令")：仅做测试，并不真正将系统重新开机，只会把重开机的数据写入/var/log目录下的wtmp记录文件。
+-[w](#/w "w命令")：仅做测试，并不真正将系统重新开机，只会把重开机的数据写入/var/log目录下的wtmp记录文件。
 ```
 
 ### 实例  

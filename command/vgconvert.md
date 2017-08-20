@@ -18,7 +18,7 @@ vgconvert(选项)(参数)
 
 ### 实例  
 
-转换卷组元数据格式前，使用[vgchange](https://philipding.github.io/linux-command/vgchange "vgchange命令")命令将卷组设置为非活动状态。在命令行中输入下面的命令：
+转换卷组元数据格式前，使用[vgchange](#/vgchange "vgchange命令")命令将卷组设置为非活动状态。在命令行中输入下面的命令：
 
 ```
 [root@localhost lvm]# vgchange -an vg1000    #设置卷组状态为非活动状态

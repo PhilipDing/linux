@@ -1,4 +1,4 @@
-在[ip](https://philipding.github.io/linux-command/ip "ip命令")报文的首部和ICMP报文的首部都可以放入时间戳数据。**clockdiff**程序正是使用时间戳来测算目的主机和本地主机的系统时间差。
+在[ip](#/ip "ip命令")报文的首部和ICMP报文的首部都可以放入时间戳数据。**clockdiff**程序正是使用时间戳来测算目的主机和本地主机的系统时间差。
 
 ### 选项  
 
@@ -10,9 +10,9 @@
 ### 实例  
 
 ```
-lixi@lixi-desktop:~$ [ping](https://philipding.github.io/linux-command/ping "ping命令") -T tsandaddr www.ustc.edu.cn -c 1
+lixi@lixi-desktop:~$ [ping](#/ping "ping命令") -T tsandaddr www.ustc.edu.cn -c 1
 PING www.ustc.edu.cn (202.38.64.9) 56(124) bytes of data.
-64 bytes from 202.38.64.9: icmp_seq=1 ttl=62 [time](https://philipding.github.io/linux-command/time "time命令")=0.823 ms
+64 bytes from 202.38.64.9: icmp_seq=1 ttl=62 [time](#/time "time命令")=0.823 ms
 TS:     lixi-desktop.local (210.45.74.25)    12522473 absolute
     210.45.74.1    -251
     local-gw.ustc.edu.cn (202.38.64.126)    248
@@ -29,7 +29,7 @@ rtt min/avg/max/mdev = 0.823/0.823/0.823/0.000 ms
 ```
 lixi@lixi-desktop:~# ./clockdiff -o 202.38.64.9  
 ..................................................
-[host](https://philipding.github.io/linux-command/host "host命令")=202.38.64.9 rtt=1(0)ms/1ms delta=-857517ms/-857517ms Wed Dec 17 11:28:30 2008
+[host](#/host "host命令")=202.38.64.9 rtt=1(0)ms/1ms delta=-857517ms/-857517ms Wed Dec 17 11:28:30 2008
 ```
 
 ```

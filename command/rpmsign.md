@@ -1,4 +1,4 @@
-**rpmsign命令**使用[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")软件包的签名管理工具。
+**rpmsign命令**使用[rpm](#/rpm "rpm命令")软件包的签名管理工具。
 
 ### 语法  
 

@@ -1,4 +1,4 @@
-**[iptables](https://philipding.github.io/linux-command/iptables "iptables命令")-[restore](https://philipding.github.io/linux-command/restore "restore命令")命令**用来还原[iptables-save](https://philipding.github.io/linux-command/iptables-save "iptables-save命令")命令所备份的iptables配置。
+**[iptables](#/iptables "iptables命令")-[restore](#/restore "restore命令")命令**用来还原[iptables-save](#/iptables-save "iptables-save命令")命令所备份的iptables配置。
 
 ### 语法  
 

@@ -1,4 +1,4 @@
-**arptables命令**用来设置、维护和检查Linux内核中的[arp](https://philipding.github.io/linux-command/arp "arp命令")包过滤规则表。
+**arptables命令**用来设置、维护和检查Linux内核中的[arp](#/arp "arp命令")包过滤规则表。
 
 ### 语法  
 
@@ -20,6 +20,6 @@ arptables(选项)
 -X：删除指定的空用户自定义规则链；
 -h：显示指令帮助信息；
 -j：指定满足规则的添加时的目标；
--s：指定要匹配ARP包的源[ip](https://philipding.github.io/linux-command/ip "ip命令")地址；
+-s：指定要匹配ARP包的源[ip](#/ip "ip命令")地址；
 -d：指定要匹配ARP包的目的IP地址。
 ```

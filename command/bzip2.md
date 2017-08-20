@@ -12,12 +12,12 @@ bzip2(选项)(参数)
 -c或——stdout：将压缩与解压缩的结果送到标准输出；
 -d或——decompress：执行解压缩；
 -f或-force：bzip2在压缩或解压缩时，若输出文件与现有文件同名，预设不会覆盖现有文件。若要覆盖。请使用此参数；
--h或——[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-h或——[help](#/help "help命令")：在线帮助；
 -k或——keep：bzip2在压缩或解压缩后，会删除原始文件。若要保留原始文件，请使用此参数；
 -s或——small：降低程序执行时内存的使用量；
--t或——[test](https://philipding.github.io/linux-command/test "test命令")：测试.bz2压缩文件的完整性；
+-t或——[test](#/test "test命令")：测试.bz2压缩文件的完整性；
 -v或——verbose：压缩或解压缩文件时，显示详细的信息；
--z或——[compress](https://philipding.github.io/linux-command/compress "compress命令")：强制执行压缩；
+-z或——[compress](#/compress "compress命令")：强制执行压缩；
 -V或——version：显示版本信息；
 --repetitive-best：若文件中有重复出现的资料时，可利用此参数提高压缩效果；
 --repetitive-fast：若文件中有重复出现的资料时，可利用此参数加快执行效果。
@@ -44,10 +44,10 @@ bzip2 -z filename
 ```
 bzip2 -d filename.bz2
 或
-[bunzip2](https://philipding.github.io/linux-command/bunzip2 "bunzip2命令") filename.bz2
+[bunzip2](#/bunzip2 "bunzip2命令") filename.bz2
 ```
 
-这里，解压的时候没标准输出，会将原来的文件filename.bz2给替换成filename。如果以前有filename则不会替换并提示错误（如果想要替换则指定`-f`选项，例如`bzip2 -[df](https://philipding.github.io/linux-command/df "df命令") filename.bz2`。
+这里，解压的时候没标准输出，会将原来的文件filename.bz2给替换成filename。如果以前有filename则不会替换并提示错误（如果想要替换则指定`-f`选项，例如`bzip2 -[df](#/df "df命令") filename.bz2`。
 
 **压缩解压的时候将结果也输出：**
 
@@ -103,8 +103,8 @@ hahahhaahahha
 
 ```
 bzip2 -c filename
-bzip2: I won't [write](https://philipding.github.io/linux-command/write "write命令") compressed data to a terminal.
-bzip2: For help, [type](https://philipding.github.io/linux-command/type "type命令"): `bzip2 --help'.
+bzip2: I won't [write](#/write "write命令") compressed data to a terminal.
+bzip2: For help, [type](#/type "type命令"): `bzip2 --help'.
 ```
 
 这里，使用`-c`指定压缩到标准输出不删除原有文件，不同的是，压缩后的文件无法输出到标准输出。

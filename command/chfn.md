@@ -1,4 +1,4 @@
-**chfn命令**用来改变[finger](https://philipding.github.io/linux-command/finger "finger命令")命令显示的信息。这些信息都存放在/etc目录里的[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")文件里。若不指定任何选项，则chfn命令会进入问答式界面。
+**chfn命令**用来改变[finger](#/finger "finger命令")命令显示的信息。这些信息都存放在/etc目录里的[passwd](#/passwd "passwd命令")文件里。若不指定任何选项，则chfn命令会进入问答式界面。
 
 ### 语法  
 
@@ -13,7 +13,7 @@ chfn(选项)(参数)
 -h<家中电话>或--home-phone<家中电话>：设置家中的电话号码；
 -o<办公地址>或--office<办公地址>：设置办公室的地址；
 -p<办公电话>或--office-phone<办公电话>：设置办公室的电话号码；
--u或--[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-u或--[help](#/help "help命令")：在线帮助；
 -v或-version：显示版本信息。
 ```
 

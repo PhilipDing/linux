@@ -10,13 +10,13 @@ ntsysv(选项)
 
 ```
 --leve：指定运行等级；
---back：在互动式界面里，显示Back钮，而非[cancel](https://philipding.github.io/linux-command/cancel "cancel命令")钮。
+--back：在互动式界面里，显示Back钮，而非[cancel](#/cancel "cancel命令")钮。
 ```
 
 ### 实例  
 
 输入ntsysv命令后，出现一个交互式的管理菜单，如下：
 
-![ntsysv](https://philipding.github.io/linux-command/wp-content/uploads/2013/11/ntsysv.jpg)
+![ntsysv](./images/ntsysv.jpg)
 
 使用空格键选择或者取消选项！

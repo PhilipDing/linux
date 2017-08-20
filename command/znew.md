@@ -1,4 +1,4 @@
-**znew命令**用于将使用[compress](https://philipding.github.io/linux-command/compress "compress命令")命令压缩的“.Z”压缩包重新转化为使用[gzip](https://philipding.github.io/linux-command/gzip "gzip命令")命令压缩的“.gz”压缩包。
+**znew命令**用于将使用[compress](#/compress "compress命令")命令压缩的“.Z”压缩包重新转化为使用[gzip](#/gzip "gzip命令")命令压缩的“.gz”压缩包。
 
 ### 语法  
 

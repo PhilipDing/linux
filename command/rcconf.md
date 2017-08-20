@@ -9,7 +9,7 @@ rcconf(选项)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：打印帮助信息；
+--[help](#/help "help命令")：打印帮助信息；
 --dialog：使用对话命令显示菜单；
 --notermcheck：不按照终端属性来设置窗口尺寸。
 ```

@@ -3,7 +3,7 @@
 ### 语法  
 
 ```
-[pushd](https://philipding.github.io/linux-command/pushd "pushd命令")(选项)(参数)
+[pushd](#/pushd "pushd命令")(选项)(参数)
 ```
 
 ### 选项  

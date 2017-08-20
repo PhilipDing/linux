@@ -10,11 +10,11 @@ shutdown(选项)(参数)
 
 ```
 -c：当执行“shutdown -h 11:50”指令时，只要按+键就可以中断关机的指令；
--f：重新启动时不执行[fsck](https://philipding.github.io/linux-command/fsck "fsck命令")；
+-f：重新启动时不执行[fsck](#/fsck "fsck命令")；
 -F：重新启动时执行fsck；
 -h：将系统关机；
 -k：只是送出信息给所有用户，但不会实际关机；
--n：不调用[init](https://philipding.github.io/linux-command/init "init命令")程序进行关机，而由shutdown自己进行；
+-n：不调用[init](#/init "init命令")程序进行关机，而由shutdown自己进行；
 -r：shutdown之后重新启动；
 -t<秒数>：送出警告信息和删除信息之间要延迟多少秒。
 ```

@@ -15,22 +15,22 @@ netstat(选项)
 -C或--cache：显示路由器配置的快取信息；
 -e或--extend：显示网络其他相关信息；
 -F或--fib：显示FIB；
--g或--[groups](https://philipding.github.io/linux-command/groups "groups命令")：显示多重广播功能群组组员名单；
--h或--[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-g或--[groups](#/groups "groups命令")：显示多重广播功能群组组员名单；
+-h或--[help](#/help "help命令")：在线帮助；
 -i或--interfaces：显示网络界面信息表单；
 -l或--listening：显示监控中的服务器的Socket；
 -M或--masquerade：显示伪装的网络连线；
--n或--numeric：直接使用[ip](https://philipding.github.io/linux-command/ip "ip命令")地址，而不通过域名服务器；
+-n或--numeric：直接使用[ip](#/ip "ip命令")地址，而不通过域名服务器；
 -N或--netlink或--symbolic：显示网络硬件外围设备的符号连接名称；
 -o或--timers：显示计时器；
 -p或--programs：显示正在使用Socket的程序识别码和程序名称；
--r或--[route](https://philipding.github.io/linux-command/route "route命令")：显示Routing Table；
+-r或--[route](#/route "route命令")：显示Routing Table；
 -s或--statistice：显示网络工作信息统计表；
 -t或--tcp：显示TCP传输协议的连线状况；
 -u或--udp：显示UDP传输协议的连线状况；
 -v或--verbose：显示指令执行过程；
 -V或--version：显示版本信息；
--[w](https://philipding.github.io/linux-command/w "w命令")或--raw：显示RAW传输协议的连线状况；
+-[w](#/w "w命令")或--raw：显示RAW传输协议的连线状况；
 -x或--unix：此参数的效果和指定"-A unix"参数相同；
 --ip或--inet：此参数的效果和指定"-A inet"参数相同。
 ```
@@ -41,7 +41,7 @@ netstat(选项)
 
 ```
 netstat -a     #列出所有端口
-netstat -[at](https://philipding.github.io/linux-command/at "at命令")    #列出所有tcp端口
+netstat -[at](#/at "at命令")    #列出所有tcp端口
 netstat -au    #列出所有udp端口                             
 ```
 
@@ -59,7 +59,7 @@ netstat -lx       #只列出所有监听 UNIX 端口
 ```
 netstat -s   显示所有端口的统计信息
 netstat -st   显示TCP端口的统计信息
-netstat -[su](https://philipding.github.io/linux-command/su "su命令")   显示UDP端口的统计信息
+netstat -[su](#/su "su命令")   显示UDP端口的统计信息
 
 ```
 
@@ -71,7 +71,7 @@ netstat -pt
 
 `netstat -p`可以与其它开关一起使用，就可以添加“PID/进程名称”到netstat输出中，这样debugging的时候可以很方便的发现特定端口运行的程序。
 
-**在netstat输出中不显示主机，端口和用户名([host](https://philipding.github.io/linux-command/host "host命令"), port or user)**
+**在netstat输出中不显示主机，端口和用户名([host](#/host "host命令"), port or user)**
 
 当你不想让主机，端口和用户名显示，使用`netstat -n`。将会使用数字代替那些名称。同样可以加速输出，因为不用进行比对查询。
 
@@ -84,7 +84,7 @@ netstat -an
 ```
 netsat -a --numeric-ports
 netsat -a --numeric-hosts
-netsat -a --numeric-[users](https://philipding.github.io/linux-command/users "users命令")
+netsat -a --numeric-[users](#/users "users命令")
 ```
 
 **持续输出netstat信息**
@@ -121,7 +121,7 @@ netstat -r
 并不是所有的进程都能找到，没有权限的会不显示，使用 root 权限查看所有的信息。
 
 ```
-netstat -ap | [grep](https://philipding.github.io/linux-command/grep "grep命令") [ssh](https://philipding.github.io/linux-command/ssh "ssh命令")
+netstat -ap | [grep](#/grep "grep命令") [ssh](#/ssh "ssh命令")
 ```
 
 找出运行在指定端口的进程：
@@ -136,14 +136,14 @@ netstat -an | grep ':80'
 netstat -i
 ```
 
-显示详细信息，像是[ifconfig](https://philipding.github.io/linux-command/ifconfig "ifconfig命令")使用`netstat -ie`。
+显示详细信息，像是[ifconfig](#/ifconfig "ifconfig命令")使用`netstat -ie`。
 
 **IP和TCP分析**
 
 查看连接某服务端口最多的的IP地址：
 
 ```
-netstat -ntu | grep :80 | [awk](https://philipding.github.io/linux-command/awk "awk命令") '{print $5}' | [cut](https://philipding.github.io/linux-command/cut "cut命令") -d: -f1 | awk '{++ip[$1]} END {for(i in ip) print ip[i],"\t",i}' | [sort](https://philipding.github.io/linux-command/sort "sort命令") -nr
+netstat -ntu | grep :80 | [awk](#/awk "awk命令") '{print $5}' | [cut](#/cut "cut命令") -d: -f1 | awk '{++ip[$1]} END {for(i in ip) print ip[i],"\t",i}' | [sort](#/sort "sort命令") -nr
 ```
 
 TCP各种状态列表：
@@ -155,5 +155,5 @@ netstat -nt | grep -e 127.0.0.1 -e 0.0.0.0 -e ::: -v | awk '/^tcp/ {++state[$NF]
 查看phpcgi进程数，如果接近预设值，说明不够用，需要增加：
 
 ```
-netstat -anpo | grep "[php](https://philipding.github.io/linux-command/php "php命令")-cgi" | [wc](https://philipding.github.io/linux-command/wc "wc命令") -l
+netstat -anpo | grep "[php](#/php "php命令")-cgi" | [wc](#/wc "wc命令") -l
 ```

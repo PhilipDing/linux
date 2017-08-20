@@ -16,7 +16,7 @@ as(选项)(参数)
 -am：包括宏扩展；
 -an：忽略形式处理；
 -as：包括符号；
-=[file](https://philipding.github.io/linux-command/file "file命令")：设置列出文件的名字；
+=[file](#/file "file命令")：设置列出文件的名字；
 --alternate：以交互宏模式开始；
 -f：跳过空白和注释预处理；
 -g：产生调试信息；

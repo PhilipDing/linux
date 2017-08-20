@@ -20,7 +20,7 @@ dump(选项)(参数)
 -s<磁带长度>：备份磁带的长度，单位为英尺；
 -T<日期>：指定备份的时间与日期；
 -u：备份完毕后，在/etc/dumpdates中记录备份的文件系统、层级、日期与时间等；
--[w](https://philipding.github.io/linux-command/w "w命令")：与-W类似，但仅显示需要备份的文件；
+-[w](#/w "w命令")：与-W类似，但仅显示需要备份的文件；
 -W：显示需要备份的文件及其最后一次备份的层级、时间与日期。
 ```
 
@@ -42,4 +42,4 @@ dump(选项)(参数)
 dump -1u -f /tmp/homeback.bak /home
 ```
 
-通过dump命令的备份层级，可实现完整+增量备份、完整+差异备份，在配合[crontab](https://philipding.github.io/linux-command/crontab "crontab命令")可以实现无人值守备份。
+通过dump命令的备份层级，可实现完整+增量备份、完整+差异备份，在配合[crontab](#/crontab "crontab命令")可以实现无人值守备份。

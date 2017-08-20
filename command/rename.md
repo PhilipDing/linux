@@ -51,7 +51,7 @@ rename "s/AA/aa/" *  //把文件名中的AA替换成aa
 修改文件的后缀
 
 ```
-rename "s//.html//.[php](https://philipding.github.io/linux-command/php "php命令")/" *     //把.html 后缀的改成 .php后缀
+rename "s//.html//.[php](#/php "php命令")/" *     //把.html 后缀的改成 .php后缀
 ```
 
 批量添加文件后缀

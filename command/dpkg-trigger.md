@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-trigger命令**是Debian Linux下的软件包触发器。
+**[dpkg](#/dpkg "dpkg命令")-trigger命令**是Debian Linux下的软件包触发器。
 
 ### 语法  
 
@@ -10,7 +10,7 @@ dpkg-trigger(选项)(参数)
 
 ```
 --check-supported：检查运行的dpkg是否支持触发器，返回值为0，则支持触发器。
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助信息；
+--[help](#/help "help命令")：显示帮助信息；
 --admindir=<目录>：设置dpkg数据库所在的目录；
 --no-act：仅用于测试，不执行任何操作；
 --by-package=<软件包>：覆盖触发器等待者。

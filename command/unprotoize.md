@@ -1,4 +1,4 @@
-**unprotoize命令**属于[gcc](https://philipding.github.io/linux-command/gcc "gcc命令")套件，用于删除C语言源代码文件中的函数原型。
+**unprotoize命令**属于[gcc](#/gcc "gcc命令")套件，用于删除C语言源代码文件中的函数原型。
 
 ### 语法  
 

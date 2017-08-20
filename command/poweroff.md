@@ -9,8 +9,8 @@ poweroff(选项)
 ### 选项  
 
 ```
--n：关闭操作系统时不执行[sync](https://philipding.github.io/linux-command/sync "sync命令")操作；
--[w](https://philipding.github.io/linux-command/w "w命令")：不真正关闭操作系统，仅在日志文件“/var/log/wtmp”中；
+-n：关闭操作系统时不执行[sync](#/sync "sync命令")操作；
+-[w](#/w "w命令")：不真正关闭操作系统，仅在日志文件“/var/log/wtmp”中；
 -d：关闭操作系统时，不将操作写入日志文件“/var/log/wtmp”中添加相应的记录；
 -f：强制关闭操作系统；
 -i：关闭操作系统之前关闭所有的网络接口；

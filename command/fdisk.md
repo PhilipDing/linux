@@ -31,7 +31,7 @@ fdisk(选项)(参数)
 输入`m`列出可以执行的命令：
 
 ```
-[command](https://philipding.github.io/linux-command/command "command命令") (m for [help](https://philipding.github.io/linux-command/help "help命令")): m
+[command](#/command "command命令") (m for [help](#/help "help命令")): m
 Command action
    a   toggle a bootable flag
    b   edit bsd disklabel
@@ -44,10 +44,10 @@ Command action
    p   print the partition table
    q   quit without saving changes
    s   create a new empty Sun disklabel
-   t   change a partition's system [id](https://philipding.github.io/linux-command/id "id命令")
+   t   change a partition's system [id](#/id "id命令")
    u   change display/entry units
    v   verify the partition table
-   [w](https://philipding.github.io/linux-command/w "w命令")   [write](https://philipding.github.io/linux-command/write "write命令") table to disk and [exit](https://philipding.github.io/linux-command/exit "exit命令")
+   [w](#/w "w命令")   [write](#/write "write命令") table to disk and [exit](#/exit "exit命令")
    x   extra functionality (experts only)
 ```
 
@@ -100,7 +100,7 @@ p    //建立主分区
 Partition number (1-4): 1  //分区号
 First cylinder (1-391, default 1):  //分区起始位置
 Using default value 1
-[last](https://philipding.github.io/linux-command/last "last命令") cylinder or +size or +sizeM or +sizeK (1-391, default 391): 100  //分区结束位置，单位为扇区
+[last](#/last "last命令") cylinder or +size or +sizeM or +sizeK (1-391, default 391): 100  //分区结束位置，单位为扇区
 
 Command (m for help): n  //再建立一个分区
 Command action
@@ -209,7 +209,7 @@ Command (m for help):
 Command (m for help): w
 The partition table has been altered!
 
-Calling ioctl() to re-[read](https://philipding.github.io/linux-command/read "read命令") partition table.
+Calling ioctl() to re-[read](#/read "read命令") partition table.
 Syncing disks.
 ```
 
@@ -218,17 +218,17 @@ Syncing disks.
 在sdb1上建立ext2分区：
 
 ```
-[root@localhost ~]# [mkfs](https://philipding.github.io/linux-command/mkfs "mkfs命令").ext2 /dev/sdb1
-[mke2fs](https://philipding.github.io/linux-command/mke2fs "mke2fs命令") 1.39 (29-May-2006)
+[root@localhost ~]# [mkfs](#/mkfs "mkfs命令").ext2 /dev/sdb1
+[mke2fs](#/mke2fs "mke2fs命令") 1.39 (29-May-2006)
 Filesystem label=
-OS [type](https://philipding.github.io/linux-command/type "type命令"): Linux
+OS [type](#/type "type命令"): Linux
 Block size=4096 (log=2)
 Fragment size=4096 (log=2)
 100576 inodes, 200804 blocks
 10040 blocks (5.00%) reserved for the super user
 First data block=0
 Maximum filesystem blocks=209715200
-7 block [groups](https://philipding.github.io/linux-command/groups "groups命令")
+7 block [groups](#/groups "groups命令")
 32768 blocks per group, 32768 fragments per group
 14368 inodes per group
 Superblock backups stored on blocks:
@@ -238,7 +238,7 @@ Writing inode tables: done
 Writing superblocks and filesystem accounting information: done
 
 This filesystem will be automatically checked every 32 mounts or
-180 days, whichever comes first.  Use [tune2fs](https://philipding.github.io/linux-command/tune2fs "tune2fs命令") -c or -i to override.
+180 days, whichever comes first.  Use [tune2fs](#/tune2fs "tune2fs命令") -c or -i to override.
 ```
 
 在sdb6上建立ext3分区：
@@ -272,16 +272,16 @@ This filesystem will be automatically checked every 32 mounts or
 建立两个目录`/oracle`和`/web`，将新建好的两个分区挂载到系统：
 
 ```
-[root@localhost ~]# [mkdir](https://philipding.github.io/linux-command/mkdir "mkdir命令") /oracle
+[root@localhost ~]# [mkdir](#/mkdir "mkdir命令") /oracle
 [root@localhost ~]# mkdir /web
-[root@localhost ~]# [mount](https://philipding.github.io/linux-command/mount "mount命令") /dev/sdb1 /oracle
+[root@localhost ~]# [mount](#/mount "mount命令") /dev/sdb1 /oracle
 [root@localhost ~]# mount /dev/sdb6 /web
 ```
 
 查看分区挂载情况：
 
 ```
-[root@localhost ~]# [df](https://philipding.github.io/linux-command/df "df命令") -h
+[root@localhost ~]# [df](#/df "df命令") -h
 文件系统              容量  已用 可用 已用% 挂载点
 /dev/mapper/VolGroup00-LogVol00
                       6.7G  2.8G  3.6G  44% /

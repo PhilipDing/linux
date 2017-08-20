@@ -11,10 +11,10 @@
 要向syslog文件/var/log/messages中记录日志信息：
 
 ```
-logger this is a [test](https://philipding.github.io/linux-command/test "test命令") log line
+logger this is a [test](#/test "test命令") log line
 
 输出：
-[tail](https://philipding.github.io/linux-command/tail "tail命令") -n 1 messages
+[tail](#/tail "tail命令") -n 1 messages
 Jan  5 10:07:03 localhost root: this is a test log line
 
 ```

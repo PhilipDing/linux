@@ -52,7 +52,7 @@ MAILTO=""HOME=/
 crontab文件的含义：用户所建立的crontab文件中，每一行都代表一项任务，每行的每个字段代表一项设置，它的格式共分为六个字段，前五段是时间设定段，第六段是要执行的命令段，格式如下：
 
 ```
-minute   hour   day   month   week   [command](https://philipding.github.io/linux-command/command "command命令")     顺序：分 时 日 月 周
+minute   hour   day   month   week   [command](#/command "command命令")     顺序：分 时 日 月 周
 ```
 
 其中：
@@ -74,7 +74,7 @@ minute   hour   day   month   week   [command](https://philipding.github.io/linu
 **crond服务**
 
 ```
-/sbin/[service](https://philipding.github.io/linux-command/service "service命令") crond start    //启动服务
+/sbin/[service](#/service "service命令") crond start    //启动服务
 /sbin/service crond stop     //关闭服务
 /sbin/service crond restart  //重启服务
 /sbin/service crond reload   //重新载入配置
@@ -95,13 +95,13 @@ service crond start
 查看crontab服务是否已设置为开机启动，执行命令：
 
 ```
-[ntsysv](https://philipding.github.io/linux-command/ntsysv "ntsysv命令")
+[ntsysv](#/ntsysv "ntsysv命令")
 ```
 
 加入开机自动启动：
 
 ```
-[chkconfig](https://philipding.github.io/linux-command/chkconfig "chkconfig命令") –level 35 crond on
+[chkconfig](#/chkconfig "chkconfig命令") –level 35 crond on
 ```
 
 ### 实例  
@@ -139,7 +139,7 @@ service crond start
 每晚的21:30重启smb 
 
 ```
-30 21 * * * /etc/[init](https://philipding.github.io/linux-command/init "init命令").d/smb restart
+30 21 * * * /etc/[init](#/init "init命令").d/smb restart
 ```
 
 每月1、10、22日的4 : 45重启smb 

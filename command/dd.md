@@ -1,6 +1,6 @@
 **dd命令**用于复制文件并对原文件的内容进行转换和格式化处理。dd命令功能很强大的，对于一些比较底层的问题，使用dd命令往往可以得到出人意料的效果。用的比较多的还是用dd来备份裸设备。但是不推荐，如果需要备份oracle裸设备，可以使用rman备份，或使用第三方软件备份，使用dd的话，管理起来不太方便。
 
-建议在有需要的时候使用dd 对物理磁盘操作，如果是文件系统的话还是使用[tar](https://philipding.github.io/linux-command/tar "tar命令") backup [cpio](https://philipding.github.io/linux-command/cpio "cpio命令")等其他命令更加方便。另外，使用dd对磁盘操作时，最好使用块设备文件。
+建议在有需要的时候使用dd 对物理磁盘操作，如果是文件系统的话还是使用[tar](#/tar "tar命令") backup [cpio](#/cpio "cpio命令")等其他命令更加方便。另外，使用dd对磁盘操作时，最好使用块设备文件。
 
 ### 语法  
 
@@ -20,7 +20,7 @@ obs=<字节数>：每次输出的字节数；
 of=<文件>：输出到文件；
 seek=<区块数>：一开始输出时，跳过指定的区块数；
 skip=<区块数>：一开始读取时，跳过指定的区块数；
---[help](https://philipding.github.io/linux-command/help "help命令")：帮助；
+--[help](#/help "help命令")：帮助；
 --version：显示版本信息。
 ```
 
@@ -32,7 +32,7 @@ skip=<区块数>：一开始读取时，跳过指定的区块数；
 1+0 records out
 1048576 bytes (1.0 MB) copied, 0.006107 seconds, 172 MB/s
 
-[root@localhost text]# [du](https://philipding.github.io/linux-command/du "du命令") -sh sun.txt 
+[root@localhost text]# [du](#/du "du命令") -sh sun.txt 
 1.1M    sun.txt
 ```
 
@@ -70,7 +70,7 @@ skip=<区块数>：一开始读取时，跳过指定的区块数；
 
 <td>字节（2B）</td>
 
-<td>[w](https://philipding.github.io/linux-command/w "w命令")</td>
+<td>[w](#/w "w命令")</td>
 
 </tr>
 

@@ -20,7 +20,7 @@ joe(选项)(参数)
 -dopadding：是程序跟tty间存在缓冲区；
 -exask：在程序中，执行“Ctrl+k+x”时，会先确认是否要保存文件；
 -force：强制在最后一行的结尾处加上换行符号；
--[help](https://philipding.github.io/linux-command/help "help命令")：执行程序时一并显示帮助；
+-[help](#/help "help命令")：执行程序时一并显示帮助；
 -keepup：在进入程序后，画面上方为状态列；
 -marking：在选取区块时，反白区块会随着光标移动；
 -mid：当光标移出画面时，即自动卷页，使光标回到中央；

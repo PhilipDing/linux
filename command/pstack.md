@@ -4,11 +4,11 @@
 
 ### 实例  
 
-[pstree](https://philipding.github.io/linux-command/pstree "pstree命令")以树结构显示进程
+[pstree](#/pstree "pstree命令")以树结构显示进程
 
 ```
-pstree -p work | [grep](https://philipding.github.io/linux-command/grep "grep命令") ad
-[sshd](https://philipding.github.io/linux-command/sshd "sshd命令")(22669)---bash(22670)---ad_preprocess(4551)-+-{ad_preprocess}(4552)
+pstree -p work | [grep](#/grep "grep命令") ad
+[sshd](#/sshd "sshd命令")(22669)---bash(22670)---ad_preprocess(4551)-+-{ad_preprocess}(4552)
                                                 |-{ad_preprocess}(4553)
                                                 |-{ad_preprocess}(4554)
                                                 |-{ad_preprocess}(4555)
@@ -19,8 +19,8 @@ pstree -p work | [grep](https://philipding.github.io/linux-command/grep "grep命
 work为工作用户，-p为显示进程识别码，ad_preprocess共启动了6个子线程，加上主线程共7个线程。
 
 ```
-[ps](https://philipding.github.io/linux-command/ps "ps命令") -Lf 4551
-UID        PID  PPID   LWP  C NLWP STIME TTY      [stat](https://philipding.github.io/linux-command/stat "stat命令")   [time](https://philipding.github.io/linux-command/time "time命令") CMD
+[ps](#/ps "ps命令") -Lf 4551
+UID        PID  PPID   LWP  C NLWP STIME TTY      [stat](#/stat "stat命令")   [time](#/time "time命令") CMD
 work      4551 22670  4551  2    7 16:30 pts/2    Sl+    0:02 ./ad_preprocess
 work      4551 22670  4552  0    7 16:30 pts/2    Sl+    0:00 ./ad_preprocess
 work      4551 22670  4553  0    7 16:30 pts/2    Sl+    0:00 ./ad_preprocess
@@ -68,7 +68,7 @@ Thread 4 (Thread 1115699552 (LWP 4555)):
 #4  0x0000000000000000 in ?? ()
 Thread 3 (Thread 1126189408 (LWP 4556)):
 #0  0x000000302af8f1a5 in __nanosleep_nocancel () from /lib64/tls/libc.so.6
-#1  0x000000302af8f010 in [sleep](https://philipding.github.io/linux-command/sleep "sleep命令") () from /lib64/tls/libc.so.6
+#1  0x000000302af8f010 in [sleep](#/sleep "sleep命令") () from /lib64/tls/libc.so.6
 #2  0x000000000044c972 in Business_config_manager::run ()
 #3  0x0000000000457b83 in Thread::run_thread ()
 #4  0x000000302b80610a in start_thread () from /lib64/tls/libpthread.so.0

@@ -18,7 +18,7 @@ uname(选项)
 -p或--processor：输出处理器类型或"unknown"；
 -i或--hardware-platform：输出硬件平台或"unknown"；
 -o或--operating-system：输出操作系统名称；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+--[help](#/help "help命令")：显示帮助；
 --version：显示版本信息。
 ```
 
@@ -59,7 +59,7 @@ GNU/Linux
 
 [root@localhost ~]# uname --version
 uname (GNU coreutils) 5.97
-Copyright (C) 2006 [free](https://philipding.github.io/linux-command/free "free命令") Software Foundation, Inc.
+Copyright (C) 2006 [free](#/free "free命令") Software Foundation, Inc.
 这是自由软件。您可以按照 GNU GPL 协议 <http://www.gnu.org/licenses/gpl.html> 的条款再发布此软件的副本，但我们无法保证相关法律不对这一情形进行限制。
 
 由 David MacKenzie 编写。

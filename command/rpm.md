@@ -17,7 +17,7 @@ rpm(选项)(参数)
 -f<文件>+：查询拥有指定文件的套件；
 -h或--hash：套件安装时列出标记；
 -i：显示套件的相关信息；
--i<套件档>或--[install](https://philipding.github.io/linux-command/install "install命令")<套件档>：安装指定的套件档；
+-i<套件档>或--[install](#/install "install命令")<套件档>：安装指定的套件档；
 -l：显示套件的文件列表；
 -p<套件档>+：查询指定的RPM套件档；
 -q：使用询问模式，当遇到任何问题时，rpm指令会先询问用户；
@@ -67,11 +67,11 @@ rpm -ivh your-package.rpm
 
 ```
 rpm -i your-package.src.rpm
-[cd](https://philipding.github.io/linux-command/cd "cd命令") /usr/src/redhat/SPECS
-[rpmbuild](https://philipding.github.io/linux-command/rpmbuild "rpmbuild命令") -bp your-package.specs             #一个和你的软件包同名的specs文件
+[cd](#/cd "cd命令") /usr/src/redhat/SPECS
+[rpmbuild](#/rpmbuild "rpmbuild命令") -bp your-package.specs             #一个和你的软件包同名的specs文件
 cd /usr/src/redhat/BUILD/your-package/      #一个和你的软件包同名的目录
 ./configure                                 #这一步和编译普通的源码软件一样，可以加上参数
-[make](https://philipding.github.io/linux-command/make "make命令")
+[make](#/make "make命令")
 make install
 ```
 
@@ -122,10 +122,10 @@ rpm -e proftpd-1
 
 **如何不安装但是获取rpm包中的文件**
 
-使用工具[rpm2cpio](https://philipding.github.io/linux-command/rpm2cpio "rpm2cpio命令")和[cpio](https://philipding.github.io/linux-command/cpio "cpio命令")
+使用工具[rpm2cpio](#/rpm2cpio "rpm2cpio命令")和[cpio](#/cpio "cpio命令")
 
 ```
-rpm2cpio xxx.rpm | cpio -[vi](https://philipding.github.io/linux-command/vi "vi命令")
+rpm2cpio xxx.rpm | cpio -[vi](#/vi "vi命令")
 rpm2cpio xxx.rpm | cpio -idmv
 rpm2cpio xxx.rpm | cpio --extract --make-directories
 ```
@@ -134,7 +134,7 @@ rpm2cpio xxx.rpm | cpio --extract --make-directories
 
 **如何查看与rpm包相关的文件和其他信息**
 
-下面所有的例子都假设使用软件包[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")-3.23.54a-11
+下面所有的例子都假设使用软件包[mysql](#/mysql "mysql命令")-3.23.54a-11
 
 1、我的系统中安装了那些rpm软件包。
 
@@ -145,7 +145,7 @@ rpm -qa 讲列出所有安装过的包
 如果要查找所有安装过的包含某个字符串sql的软件包
 
 ```
-rpm -qa | [grep](https://philipding.github.io/linux-command/grep "grep命令") sql
+rpm -qa | [grep](#/grep "grep命令") sql
 ```
 
 2、如何获得某个软件包的文件全名。
@@ -162,7 +162,7 @@ rpm -q mysql
 rpm -ql 包名
 ```
 
-注意这里的是不包括.rpm后缀的软件包的名称，也就是说只能用mysql或者mysql-3.23.54a-11而不是mysql-3.23.54a-11.rpm。如果只是想知道可执行程序放到那里去了，也可以用[which](https://philipding.github.io/linux-command/which "which命令")，比如：
+注意这里的是不包括.rpm后缀的软件包的名称，也就是说只能用mysql或者mysql-3.23.54a-11而不是mysql-3.23.54a-11.rpm。如果只是想知道可执行程序放到那里去了，也可以用[which](#/which "which命令")，比如：
 
 ```
 which mysql
@@ -190,11 +190,11 @@ rpm -qlf `which 程序名`   #返回软件包的文件列表
 
 7、某个文件是哪个软件包安装的，或者哪个软件包包含这个文件。
 
-注意，前一个问题中的方法，只适用与可执行的程序，而下面的方法，不仅可以用于可执行程序，也可以用于普通的任何文件。前提是知道这个文件名。首先获得这个程序的完整路径，可以用[whereis](https://philipding.github.io/linux-command/whereis "whereis命令")或者which，然后使用`rpm -qf`例如：
+注意，前一个问题中的方法，只适用与可执行的程序，而下面的方法，不仅可以用于可执行程序，也可以用于普通的任何文件。前提是知道这个文件名。首先获得这个程序的完整路径，可以用[whereis](#/whereis "whereis命令")或者which，然后使用`rpm -qf`例如：
 
 ```
-whereis [ftptop](https://philipding.github.io/linux-command/ftptop "ftptop命令")
-ftptop: /usr/bin/ftptop /usr/share/[man](https://philipding.github.io/linux-command/man "man命令")/man1/ftptop.1.gz
+whereis [ftptop](#/ftptop "ftptop命令")
+ftptop: /usr/bin/ftptop /usr/share/[man](#/man "man命令")/man1/ftptop.1.gz
 
 rpm -qf /usr/bin/ftptop
 proftpd-1.2.8-1

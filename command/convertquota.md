@@ -1,4 +1,4 @@
-**convertquota命令**用于将老的磁盘额数据文件（“[quota](https://philipding.github.io/linux-command/quota "quota命令").user”和“quota.group”）转换为新格式的文件（“quota.user”和“quota.group”）。
+**convertquota命令**用于将老的磁盘额数据文件（“[quota](#/quota "quota命令").user”和“quota.group”）转换为新格式的文件（“quota.user”和“quota.group”）。
 
 ### 语法  
 

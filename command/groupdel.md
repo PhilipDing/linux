@@ -13,6 +13,6 @@ groupdel(参数)
 ### 实例  
 
 ```
-[groupadd](https://philipding.github.io/linux-command/groupadd "groupadd命令") damon  //创建damon工作组
+[groupadd](#/groupadd "groupadd命令") damon  //创建damon工作组
 groupdel damon  //删除这个工作组
 ```

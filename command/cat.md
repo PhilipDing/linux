@@ -1,6 +1,6 @@
-**cat命令**连接文件并打印到标准输出设备上，cat经常用来显示文件的内容，类似于下的[type](https://philipding.github.io/linux-command/type "type命令")命令。
+**cat命令**连接文件并打印到标准输出设备上，cat经常用来显示文件的内容，类似于下的[type](#/type "type命令")命令。
 
-注意：当文件较大时，文本在屏幕上迅速闪过（滚屏），用户往往看不清所显示的内容。因此，一般用[more](https://philipding.github.io/linux-command/more "more命令")等命令分屏显示。为了控制滚屏，可以按Ctrl+S键，停止滚屏；按Ctrl+Q键可以恢复滚屏。按Ctrl+C（中断）键可以终止该命令的执行，并且返回Shell提示符状态。
+注意：当文件较大时，文本在屏幕上迅速闪过（滚屏），用户往往看不清所显示的内容。因此，一般用[more](#/more "more命令")等命令分屏显示。为了控制滚屏，可以按Ctrl+S键，停止滚屏；按Ctrl+Q键可以恢复滚屏。按Ctrl+C（中断）键可以终止该命令的执行，并且返回Shell提示符状态。
 
 ### 语法  
 
@@ -30,5 +30,5 @@ cat(选项)(参数)
 ```
 cat m1 （在屏幕上显示文件ml的内容）
 cat m1 m2 （同时显示文件ml和m2的内容）
-cat m1 m2 > [file](https://philipding.github.io/linux-command/file "file命令") （将文件ml和m2合并后放入文件file中）
+cat m1 m2 > [file](#/file "file命令") （将文件ml和m2合并后放入文件file中）
 ```

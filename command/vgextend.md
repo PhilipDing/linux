@@ -1,4 +1,4 @@
-**vgextend命令**用于动态扩展LVM卷组，它通过向卷组中添加物理卷来增加卷组的容量。LVM卷组中的物理卷可以在使用[vgcreate](https://philipding.github.io/linux-command/vgcreate "vgcreate命令")命令创建卷组时添加，也可以使用vgextend命令动态的添加。
+**vgextend命令**用于动态扩展LVM卷组，它通过向卷组中添加物理卷来增加卷组的容量。LVM卷组中的物理卷可以在使用[vgcreate](#/vgcreate "vgcreate命令")命令创建卷组时添加，也可以使用vgextend命令动态的添加。
 
 ### 语法  
 

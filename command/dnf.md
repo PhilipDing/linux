@@ -1,4 +1,4 @@
-**DNF**是新一代的[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")软件包管理器。他首先出现在 Fedora 18 这个发行版中。而最近，它取代了[yum](https://philipding.github.io/linux-command/yum "yum命令")，正式成为 Fedora 22 的包管理器。
+**DNF**是新一代的[rpm](#/rpm "rpm命令")软件包管理器。他首先出现在 Fedora 18 这个发行版中。而最近，它取代了[yum](#/yum "yum命令")，正式成为 Fedora 22 的包管理器。
 
 DNF包管理器克服了YUM包管理器的一些瓶颈，提升了包括用户体验，内存占用，依赖分析，运行速度等多方面的内容。DNF使用 RPM, libsolv 和 hawkey 库进行包管理操作。尽管它没有预装在 CentOS 和 RHEL 7 中，但你可以在使用 YUM 的同时使用 DNF 。你可以在这里获得关于 DNF 的更多知识：[《 DNF 代替 YUM ，你所不知道的缘由》](http://www.tecmint.com/dnf-next-generation-package-management-utility-for-linux/)
 
@@ -13,7 +13,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 在系统中执行以下命令：
 
 ```
-# yum [install](https://philipding.github.io/linux-command/install "install命令") epel-release
+# yum [install](#/install "install命令") epel-release
 ```
 
 或者
@@ -40,7 +40,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf –version
 ```
 
-![Check-DNF-Version](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113738jKb.gif)
+![Check-DNF-Version](./images/113738jKb.gif)
 
 **查看系统中可用的 DNF 软件库**
 
@@ -50,7 +50,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf repolist
 ```
 
-![Check-All-Enabled-Repositories](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113738mRq.gif)
+![Check-All-Enabled-Repositories](./images/113738mRq.gif)
 
 **查看系统中可用和不可用的所有的 DNF 软件库**
 
@@ -60,7 +60,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf repolist all
 ```
 
-![3](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113739UDY.gif)
+![3](./images/113739UDY.gif)
 
 **列出所有 RPM 包**
 
@@ -70,7 +70,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf list
 ```
 
-![4](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113739I5J.png)
+![4](./images/113739I5J.png)
 
 **列出所有安装了的 RPM 包**
 
@@ -80,7 +80,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf list installed
 ```
 
-![5](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113739jRM.png)
+![5](./images/113739jRM.png)
 
 **列出所有可供安装的 RPM 包**
 
@@ -90,17 +90,17 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf list available
 ```
 
-![6](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113739RGQ.png)
+![6](./images/113739RGQ.png)
 
 **搜索软件库中的 RPM 包**
 
-用处：当你不知道你想要安装的软件的准确名称时，你可以用该命令来搜索软件包。你需要在”search”参数后面键入软件的部分名称来搜索。（在本例中我们使用”[nano](https://philipding.github.io/linux-command/nano "nano命令")”）
+用处：当你不知道你想要安装的软件的准确名称时，你可以用该命令来搜索软件包。你需要在”search”参数后面键入软件的部分名称来搜索。（在本例中我们使用”[nano](#/nano "nano命令")”）
 
 ```
 # dnf search nano
 ```
 
-![7](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113739je7.gif)
+![7](./images/113739je7.gif)
 
 **查找某一文件的提供者**
 
@@ -110,17 +110,17 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf provides /bin/bash
 ```
 
-![8](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113740GkO.gif)
+![8](./images/113740GkO.gif)
 
 **查看软件包详情**
 
 用处：当你想在安装某一个软件包之前查看它的详细信息时，这条命令可以帮到你。（在本例中，我们将查看”nano”这一软件包的详细信息）
 
 ```
-# dnf [info](https://philipding.github.io/linux-command/info "info命令") nano
+# dnf [info](#/info "info命令") nano
 ```
 
-![9](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113740aVm.gif)
+![9](./images/113740aVm.gif)
 
 **安装软件包**
 
@@ -130,7 +130,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf install nano
 ```
 
-![10](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113740FQt.gif)
+![10](./images/113740FQt.gif)
 
 **升级软件包**
 
@@ -140,7 +140,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf update systemd
 ```
 
-![11](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/1137401RN.gif)
+![11](./images/1137401RN.gif)
 
 **检查系统软件包的更新**
 
@@ -150,7 +150,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf check-update
 ```
 
-![12](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113741eE8.gif)
+![12](./images/113741eE8.gif)
 
 **升级所有系统软件包**
 
@@ -160,7 +160,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf update 或 # dnf upgrade
 ```
 
-![13](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113741Nk6.gif)
+![13](./images/113741Nk6.gif)
 
 **删除软件包**
 
@@ -170,7 +170,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf remove nano 或 # dnf erase nano
 ```
 
-![14](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113741KhO.gif)
+![14](./images/113741KhO.gif)
 
 **删除无用孤立的软件包**
 
@@ -180,7 +180,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf autoremove
 ```
 
-![15](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/1137419EO.gif)
+![15](./images/1137419EO.gif)
 
 **删除缓存的无用软件包**
 
@@ -190,17 +190,17 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf clean all
 ```
 
-![16](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113741cWA.gif)
+![16](./images/113741cWA.gif)
 
 **获取有关某条命令的使用帮助**
 
 用处：该命令用于获取有关某条命令的使用帮助（包括可用于该命令的参数和该命令的用途说明）（本例中我们将使用命令获取有关命令”clean”的使用帮助）
 
 ```
-# dnf [help](https://philipding.github.io/linux-command/help "help命令") clean
+# dnf [help](#/help "help命令") clean
 ```
 
-![17](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113741wBy.gif)
+![17](./images/113741wBy.gif)
 
 **查看所有的 DNF 命令及其用途**
 
@@ -210,17 +210,17 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf help
 ```
 
-![18](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113742sZM.gif)
+![18](./images/113742sZM.gif)
 
 **查看 DNF 命令的执行历史**
 
 用处：您可以使用该命令来查看您系统上 DNF 命令的执行历史。通过这个手段您可以知道在自您使用 DNF 开始有什么软件被安装和卸载。
 
 ```
-# dnf [history](https://philipding.github.io/linux-command/history "history命令")
+# dnf [history](#/history "history命令")
 ```
 
-![19](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113742jSO.gif)
+![19](./images/113742jSO.gif)
 
 **查看所有的软件包组**
 
@@ -230,7 +230,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf grouplist
 ```
 
-![20](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113742YQN.gif)
+![20](./images/113742YQN.gif)
 
 **安装一个软件包组**
 
@@ -240,7 +240,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf groupinstall ‘Educational Software’
 ```
 
-![21](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/11374395s.gif)
+![21](./images/11374395s.gif)
 
 **升级一个软件包组中的软件包**
 
@@ -250,7 +250,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf groupupdate ‘Educational Software’
 ```
 
-![22](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113743ZXj.gif)
+![22](./images/113743ZXj.gif)
 
 **删除一个软件包组**
 
@@ -260,7 +260,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf groupremove ‘Educational Software’
 ```
 
-![23](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113743i2d.gif)
+![23](./images/113743i2d.gif)
 
 **从特定的软件包库安装特定的软件**
 
@@ -275,7 +275,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 用处：该命令可以通过所有可用的软件源将已经安装的所有软件包更新到最新的稳定发行版
 
 ```
-# dnf distro-[sync](https://philipding.github.io/linux-command/sync "sync命令")
+# dnf distro-[sync](#/sync "sync命令")
 ```
 
 **重新安装特定软件包**
@@ -286,7 +286,7 @@ DNF 并未默认安装在 RHEL 或 CentOS 7系统中，但是 Fedora 22 已经�
 # dnf reinstall nano
 ```
 
-![26](https://philipding.github.io/linux-command/wp-content/uploads/2015/11/113743TtJ.gif)
+![26](./images/113743TtJ.gif)
 
 **回滚某个特定软件的版本**
 

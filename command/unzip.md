@@ -1,4 +1,4 @@
-**unzip命令**用于解压缩由[zip](https://philipding.github.io/linux-command/zip "zip命令")命令压缩的“.zip”压缩包。
+**unzip命令**用于解压缩由[zip](#/zip "zip命令")命令压缩的“.zip”压缩包。
 
 ### 语法  
 
@@ -22,7 +22,7 @@ unzip(选项)(参数)
 -C：压缩文件中的文件名称区分大小写；
 -j：不处理压缩文件中原有的目录路径；
 -L：将压缩文件中的全部文件名改为小写；
--M：将输出结果送到[more](https://philipding.github.io/linux-command/more "more命令")程序处理；
+-M：将输出结果送到[more](#/more "more命令")程序处理；
 -n：解压缩时不要覆盖原有的文件；
 -o：不必先询问用户，unzip执行后覆盖原有的文件；
 -P<密码>：使用zip的密码选项；
@@ -32,7 +32,7 @@ unzip(选项)(参数)
 -X：解压缩时同时回存文件原来的UID/GID；
 -d<目录>：指定文件解压缩后所要存储的目录；
 -x<文件>：指定不要处理.zip压缩文件中的哪些文件；
--Z：unzip-Z等于执行[zipinfo](https://philipding.github.io/linux-command/zipinfo "zipinfo命令")指令。
+-Z：unzip-Z等于执行[zipinfo](#/zipinfo "zipinfo命令")指令。
 ```
 
 ### 参数  
@@ -44,7 +44,7 @@ unzip(选项)(参数)
 将压缩文件text.zip在当前目录下解压缩。
 
 ```
-unzip [test](https://philipding.github.io/linux-command/test "test命令").zip
+unzip [test](#/test "test命令").zip
 ```
 
 将压缩文件text.zip在指定目录`/tmp`下解压缩，如果已有相同的文件存在，要求unzip命令不覆盖原先的文件。

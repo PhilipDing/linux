@@ -22,7 +22,7 @@ apt-get(选项)(参数)
 使用apt-get命令的第一步就是引入必需的软件库，Debian的软件库也就是所有Debian软件包的集合，它们存在互联网上的一些公共站点上。把它们的地址加入，apt-get就能搜索到我们想要的软件。/etc/apt/sources.list是存放这些地址列表的配置文件，其格式如下：
 
 ```
-deb [web或[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")地址] [发行版名字] [main/contrib/non-[free](https://philipding.github.io/linux-command/free "free命令")]
+deb [web或[ftp](#/ftp "ftp命令")地址] [发行版名字] [main/contrib/non-[free](#/free "free命令")]
 ```
 
 我们常用的Ubuntu就是一个基于Debian的发行，我们使用apt-get命令获取这个列表，以下是我整理的常用命令：
@@ -36,7 +36,7 @@ apt-get update
 安装一个新软件包：
 
 ```
-apt-get [install](https://philipding.github.io/linux-command/install "install命令") packagename
+apt-get [install](#/install "install命令") packagename
 ```
 
 卸载一个已安装的软件包（保留配置文件）：

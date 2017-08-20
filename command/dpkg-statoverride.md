@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-statoverride命令**用于Debian Linux中覆盖文件的所有权和模式，让dpkg于包安装时使得文件所有权与模式失效。
+**[dpkg](#/dpkg "dpkg命令")-statoverride命令**用于Debian Linux中覆盖文件的所有权和模式，让dpkg于包安装时使得文件所有权与模式失效。
 
 ### 语法  
 
@@ -20,7 +20,7 @@ dpkg-statoverride(选项)
 修改文件夹的权限属性：
 
 ```
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") dpkg-statoverride --update --add nagios nagios 751 /var/lib/nagios3
+[sudo](#/sudo "sudo命令") dpkg-statoverride --update --add nagios nagios 751 /var/lib/nagios3
 ```
 
 强制修改文件夹的权限属性：
@@ -32,5 +32,5 @@ sudo dpkg-statoverride --force --update --add root sasl 755 /var/spool/postfix/v
 将文件从数据库中删除：
 
 ```
-sudo dpkg-statoverride --remove /usr/bin/[wall](https://philipding.github.io/linux-command/wall "wall命令")
+sudo dpkg-statoverride --remove /usr/bin/[wall](#/wall "wall命令")
 ```

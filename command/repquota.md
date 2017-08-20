@@ -9,7 +9,7 @@ repquota(选项)(参数)
 ### 选项  
 
 ```
--a：列出在/etc/fstab文件里，有加入[quota](https://philipding.github.io/linux-command/quota "quota命令")设置的分区的使用状况，包括用户和群组；
+-a：列出在/etc/fstab文件里，有加入[quota](#/quota "quota命令")设置的分区的使用状况，包括用户和群组；
 -g：列出所有群组的磁盘空间限制；
 -u：列出所有用户的磁盘空间限制；
 -v：显示该用户或群组的所有空间限制。

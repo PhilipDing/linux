@@ -16,9 +16,9 @@ dmidecode [选项]
 -d：(default:/dev/mem)从设备文件读取信息，输出内容与不加参数标准输出相同。
 -h：显示帮助信息。
 -s：只显示指定DMI字符串的信息。(string)
--t：只显示指定条目的信息。([type](https://philipding.github.io/linux-command/type "type命令"))
+-t：只显示指定条目的信息。([type](#/type "type命令"))
 -u：显示未解码的原始条目内容。
---[dump](https://philipding.github.io/linux-command/dump "dump命令")-bin [file](https://philipding.github.io/linux-command/file "file命令")：将DMI数据转储到一个二进制文件中。
+--[dump](#/dump "dump命令")-bin [file](#/file "file命令")：将DMI数据转储到一个二进制文件中。
 --from-dump FILE：从一个二进制文件读取DMI数据。
 -V：显示版本信息。
 ```
@@ -29,7 +29,7 @@ dmidecode [选项]
 
 *   bios-vendor
 *   bios-version
-*   bios-release-[date](https://philipding.github.io/linux-command/date "date命令")
+*   bios-release-[date](#/date "date命令")
 *   system-manufacturer
 *   system-product-name
 *   system-version
@@ -110,7 +110,7 @@ dmidecode [选项]
 ### 实例  
 
 ```
-查看服务器型号：dmidecode | [grep](https://philipding.github.io/linux-command/grep "grep命令") 'Product Name'
+查看服务器型号：dmidecode | [grep](#/grep "grep命令") 'Product Name'
 查看主板的序列号：dmidecode |grep 'Serial Number'
 查看系统序列号：dmidecode -s system-serial-number
 查看内存信息：dmidecode -t memory
@@ -130,14 +130,14 @@ Processor Information
         Type: Central Processor
         Family: Xeon MP
         Manufacturer: Intel(R) Corporation
-        [id](https://philipding.github.io/linux-command/id "id命令"): C2 06 02 00 FF FB EB BF
+        [id](#/id "id命令"): C2 06 02 00 FF FB EB BF
         Signature: Type 0, Family 6, Model 44, Stepping 2
         Flags:
                 FPU (Floating-point unit on-chip)
                 VME (Virtual mode extension)
                 DE (Debugging extension)
                 PSE (Page size extension)
-                TSC ([time](https://philipding.github.io/linux-command/time "time命令") stamp counter)
+                TSC ([time](#/time "time命令") stamp counter)
                 MSR (Model specific registers)
                 PAE (Physical address extension)
                 MCE (Machine check exception)
@@ -145,7 +145,7 @@ Processor Information
                 APIC (On-chip APIC hardware supported)
                 SEP (Fast system call)
                 MTRR (Memory type range registers)
-                PGE (Page global [enable](https://philipding.github.io/linux-command/enable "enable命令"))
+                PGE (Page global [enable](#/enable "enable命令"))
                 MCA (Machine check architecture)
                 CMOV (Conditional move instruction supported)
                 PAT (Page attribute table)
@@ -157,7 +157,7 @@ Processor Information
                 FXSR (FXSAVE and FXSTOR instructions supported)
                 SSE (Streaming SIMD extensions)
                 SSE2 (Streaming SIMD extensions 2)
-                [ss](https://philipding.github.io/linux-command/ss "ss命令") (Self-snoop)
+                [ss](#/ss "ss命令") (Self-snoop)
                 HTT (Multi-threading)
                 TM (Thermal monitor supported)
                 PBE (Pending break enabled)

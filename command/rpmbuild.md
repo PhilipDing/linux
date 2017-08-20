@@ -1,4 +1,4 @@
-**rpmbuild命令**被用于创建[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")的二进制软件包和源码软件包。
+**rpmbuild命令**被用于创建[rpm](#/rpm "rpm命令")的二进制软件包和源码软件包。
 
 ### 语法  
 

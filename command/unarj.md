@@ -1,4 +1,4 @@
-**unarj命令**用来解压缩由[arj](https://philipding.github.io/linux-command/arj "arj命令")命令创建的压缩包。
+**unarj命令**用来解压缩由[arj](#/arj "arj命令")命令创建的压缩包。
 
 ### 语法  
 

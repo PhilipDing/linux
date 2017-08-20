@@ -4,7 +4,7 @@
 
 **增加了系统的安全性，限制了用户的权力：**
 
-在经过 chroot 之后，在新根下将访问不到旧系统的根目录结构和文件，这样就增强了系统的安全性。这个一般是在登录 ([login](https://philipding.github.io/linux-command/login "login命令")) 前使用 chroot，以此达到用户不能访问一些特定的文件。
+在经过 chroot 之后，在新根下将访问不到旧系统的根目录结构和文件，这样就增强了系统的安全性。这个一般是在登录 ([login](#/login "login命令")) 前使用 chroot，以此达到用户不能访问一些特定的文件。
 
 **建立一个与原系统隔离的系统目录结构，方便用户的开发：**
 
@@ -12,7 +12,7 @@
 
 **切换系统的根目录位置，引导 Linux 系统启动以及急救系统等：**
 
-chroot 的作用就是切换系统的根位置，而这个作用最为明显的是在系统初始引导磁盘的处理过程中使用，从初始 RAM 磁盘 (initrd) 切换系统的根位置并执行真正的 [init](https://philipding.github.io/linux-command/init "init命令")。另外，当系统出现一些问题时，我们也可以使用 chroot 来切换到一个临时的系统。
+chroot 的作用就是切换系统的根位置，而这个作用最为明显的是在系统初始引导磁盘的处理过程中使用，从初始 RAM 磁盘 (initrd) 切换系统的根位置并执行真正的 [init](#/init "init命令")。另外，当系统出现一些问题时，我们也可以使用 chroot 来切换到一个临时的系统。
 
 ### 语法  
 
@@ -23,7 +23,7 @@ chroot(选项)(参数)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+--[help](#/help "help命令")：在线帮助；
 --version：显示版本信息。
 ```
 
@@ -40,14 +40,14 @@ chroot(选项)(参数)
 chroot target /bin/sh
 ```
 
-这里,target是busybox安装好的路径，类似一个文件系统包含了许多工具。这样，将会进入一个shell界面，这个shell以target为根。运行[exit](https://philipding.github.io/linux-command/exit "exit命令")退出该shell又返回原来的本机环境了，也可以使用Ctrl+D。
+这里,target是busybox安装好的路径，类似一个文件系统包含了许多工具。这样，将会进入一个shell界面，这个shell以target为根。运行[exit](#/exit "exit命令")退出该shell又返回原来的本机环境了，也可以使用Ctrl+D。
 
 注意：
 
 *   根用户才行
 *   如果直接chroot target默认寻找target的/bin/bash.这会以target作为根目录
 
-将target作为根目录(运行其中的`/bin/[ls](https://philipding.github.io/linux-command/ls "ls命令")`):
+将target作为根目录(运行其中的`/bin/[ls](#/ls "ls命令")`):
 
 ```
 chroot target /bin/ls
@@ -55,20 +55,20 @@ chroot target /bin/ls
 
 这里，target是busybox安装好的路径，类似一个文件系统包含了许多工具。这样运行的是target中的ls（不是本机的`/bin/ls`），然后返回立即本机的目录环境。
 
-注意，自己在本地编译一个程序生成a.out之后，拷进`target/bin/`中这样运行却不行,因为它包含了动态连接的库，需要用[ldd](https://philipding.github.io/linux-command/ldd "ldd命令")查看a.out需要那些动态库，将这些库拷贝到新根的对应路径下才能执行。
+注意，自己在本地编译一个程序生成a.out之后，拷进`target/bin/`中这样运行却不行,因为它包含了动态连接的库，需要用[ldd](#/ldd "ldd命令")查看a.out需要那些动态库，将这些库拷贝到新根的对应路径下才能执行。
 
 **用chroot运行自己编译的一个程序：**
 
 准备chroot的根目录：
 
 ```
-[mkdir](https://philipding.github.io/linux-command/mkdir "mkdir命令") newRoot
+[mkdir](#/mkdir "mkdir命令") newRoot
 ```
 
 编译自己的程序：
 
 ```
-[gcc](https://philipding.github.io/linux-command/gcc "gcc命令") main.c
+[gcc](#/gcc "gcc命令") main.c
 ```
 
 这里main.c生成a.out，功能是输出hello。
@@ -84,13 +84,13 @@ ldd a.out
 ```
 linux-gate.so.1 = &gt;  (0xb8034000)
 libc.so.6 = &gt; /lib/tls/i686/cmov/libc.so.6 (0xb7eab000)
-/lib/[ld](https://philipding.github.io/linux-command/ld "ld命令")-linux.so.2 (0xb801a000)
+/lib/[ld](#/ld "ld命令")-linux.so.2 (0xb801a000)
 ```
 
 将程序需要的库和程序拷贝到新根目录下：
 
 ```
-[cp](https://philipding.github.io/linux-command/cp "cp命令") a.out newRoot
+[cp](#/cp "cp命令") a.out newRoot
 mkdir newRoot/lib
 cp /lib/tls/i686/cmov/libc.so.6 newRoot/lib
 cp /lib/ld-linux.so.2 newRoot/lib
@@ -105,7 +105,7 @@ a.out lib/
 使用chroot运行自己的程序：
 
 ```
-[su](https://philipding.github.io/linux-command/su "su命令")
+[su](#/su "su命令")
 chroot newRoot /a.out
 ```
 

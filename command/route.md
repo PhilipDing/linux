@@ -1,6 +1,6 @@
 **route命令**用来显示并设置Linux内核中的网络路由表，route命令设置的路由主要是静态路由。要实现两个不同的子网之间的通信，需要一台连接两个网络的路由器，或者同时位于两个网络的网关来实现。
 
-在Linux系统中设置路由通常是为了解决以下问题：该Linux系统在一个局域网中，局域网中有一个网关，能够让机器访问Internet，那么就需要将这台机器的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址设置为Linux机器的默认路由。要注意的是，直接在命令行下执行route命令来添加路由，不会永久保存，当网卡重启或者机器重启之后，该路由就失效了；可以在`/etc/rc.local`中添加route命令来保证该路由设置永久有效。
+在Linux系统中设置路由通常是为了解决以下问题：该Linux系统在一个局域网中，局域网中有一个网关，能够让机器访问Internet，那么就需要将这台机器的[ip](#/ip "ip命令")地址设置为Linux机器的默认路由。要注意的是，直接在命令行下执行route命令来添加路由，不会永久保存，当网卡重启或者机器重启之后，该路由就失效了；可以在`/etc/rc.local`中添加route命令来保证该路由设置永久有效。
 
 ### 语法  
 
@@ -15,9 +15,9 @@ route(选项)(参数)
 -C：打印将Linux核心的路由缓存；
 -v：详细信息模式；
 -n：不执行DNS反向查找，直接显示数字形式的IP地址；
--e：[netstat](https://philipding.github.io/linux-command/netstat "netstat命令")格式显示路由表；
+-e：[netstat](#/netstat "netstat命令")格式显示路由表；
 -net：到一个网络的路由表；
--[host](https://philipding.github.io/linux-command/host "host命令")：到一个主机的路由表。
+-[host](#/host "host命令")：到一个主机的路由表。
 ```
 
 ### 参数  
@@ -77,7 +77,7 @@ route add -net 224.0.0.0 netmask 240.0.0.0 dev eth0    #增加一条到达244.0.
 **屏蔽一条路由：**
 
 ```
-route add -net 224.0.0.0 netmask 240.0.0.0 [reject](https://philipding.github.io/linux-command/reject "reject命令")     #增加一条屏蔽的路由，目的地址为224.x.x.x将被拒绝。
+route add -net 224.0.0.0 netmask 240.0.0.0 [reject](#/reject "reject命令")     #增加一条屏蔽的路由，目的地址为224.x.x.x将被拒绝。
 ```
 
 **删除路由记录：**

@@ -1,4 +1,4 @@
-**xargs命令**是给其他命令传递参数的一个过滤器，也是组合多个命令的一个工具。它擅长将标准输入数据转换成命令行参数，xargs能够处理管道或者stdin并将其转换成特定命令的命令参数。xargs也可以将单行或多行文本输入转换为其他格式，例如多行变单行，单行变多行。xargs的默认命令是[echo](https://philipding.github.io/linux-command/echo "echo命令")，空格是默认定界符。这意味着通过管道传递给xargs的输入将会包含换行和空白，不过通过xargs的处理，换行和空白将被空格取代。xargs是构建单行命令的重要组件之一。
+**xargs命令**是给其他命令传递参数的一个过滤器，也是组合多个命令的一个工具。它擅长将标准输入数据转换成命令行参数，xargs能够处理管道或者stdin并将其转换成特定命令的命令参数。xargs也可以将单行或多行文本输入转换为其他格式，例如多行变单行，单行变多行。xargs的默认命令是[echo](#/echo "echo命令")，空格是默认定界符。这意味着通过管道传递给xargs的输入将会包含换行和空白，不过通过xargs的处理，换行和空白将被空格取代。xargs是构建单行命令的重要组件之一。
 
 ### xargs命令用法  
 
@@ -7,13 +7,13 @@ xargs用作替换工具，读取输入数据重新格式化后输出。
 定义一个测试文件，内有多行文本数据：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") [test](https://philipding.github.io/linux-command/test "test命令").txt
+[cat](#/cat "cat命令") [test](#/test "test命令").txt
 
 a b c d e f g
 h i j k l m n
 o p q
 r s t
-u v [w](https://philipding.github.io/linux-command/w "w命令") x y z
+u v [w](#/w "w命令") x y z
 
 ```
 
@@ -95,29 +95,29 @@ cat arg.txt | xargs -I {} ./sk.sh -p {} -l
 复制所有图片文件到 /data/images 目录下：
 
 ```
-[ls](https://philipding.github.io/linux-command/ls "ls命令") *.jpg | xargs -n1 -I [cp](https://philipding.github.io/linux-command/cp "cp命令") {} /data/images
+[ls](#/ls "ls命令") *.jpg | xargs -n1 -I [cp](#/cp "cp命令") {} /data/images
 ```
 
-**xargs结合[find](https://philipding.github.io/linux-command/find "find命令")使用**
+**xargs结合[find](#/find "find命令")使用**
 
-用[rm](https://philipding.github.io/linux-command/rm "rm命令") 删除太多的文件时候，可能得到一个错误信息：/bin/rm Argument list too long. 用xargs去避免这个问题：
+用[rm](#/rm "rm命令") 删除太多的文件时候，可能得到一个错误信息：/bin/rm Argument list too long. 用xargs去避免这个问题：
 
 ```
-find . -[type](https://philipding.github.io/linux-command/type "type命令") f -name "*.log" -print0 | xargs -0 rm -f
+find . -[type](#/type "type命令") f -name "*.log" -print0 | xargs -0 rm -f
 ```
 
 xargs -0将\0作为定界符。
 
-统计一个源代码目录中所有[php](https://philipding.github.io/linux-command/php "php命令")文件的行数：
+统计一个源代码目录中所有[php](#/php "php命令")文件的行数：
 
 ```
-find . -type f -name "*.php" -print0 | xargs -0 [wc](https://philipding.github.io/linux-command/wc "wc命令") -l
+find . -type f -name "*.php" -print0 | xargs -0 [wc](#/wc "wc命令") -l
 ```
 
 查找所有的jpg 文件，并且压缩它们：
 
 ```
-find . -type f -name "*.jpg" -print | xargs [tar](https://philipding.github.io/linux-command/tar "tar命令") -czvf images.tar.gz
+find . -type f -name "*.jpg" -print | xargs [tar](#/tar "tar命令") -czvf images.tar.gz
 
 ```
 
@@ -126,7 +126,7 @@ find . -type f -name "*.jpg" -print | xargs [tar](https://philipding.github.io/l
 假如你有一个文件包含了很多你希望下载的URL，你能够使用xargs下载所有链接：
 
 ```
-cat url-list.txt | xargs [wget](https://philipding.github.io/linux-command/wget "wget命令") -c
+cat url-list.txt | xargs [wget](#/wget "wget命令") -c
 
 ```
 
@@ -138,7 +138,7 @@ cat url-list.txt | xargs [wget](https://philipding.github.io/linux-command/wget 
 cmd1 | ( cmd2; cmd3; cmd4 ) | cmd5
 ```
 
-如果cmd2 是[cd](https://philipding.github.io/linux-command/cd "cd命令") /，那么就会改变子Shell的工作目录，这种改变只是局限于子shell内部，cmd5则完全不知道工作目录发生的变化。子shell是嵌在圆括号()内部的命令序列，子Shell内部定义的变量为局部变量。
+如果cmd2 是[cd](#/cd "cd命令") /，那么就会改变子Shell的工作目录，这种改变只是局限于子shell内部，cmd5则完全不知道工作目录发生的变化。子shell是嵌在圆括号()内部的命令序列，子Shell内部定义的变量为局部变量。
 
 子shell可用于为一组命令设定临时的环境变量：
 
@@ -148,12 +148,12 @@ COMMAND3
 (
   IFS=:
   PATH=/bin
-  [unset](https://philipding.github.io/linux-command/unset "unset命令") TERMINFO
-  [set](https://philipding.github.io/linux-command/set "set命令") -C
+  [unset](#/unset "unset命令") TERMINFO
+  [set](#/set "set命令") -C
   shift 5
   COMMAND4
   COMMAND5
-  [exit](https://philipding.github.io/linux-command/exit "exit命令") 3 # 只是从子shell退出。
+  [exit](#/exit "exit命令") 3 # 只是从子shell退出。
 )
 # 父shell不受影响，变量值没有更改。
 COMMAND6

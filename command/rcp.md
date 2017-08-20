@@ -15,7 +15,7 @@ rcp(选项)(参数)
 -D：指定远程服务器的端口号。
 ```
 
-同名用户的主目录。如果没有给出远程用户名，就使用当前用户名。如果远程机上的路径包含特殊shell字符，需要用反斜线`\\`、双引号`""`或单引号`''`括起来，使所有的shell元字符都能被远程地解释。需要说明的是，rcp不提示输入口令，它通过[rsh](https://philipding.github.io/linux-command/rsh "rsh命令")命令来执行拷贝。
+同名用户的主目录。如果没有给出远程用户名，就使用当前用户名。如果远程机上的路径包含特殊shell字符，需要用反斜线`\\`、双引号`""`或单引号`''`括起来，使所有的shell元字符都能被远程地解释。需要说明的是，rcp不提示输入口令，它通过[rsh](#/rsh "rsh命令")命令来执行拷贝。
 
 directory 每个文件或目录参数既可以是远程文件名也可以是本地文件名。远程文件名具有如下形式`rname@rhost:path`，其中rname是远程用户名，rhost是远程计算机名，path是这个文件的路径。
 
@@ -31,11 +31,11 @@ directory 每个文件或目录参数既可以是远程文件名也可以是本
 
 只对root用户生效
 
-1、在双方root用户根目录下建立rhosts文件，并将双方的[hostname](https://philipding.github.io/linux-command/hostname "hostname命令")加进去。在此之前应在双方的`/etc/hosts`文件中加入对方的[ip](https://philipding.github.io/linux-command/ip "ip命令")和hostname
+1、在双方root用户根目录下建立rhosts文件，并将双方的[hostname](#/hostname "hostname命令")加进去。在此之前应在双方的`/etc/hosts`文件中加入对方的[ip](#/ip "ip命令")和hostname
 
 2、把rsh服务启动起来，redhat默认是不启动的。
 
-方法：用执行[ntsysv](https://philipding.github.io/linux-command/ntsysv "ntsysv命令")命令，在rsh选项前用空格键选中，确定退出。然后执行`[service](https://philipding.github.io/linux-command/service "service命令") xinetd restart`即可。
+方法：用执行[ntsysv](#/ntsysv "ntsysv命令")命令，在rsh选项前用空格键选中，确定退出。然后执行`[service](#/service "service命令") xinetd restart`即可。
 
 3、到`/etc/pam.d/`目录下，把rsh文件中的`auth required /lib/security/pam_securetty.so`一行用“#”注释掉即可。（只有注释掉这一行，才能用root用户登录）
 

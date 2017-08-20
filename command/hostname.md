@@ -13,7 +13,7 @@ hostname(选项)(参数)
 -a：显示主机别名；
 -d：显示DNS域名；
 -f：显示FQDN名称；
--i：显示主机的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址；
+-i：显示主机的[ip](#/ip "ip命令")地址；
 -s：显示短主机名称，在第一个点处截断；
 -y：显示NIS域名。
 ```

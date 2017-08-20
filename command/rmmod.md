@@ -11,7 +11,7 @@ rmmod(选项)(参数)
 ```
 -v：显示指令执行的详细信息；
 -f：强制移除模块，使用此选项比较危险；
--[w](https://philipding.github.io/linux-command/w "w命令")：等待着，直到模块能够被除时在移除模块；
+-[w](#/w "w命令")：等待着，直到模块能够被除时在移除模块；
 -s：向系统日志（syslog）发送错误信息。
 ```
 
@@ -21,10 +21,10 @@ rmmod(选项)(参数)
 
 ### 实例  
 
-用rmmod命令主要用于卸载正在使用的Linux内核模块，与`[modprobe](https://philipding.github.io/linux-command/modprobe "modprobe命令") -r`命令相似，如下所示：
+用rmmod命令主要用于卸载正在使用的Linux内核模块，与`[modprobe](#/modprobe "modprobe命令") -r`命令相似，如下所示：
 
 ```
-[root@localhost boot]# [lsmod](https://philipding.github.io/linux-command/lsmod "lsmod命令") | [grep](https://philipding.github.io/linux-command/grep "grep命令") raid1
+[root@localhost boot]# [lsmod](#/lsmod "lsmod命令") | [grep](#/grep "grep命令") raid1
 raid1                  25153  0
 
 [root@localhost boot]# rmmod raid1

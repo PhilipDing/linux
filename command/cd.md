@@ -1,4 +1,4 @@
-**cd命令**用来切换工作目录至[dirname](https://philipding.github.io/linux-command/dirname "dirname命令")。 其中dirName表示法可为绝对路径或相对路径。若目录名称省略，则变换至使用者的home directory(也就是刚[login](https://philipding.github.io/linux-command/login "login命令")时所在的目录)。另外，`~`也表示为home directory的意思，`.`则是表示目前所在的目录，`..`则表示目前目录位置的上一层目录。
+**cd命令**用来切换工作目录至[dirname](#/dirname "dirname命令")。 其中dirName表示法可为绝对路径或相对路径。若目录名称省略，则变换至使用者的home directory(也就是刚[login](#/login "login命令")时所在的目录)。另外，`~`也表示为home directory的意思，`.`则是表示目前所在的目录，`..`则表示目前目录位置的上一层目录。
 
 ### 语法  
 

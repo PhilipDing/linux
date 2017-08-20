@@ -12,7 +12,7 @@ iconv -f encoding [-t encoding] [inputfile]...
 -f encoding :把字符从encoding编码开始转换。 
 -t encoding :把字符转换到encoding编码。 
 -l :列出已知的编码字符集合 
--o [file](https://philipding.github.io/linux-command/file "file命令") :指定输出文件 
+-o [file](#/file "file命令") :指定输出文件 
 -c :忽略输出的非法字符 
 -s :禁止警告信息，但不是错误信息 
 --verbose :显示进度信息 

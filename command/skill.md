@@ -12,29 +12,29 @@ skill(选项)
 -f：快速模式；
 -i：交互模式，每一步操作都需要确认；
 -v：冗余模式；
--[w](https://philipding.github.io/linux-command/w "w命令")：激活模式；
+-[w](#/w "w命令")：激活模式；
 -V：显示版本号；
 -t：指定开启进程的终端号；
 -u：指定开启进程的用户；
--p：指定进程的[id](https://philipding.github.io/linux-command/id "id命令")号；
+-p：指定进程的[id](#/id "id命令")号；
 -c：指定开启进程的指令名称。
 ```
 
 ### 实例  
 
-如果您发现了一个占用大量CPU和内存的进程，但又不想停止它，该怎么办？考虑下面的[top](https://philipding.github.io/linux-command/top "top命令")命令输出：
+如果您发现了一个占用大量CPU和内存的进程，但又不想停止它，该怎么办？考虑下面的[top](#/top "top命令")命令输出：
 
 ```
 top -c -p 16514
-23:00:44  up 12 days,  2:04,  4 [users](https://philipding.github.io/linux-command/users "users命令"),  load average: 0.47, 0.35, 0.31
+23:00:44  up 12 days,  2:04,  4 [users](#/users "users命令"),  load average: 0.47, 0.35, 0.31
 1 processes: 1 sleeping, 0 running, 0 zombie, 0 stopped
-CPU states:  cpu    user    [nice](https://philipding.github.io/linux-command/nice "nice命令")  system    irq  softirq  iowait    idle
+CPU states:  cpu    user    [nice](#/nice "nice命令")  system    irq  softirq  iowait    idle
            total    0.0%    0.6%    8.7%   2.2%     0.0%   88.3%    0.0%
-Mem:  1026912k av, 1010476k used,   16436k [free](https://philipding.github.io/linux-command/free "free命令"),       0k shrd,   52128k buff
+Mem:  1026912k av, 1010476k used,   16436k [free](#/free "free命令"),       0k shrd,   52128k buff
                     766724k actv,  143128k in_d,   14264k in_c
 Swap: 2041192k av,   83160k used, 1958032k free                  799432k cached
 
-  PID USER     PRI  NI  SIZE  RSS SHARE [stat](https://philipding.github.io/linux-command/stat "stat命令") %CPU %MEM   [time](https://philipding.github.io/linux-command/time "time命令") CPU [command](https://philipding.github.io/linux-command/command "command命令")
+  PID USER     PRI  NI  SIZE  RSS SHARE [stat](#/stat "stat命令") %CPU %MEM   [time](#/time "time命令") CPU [command](#/command "command命令")
 16514 oracle    19   4 28796  26M 20252 D N   7.0  2.5   0:03   0 oraclePRODB2...
 ```
 

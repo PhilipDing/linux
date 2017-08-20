@@ -1,4 +1,4 @@
-**tcpdump命令**是一款sniffer工具，它可以打印所有经过网络接口的数据包的头信息，也可以使用`-[w](https://philipding.github.io/linux-command/w "w命令")`选项将数据包保存到文件中，方便以后分析。
+**tcpdump命令**是一款sniffer工具，它可以打印所有经过网络接口的数据包的头信息，也可以使用`-[w](#/w "w命令")`选项将数据包保存到文件中，方便以后分析。
 
 ### 语法  
 
@@ -12,7 +12,7 @@ tcpdump(选项)
 -a：尝试将网络和广播地址转换成名称；
 -c<数据包数目>：收到指定的数据包数目后，就停止进行倾倒操作；
 -d：把编译过的数据包编码转换成可阅读的格式，并倾倒到标准输出；
--[dd](https://philipding.github.io/linux-command/dd "dd命令")：把编译过的数据包编码转换成C语言的格式，并倾倒到标准输出；
+-[dd](#/dd "dd命令")：把编译过的数据包编码转换成C语言的格式，并倾倒到标准输出；
 -ddd：把编译过的数据包编码转换成十进制数字的格式，并倾倒到标准输出；
 -e：在每列倾倒资料上显示连接层级的文件头；
 -f：用数字显示网际网络地址；
@@ -57,10 +57,10 @@ tcpdump -i eth1
 打印所有进入或离开sundown的数据包。
 
 ```
-tcpdump [host](https://philipding.github.io/linux-command/host "host命令") sundown
+tcpdump [host](#/host "host命令") sundown
 ```
 
-也可以指定[ip](https://philipding.github.io/linux-command/ip "ip命令"),例如截获所有210.27.48.1 的主机收到的和发出的所有的数据包
+也可以指定[ip](#/ip "ip命令"),例如截获所有210.27.48.1 的主机收到的和发出的所有的数据包
 
 ```
 tcpdump host 210.27.48.1
@@ -90,7 +90,7 @@ tcpdump ip host ace and not helios
 tcpdump ip host 210.27.48.1 and ! 210.27.48.2
 ```
 
-截获主机[hostname](https://philipding.github.io/linux-command/hostname "hostname命令")发送的所有数据
+截获主机[hostname](#/hostname "hostname命令")发送的所有数据
 
 ```
 tcpdump -i eth0 src host hostname
@@ -104,7 +104,7 @@ tcpdump -i eth0 dst host hostname
 
 **监视指定主机和端口的数据包**
 
-如果想要获取主机210.27.48.1接收或发出的[telnet](https://philipding.github.io/linux-command/telnet "telnet命令")包，使用如下命令
+如果想要获取主机210.27.48.1接收或发出的[telnet](#/telnet "telnet命令")包，使用如下命令
 
 ```
 tcpdump tcp port 23 host 210.27.48.1
@@ -126,7 +126,7 @@ tcpdump net ucb-ether
 
 ucb-ether此处可理解为“Berkeley网络”的网络地址，此表达式最原始的含义可表达为：打印网络地址为ucb-ether的所有数据包
 
-打印所有通过网关snup的[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")数据包
+打印所有通过网关snup的[ftp](#/ftp "ftp命令")数据包
 
 ```
 tcpdump 'gateway snup and (port ftp or ftp-data)'

@@ -19,12 +19,12 @@ rexec(选项)(参数)
 
 ### 参数  
 
-*   远程主机：指定远程主机（[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或主机名）；
+*   远程主机：指定远程主机（[ip](#/ip "ip命令")地址或主机名）；
 *   命令：指定需要在远程主机上执行的命令。
 
 ### 实例  
 
-要在一个远程主机上执行[date](https://philipding.github.io/linux-command/date "date命令")命令，输入：
+要在一个远程主机上执行[date](#/date "date命令")命令，输入：
 
 ```
 rexec host1 date
@@ -43,7 +43,7 @@ rexec -nhost1 date
 列出远程主机上另一个用户的目录，输入：
 
 ```
-rexec host1 [ls](https://philipding.github.io/linux-command/ls "ls命令") -l /home/karen
+rexec host1 [ls](#/ls "ls命令") -l /home/karen
 ```
 
 在远程主机host1上的karen 用户的目录列表显示在本地系统上。

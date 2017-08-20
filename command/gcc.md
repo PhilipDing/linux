@@ -12,7 +12,7 @@ gcc(选项)(参数)
 -o：指定生成的输出文件；
 -E：仅执行编译预处理；
 -S：将C代码转换为汇编代码；
--[wall](https://philipding.github.io/linux-command/wall "wall命令")：显示警告信息；
+-[wall](#/wall "wall命令")：显示警告信息；
 -c：仅执行编译操作，不进行连接操作。
 ```
 
@@ -24,7 +24,7 @@ C源文件：指定C语言源代码文件。
 
 **常用编译命令选项**
 
-假设源程序文件名为[test](https://philipding.github.io/linux-command/test "test命令").c
+假设源程序文件名为[test](#/test "test命令").c
 
 **无选项编译链接**
 

@@ -11,7 +11,7 @@ bc(选项)(参数)
 ```
 -i：强制进入交互式模式；
 -l：定义使用的标准数学库；
--[w](https://philipding.github.io/linux-command/w "w命令")：对POSIX bc的扩展给出警告信息；
+-[w](#/w "w命令")：对POSIX bc的扩展给出警告信息；
 -q：不打印正常的GNU bc环境信息；
 -v：显示指令版本信息；
 -h：显示指令的帮助信息。
@@ -26,7 +26,7 @@ bc(选项)(参数)
 算术操作高级运算bc命令它可以执行浮点运算和一些高级函数：
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") "1.212*3" | bc 
+[echo](#/echo "echo命令") "1.212*3" | bc 
 3.636
 
 ```

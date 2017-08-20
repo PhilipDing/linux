@@ -9,7 +9,7 @@ logrotate(选项)(参数)
 ### 选项  
 
 ```
--?或--[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-?或--[help](#/help "help命令")：在线帮助；
 -d或--debug：详细显示指令执行过程，便于排错或了解程序执行的情况；
 -f或--force ：强行启动记录文件维护操作，纵使logrotate指令认为没有需要亦然；
 -s<状态文件>或--state=<状态文件>：使用指定的状态文件；

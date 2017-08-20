@@ -32,7 +32,7 @@ sort(选项)(参数)
 sort将文件/文本的每一行作为一个单位，相互比较，比较原则是从首字符向后，依次按[ASCII](http://zh.wikipedia.org/zh/ASCII)码值进行比较，最后将他们按升序输出。
 
 ```
-[root@[mail](https://philipding.github.io/linux-command/mail "mail命令") text]# [cat](https://philipding.github.io/linux-command/cat "cat命令") sort.txt
+[root@[mail](#/mail "mail命令") text]# [cat](#/cat "cat命令") sort.txt
 aaa:10:1.1
 ccc:30:3.3
 ddd:40:4.4
@@ -49,7 +49,7 @@ eee:50:5.5
 eee:50:5.5
 ```
 
-忽略相同行使用-u选项或者[uniq](https://philipding.github.io/linux-command/uniq "uniq命令")：
+忽略相同行使用-u选项或者[uniq](#/uniq "uniq命令")：
 
 ```
 [root@mail text]# cat sort.txt

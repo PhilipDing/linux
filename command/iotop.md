@@ -1,25 +1,25 @@
-**iotop命令**是一个用来监视磁盘I/O使用状况的[top](https://philipding.github.io/linux-command/top "top命令")类工具。iotop具有与top相似的UI，其中包括PID、用户、I/O、进程等相关信息。Linux下的IO统计工具如[iostat](https://philipding.github.io/linux-command/iostat "iostat命令")，nmon等大多数是只能统计到per设备的读写情况，如果你想知道每个进程是如何使用IO的就比较麻烦，使用iotop命令可以很方便的查看。
+**iotop命令**是一个用来监视磁盘I/O使用状况的[top](#/top "top命令")类工具。iotop具有与top相似的UI，其中包括PID、用户、I/O、进程等相关信息。Linux下的IO统计工具如[iostat](#/iostat "iostat命令")，nmon等大多数是只能统计到per设备的读写情况，如果你想知道每个进程是如何使用IO的就比较麻烦，使用iotop命令可以很方便的查看。
 
-iotop使用Python语言编写而成，要求Python2.5（及以上版本）和Linux kernel2.6.20（及以上版本）。iotop提供有源代码及[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")包，可从其[官方主页](http://guichaz.free.fr/iotop/)下载。
+iotop使用Python语言编写而成，要求Python2.5（及以上版本）和Linux kernel2.6.20（及以上版本）。iotop提供有源代码及[rpm](#/rpm "rpm命令")包，可从其[官方主页](http://guichaz.free.fr/iotop/)下载。
 
 ### 安装  
 
 **Ubuntu**
 
 ```
-[apt-get](https://philipding.github.io/linux-command/apt-get "apt-get命令") [install](https://philipding.github.io/linux-command/install "install命令") iotop
+[apt-get](#/apt-get "apt-get命令") [install](#/install "install命令") iotop
 ```
 
 **CentOS**
 
 ```
-[yum](https://philipding.github.io/linux-command/yum "yum命令") install iotop
+[yum](#/yum "yum命令") install iotop
 ```
 
 **编译安装**
 
 ```
-[wget](https://philipding.github.io/linux-command/wget "wget命令") http://guichaz.[free](https://philipding.github.io/linux-command/free "free命令").fr/iotop/files/iotop-0.4.4.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz    
+[wget](#/wget "wget命令") http://guichaz.[free](#/free "free命令").fr/iotop/files/iotop-0.4.4.[tar](#/tar "tar命令").gz    
 tar zxf iotop-0.4.4.tar.gz    
 python setup.py build    
 python setup.py install    
@@ -57,9 +57,9 @@ iotop（选项）
 直接执行iotop就可以看到效果了：
 
 ```
-Total DISK [read](https://philipding.github.io/linux-command/read "read命令"):       0.00 B/s | Total DISK [write](https://philipding.github.io/linux-command/write "write命令"):       0.00 B/s
-  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN     IO>    [command](https://philipding.github.io/linux-command/command "command命令")
-    1 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % [init](https://philipding.github.io/linux-command/init "init命令") [3]
+Total DISK [read](#/read "read命令"):       0.00 B/s | Total DISK [write](#/write "write命令"):       0.00 B/s
+  TID  PRIO  USER     DISK READ  DISK WRITE  SWAPIN     IO>    [command](#/command "command命令")
+    1 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % [init](#/init "init命令") [3]
     2 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % [kthreadd]
     3 rt/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % [migration/0]
     4 be/4 root        0.00 B/s    0.00 B/s  0.00 %  0.00 % [ksoftirqd/0]

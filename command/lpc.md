@@ -13,6 +13,6 @@ lpc
 lpc> ?         
 命令可能是缩写。命令是：
 
-[exit](https://philipding.github.io/linux-command/exit "exit命令")    [help](https://philipding.github.io/linux-command/help "help命令")    quit    status  ?
+[exit](#/exit "exit命令")    [help](#/help "help命令")    quit    status  ?
 lpc> exit
 ```

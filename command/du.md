@@ -1,4 +1,4 @@
-**du命令**也是查看使用空间的，但是与[df](https://philipding.github.io/linux-command/df "df命令")命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看，还是和df命令有一些区别的。
+**du命令**也是查看使用空间的，但是与[df](#/df "df命令")命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看，还是和df命令有一些区别的。
 
 ### 语法  
 
@@ -16,9 +16,9 @@ du [选项][文件]
 -m或--megabytes 以MB为单位输出。
 -s或--summarize 仅显示总计，只列出最后加总的值。
 -h或--human-readable 以K，M，G为单位，提高信息的可读性。
--x或--one-[file](https://philipding.github.io/linux-command/file "file命令")-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。
+-x或--one-[file](#/file "file命令")-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。
 -L<符号链接>或--dereference<符号链接> 显示选项中所指定符号链接的源文件大小。
--S或--separate-[dirs](https://philipding.github.io/linux-command/dirs "dirs命令") 显示个别目录的大小时，并不含其子目录的大小。
+-S或--separate-[dirs](#/dirs "dirs命令") 显示个别目录的大小时，并不含其子目录的大小。
 -X<文件>或--exclude-from=<文件> 在<文件>指定目录或文件。
 --exclude=<目录或文件> 略过指定的目录或文件。
 -D或--dereference-args 显示指定符号链接的源文件大小。
@@ -31,12 +31,12 @@ du [选项][文件]
 显示目录或者文件所占空间：
 
 ```
-[root@localhost [test](https://philipding.github.io/linux-command/test "test命令")]# du
+[root@localhost [test](#/test "test命令")]# du
 608 ./test6
 308 ./test4
 4 ./scf/lib
-4 ./scf/[service](https://philipding.github.io/linux-command/service "service命令")/deploy/product
-4 ./scf/service/deploy/[info](https://philipding.github.io/linux-command/info "info命令")
+4 ./scf/[service](#/service "service命令")/deploy/product
+4 ./scf/service/deploy/[info](#/info "info命令")
 12 ./scf/service/deploy
 16 ./scf/service
 4 ./scf/doc
@@ -72,7 +72,7 @@ du [选项][文件]
 显示多个文件所占空间：
 
 ```
-[root@localhost test]# du log30.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz log31.tar.gz
+[root@localhost test]# du log30.[tar](#/tar "tar命令").gz log31.tar.gz
 4 log30.tar.gz
 4 log31.tar.gz
 ```
@@ -86,7 +86,7 @@ du [选项][文件]
 [root@localhost test]# du -s scf
 32 scf
 
-[root@localhost test]# [cd](https://philipding.github.io/linux-command/cd "cd命令") ..
+[root@localhost test]# [cd](#/cd "cd命令") ..
 [root@localhost soft]# du -s test
 1288 test
 ```

@@ -1,4 +1,4 @@
-**atq命令**显示系统中待执行的任务列表，也就是列出当前用户的[at](https://philipding.github.io/linux-command/at "at命令")任务列表。
+**atq命令**显示系统中待执行的任务列表，也就是列出当前用户的[at](#/at "at命令")任务列表。
 
 ### 语法  
 
@@ -17,7 +17,7 @@ atq(选项)
 
 ```
 at now + 10 minutes
-at> [echo](https://philipding.github.io/linux-command/echo "echo命令") 1111
+at> [echo](#/echo "echo命令") 1111
 at> <eot>
 job 3 at Fri Apr 26 12:56:00 2013
 

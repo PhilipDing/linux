@@ -9,7 +9,7 @@ pwd（选项）
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助信息；
+--[help](#/help "help命令")：显示帮助信息；
 --version：显示版本信息。
 
 ```

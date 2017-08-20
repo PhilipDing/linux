@@ -2,20 +2,20 @@
 
 ### 安装pssh  
 
-在CentOS系统环境下，介绍[yum](https://philipding.github.io/linux-command/yum "yum命令")的安装和源码安装的方式：
+在CentOS系统环境下，介绍[yum](#/yum "yum命令")的安装和源码安装的方式：
 
 **yum方法**
 
 ```
-yum [install](https://philipding.github.io/linux-command/install "install命令") pssh
+yum [install](#/install "install命令") pssh
 ```
 
 **编译安装**
 
 ```
-[wget](https://philipding.github.io/linux-command/wget "wget命令") http://parallel-[ssh](https://philipding.github.io/linux-command/ssh "ssh命令").googlecode.com/files/pssh-2.3.1.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz
+[wget](#/wget "wget命令") http://parallel-[ssh](#/ssh "ssh命令").googlecode.com/files/pssh-2.3.1.[tar](#/tar "tar命令").gz
 tar xf pssh-2.3.1.tar.gz
-[cd](https://philipding.github.io/linux-command/cd "cd命令") pssh-2.3.1/
+[cd](#/cd "cd命令") pssh-2.3.1/
 python setup.py install
 ```
 
@@ -23,8 +23,8 @@ python setup.py install
 
 ```
 --version：查看版本
---[help](https://philipding.github.io/linux-command/help "help命令")：查看帮助，即此信息
--h：主机文件列表，内容格式”[user@][host](https://philipding.github.io/linux-command/host "host命令")[:port]”
+--[help](#/help "help命令")：查看帮助，即此信息
+-h：主机文件列表，内容格式”[user@][host](#/host "host命令")[:port]”
 -H：主机字符串，内容格式”[user@]host[:port]”
 -：登录使用的用户名
 -p：并发的线程数【可选】
@@ -42,23 +42,23 @@ python setup.py install
 
 ### 实例  
 
-获取每台服务器的[uptime](https://philipding.github.io/linux-command/uptime "uptime命令")：
+获取每台服务器的[uptime](#/uptime "uptime命令")：
 
 ```
-# pssh -h [ip](https://philipding.github.io/linux-command/ip "ip命令").txt -i uptime
+# pssh -h [ip](#/ip "ip命令").txt -i uptime
 [1] 11:15:03 [SUCCESS] Mar.mars.he
 11:15:11 up 4 days, 16:25,  1 user,  load average: 0.00, 0.00, 0.00
 [2] 11:15:03 [SUCCESS] Jan.mars.he
-11:15:12 up 3 days, 23:26,  0 [users](https://philipding.github.io/linux-command/users "users命令"),  load average: 0.00, 0.00, 0.00
+11:15:12 up 3 days, 23:26,  0 [users](#/users "users命令"),  load average: 0.00, 0.00, 0.00
 [3] 11:15:03 [SUCCESS] Feb.mars.he
 11:15:12 up 4 days, 16:26,  2 users,  load average: 0.08, 0.02, 0.01
 ```
 
-查看每台服务器上[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")复制IO/SQL线程运行状态信息：
+查看每台服务器上[mysql](#/mysql "mysql命令")复制IO/SQL线程运行状态信息：
 
 ```
-# pssh -h IP.txt -i "/usr/local/mysql/bin/mysql -e 'show slave status \G'"|[grep](https://philipding.github.io/linux-command/grep "grep命令") Running:
-             Slave_IO_Running: [yes](https://philipding.github.io/linux-command/yes "yes命令")
+# pssh -h IP.txt -i "/usr/local/mysql/bin/mysql -e 'show slave status \G'"|[grep](#/grep "grep命令") Running:
+             Slave_IO_Running: [yes](#/yes "yes命令")
             Slave_SQL_Running: Yes
              Slave_IO_Running: Yes
             Slave_SQL_Running: Yes
@@ -87,7 +87,7 @@ python setup.py install
 -rw-r--r--. 1 root root 70 12月  1 11:19 Jan.mars.he
 -rw-r--r--. 1 root root 69 12月  1 11:19 Mar.mars.he
 
-# [cat](https://philipding.github.io/linux-command/cat "cat命令") /tmp/pssh/*
+# [cat](#/cat "cat命令") /tmp/pssh/*
 11:19:55 up 4 days, 16:31,  2 users,  load average: 0.02, 0.03, 0.00
 11:19:56 up 3 days, 23:30,  0 users,  load average: 0.01, 0.00, 0.00
 11:19:56 up 4 days, 16:30,  1 user,  load average: 0.00, 0.00, 0.00

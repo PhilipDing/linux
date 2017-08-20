@@ -16,7 +16,7 @@ lpr(选项)(参数)
 -U：指定可选的用户名；
 -#：指定打印的份数；
 -h：关闭banner打印；
--m：打印完成后发送E-[mail](https://philipding.github.io/linux-command/mail "mail命令")；
+-m：打印完成后发送E-[mail](#/mail "mail命令")；
 -r：打印完成后删除文件。
 ```
 
@@ -26,7 +26,7 @@ lpr(选项)(参数)
 
 ### 实例  
 
-将man1和man2送到打印机[lp](https://philipding.github.io/linux-command/lp "lp命令")进行打印：
+将man1和man2送到打印机[lp](#/lp "lp命令")进行打印：
 
 ```
 lpr -P lp man1 man2

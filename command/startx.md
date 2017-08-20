@@ -1,4 +1,4 @@
-**startx命令**用来启动X Window，实际上启动X Window的程序为[xinit](https://philipding.github.io/linux-command/xinit "xinit命令")。
+**startx命令**用来启动X Window，实际上启动X Window的程序为[xinit](#/xinit "xinit命令")。
 
 ### 语法  
 
@@ -22,13 +22,13 @@ startx
 要在工作站上强制启动 X 会话，请输入： 
 
 ```
-startx -[w](https://philipding.github.io/linux-command/w "w命令")
+startx -[w](#/w "w命令")
 ```
 
-要为 X 终端启动 X 会话，并注销用户的 [telnet](https://philipding.github.io/linux-command/telnet "telnet命令") 会话，请输入：
+要为 X 终端启动 X 会话，并注销用户的 [telnet](#/telnet "telnet命令") 会话，请输入：
 
 ```
-startx; [kill](https://philipding.github.io/linux-command/kill "kill命令") -9 $
+startx; [kill](#/kill "kill命令") -9 $
 ```
 
 要使用 .xinitrc 脚本启动 X 会话，请输入：
@@ -52,7 +52,7 @@ startx -m mwm
  (xclock -g 75x75+0+0 &)
  (xbiff -g 75x75+101-0 &)
  if ("/dev/lft*" == "`tty`") then
-  aixterm -g 80x24+0+0 +ut -C -T `[hostname](https://philipding.github.io/linux-command/hostname "hostname命令")`
+  aixterm -g 80x24+0+0 +ut -C -T `[hostname](#/hostname "hostname命令")`
  else
   aixterm -g 80x24+0+0 +ut -T `hostname`
  endif
@@ -77,5 +77,5 @@ $HOME/.mwmrc mwm 配置文件。
 $HOME/.twmrc twm 配置文件。
 $HOME/.awmrc awm 配置文件。
 $HOME/.uwmrc uwm 配置文件。
-/dev/lft* 终端或 tty、工作站初始 [login](https://philipding.github.io/linux-command/login "login命令") shell 的界面。
+/dev/lft* 终端或 tty、工作站初始 [login](#/login "login命令") shell 的界面。
 ```

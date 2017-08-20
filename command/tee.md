@@ -1,6 +1,6 @@
 **tee命令**用于将数据重定向到文件，另一方面还可以提供一份重定向数据的副本作为后续命令的stdin。简单的说就是把数据重定向到给定文件和屏幕上。
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2013/12/073315SF8.gif)
+![](./images/073315SF8.gif)
 
 存在缓存机制，每1024个字节将输出一次。若从管道接收输入数据，应该是缓冲区满，才将数据转存到指定的文件中。若文件内容不到1024个字节，则接收完从标准输入设备读入的数据后，将刷新一次缓冲区，并转存数据到指定文件。
 
@@ -24,7 +24,7 @@ tee(选项)(参数)
 在终端打印stdout同时重定向到文件中：
 
 ```
-[ls](https://philipding.github.io/linux-command/ls "ls命令") | tee out.txt
+[ls](#/ls "ls命令") | tee out.txt
 1.sh
 1.txt
 2.txt
@@ -39,7 +39,7 @@ WWW.pef
 ```
 
 ```
-[root@localhost text]# ls | tee out.txt | [cat](https://philipding.github.io/linux-command/cat "cat命令") -n
+[root@localhost text]# ls | tee out.txt | [cat](#/cat "cat命令") -n
      1  1.sh
      2  1.txt
      3  2.txt

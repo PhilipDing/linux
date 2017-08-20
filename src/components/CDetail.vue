@@ -43,6 +43,10 @@ export default {
         border-bottom: 1px solid #e5e5e5;
     }
 
+    img {
+        width: 100%;
+    }
+
     pre {
         margin-top: 1.5em;
         margin-bottom: 1.5em;

@@ -25,4 +25,4 @@ shell变量或函数：指定要删除的shell变量或shell函数。
 unset -v mylove         #删除指定的环境变量
 ```
 
-执行以上命令后，系统将删除指定的环境变量。用户可以使用[env](https://philipding.github.io/linux-command/env "env命令")命令和[grep](https://philipding.github.io/linux-command/grep "grep命令")命令对其进行查询。已经删除的环境变量再次使用指令查询时，将出现查询不到指定环境变量的输出信息。
+执行以上命令后，系统将删除指定的环境变量。用户可以使用[env](#/env "env命令")命令和[grep](#/grep "grep命令")命令对其进行查询。已经删除的环境变量再次使用指令查询时，将出现查询不到指定环境变量的输出信息。

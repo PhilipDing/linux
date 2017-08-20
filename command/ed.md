@@ -1,4 +1,4 @@
-**ed命令**是单行纯文本编辑器，它有命令模式（[command](https://philipding.github.io/linux-command/command "command命令") mode）和输入模式（input mode）两种工作模式。ed命令支持多个内置命令，常见内置命令如下：
+**ed命令**是单行纯文本编辑器，它有命令模式（[command](#/command "command命令") mode）和输入模式（input mode）两种工作模式。ed命令支持多个内置命令，常见内置命令如下：
 
 ```
 A：切换到输入模式，在文件的最后一行之后输入新的内容；
@@ -6,7 +6,7 @@ C：切换到输入模式，用输入的内容替换掉最后一行的内容；
 i：切换到输入模式，在当前行之前加入一个新的空行来输入内容；
 d：用于删除最后一行文本内容；
 n：用于显示最后一行的行号和内容；
-[w](https://philipding.github.io/linux-command/w "w命令")：<文件名>：一给定的文件名保存当前正在编辑的文件；
+[w](#/w "w命令")：<文件名>：一给定的文件名保存当前正在编辑的文件；
 q：退出ed编辑器。
 ```
 
@@ -22,7 +22,7 @@ ed(选项)(参数)
 -G或——traditional：提供兼容的功能；
 -p<字符串>：指定ed在command mode的提示字符；
 -s，-，--quiet或——silent：不执行开启文件时的检查功能；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+--[help](#/help "help命令")：显示帮助；
 --version：显示版本信息。
 ```
 

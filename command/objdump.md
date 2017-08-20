@@ -1,11 +1,11 @@
-**objdump命令**是用查看目标文件或者可执行的目标文件的构成的[gcc](https://philipding.github.io/linux-command/gcc "gcc命令")工具。
+**objdump命令**是用查看目标文件或者可执行的目标文件的构成的[gcc](#/gcc "gcc命令")工具。
 
 ### 选项  
 
 ```
 --archive-headers 
 -a 
-显示档案库的成员信息,类似[ls](https://philipding.github.io/linux-command/ls "ls命令") -l将lib*.a的信息列出。 
+显示档案库的成员信息,类似[ls](#/ls "ls命令") -l将lib*.a的信息列出。 
 
 -b bfdname 
 --target=bfdname 
@@ -20,7 +20,7 @@ objdump -b oasys -m vax -h fu.o
 
 --debugging 
 -g 
-显示调试信息。企图解析保存在文件中的调试信息并以C语言的语法显示出来。仅仅支持某些类型的调试信息。有些其他的格式被[readelf](https://philipding.github.io/linux-command/readelf "readelf命令") -[w](https://philipding.github.io/linux-command/w "w命令")支持。 
+显示调试信息。企图解析保存在文件中的调试信息并以C语言的语法显示出来。仅仅支持某些类型的调试信息。有些其他的格式被[readelf](#/readelf "readelf命令") -[w](#/w "w命令")支持。 
 
 -e 
 --debugging-tags 
@@ -43,7 +43,7 @@ objdump -b oasys -m vax -h fu.o
 指定目标文件的小端。这个项将影响反汇编出来的指令。在反汇编的文件没描述小端信息的时候用。例如S-records. 
 
 -f 
---[file](https://philipding.github.io/linux-command/file "file命令")-headers 
+--[file](#/file "file命令")-headers 
 显示objfile中每个文件的整体头部摘要信息。 
 
 -h 
@@ -52,11 +52,11 @@ objdump -b oasys -m vax -h fu.o
 显示目标文件各个section的头部摘要信息。 
 
 -H 
---[help](https://philipding.github.io/linux-command/help "help命令") 
+--[help](#/help "help命令") 
 简短的帮助信息。 
 
 -i 
---[info](https://philipding.github.io/linux-command/info "info命令") 
+--[info](#/info "info命令") 
 显示对于 -b 或者 -m 选项可用的架构和目标格式列表。 
 
 -j name
@@ -65,7 +65,7 @@ objdump -b oasys -m vax -h fu.o
 
 -l
 --line-numbers 
-用文件名和行号标注相应的目标代码，仅仅和-d、-D或者-r一起使用使用-[ld](https://philipding.github.io/linux-command/ld "ld命令")和使用-d的区别不是很大，在源码级调试的时候有用，要求编译时使用了-g之类的调试编译选项。 
+用文件名和行号标注相应的目标代码，仅仅和-d、-D或者-r一起使用使用-[ld](#/ld "ld命令")和使用-d的区别不是很大，在源码级调试的时候有用，要求编译时使用了-g之类的调试编译选项。 
 
 -m machine 
 --architecture=machine 
@@ -101,7 +101,7 @@ objdump -b oasys -m vax -h fu.o
 
 -t 
 --syms 
-显示文件的符号表入口。类似于[nm](https://philipding.github.io/linux-command/nm "nm命令") -s提供的信息 
+显示文件的符号表入口。类似于[nm](#/nm "nm命令") -s提供的信息 
 
 -T 
 --dynamic-syms 
@@ -127,7 +127,7 @@ objdump -b oasys -m vax -h fu.o
 首先，在给出后面大部分测试所基于的源代码以及编译指令。 源代码如下： 
 
 ```
-[root@localhost [test](https://philipding.github.io/linux-command/test "test命令")]# [nl](https://philipding.github.io/linux-command/nl "nl命令") mytest.cpp 
+[root@localhost [test](#/test "test命令")]# [nl](#/nl "nl命令") mytest.cpp 
 ```
 
 ```
@@ -155,7 +155,7 @@ a+=2;
 ```
 [root@localhost test]# objdump -V 
 GNU objdump 2.17.50.0.6-14.el5 20061020 
-Copyright 2005 [free](https://philipding.github.io/linux-command/free "free命令") Software Foundation, Inc. 
+Copyright 2005 [free](#/free "free命令") Software Foundation, Inc. 
 This program is free software; you may redistribute it under the terms of 
 the GNU General Public License.  This program has absolutely no warranty. 
 ```
@@ -276,7 +276,7 @@ void printTest2()
    f:   83 ec 10                sub    $0x10,%esp 
 { 
         int a = 2; 
-  12:   c7 45 [fc](https://philipding.github.io/linux-command/fc "fc命令") 02 00 00 00    movl   $0x2,0xfffffffc(%ebp) 
+  12:   c7 45 [fc](#/fc "fc命令") 02 00 00 00    movl   $0x2,0xfffffffc(%ebp) 
         a+=2; 
   19:   83 45 fc 02             addl   $0x2,0xfffffffc(%ebp) 
 } 
@@ -331,7 +331,7 @@ void printTest2()
 mytest.o:     file format elf32-i386 
 
 SYMBOL TABLE: 
-00000000 l    [df](https://philipding.github.io/linux-command/df "df命令") *ABS*  00000000 mytest.cpp 
+00000000 l    [df](#/df "df命令") *ABS*  00000000 mytest.cpp 
 00000000 l    d  .text  00000000 .text 
 00000000 l    d  .data  00000000 .data 
 00000000 l    d  .bss   00000000 .bss 
@@ -456,7 +456,7 @@ mytest.o:     file format elf32-i386
 Sections: 
 Idx Name          Size      VMA       LMA       File off  Algn 
   0 .text         0000001f  00000000  00000000  00000034  2**2 
-                  CONTENTS, ALLOC, LOAD, [readonly](https://philipding.github.io/linux-command/readonly "readonly命令"), CODE 
+                  CONTENTS, ALLOC, LOAD, [readonly](#/readonly "readonly命令"), CODE 
   1 .data         00000000  00000000  00000000  00000054  2**2 
                   CONTENTS, ALLOC, LOAD, DATA 
   2 .bss          00000000  00000000  00000000  00000054  2**2 
@@ -481,4 +481,4 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY 
 ```
 
-这里，更多的内容参见`[man](https://philipding.github.io/linux-command/man "man命令") objdump`中的这个选项。
+这里，更多的内容参见`[man](#/man "man命令") objdump`中的这个选项。

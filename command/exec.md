@@ -18,7 +18,7 @@ exec(选项)(参数)
 
 ### 实例  
 
-首先使用[echo](https://philipding.github.io/linux-command/echo "echo命令")命令将文本“Linux C++”进行输出，输入如下命令：
+首先使用[echo](#/echo "echo命令")命令将文本“Linux C++”进行输出，输入如下命令：
 
 ```
 echo Linux C++           #输出指定信息

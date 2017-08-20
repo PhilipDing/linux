@@ -1,4 +1,4 @@
-**mail命令**是命令行的电子邮件发送和接收工具。操作的界面不像[elm](https://philipding.github.io/linux-command/elm "elm命令")或pine那么容易使用，但功能非常完整。
+**mail命令**是命令行的电子邮件发送和接收工具。操作的界面不像[elm](#/elm "elm命令")或pine那么容易使用，但功能非常完整。
 
 ### 语法  
 
@@ -40,7 +40,7 @@ welcome to www.linuxde.net
 **使用管道进行邮件发送**
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") "hello,this is the content of mail.welcome to www.linuxde.net" | mail -s "Hello from linuxde.net by pipe" admin@linuxde.net
+[echo](#/echo "echo命令") "hello,this is the content of mail.welcome to www.linuxde.net" | mail -s "Hello from linuxde.net by pipe" admin@linuxde.net
 ```
 
 使用管道直接敲入这行命令即可完成邮件的发送，其中echo后的是邮件正文。
@@ -48,14 +48,14 @@ welcome to www.linuxde.net
 **使用文件进行邮件发送**
 
 ```
-mail -s "Hello from linuxde.net by [file](https://philipding.github.io/linux-command/file "file命令")" admin@linuxde.net < mail.txt
+mail -s "Hello from linuxde.net by [file](#/file "file命令")" admin@linuxde.net < mail.txt
 ```
 
 使用上面的命令后，我们就可以把mail.txt文件的内容作为邮件的内容发送给admin@linuxde.net了。
 
 使用上述三种方式都可以给外部邮箱进行邮件发送，但因为前面2中都是直接在shell中敲入邮件内容，因此无法输入中文，即使我们使用粘贴的方式输入了中文，那么收到的邮件也是乱码的。但第3种方式，我们可以在window下编辑好邮件内容后，放到linux下，再进行发送，这样就可以正常发送中文了。不过目前邮件的中文标题暂时没有找到解决办法。
 
-因为mail程序本身就是调用[sendmail](https://philipding.github.io/linux-command/sendmail "sendmail命令")来进行邮件发送的，因此我们可以在mail命令中使用sendmail的参数进行配置，比如我想使用特定的发件人发送邮件，可以使用如下命令：
+因为mail程序本身就是调用[sendmail](#/sendmail "sendmail命令")来进行邮件发送的，因此我们可以在mail命令中使用sendmail的参数进行配置，比如我想使用特定的发件人发送邮件，可以使用如下命令：
 
 ```
 mail -s "Hello from linuxde.net with sender" admin@linuxde.net -- -f user@linuxde.net<mail.txt
@@ -66,13 +66,13 @@ mail -s "Hello from linuxde.net with sender" admin@linuxde.net -- -f user@linuxd
 很多情况下，我们也需要使用邮件来发送附件，在linux下使用mail命令发送附件也很简单，不过首先需要安装uuencode软件包，这个程序是对二进制文件进行编码使其适合通过邮件进行发送，在CentOS上安装该软件包如下：
 
 ```
-[yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") sharutils
+[yum](#/yum "yum命令") [install](#/install "install命令") sharutils
 ```
 
 安装完成后我们就可以来进行附件的发送了，使用如下命令：
 
 ```
-uuencode [test](https://philipding.github.io/linux-command/test "test命令").txt test | mail -s "hello,see the attachement" admin@linuxde.net<mail.txt
+uuencode [test](#/test "test命令").txt test | mail -s "hello,see the attachement" admin@linuxde.net<mail.txt
 ```
 
 完成后就可以把text.txt文件作为邮件的附件发送出去了。uuencode有两个参数，第一个是要发送的文件，第二个是显示的文件名称。

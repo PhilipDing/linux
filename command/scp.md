@@ -1,4 +1,4 @@
-**scp命令**用于在Linux下进行远程拷贝文件的命令，和它类似的命令有[cp](https://philipding.github.io/linux-command/cp "cp命令")，不过cp只是在本机进行拷贝不能跨服务器，而且scp传输是加密的。可能会稍微影响一下速度。当你服务器硬盘变为只读[read](https://philipding.github.io/linux-command/read "read命令") only system时，用scp可以帮你把文件移出来。另外，scp还非常不占资源，不会提高多少系统负荷，在这一点上，[rsync](https://philipding.github.io/linux-command/rsync "rsync命令")就远远不及它了。虽然 rsync比scp会快一点，但当小文件众多的情况下，rsync会导致硬盘I/O非常高，而scp基本不影响系统正常使用。
+**scp命令**用于在Linux下进行远程拷贝文件的命令，和它类似的命令有[cp](#/cp "cp命令")，不过cp只是在本机进行拷贝不能跨服务器，而且scp传输是加密的。可能会稍微影响一下速度。当你服务器硬盘变为只读[read](#/read "read命令") only system时，用scp可以帮你把文件移出来。另外，scp还非常不占资源，不会提高多少系统负荷，在这一点上，[rsync](#/rsync "rsync命令")就远远不及它了。虽然 rsync比scp会快一点，但当小文件众多的情况下，rsync会导致硬盘I/O非常高，而scp基本不影响系统正常使用。
 
 ### 语法  
 
@@ -9,7 +9,7 @@ scp(选项)(参数)
 ### 选项  
 
 ```
--1：使用[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")协议版本1；
+-1：使用[ssh](#/ssh "ssh命令")协议版本1；
 -2：使用ssh协议版本2；
 -4：使用ipv4；
 -6：使用ipv6；
@@ -27,7 +27,7 @@ scp(选项)(参数)
 ### 参数  
 
 *   源文件：指定要复制的源文件。
-*   目标文件：目标文件。格式为`user@[host](https://philipding.github.io/linux-command/host "host命令")：filename`（文件名为目标文件的名称）。
+*   目标文件：目标文件。格式为`user@[host](#/host "host命令")：filename`（文件名为目标文件的名称）。
 
 ### 实例  
 
@@ -36,7 +36,7 @@ scp(选项)(参数)
 **从远处复制文件到本地目录**
 
 ```
-scp root@10.10.10.10:/opt/soft/nginx-0.5.38.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz /opt/soft/
+scp root@10.10.10.10:/opt/soft/nginx-0.5.38.[tar](#/tar "tar命令").gz /opt/soft/
 ```
 
 从10.10.10.10机器上的`/opt/soft/`的目录中下载nginx-0.5.38.tar.gz 文件到本地`/opt/soft/`目录中。

@@ -11,7 +11,7 @@ pvremove(选项)(参数)
 ```
 -d：调试模式；
 -f：强制删除；
--y：对提问回答“[yes](https://philipding.github.io/linux-command/yes "yes命令")”。
+-y：对提问回答“[yes](#/yes "yes命令")”。
 ```
 
 ### 参数  

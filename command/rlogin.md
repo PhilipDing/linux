@@ -18,4 +18,4 @@ rlogin(选项)(参数)
 
 ### 参数  
 
-远程主机：指定要登录的远程主机（[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或者域名）。
+远程主机：指定要登录的远程主机（[ip](#/ip "ip命令")地址或者域名）。

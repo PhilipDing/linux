@@ -1,4 +1,4 @@
-**strace命令**是一个集诊断、调试、统计与一体的工具，我们可以使用strace对应用的系统调用和信号传递的跟踪结果来对应用进行分析，以达到解决问题或者是了解应用工作过程的目的。当然strace与专业的调试工具比如说[gdb](https://philipding.github.io/linux-command/gdb "gdb命令")之类的是没法相比的，因为它不是一个专业的调试器。
+**strace命令**是一个集诊断、调试、统计与一体的工具，我们可以使用strace对应用的系统调用和信号传递的跟踪结果来对应用进行分析，以达到解决问题或者是了解应用工作过程的目的。当然strace与专业的调试工具比如说[gdb](#/gdb "gdb命令")之类的是没法相比的，因为它不是一个专业的调试器。
 
 strace的最简单的用法就是执行一个指定的命令，在指定的命令结束之后它也就退出了。在命令执行的过程中，strace会记录和解析命令进程的所有系统调用以及这个进程所接收到的所有的信号值。
 
@@ -8,7 +8,7 @@ strace的最简单的用法就是执行一个指定的命令，在指定的命�
 strace  [  -dffhiqrtttTvxx  ] [ -acolumn ] [ -eexpr ] ...
     [ -ofile ] [-ppid ] ...  [ -sstrsize ] [ -uusername ]
     [ -Evar=val ] ...  [ -Evar  ]...
-    [ [command](https://philipding.github.io/linux-command/command "command命令") [ arg ...  ] ]
+    [ [command](#/command "command命令") [ arg ...  ] ]
 
 strace  -c  [ -eexpr ] ...  [ -Ooverhead ] [ -Ssortby ]
     [ command [ arg...  ] ]
@@ -35,10 +35,10 @@ strace  -c  [ -eexpr ] ...  [ -Ooverhead ] [ -Ssortby ]
 -x 以十六进制形式输出非标准字符串
 -xx 所有字符串以十六进制形式输出.
 -a column 设置返回值的输出位置.默认 为40.
--e [expr](https://philipding.github.io/linux-command/expr "expr命令") 指定一个表达式,用来控制如何跟踪.格式：[qualifier=][!]value1[,value2]...
-qualifier只能是 trace,abbrev,verbose,raw,signal,[read](https://philipding.github.io/linux-command/read "read命令"),[write](https://philipding.github.io/linux-command/write "write命令")其中之一.value是用来限定的符号或数字.默认的 qualifier是 trace.感叹号是否定符号.例如:-eopen等价于 -e trace=open,表示只跟踪open调用.而-etrace!=open 表示跟踪除了open以外的其他调用.有两个特殊的符号 all 和 none. 注意有些shell使用!来执行历史记录里的命令,所以要使用\\.
--e trace=[set](https://philipding.github.io/linux-command/set "set命令") 只跟踪指定的系统 调用.例如:-e trace=open,close,rean,write表示只跟踪这四个系统调用.默认的为set=all.
--e trace=[file](https://philipding.github.io/linux-command/file "file命令") 只跟踪有关文件操作的系统调用.
+-e [expr](#/expr "expr命令") 指定一个表达式,用来控制如何跟踪.格式：[qualifier=][!]value1[,value2]...
+qualifier只能是 trace,abbrev,verbose,raw,signal,[read](#/read "read命令"),[write](#/write "write命令")其中之一.value是用来限定的符号或数字.默认的 qualifier是 trace.感叹号是否定符号.例如:-eopen等价于 -e trace=open,表示只跟踪open调用.而-etrace!=open 表示跟踪除了open以外的其他调用.有两个特殊的符号 all 和 none. 注意有些shell使用!来执行历史记录里的命令,所以要使用\\.
+-e trace=[set](#/set "set命令") 只跟踪指定的系统 调用.例如:-e trace=open,close,rean,write表示只跟踪这四个系统调用.默认的为set=all.
+-e trace=[file](#/file "file命令") 只跟踪有关文件操作的系统调用.
 -e trace=process 只跟踪有关进程控制的系统调用.
 -e trace=network 跟踪与网络有关的所有系统调用.
 -e strace=signal 跟踪所有与系统信号有关的 系统调用
@@ -61,19 +61,19 @@ qualifier只能是 trace,abbrev,verbose,raw,signal,[read](https://philipding.git
 现在我们做一个很简单的程序来演示strace的基本用法。这个程序的C语言代码如下：
 
 ```
-# filename [test](https://philipding.github.io/linux-command/test "test命令").c
+# filename [test](#/test "test命令").c
 #include <stdio.h>
 
 int main()
 {
     int a;
     scanf("%d", &a);
-    [printf](https://philipding.github.io/linux-command/printf "printf命令")("%09d\n", a);
+    [printf](#/printf "printf命令")("%09d\n", a);
     return 0;
 }
 ```
 
-然后我们用`[gcc](https://philipding.github.io/linux-command/gcc "gcc命令") -o test test.c`编译一下，得到一个可执行的文件test。然后用strace调用执行：
+然后我们用`[gcc](#/gcc "gcc命令") -o test test.c`编译一下，得到一个可执行的文件test。然后用strace调用执行：
 
 ```
 strace ./test
@@ -94,7 +94,7 @@ oracle@orainst[orcl]:~ $strace ./test
 
 // strace的trace结果
 execve("./test", ["./test"], [/* 41 vars */]) = 0
-[uname](https://philipding.github.io/linux-command/uname "uname命令")({sys="Linux", node="orainst.desktop.mycompany.com", ...}) = 0
+[uname](#/uname "uname命令")({sys="Linux", node="orainst.desktop.mycompany.com", ...}) = 0
 brk(0)                                  = 0x8078000
 fstat64(3, {st_mode=S_IFREG|0644, st_size=65900, ...}) = 0
 old_mmap(NULL, 65900, PROT_READ, MAP_PRIVATE, 3, 0) = 0xbf5ef000
@@ -128,7 +128,7 @@ exit_group(0)                           = ?
 我们还是使用上面的那个test程序，来观察进程接收信号的情况。还是先`strace ./test`，等到等待输入的画面的时候不要输入任何东西，然后打开另外一个窗口，输入如下的命令
 
 ```
-[killall](https://philipding.github.io/linux-command/killall "killall命令") test
+[killall](#/killall "killall命令") test
 ```
 
 这时候就能看到我们的程序推出了，最后的trace结果如下：
@@ -176,7 +176,7 @@ $strace -c ./test
 
 ```
 execve("./test", ["./test"], [/* 41 vars */]) = 0
-% [time](https://philipding.github.io/linux-command/time "time命令")     seconds  usecs/call     calls    errors syscall
+% [time](#/time "time命令")     seconds  usecs/call     calls    errors syscall
 ------ ----------- ----------- --------- --------- ----------------
  45.90    0.000140           5        27        25 open
  34.43    0.000105           4        24        21 stat64
@@ -311,7 +311,7 @@ strace -p pid
 我们先要得到lgwr进程的pid，运行下面的命令
 
 ```
-[ps](https://philipding.github.io/linux-command/ps "ps命令") -ef|[grep](https://philipding.github.io/linux-command/grep "grep命令") lgwr
+[ps](#/ps "ps命令") -ef|[grep](#/grep "grep命令") lgwr
 
 oracle    5912     1  0 Nov12 ?        00:14:56 ora_lgwr_orcl
 ```

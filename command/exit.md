@@ -16,20 +16,20 @@ exit(参数)
 
 ```
 [root@localhost ~]# exit
-[logout](https://philipding.github.io/linux-command/logout "logout命令")
+[logout](#/logout "logout命令")
 ```
 
 在脚本中，进入脚本所在目录，否则退出：
 
 ```
-[cd](https://philipding.github.io/linux-command/cd "cd命令") $([dirname](https://philipding.github.io/linux-command/dirname "dirname命令") $0) || exit 1
+[cd](#/cd "cd命令") $([dirname](#/dirname "dirname命令") $0) || exit 1
 ```
 
 在脚本中，判断参数数量，不匹配就打印使用方式，退出：
 
 ```
 if [ "$#" -ne "2" ]; then
-    [echo](https://philipding.github.io/linux-command/echo "echo命令") "usage: $0 <area> <hours>"
+    [echo](#/echo "echo命令") "usage: $0 <area> <hours>"
     exit 2
 fi
 ```
@@ -37,7 +37,7 @@ fi
 在脚本中，退出时删除临时文件：
 
 ```
-[trap](https://philipding.github.io/linux-command/trap "trap命令") "[rm](https://philipding.github.io/linux-command/rm "rm命令") -f tmpfile; echo Bye." EXIT
+[trap](#/trap "trap命令") "[rm](#/rm "rm命令") -f tmpfile; echo Bye." EXIT
 ```
 
 检查上一命令的退出码：

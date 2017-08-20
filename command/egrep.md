@@ -1,4 +1,4 @@
-**egrep命令**用于在文件内查找指定的字符串。egrep执行效果与`[grep](https://philipding.github.io/linux-command/grep "grep命令") -E`相似，使用的语法及参数可参照grep指令，与grep的不同点在于解读字符串的方法。egrep是用extended regular expression语法来解读的，而grep则用basic regular expression 语法解读，extended regular expression比basic regular expression的表达更规范。
+**egrep命令**用于在文件内查找指定的字符串。egrep执行效果与`[grep](#/grep "grep命令") -E`相似，使用的语法及参数可参照grep指令，与grep的不同点在于解读字符串的方法。egrep是用extended regular expression语法来解读的，而grep则用basic regular expression 语法解读，extended regular expression比basic regular expression的表达更规范。
 
 ### 语法  
 
@@ -19,7 +19,7 @@ egrep Linux *
 ```
 #以下五行为 testfile 中包含Linux字符的行
 testfile:hello Linux!
-testfile:Linux is a [free](https://philipding.github.io/linux-command/free "free命令") Unix-[type](https://philipding.github.io/linux-command/type "type命令") operating system.
+testfile:Linux is a [free](#/free "free命令") Unix-[type](#/type "type命令") operating system.
 testfile:This is a Linux testfile!
 testfile:Linux
 testfile:Linux
@@ -30,5 +30,5 @@ testfile1:This a Linux testfile!
 
 #以下两行为 testfile_2 中包含Linux字符的行
 testfile_2:Linux is a free unix-type opterating system
-testfile_2:Linux [test](https://philipding.github.io/linux-command/test "test命令")
+testfile_2:Linux [test](#/test "test命令")
 ```

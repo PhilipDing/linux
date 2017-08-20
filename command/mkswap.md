@@ -24,21 +24,21 @@ mkswap(选项)(参数)
 **查看系统swap space大小：**
 
 ```
-[free](https://philipding.github.io/linux-command/free "free命令") -m
+[free](#/free "free命令") -m
 total used free shared buffers cached
 Mem: 377 180 197 0 19 110
 -/+ buffers/cache: 50 327
 Swap: 572 0 572
 ```
 
-**查看当前的swap空间([file](https://philipding.github.io/linux-command/file "file命令")(s)/partition(s))：**
+**查看当前的swap空间([file](#/file "file命令")(s)/partition(s))：**
 
 ```
-[swapon](https://philipding.github.io/linux-command/swapon "swapon命令") -s
+[swapon](#/swapon "swapon命令") -s
 
 等价于
 
-[cat](https://philipding.github.io/linux-command/cat "cat命令") /proc/swaps
+[cat](#/cat "cat命令") /proc/swaps
 ```
 
 **添加交换空间**
@@ -47,7 +47,7 @@ Swap: 572 0 572
 
 添加一个交换分区，步骤如下：
 
-使用[fdisk](https://philipding.github.io/linux-command/fdisk "fdisk命令")来创建交换分区（假设 /dev/sdb2 是创建的交换分区），使用 mkswap 命令来设置交换分区：
+使用[fdisk](#/fdisk "fdisk命令")来创建交换分区（假设 /dev/sdb2 是创建的交换分区），使用 mkswap 命令来设置交换分区：
 
 ```
 mkswap /dev/sdb2
@@ -70,7 +70,7 @@ swapon /dev/sdb2
 创建大小为512M的交换文件：
 
 ```
-[dd](https://philipding.github.io/linux-command/dd "dd命令") if=/dev/zero of=/swapfile1 bs=1024 count=524288
+[dd](#/dd "dd命令") if=/dev/zero of=/swapfile1 bs=1024 count=524288
 ```
 
 使用mkswap命令来设置交换文件：
@@ -98,7 +98,7 @@ swapon /swapfile1
 禁用交换分区：
 
 ```
-[swapoff](https://philipding.github.io/linux-command/swapoff "swapoff命令") /dev/sdb2
+[swapoff](#/swapoff "swapoff命令") /dev/sdb2
 ```
 
 从`/etc/fstab`中删除项目，使用fdisk或yast工具删除分区。

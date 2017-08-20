@@ -14,7 +14,7 @@ cmp(选项)(参数)
 -l或——verbose：标示出所有不一样的地方；
 -s或--quiet或——silent：不显示错误信息；
 -v或——version：显示版本信息；
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助。
+--[help](#/help "help命令")：在线帮助。
 ```
 
 ### 参数  
@@ -29,7 +29,7 @@ cmp(选项)(参数)
 cmp testfile testfile1            #比较两个指定的文件
 ```
 
-在上述指令执行之前，使用[cat](https://philipding.github.io/linux-command/cat "cat命令")命令查看两个指定的文件内容，如下所示：
+在上述指令执行之前，使用[cat](#/cat "cat命令")命令查看两个指定的文件内容，如下所示：
 
 ```
 cat testfile                    #查看文件内容  

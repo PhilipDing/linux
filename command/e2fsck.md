@@ -22,8 +22,8 @@ e2fsck(选项)(参数)
 -a：不询问使用者意见，便自动修复文件系统；
 -b<superblock>：指定superblock，而不使用预设的superblock；
 -B<区块大小>：指定区块的大小，单位为字节；
--c：一并执行[badblocks](https://philipding.github.io/linux-command/badblocks "badblocks命令")，以标示损坏的区块；
--C：将检查过程的信息完整记录在[file](https://philipding.github.io/linux-command/file "file命令") descriptor中，使得整个检查过程都能完整监控；
+-c：一并执行[badblocks](#/badblocks "badblocks命令")，以标示损坏的区块；
+-C：将检查过程的信息完整记录在[file](#/file "file命令") descriptor中，使得整个检查过程都能完整监控；
 -d：显示排错信息；
 -f：即使文件系统没有错误迹象，仍强制地检查正确性；
 -F：执行前先清除设备的缓冲区；
@@ -37,7 +37,7 @@ e2fsck(选项)(参数)
 -t：显示时间信息；
 -v：执行时显示详细的信息；
 -V：显示版本信息；
--y：采取非互动方式执行，所有的问题均设置以"[yes](https://philipding.github.io/linux-command/yes "yes命令")"回答。
+-y：采取非互动方式执行，所有的问题均设置以"[yes](#/yes "yes命令")"回答。
 ```
 
 ### 参数  
@@ -52,4 +52,4 @@ e2fsck(选项)(参数)
 e2fsck -a -y /dev/sda1
 ```
 
-执行e2fsck或[fsck](https://philipding.github.io/linux-command/fsck "fsck命令")前请先[umount](https://philipding.github.io/linux-command/umount "umount命令") partition，否则有机会令档案系统毁损。如果需要对根目录`/`进行检查及修复，便需要进入singal user mode执行。
+执行e2fsck或[fsck](#/fsck "fsck命令")前请先[umount](#/umount "umount命令") partition，否则有机会令档案系统毁损。如果需要对根目录`/`进行检查及修复，便需要进入singal user mode执行。

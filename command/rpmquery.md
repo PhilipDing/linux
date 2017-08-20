@@ -1,4 +1,4 @@
-**rpmquery命令**使用多种依据从[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")数据库中查询软件包信息。
+**rpmquery命令**使用多种依据从[rpm](#/rpm "rpm命令")数据库中查询软件包信息。
 
 ### 语法  
 
@@ -21,6 +21,6 @@ rpmquery(选项)
 使用rpmquery命令查询指定文件所属的软件包：
 
 ```
-[root@localhost ~]# rpmquery -qf /usr/bin/[htpasswd](https://philipding.github.io/linux-command/htpasswd "htpasswd命令")
-[httpd](https://philipding.github.io/linux-command/httpd "httpd命令")-2.2.3-81.el5.centos
+[root@localhost ~]# rpmquery -qf /usr/bin/[htpasswd](#/htpasswd "htpasswd命令")
+[httpd](#/httpd "httpd命令")-2.2.3-81.el5.centos
 ```

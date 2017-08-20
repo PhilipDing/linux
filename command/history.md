@@ -16,7 +16,7 @@ history(选项)(参数)
 -c：清空当前历史命令；
 -a：将历史命令缓冲区中命令写入历史命令文件中；
 -r：将历史命令文件中的命令读入当前历史命令缓冲区；
--[w](https://philipding.github.io/linux-command/w "w命令")：将当前历史命令缓冲区命令写入历史命令文件中。
+-[w](#/w "w命令")：将当前历史命令缓冲区命令写入历史命令文件中。
 ```
 
 ### 参数  
@@ -29,14 +29,14 @@ n：打印最近的n条历史命令。
 
 ```
 [root@localhost ~]# history 10
-   92  [ls](https://philipding.github.io/linux-command/ls "ls命令")
-   93  [cd](https://philipding.github.io/linux-command/cd "cd命令") ..
+   92  [ls](#/ls "ls命令")
+   93  [cd](#/cd "cd命令") ..
    94  ls
-   95  [exit](https://philipding.github.io/linux-command/exit "exit命令")
+   95  [exit](#/exit "exit命令")
    96  ls -a
-   97  cd .[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")/
+   97  cd .[ssh](#/ssh "ssh命令")/
    98  ls
-   99  [cat](https://philipding.github.io/linux-command/cat "cat命令") known_hosts
+   99  [cat](#/cat "cat命令") known_hosts
   100  exit
   101  history 10
 ```

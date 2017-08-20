@@ -1,4 +1,4 @@
-**systemctl命令**是系统服务管理器指令，它实际上将 [service](https://philipding.github.io/linux-command/service "service命令") 和 [chkconfig](https://philipding.github.io/linux-command/chkconfig "chkconfig命令") 这两个命令组合到一起。
+**systemctl命令**是系统服务管理器指令，它实际上将 [service](#/service "service命令") 和 [chkconfig](#/chkconfig "chkconfig命令") 这两个命令组合到一起。
 
 <table>
 
@@ -18,9 +18,9 @@
 
 <td>使某服务自动启动</td>
 
-<td>chkconfig --level 3 [httpd](https://philipding.github.io/linux-command/httpd "httpd命令") on</td>
+<td>chkconfig --level 3 [httpd](#/httpd "httpd命令") on</td>
 
-<td>systemctl [enable](https://philipding.github.io/linux-command/enable "enable命令") httpd.service</td>
+<td>systemctl [enable](#/enable "enable命令") httpd.service</td>
 
 </tr>
 
@@ -50,7 +50,7 @@
 
 <td>chkconfig --list</td>
 
-<td>systemctl list-units --[type](https://philipding.github.io/linux-command/type "type命令")=service</td>
+<td>systemctl list-units --[type](#/type "type命令")=service</td>
 
 </tr>
 
@@ -129,7 +129,7 @@ systemctl list -units --type=service
 开启防火墙22端口
 
 ```
-[iptables](https://philipding.github.io/linux-command/iptables "iptables命令") -I INPUT -p tcp --dport 22 -j [accept](https://philipding.github.io/linux-command/accept "accept命令")
+[iptables](#/iptables "iptables命令") -I INPUT -p tcp --dport 22 -j [accept](#/accept "accept命令")
 ```
 
 如果仍然有问题，就可能是SELinux导致的
@@ -141,7 +141,7 @@ systemctl list -units --type=service
 彻底关闭防火墙：
 
 ```
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") systemctl status firewalld.service
+[sudo](#/sudo "sudo命令") systemctl status firewalld.service
 sudo systemctl stop firewalld.service          
 sudo systemctl disable firewalld.service
 ```

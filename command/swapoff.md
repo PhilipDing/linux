@@ -1,4 +1,4 @@
-**swapoff命令**用于关闭指定的交换空间（包括交换文件和交换分区）。swapoff实际上为[swapon](https://philipding.github.io/linux-command/swapon "swapon命令")的符号连接，可用来关闭系统的交换区。
+**swapoff命令**用于关闭指定的交换空间（包括交换文件和交换分区）。swapoff实际上为[swapon](#/swapon "swapon命令")的符号连接，可用来关闭系统的交换区。
 
 ### 语法  
 

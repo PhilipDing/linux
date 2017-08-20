@@ -9,7 +9,7 @@ ifconfig(参数)
 ### 参数  
 
 ```
-add<地址>：设置网络设备IPv6的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址；
+add<地址>：设置网络设备IPv6的[ip](#/ip "ip命令")地址；
 del<地址>：删除网络设备IPv6的IP地址；
 down：关闭指定的网络设备；
 <hw<网络设备类型><硬件地址>：设置网络设备的类型与硬件地址；
@@ -58,7 +58,7 @@ lo        Link encap:Local Loopback
 
 **inet addr**用来表示网卡的IP地址，此网卡的IP地址是`10.160.7.81`，广播地址`Bcast:10.160.15.255`，掩码地址`Mask:255.255.240.0`。
 
-**lo**是表示主机的回坏地址，这个一般是用来测试一个网络程序，但又不想让局域网或外网的用户能够查看，只能在此台主机上运行和查看所用的网络接口。比如把 [httpd](https://philipding.github.io/linux-command/httpd "httpd命令")服务器的指定到回坏地址，在浏览器输入127.0.0.1就能看到你所架WEB网站了。但只是您能看得到，局域网的其它主机或用户无从知道。
+**lo**是表示主机的回坏地址，这个一般是用来测试一个网络程序，但又不想让局域网或外网的用户能够查看，只能在此台主机上运行和查看所用的网络接口。比如把 [httpd](#/httpd "httpd命令")服务器的指定到回坏地址，在浏览器输入127.0.0.1就能看到你所架WEB网站了。但只是您能看得到，局域网的其它主机或用户无从知道。
 
 *   第一行：连接类型：Ethernet（以太网）HWaddr（硬件mac地址）。
 *   第二行：网卡的IP地址、子网、掩码。
@@ -73,7 +73,7 @@ ifconfig eth0 up
 ifconfig eth0 down
 ```
 
-`ifconfig eth0 up`为启动网卡eth0，`ifconfig eth0 down`为关闭网卡eth0。[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")登陆linux服务器操作要小心，关闭了就不能开启了，除非你有多网卡。
+`ifconfig eth0 up`为启动网卡eth0，`ifconfig eth0 down`为关闭网卡eth0。[ssh](#/ssh "ssh命令")登陆linux服务器操作要小心，关闭了就不能开启了，除非你有多网卡。
 
 **为网卡配置和删除IPv6地址：**
 
@@ -85,7 +85,7 @@ ifconfig eth0 del 33ffe:3240:800:1005::2/64    #为网卡eth0删除IPv6地址
 **用ifconfig修改MAC地址：**
 
 ```
-ifconfig eth0 hw ether 00:AA:BB:CC:[dd](https://philipding.github.io/linux-command/dd "dd命令"):EE
+ifconfig eth0 hw ether 00:AA:BB:CC:[dd](#/dd "dd命令"):EE
 ```
 
 **配置IP地址：**
@@ -96,7 +96,7 @@ ifconfig eth0 hw ether 00:AA:BB:CC:[dd](https://philipding.github.io/linux-comma
 [root@localhost ~]# ifconfig eth0 192.168.2.10 netmask 255.255.255.0 broadcast 192.168.2.255
 ```
 
-**启用和关闭[arp](https://philipding.github.io/linux-command/arp "arp命令")协议：**
+**启用和关闭[arp](#/arp "arp命令")协议：**
 
 ```
 ifconfig eth0 arp    #开启网卡eth0 的arp协议

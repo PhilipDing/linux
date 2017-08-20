@@ -11,7 +11,7 @@ wc(选项)(参数)
 ```
 -c或--bytes或——chars：只显示Bytes数；
 -l或——lines：只显示列数；
--[w](https://philipding.github.io/linux-command/w "w命令")或——words：只显示字数。
+-[w](#/w "w命令")或——words：只显示字数。
 ```
 
 ### 参数  

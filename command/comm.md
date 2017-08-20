@@ -26,7 +26,7 @@ comm(选项)(参数)
 ### 实例  
 
 ```
-[root@localhost text]# [cat](https://philipding.github.io/linux-command/cat "cat命令") aaa.txt 
+[root@localhost text]# [cat](#/cat "cat命令") aaa.txt 
 aaa
 bbb
 ccc
@@ -79,7 +79,7 @@ ccc
 打印出两个文件中不相同的行，需要删除第三列：
 
 ```
-[root@localhost text]# comm aaa.txt bbb.txt -3 | [sed](https://philipding.github.io/linux-command/sed "sed命令") 's/^\t//'
+[root@localhost text]# comm aaa.txt bbb.txt -3 | [sed](#/sed "sed命令") 's/^\t//'
 aaa
 aaa
 ddd

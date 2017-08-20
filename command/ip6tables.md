@@ -1,4 +1,4 @@
-**ip6tables命令**和[iptables](https://philipding.github.io/linux-command/iptables "iptables命令")一样，都是linux中防火墙软件，不同的是ip6tables采用的TCP/[ip](https://philipding.github.io/linux-command/ip "ip命令")协议为IPv6。
+**ip6tables命令**和[iptables](#/iptables "iptables命令")一样，都是linux中防火墙软件，不同的是ip6tables采用的TCP/[ip](#/ip "ip命令")协议为IPv6。
 
 ### 语法  
 
@@ -33,7 +33,7 @@ ip6tables(选项)
 在命令行窗口输入下面的指令就可以查看当前的 IPv6 防火墙配置：
 
 ```
-ip6tables -[nl](https://philipding.github.io/linux-command/nl "nl命令") --line-numbers
+ip6tables -[nl](#/nl "nl命令") --line-numbers
 ```
 
 **/etc/sysconfig/ip6tables文件**
@@ -41,14 +41,14 @@ ip6tables -[nl](https://philipding.github.io/linux-command/nl "nl命令") --line
 使用编辑器编辑`/etc/sysconfig/ip6tables`文件：
 
 ```
-[vi](https://philipding.github.io/linux-command/vi "vi命令") /etc/sysconfig/ip6tables
+[vi](#/vi "vi命令") /etc/sysconfig/ip6tables
 ```
 
 可能会看到下面的默认 ip6tables 规则：
 
 ```
 *filter
-:INPUT [accept](https://philipding.github.io/linux-command/accept "accept命令") [0:0]
+:INPUT [accept](#/accept "accept命令") [0:0]
 :FORWARD ACCEPT [0:0]
 :OUTPUT ACCEPT [0:0]
 :RH-Firewall-1-INPUT - [0:0]
@@ -64,7 +64,7 @@ ip6tables -[nl](https://philipding.github.io/linux-command/nl "nl命令") --line
 -A RH-Firewall-1-INPUT -p udp -m udp --dport 32768:61000 -j ACCEPT
 -A RH-Firewall-1-INPUT -p tcp -m tcp --dport 32768:61000 ! --syn -j ACCEPT
 -A RH-Firewall-1-INPUT -m tcp -p tcp --dport 22 -j ACCEPT
--A RH-Firewall-1-INPUT -j [reject](https://philipding.github.io/linux-command/reject "reject命令") --reject-with icmp6-adm-prohibited
+-A RH-Firewall-1-INPUT -j [reject](#/reject "reject命令") --reject-with icmp6-adm-prohibited
 COMMIT
 ```
 
@@ -117,7 +117,7 @@ COMMIT
 保存并关闭该文件。然后重新启动 ip6tables 防火墙：
 
 ```
-# [service](https://philipding.github.io/linux-command/service "service命令") ip6tables restart
+# [service](#/service "service命令") ip6tables restart
 ```
 
 然后重新查看 ip6tables 规则，可以看到如下所示的输出：
@@ -168,12 +168,12 @@ IPv4 通常默认即可保护内部局域网私有 IP 上的主机。但是 IPv6
 ```
 :ICMPv6 - [0:0]
 # Approve certain ICMPv6 types and all outgoing ICMPv6
-# http://forum.linode.com/viewtopic.[php](https://philipding.github.io/linux-command/php "php命令")?p=39840#39840
+# http://forum.linode.com/viewtopic.[php](#/php "php命令")?p=39840#39840
 -A INPUT -p icmpv6 -j ICMPv6
--A ICMPv6 -p icmpv6 --icmpv6-[type](https://philipding.github.io/linux-command/type "type命令") [echo](https://philipding.github.io/linux-command/echo "echo命令")-request -j ACCEPT
+-A ICMPv6 -p icmpv6 --icmpv6-[type](#/type "type命令") [echo](#/echo "echo命令")-request -j ACCEPT
 -A ICMPv6 -p icmpv6 --icmpv6-type destination-unreachable -j ACCEPT
 -A ICMPv6 -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
--A ICMPv6 -p icmpv6 --icmpv6-type [time](https://philipding.github.io/linux-command/time "time命令")-exceeded -j ACCEPT
+-A ICMPv6 -p icmpv6 --icmpv6-type [time](#/time "time命令")-exceeded -j ACCEPT
 -A ICMPv6 -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 -A ICMPv6 -p icmpv6 --icmpv6-type router-solicitation -j ACCEPT
 -A ICMPv6 -p icmpv6 --icmpv6-type router-advertisement -j ACCEPT

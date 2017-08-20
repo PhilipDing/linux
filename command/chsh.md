@@ -11,7 +11,7 @@ chsh(选项)(参数)
 ```
 -s<shell 名称>或--shell<shell 名称>：更改系统预设的shell环境。；
 -l或--list-shells：列出目前系统可用的shell清单；
--u或--[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-u或--[help](#/help "help命令")：在线帮助；
 -v或-version：显示版本信息。
 ```
 
@@ -29,14 +29,14 @@ chsh(选项)(参数)
 [rocrocket@localhost ~]$ chsh -l
 /bin/sh
 /bin/bash
-/sbin/[nologin](https://philipding.github.io/linux-command/nologin "nologin命令")
+/sbin/[nologin](#/nologin "nologin命令")
 /bin/zsh
 ```
 
 第二种：
 
 ```
-[rocrocket@localhost ~]$ [cat](https://philipding.github.io/linux-command/cat "cat命令") /etc/shells
+[rocrocket@localhost ~]$ [cat](#/cat "cat命令") /etc/shells
 /bin/sh
 /bin/bash
 /sbin/nologin
@@ -48,7 +48,7 @@ chsh(选项)(参数)
 **查看当前正在使用的shell：**
 
 ```
-[rocrocket@localhost ~]$ [echo](https://philipding.github.io/linux-command/echo "echo命令") $SHELL
+[rocrocket@localhost ~]$ [echo](#/echo "echo命令") $SHELL
 /bin/bash
 ```
 
@@ -64,10 +64,10 @@ Shell changed.
 [rocrocket@localhost ~]$
 ```
 
-使用chsh加选项`-s`就可以修改登录的shell了！你会发现你现在执行`echo $SHELL`后仍然输出为`/bin/bash`，这是因为你需要重启你的shell才完全投入到zsh怀抱中去。`chsh -s`其实修改的就是`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`文件里和你的用户名相对应的那一行。现在来查看下：
+使用chsh加选项`-s`就可以修改登录的shell了！你会发现你现在执行`echo $SHELL`后仍然输出为`/bin/bash`，这是因为你需要重启你的shell才完全投入到zsh怀抱中去。`chsh -s`其实修改的就是`/etc/[passwd](#/passwd "passwd命令")`文件里和你的用户名相对应的那一行。现在来查看下：
 
 ```
-[rocrocket@localhost ~]$ cat /etc/passwd|[grep](https://philipding.github.io/linux-command/grep "grep命令") ^rocrocket
+[rocrocket@localhost ~]$ cat /etc/passwd|[grep](#/grep "grep命令") ^rocrocket
 rocrocket:x:500:500:rocrocket,China:/rocrocket/PSB/home:/bin/zsh
 ```
 

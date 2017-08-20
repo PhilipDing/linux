@@ -12,7 +12,7 @@ bzcat(参数)
 
 ### 实例  
 
-将`/tmp/[man](https://philipding.github.io/linux-command/man "man命令").config`以[bzip2](https://philipding.github.io/linux-command/bzip2 "bzip2命令")格式压缩：
+将`/tmp/[man](#/man "man命令").config`以[bzip2](#/bzip2 "bzip2命令")格式压缩：
 
 ```
 bzip2 -z man.config

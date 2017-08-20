@@ -15,12 +15,12 @@ service(选项)(参数)
 
 ### 参数  
 
-*   服务名：自动要控制的服务名，即`/etc/[init](https://philipding.github.io/linux-command/init "init命令").d`目录下的脚本文件名；
+*   服务名：自动要控制的服务名，即`/etc/[init](#/init "init命令").d`目录下的脚本文件名；
 *   控制命令：系统服务脚本支持的控制命令。
 
 ### 实例  
 
-当修改了主机名、[ip](https://philipding.github.io/linux-command/ip "ip命令")地址等信息时，经常需要把网络重启使之生效。
+当修改了主机名、[ip](#/ip "ip命令")地址等信息时，经常需要把网络重启使之生效。
 
 ```
 service network status
@@ -37,7 +37,7 @@ service network restart
 弹出界面 eth0：                                            [  确定  ]
 ```
 
-重启[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")
+重启[mysql](#/mysql "mysql命令")
 
 ```
 service mysqld status

@@ -26,19 +26,19 @@ export(选项)(参数)
 
 ```
 [root@localhost ~]# export
-[declare](https://philipding.github.io/linux-command/declare "declare命令") -x G_BROKEN_FILENAMES="1"
+[declare](#/declare "declare命令") -x G_BROKEN_FILENAMES="1"
 declare -x HISTSIZE="1000"
 declare -x HOME="/root"
-declare -x [hostname](https://philipding.github.io/linux-command/hostname "hostname命令")="localhost"
+declare -x [hostname](#/hostname "hostname命令")="localhost"
 declare -x INPUTRC="/etc/inputrc"
 declare -x LANG="zh_CN.UTF-8"
 declare -x LESSOPEN="|/usr/bin/lesspipe.sh %s"
-declare -x [logname](https://philipding.github.io/linux-command/logname "logname命令")="root"
-declare -x LS_COLORS="no=00:fi=00:di=01;34:[ln](https://philipding.github.io/linux-command/ln "ln命令")=01;36:pi=40;33:so=01;35:bd=40;33;01:[cd](https://philipding.github.io/linux-command/cd "cd命令")=40;33;01:or=01;05;37;41:mi=01;05;37;41:[ex](https://philipding.github.io/linux-command/ex "ex命令")=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.[tar](https://philipding.github.io/linux-command/tar "tar命令")=01;31:*.tgz=01;31:*.[arj](https://philipding.github.io/linux-command/arj "arj命令")=01;31:*.taz=01;31:*.lzh=01;31:*.[zip](https://philipding.github.io/linux-command/zip "zip命令")=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")=01;31:*.[cpio](https://philipding.github.io/linux-command/cpio "cpio命令")=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:"
-declare -x [mail](https://philipding.github.io/linux-command/mail "mail命令")="/var/spool/mail/root"
+declare -x [logname](#/logname "logname命令")="root"
+declare -x LS_COLORS="no=00:fi=00:di=01;34:[ln](#/ln "ln命令")=01;36:pi=40;33:so=01;35:bd=40;33;01:[cd](#/cd "cd命令")=40;33;01:or=01;05;37;41:mi=01;05;37;41:[ex](#/ex "ex命令")=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.[tar](#/tar "tar命令")=01;31:*.tgz=01;31:*.[arj](#/arj "arj命令")=01;31:*.taz=01;31:*.lzh=01;31:*.[zip](#/zip "zip命令")=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.[rpm](#/rpm "rpm命令")=01;31:*.[cpio](#/cpio "cpio命令")=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:"
+declare -x [mail](#/mail "mail命令")="/var/spool/mail/root"
 declare -x OLDPWD
 declare -x PATH="/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin"
-declare -x [pwd](https://philipding.github.io/linux-command/pwd "pwd命令")="/root"
+declare -x [pwd](#/pwd "pwd命令")="/root"
 declare -x SHELL="/bin/bash"
 declare -x SHLVL="1"
 declare -x SSH_CLIENT="192.168.2.111 2705 22"

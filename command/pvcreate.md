@@ -11,7 +11,7 @@ pvcreate(选项)(参数)
 ```
 -f：强制创建物理卷，不需要用户确认；
 -u：指定设备的UUID；
--y：所有的问题都回答“[yes](https://philipding.github.io/linux-command/yes "yes命令")”；
+-y：所有的问题都回答“[yes](#/yes "yes命令")”；
 -Z：是否利用前4个扇区。
 ```
 
@@ -24,12 +24,12 @@ pvcreate(选项)(参数)
 查看磁盘信息：
 
 ```
-[root@localhost ~]# [fdisk](https://philipding.github.io/linux-command/fdisk "fdisk命令") -l
+[root@localhost ~]# [fdisk](#/fdisk "fdisk命令") -l
 Disk /dev/hda: 41.1 GB, 41174138880 bytes
 255 heads, 63 sectors/track, 5005 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes
 
-   Device Boot      Start         End      Blocks   [id](https://philipding.github.io/linux-command/id "id命令")  System
+   Device Boot      Start         End      Blocks   [id](#/id "id命令")  System
 /dev/hda1   *           1          13      104391   83  Linux
 /dev/hda2              14        1288    10241437+  83  Linux
 /dev/hda3            1289        1925     5116702+  83  Linux
@@ -45,7 +45,7 @@ Units = cylinders of 16065 * 512 = 8225280 bytes
 检查有无 PV 在系统上，然后将`/dev/hda6`到`/dev/hda9`建立成为PV格式
 
 ```
-[root@localhost ~]# [pvscan](https://philipding.github.io/linux-command/pvscan "pvscan命令")
+[root@localhost ~]# [pvscan](#/pvscan "pvscan命令")
 No matching physical volumes found    #找不到任何的 PV 存在！
 ```
 
@@ -73,7 +73,7 @@ No matching physical volumes found    #找不到任何的 PV 存在！
 更详细的列示出系统上面每个 PV 信息：
 
 ```
-[root@localhost ~]# [pvdisplay](https://philipding.github.io/linux-command/pvdisplay "pvdisplay命令")
+[root@localhost ~]# [pvdisplay](#/pvdisplay "pvdisplay命令")
   "/dev/hda6" is a new physical volume of "1.40 GB"
   --- NEW Physical volume ---
   PV Name               /dev/hda6  #实际的 partition 分区名称
@@ -82,7 +82,7 @@ No matching physical volumes found    #找不到任何的 PV 存在！
   Allocatable           NO         #是否已被分配，结果是 NO
   PE Size (KByte)       0          #在此 PV 內的 PE 大小
   Total PE              0          #共分割出几个 PE
-  [free](https://philipding.github.io/linux-command/free "free命令") PE               0          #沒被 LV 用掉的 PE
+  [free](#/free "free命令") PE               0          #沒被 LV 用掉的 PE
   Allocated PE          0          #尚可分配出去的 PE 数量
   PV UUID               Z13Jk5-RCls-UJ8B-HzDa-Gesn-atku-rf2biN
 ....(底下省略)....
@@ -91,7 +91,7 @@ No matching physical volumes found    #找不到任何的 PV 存在！
 删除物理卷：
 
 ```
-[root@localhost ~]# [pvremove](https://philipding.github.io/linux-command/pvremove "pvremove命令") /dev/sdb2
+[root@localhost ~]# [pvremove](#/pvremove "pvremove命令") /dev/sdb2
 Labels on physical volume "/dev/sdb2" successfully wiped
 
 ```
@@ -99,7 +99,7 @@ Labels on physical volume "/dev/sdb2" successfully wiped
 修改物理卷属性：
 
 ```
-[root@localhost ~]# [pvchange](https://philipding.github.io/linux-command/pvchange "pvchange命令") -x n /dev/sdb1    #禁止分配指定物理卷上的PE
+[root@localhost ~]# [pvchange](#/pvchange "pvchange命令") -x n /dev/sdb1    #禁止分配指定物理卷上的PE
 Physical volume "/dev/sdb1" changed  
 1 physical volume changed / 0 physical volumes not changed 
 ```

@@ -1,4 +1,4 @@
-**rpmdb命令**用于初始化和重建[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")数据库。
+**rpmdb命令**用于初始化和重建[rpm](#/rpm "rpm命令")数据库。
 
 ### 语法  
 

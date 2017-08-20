@@ -1,4 +1,4 @@
-**dircolors命令**设置[ls](https://philipding.github.io/linux-command/ls "ls命令")命令在显示目录或文件时所用的色彩。dircolors可根据[色彩配置文件]来设置LS_COLORS环境变量或是显示设置LS_COLORS环境变量的命令。
+**dircolors命令**设置[ls](#/ls "ls命令")命令在显示目录或文件时所用的色彩。dircolors可根据[色彩配置文件]来设置LS_COLORS环境变量或是显示设置LS_COLORS环境变量的命令。
 
 ### 语法  
 
@@ -12,7 +12,7 @@ dircolors(选项)(参数)
 -b或--sh或--bourne-shell：显示在Boume shell中，将LS_COLORS设为目前预设置的shell指令；
 -c或--csh或--c-shell：显示在C shell中，将LS_COLORS设为目前预设置的shell指令；
 -p或--print-database：显示预设置；
--[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+-[help](#/help "help命令")：显示帮助；
 -version：显示版本信息。
 ```
 
@@ -24,7 +24,7 @@ dircolors(选项)(参数)
 
 ```
 [root@localhost ~]# dircolors -p
-# Configuration [file](https://philipding.github.io/linux-command/file "file命令") for dircolors, a utility to help you [set](https://philipding.github.io/linux-command/set "set命令") the
+# Configuration [file](#/file "file命令") for dircolors, a utility to help you [set](#/set "set命令") the
 # LS_COLORS environment variable used by GNU ls with the --color option.
 # The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
 # slackware version of dircolors) are recognized but ignored.
@@ -52,11 +52,11 @@ TERM xterm-debian
 TERM rxvt
 TERM screen
 TERM screen-bce
-TERM screen-[w](https://philipding.github.io/linux-command/w "w命令")
+TERM screen-[w](#/w "w命令")
 TERM vt100
 TERM Eterm
-# Below are the color [init](https://philipding.github.io/linux-command/init "init命令") strings for the basic file types. A color init
-# string consists of one or [more](https://philipding.github.io/linux-command/more "more命令") of the following numeric codes:
+# Below are the color [init](#/init "init命令") strings for the basic file types. A color init
+# string consists of one or [more](#/more "more命令") of the following numeric codes:
 # Attribute codes:
 # 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
 # Text color codes:
@@ -67,7 +67,7 @@ NORMAL 00 # global default, although everything should be something.
 FILE 00 # normal file
 DIR 01;34 # directory
 LINK 01;36 # symbolic link. (If you set this to 'target' instead of a
- # numerical value, the color is [as](https://philipding.github.io/linux-command/as "as命令") for the file pointed to.)
+ # numerical value, the color is [as](#/as "as命令") for the file pointed to.)
 FIFO 40;33 # pipe
 SOCK 01;35 # socket
 DOOR 01;35 # door
@@ -80,8 +80,8 @@ STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
 OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
 STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
 # This is for files with execute permission:
-[exec](https://philipding.github.io/linux-command/exec "exec命令") 01;32
-# List any file extensions like '.gz' or '.[tar](https://philipding.github.io/linux-command/tar "tar命令")' that you would like ls
+[exec](#/exec "exec命令") 01;32
+# List any file extensions like '.gz' or '.[tar](#/tar "tar命令")' that you would like ls
 # to colorize below. Put the extension, a space, and the color init string.
 # (and any comments you want to add after a '#')
 # If you use DOS-style suffixes, you may want to uncomment the following:
@@ -92,16 +92,16 @@ STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
 #.bat 01;32
 .tar 01;31 # archives or compressed (bright red)
 .tgz 01;31
-.[arj](https://philipding.github.io/linux-command/arj "arj命令") 01;31
+.[arj](#/arj "arj命令") 01;31
 .taz 01;31
 .lzh 01;31
-.[zip](https://philipding.github.io/linux-command/zip "zip命令") 01;31
+.[zip](#/zip "zip命令") 01;31
 .z 01;31
 .Z 01;31
 .gz 01;31
 .bz2 01;31
 .deb 01;31
-.[rpm](https://philipding.github.io/linux-command/rpm "rpm命令") 01;31
+.[rpm](#/rpm "rpm命令") 01;31
 .jar 01;31
 # image formats
 .jpg 01;35

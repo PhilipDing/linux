@@ -1,9 +1,9 @@
-**[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")-add命令**是把专用密钥添加到[ssh-agent](https://philipding.github.io/linux-command/ssh-agent "ssh-agent命令")的高速缓存中。该命令位置在`/usr/bin/ssh-add`。
+**[ssh](#/ssh "ssh命令")-add命令**是把专用密钥添加到[ssh-agent](#/ssh-agent "ssh-agent命令")的高速缓存中。该命令位置在`/usr/bin/ssh-add`。
 
 ### 语法  
 
 ```
-ssh-add [-cDdLlXx] [-t life] [[file](https://philipding.github.io/linux-command/file "file命令") ...]
+ssh-add [-cDdLlXx] [-t life] [[file](#/file "file命令") ...]
 ssh-add -s pkcs11
 ssh-add -e pkcs11
 ```

@@ -1,8 +1,8 @@
-**cut命令**用来显示行中的指定部分，删除文件中指定字段。cut经常用来显示文件的内容，类似于下的[type](https://philipding.github.io/linux-command/type "type命令")命令。
+**cut命令**用来显示行中的指定部分，删除文件中指定字段。cut经常用来显示文件的内容，类似于下的[type](#/type "type命令")命令。
 
-说明：该命令有两项功能，其一是用来显示文件的内容，它依次读取由参数[file](https://philipding.github.io/linux-command/file "file命令")所指 明的文件，将它们的内容输出到标准输出上；其二是连接两个或多个文件，如`cut fl f2 > f3`将把文件fl和几的内容合并起来，然后通过输出重定向符“>”的作用，将它们放入文件f3中。
+说明：该命令有两项功能，其一是用来显示文件的内容，它依次读取由参数[file](#/file "file命令")所指 明的文件，将它们的内容输出到标准输出上；其二是连接两个或多个文件，如`cut fl f2 > f3`将把文件fl和几的内容合并起来，然后通过输出重定向符“>”的作用，将它们放入文件f3中。
 
-当文件较大时，文本在屏幕上迅速闪过（滚屏），用户往往看不清所显示的内容。因此，一般用[more](https://philipding.github.io/linux-command/more "more命令")等命令分屏显示。为了控制滚屏，可以按Ctrl+S键，停止滚屏；按Ctrl+Q键可以恢复滚屏。按Ctrl+C（中断）键可以终止该命令的执行，并且返回Shell提示符状态。
+当文件较大时，文本在屏幕上迅速闪过（滚屏），用户往往看不清所显示的内容。因此，一般用[more](#/more "more命令")等命令分屏显示。为了控制滚屏，可以按Ctrl+S键，停止滚屏；按Ctrl+Q键可以恢复滚屏。按Ctrl+C（中断）键可以终止该命令的执行，并且返回Shell提示符状态。
 
 ### 语法  
 
@@ -20,7 +20,7 @@ cut(选项)(参数)
 -n：与“-b”选项连用，不分割多字节字符；
 --complement：补足被选择的字节、字符或字段；
 --out-delimiter=<字段分隔符>：指定输出内容是的字段分割符；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示指令的帮助信息；
+--[help](#/help "help命令")：显示指令的帮助信息；
 --version：显示指令的版本信息。
 ```
 
@@ -33,7 +33,7 @@ cut(选项)(参数)
 例如有一个学生报表信息，包含No、Name、Mark、Percent：
 
 ```
-[root@localhost text]# [cat](https://philipding.github.io/linux-command/cat "cat命令") [test](https://philipding.github.io/linux-command/test "test命令").txt 
+[root@localhost text]# [cat](#/cat "cat命令") [test](#/test "test命令").txt 
 No Name Mark Percent
 01 tom 69 91
 02 jack 71 87
@@ -132,7 +132,7 @@ abc
 
 ```
 [root@localhost text]# cut -c-2 test.txt 
-[ab](https://philipding.github.io/linux-command/ab "ab命令")
+[ab](#/ab "ab命令")
 ab
 ab
 ab

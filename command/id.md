@@ -1,18 +1,18 @@
 **id命令**可以显示真实有效的用户ID(UID)和组ID(GID)。UID 是对一个用户的单一身份标识。组ID（GID）则对应多个UID。id命令已经默认预装在大多数Linux系统中。要使用它，只需要在你的控制台输入id。不带选项输入id会显示如下。结果会使用活跃用户。
 
-当我们想知道某个用户的UID和GID时id命令是非常有用的。一些程序可能需要UID/GID来运行。id使我们更加容易地找出用户的UID以GID而不必在`/etc/group`文件中搜寻。如往常一样，你可以在控制台输入`[man](https://philipding.github.io/linux-command/man "man命令") id`进入id的手册页来获取更多的详情。
+当我们想知道某个用户的UID和GID时id命令是非常有用的。一些程序可能需要UID/GID来运行。id使我们更加容易地找出用户的UID以GID而不必在`/etc/group`文件中搜寻。如往常一样，你可以在控制台输入`[man](#/man "man命令") id`进入id的手册页来获取更多的详情。
 
 ### 语法  
 
 ```
-id [-gGnru][--[help](https://philipding.github.io/linux-command/help "help命令")][--version][用户名称]
+id [-gGnru][--[help](#/help "help命令")][--version][用户名称]
 ```
 
 ### 选项  
 
 ```
 -g或--group 　 显示用户所属群组的ID。
--G或--[groups](https://philipding.github.io/linux-command/groups "groups命令")   显示用户所属附加群组的ID。
+-G或--[groups](#/groups "groups命令")   显示用户所属附加群组的ID。
 -n或--name 　  显示用户，所属群组或附加群组的名称。
 -r或--real 　  显示实际ID。
 -u或--user 　  显示用户ID。

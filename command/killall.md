@@ -1,4 +1,4 @@
-**killall命令**使用进程的名称来杀死进程，使用此指令可以杀死一组同名进程。我们可以使用[kill](https://philipding.github.io/linux-command/kill "kill命令")命令杀死指定进程PID的进程，如果要找到我们需要杀死的进程，我们还需要在之前使用[ps](https://philipding.github.io/linux-command/ps "ps命令")等命令再配合[grep](https://philipding.github.io/linux-command/grep "grep命令")来查找进程，而killall把这两个过程合二为一，是一个很好用的命令。
+**killall命令**使用进程的名称来杀死进程，使用此指令可以杀死一组同名进程。我们可以使用[kill](#/kill "kill命令")命令杀死指定进程PID的进程，如果要找到我们需要杀死的进程，我们还需要在之前使用[ps](#/ps "ps命令")等命令再配合[grep](#/grep "grep命令")来查找进程，而killall把这两个过程合二为一，是一个很好用的命令。
 
 ### 语法  
 
@@ -29,5 +29,5 @@ killall(选项)(参数)
 杀死所有同名进程
 
 ```
-killall [vi](https://philipding.github.io/linux-command/vi "vi命令")
+killall [vi](#/vi "vi命令")
 ```

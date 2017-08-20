@@ -11,7 +11,7 @@ logwatch(选项)
 ```
 --detail<报告详细程度>：指定日志报告的详细程度；
 --logfile<日志文件>：仅处理指定的日志文件；
---[service](https://philipding.github.io/linux-command/service "service命令")<服务名>：仅处理指定服务的日志文件；
+--[service](#/service "service命令")<服务名>：仅处理指定服务的日志文件；
 --print：打印结果到标准输出；
 --mailto<邮件地址>：将结果发送到指定邮箱；
 --range<日期范围>：指定处理日志的日期范围；
@@ -19,9 +19,9 @@ logwatch(选项)
 --debug<调试等级>：调试模式；
 --save<文件名>：将结果保存到指定文件中，而不显示或者发送到指定邮箱；
 --logdir<目录>：指定查找日志文件的目录，而不使用默认的日志目录；
---[hostname](https://philipding.github.io/linux-command/hostname "hostname命令")<主机名>：指定在日志报告中使用的主机名，不使用系统默认的主机名；
---numeric：在报告中显示[ip](https://philipding.github.io/linux-command/ip "ip命令")地址而不是主机名；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示指令的帮助信息。
+--[hostname](#/hostname "hostname命令")<主机名>：指定在日志报告中使用的主机名，不使用系统默认的主机名；
+--numeric：在报告中显示[ip](#/ip "ip命令")地址而不是主机名；
+--[help](#/help "help命令")：显示指令的帮助信息。
 ```
 
 ### 实例  
@@ -29,7 +29,7 @@ logwatch(选项)
 检查你的主机上是否已经存在Logwatch（Redhat默认已经安装了Logwatch，不过版本比较旧）：
 
 ```
-[rpm](https://philipding.github.io/linux-command/rpm "rpm命令") -qa logwatch
+[rpm](#/rpm "rpm命令") -qa logwatch
 ```
 
 如果主机上没有logwatch，则执行：
@@ -57,5 +57,5 @@ rpm -Uvh logwatch***.rpm
 
 ```
 logwatch --detail High --Service All --range All --print    基本就可以显示出所有日志的情况了
-logwatch --service [sshd](https://philipding.github.io/linux-command/sshd "sshd命令") --detail High                       只看sshd的日志情况
+logwatch --service [sshd](#/sshd "sshd命令") --detail High                       只看sshd的日志情况
 ```

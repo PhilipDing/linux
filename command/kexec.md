@@ -13,7 +13,7 @@ kexec(选项)
 ```
 -l：指定内核映像文件；
 -e：允许当前被加载的内核；
--f：强制立即调用系统调用“kexec”，而不调用“[shutdown](https://philipding.github.io/linux-command/shutdown "shutdown命令")”；
+-f：强制立即调用系统调用“kexec”，而不调用“[shutdown](#/shutdown "shutdown命令")”；
 -t：指定新内核的类型；
 -u：卸载当前的kexec目标内核。
 ```

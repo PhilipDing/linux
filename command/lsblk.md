@@ -1,4 +1,4 @@
-**lsblk命令**用于列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息。块设备有硬盘，闪存盘，[cd](https://philipding.github.io/linux-command/cd "cd命令")-ROM等等。lsblk命令包含在util-linux-ng包中，现在该包改名为util-linux。这个包带了几个其它工具，如[dmesg](https://philipding.github.io/linux-command/dmesg "dmesg命令")。要安装lsblk，请在此处[下载util-linux包](ftp://ftp.kernel.org/pub/linux/utils/util-linux/)。Fedora用户可以通过命令`[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") [yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") util-linux-ng`来安装该包。
+**lsblk命令**用于列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息。块设备有硬盘，闪存盘，[cd](#/cd "cd命令")-ROM等等。lsblk命令包含在util-linux-ng包中，现在该包改名为util-linux。这个包带了几个其它工具，如[dmesg](#/dmesg "dmesg命令")。要安装lsblk，请在此处[下载util-linux包](ftp://ftp.kernel.org/pub/linux/utils/util-linux/)。Fedora用户可以通过命令`[sudo](#/sudo "sudo命令") [yum](#/yum "yum命令") [install](#/install "install命令") util-linux-ng`来安装该包。
 
 ### 选项  
 
@@ -9,7 +9,7 @@
 -D, --discard        print discard capabilities。
 -e, --exclude <list> 排除设备 (default: RAM disks)。
 -f, --fs             显示文件系统信息。
--h, --[help](https://philipding.github.io/linux-command/help "help命令")           显示帮助信息。
+-h, --[help](#/help "help命令")           显示帮助信息。
 -i, --ascii          use ascii characters only。
 -m, --perms          显示权限信息。
 -l, --list           使用列表格式显示。
@@ -27,7 +27,7 @@ lsblk命令默认情况下将以树状列出所有块设备。打开终端，并
 ```
 lsblk
 
-NAME   MAJ:MIN [rm](https://philipding.github.io/linux-command/rm "rm命令")   SIZE RO [type](https://philipding.github.io/linux-command/type "type命令") [mountpoint](https://philipding.github.io/linux-command/mountpoint "mountpoint命令")
+NAME   MAJ:MIN [rm](#/rm "rm命令")   SIZE RO [type](#/type "type命令") [mountpoint](#/mountpoint "mountpoint命令")
 sda      8:0    0 232.9G  0 disk 
 ├─sda1   8:1    0  46.6G  0 part /
 ├─sda2   8:2    0     1K  0 part 
@@ -73,7 +73,7 @@ lsblk --bytes /dev/sda
 你也可以组合几个选项来获取指定的输出。例如，你也许想要以列表格式列出设备，而不是默认的树状格式。你可能也对移除不同栏目名称的标题感兴趣。可以将两个不同的选项组合，以获得期望的输出，命令如下：
 
 ```
-lsblk -[nl](https://philipding.github.io/linux-command/nl "nl命令")
+lsblk -[nl](#/nl "nl命令")
 ```
 
 要获取SCSI设备的列表，你只能使用-S选项。该选项是大写字母S，不能和-s选项混淆，该选项是用来以颠倒的顺序打印依赖的。

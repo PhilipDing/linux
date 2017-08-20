@@ -22,7 +22,7 @@ pmap(选项)(参数)
 ### 实例  
 
 ```
-[pidof](https://philipding.github.io/linux-command/pidof "pidof命令") nginx
+[pidof](#/pidof "pidof命令") nginx
 13312 5371
 
 pmap -x 5371
@@ -32,7 +32,7 @@ Address           Kbytes     RSS   Dirty Mode   Mapping
 000000000068c000      68      68      60 rw---  nginx
 000000000069d000      56      12      12 rw---    [ anon ]
 000000000a0c8000    1812    1684    1684 rw---    [ anon ]
-0000003ac0a00000     112      40       0 r-x--  [ld](https://philipding.github.io/linux-command/ld "ld命令")-2.5.so
+0000003ac0a00000     112      40       0 r-x--  [ld](#/ld "ld命令")-2.5.so
 0000003ac0c1c000       4       4       4 r----  ld-2.5.so
 0000003ac0c1d000       4       4       4 rw---  ld-2.5.so
 0000003ac0e00000    1340     284       0 r-x--  libc-2.5.so

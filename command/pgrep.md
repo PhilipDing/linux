@@ -1,4 +1,4 @@
-**pgrep命令**以名称为依据从运行进程队列中查找进程，并显示查找到的进程[id](https://philipding.github.io/linux-command/id "id命令")。每一个进程ID以一个十进制数表示，通过一个分割字符串和下一个ID分开，默认的分割字符串是一个新行。对于每个属性选项，用户可以在命令行上指定一个以逗号分割的可能值的集合。
+**pgrep命令**以名称为依据从运行进程队列中查找进程，并显示查找到的进程[id](#/id "id命令")。每一个进程ID以一个十进制数表示，通过一个分割字符串和下一个ID分开，默认的分割字符串是一个新行。对于每个属性选项，用户可以在命令行上指定一个以逗号分割的可能值的集合。
 
 ### 语法  
 
@@ -20,14 +20,14 @@ pgrep(选项)(参数)
 
 ### 参数  
 
-进程名称：指定要查找的进程名称，同时也支持类似[grep](https://philipding.github.io/linux-command/grep "grep命令")指令中的匹配模式。
+进程名称：指定要查找的进程名称，同时也支持类似[grep](#/grep "grep命令")指令中的匹配模式。
 
 ### 实例  
 
 ```
-pgrep -lo [httpd](https://philipding.github.io/linux-command/httpd "httpd命令")
+pgrep -lo [httpd](#/httpd "httpd命令")
 4557 httpd
- [root@localhost ~]# pgrep -[ln](https://philipding.github.io/linux-command/ln "ln命令") httpd
+ [root@localhost ~]# pgrep -[ln](#/ln "ln命令") httpd
 4566 httpd
 
 [root@localhost ~]# pgrep -l httpd

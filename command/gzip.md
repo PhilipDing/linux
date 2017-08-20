@@ -1,6 +1,6 @@
 **gzip命令**用来压缩文件。gzip是个使用广泛的压缩程序，文件经它压缩过后，其名称后面会多处“.gz”扩展名。
 
-gzip是在Linux系统中经常使用的一个对文件进行压缩和解压缩的命令，既方便又好用。gzip不仅可以用来压缩大的、较少使用的文件以节省磁盘空间，还可以和[tar](https://philipding.github.io/linux-command/tar "tar命令")命令一起构成Linux操作系统中比较流行的压缩文件格式。据统计，gzip命令对文本文件有60%～70%的压缩率。减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。
+gzip是在Linux系统中经常使用的一个对文件进行压缩和解压缩的命令，既方便又好用。gzip不仅可以用来压缩大的、较少使用的文件以节省磁盘空间，还可以和[tar](#/tar "tar命令")命令一起构成Linux操作系统中比较流行的压缩文件格式。据统计，gzip命令对文本文件有60%～70%的压缩率。减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。
 
 ### 语法  
 
@@ -12,9 +12,9 @@ gzip(选项)(参数)
 
 ```
 -a或——ascii：使用ASCII文字模式；
--d或--decompress或----[uncompress](https://philipding.github.io/linux-command/uncompress "uncompress命令")：解开压缩文件；
+-d或--decompress或----[uncompress](#/uncompress "uncompress命令")：解开压缩文件；
 -f或——force：强行压缩文件。不理会文件名称或硬连接是否存在以及该文件是否为符号连接；
--h或——[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-h或——[help](#/help "help命令")：在线帮助；
 -l或——list：列出压缩文件的相关信息；
 -L或——license：显示版本与版权信息；
 -n或--no-name：压缩文件时，不保存原来的文件名称及时间戳记；
@@ -22,7 +22,7 @@ gzip(选项)(参数)
 -q或——quiet：不显示警告信息；
 -r或——recursive：递归处理，将指定目录下的所有文件及子目录一并处理；
 -S或<压缩字尾字符串>或----suffix<压缩字尾字符串>：更改压缩字尾字符串；
--t或——[test](https://philipding.github.io/linux-command/test "test命令")：测试压缩文件是否正确无误；
+-t或——[test](#/test "test命令")：测试压缩文件是否正确无误；
 -v或——verbose：显示指令执行过程；
 -V或——version：显示版本信息；
 -<压缩效率>：压缩效率是一个介于1~9的数值，预设值为“6”，指定愈大的数值，压缩效率就会愈高；

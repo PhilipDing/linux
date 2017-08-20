@@ -1,4 +1,4 @@
-**elm命令**是一个E-[mail](https://philipding.github.io/linux-command/mail "mail命令")客户端管理程序，它提供了纯文本交互式全屏幕界面。
+**elm命令**是一个E-[mail](#/mail "mail命令")客户端管理程序，它提供了纯文本交互式全屏幕界面。
 
 ### 语法  
 

@@ -18,7 +18,7 @@ lsof(选项)
 +d<目录>：列出目录下被打开的文件；
 +D<目录>：递归列出目录下被打开的文件；
 -n<目录>：列出使用NFS的文件；
--i<条件>：列出符合条件的进程。（4、6、协议、:端口、 @[ip](https://philipding.github.io/linux-command/ip "ip命令") ）
+-i<条件>：列出符合条件的进程。（4、6、协议、:端口、 @[ip](#/ip "ip命令") ）
 -p<进程号>：列出指定进程号所打开的文件；
 -u：列出UID号进程详情；
 -h：显示帮助信息；
@@ -29,11 +29,11 @@ lsof(选项)
 
 ```
 lsof
-[command](https://philipding.github.io/linux-command/command "command命令")     PID USER   FD      [type](https://philipding.github.io/linux-command/type "type命令")             DEVICE     SIZE       NODE NAME
-[init](https://philipding.github.io/linux-command/init "init命令")          1 root  cwd       DIR                8,2     4096          2 /
+[command](#/command "command命令")     PID USER   FD      [type](#/type "type命令")             DEVICE     SIZE       NODE NAME
+[init](#/init "init命令")          1 root  cwd       DIR                8,2     4096          2 /
 init          1 root  rtd       DIR                8,2     4096          2 /
 init          1 root  txt       REG                8,2    43496    6121706 /sbin/init
-init          1 root  mem       REG                8,2   143600    7823908 /lib64/[ld](https://philipding.github.io/linux-command/ld "ld命令")-2.5.so
+init          1 root  mem       REG                8,2   143600    7823908 /lib64/[ld](#/ld "ld命令")-2.5.so
 init          1 root  mem       REG                8,2  1722304    7823915 /lib64/libc-2.5.so
 init          1 root  mem       REG                8,2    23360    7823919 /lib64/libdl-2.5.so
 init          1 root  mem       REG                8,2    95464    7824116 /lib64/libselinux.so.1
@@ -75,12 +75,12 @@ events/1      7 root  cwd       DIR                8,2     4096          2 /
 5.  jld：jail directory (FreeBSD);
 6.  ltx：shared library text (code and data);
 7.  mxx ：hex memory-mapped type number xx.
-8.  m86：DOS Merge mapped [file](https://philipding.github.io/linux-command/file "file命令");
+8.  m86：DOS Merge mapped [file](#/file "file命令");
 9.  mem：memory-mapped file;
 10.  mmap：memory-mapped device;
 11.  pd：parent directory;
 12.  rtd：root directory;
-13.  [tr](https://philipding.github.io/linux-command/tr "tr命令")：kernel trace file (OpenBSD);
+13.  [tr](#/tr "tr命令")：kernel trace file (OpenBSD);
 14.  v86  VP/ix mapped file;
 15.  0：表示标准输出
 16.  1：表示标准输入
@@ -90,16 +90,16 @@ events/1      7 root  cwd       DIR                8,2     4096          2 /
 
 1.  u：表示该文件被打开并处于读取/写入模式。
 2.  r：表示该文件被打开并处于只读模式。
-3.  [w](https://philipding.github.io/linux-command/w "w命令")：表示该文件被打开并处于。
+3.  [w](#/w "w命令")：表示该文件被打开并处于。
 4.  空格：表示该文件的状态模式为unknow，且没有锁定。
 5.  -：表示该文件的状态模式为unknow，且被锁定。
 
 同时在文件状态模式后面，还跟着相关的锁：
 
 1.  N：for a Solaris NFS lock of unknown type;
-2.  r：for [read](https://philipding.github.io/linux-command/read "read命令") lock on part of the file;
+2.  r：for [read](#/read "read命令") lock on part of the file;
 3.  R：for a read lock on the entire file;
-4.  w：for a [write](https://philipding.github.io/linux-command/write "write命令") lock on part of the file;（文件的部分写锁）
+4.  w：for a [write](#/write "write命令") lock on part of the file;（文件的部分写锁）
 5.  W：for a write lock on the entire file;（整个文件的写锁）
 6.  u：for a read and write lock of any length;
 7.  U：for a lock of unknown type;

@@ -14,17 +14,17 @@ indent（选项)(源文件)(-o 目标文件)
 -bad：在声明区加上空白行；
 -bap：添加空白行；
 -bbb：在注释后面添加空白行；
--[bc](https://philipding.github.io/linux-command/bc "bc命令")：在声明段中，如果出现逗号就换行；
+-[bc](#/bc "bc命令")：在声明段中，如果出现逗号就换行；
 -bl：if（或是else、for等）与后面执行区段的“{”不同行，且“}”自成一行-bli<缩排格数>设置{}缩排的格数；
 -br：if（或是else、for等）与后面执行区段的“{”同行，且“}”自成一行；
 -bs：在sizeof之后空一格；
 -c<栏数>：将注释置于程序右侧指定的栏位；
--[cd](https://philipding.github.io/linux-command/cd "cd命令")<栏数>：将注释置于声明右侧指定的栏位；
+-[cd](#/cd "cd命令")<栏数>：将注释置于声明右侧指定的栏位；
 -cdb：注释符号自成一行；
 -ce：将else置于“}”（if执行区段的结尾）之后；
 -ci：<缩排格数>：叙述过长而换行时，指定换行后缩排的格数；
 -cli<缩排格数>：使用case时，switch缩排的格数；
--[cp](https://philipding.github.io/linux-command/cp "cp命令")<栏数>：将注释置于else与elseif叙述右侧指定的栏位；
+-[cp](#/cp "cp命令")<栏数>：将注释置于else与elseif叙述右侧指定的栏位；
 -cs：在case之后空一格；
 -d<缩排格数>：针对不是放在程序码右侧的注释，设置其缩排格数；
 -di<栏数>：将声明区段的变量置于指定的栏位；
@@ -32,9 +32,9 @@ indent（选项)(源文件)(-o 目标文件)
 -fca：设置所有注释的格式；
 -gnu：使用指定的GNU格式，该参数为默认值；
 -i<格数>：设置缩排的格数；
--[ip](https://philipding.github.io/linux-command/ip "ip命令")<格数>：设置参数的缩排格数；
+-[ip](#/ip "ip命令")<格数>：设置参数的缩排格数；
 -kr：指定使用Kernighan&Ritchie的格式；
--[lp](https://philipding.github.io/linux-command/lp "lp命令")：叙述过长而换行，且叙述中包含了括号时，将括号中的每行起始栏位内容垂直对其排列；
+-[lp](#/lp "lp命令")：叙述过长而换行，且叙述中包含了括号时，将括号中的每行起始栏位内容垂直对其排列；
 -nbad：在声明区段后不要加上空白行；
 -nbap：在程序后面不添加空白行；
 -nbbb：在注释段后面不添加空白行；
@@ -58,7 +58,7 @@ indent（选项)(源文件)(-o 目标文件)
 -psl：程序类型置于程序名称的前一行；
 -sc：在每行注释左侧添加星号；
 -sob：删除多余的空白行；
--[ss](https://philipding.github.io/linux-command/ss "ss命令")：若for或swile区段仅有一行时，在分号前加上空格；
+-[ss](#/ss "ss命令")：若for或swile区段仅有一行时，在分号前加上空格；
 -st：将结果显示在标准输出设备上；
 -T：数据类型名称缩排；
 -ts<格数>：设置tab的长度；
@@ -68,7 +68,7 @@ indent（选项)(源文件)(-o 目标文件)
 
 ### 实例  
 
-使用indent命令将C语言源文件"[test](https://philipding.github.io/linux-command/test "test命令").c"中所有的sizeof后面添加一个空格，输入如下命令：
+使用indent命令将C语言源文件"[test](#/test "test命令").c"中所有的sizeof后面添加一个空格，输入如下命令：
 
 ```
 indent -bs /home/rootlocal/桌面/test.c

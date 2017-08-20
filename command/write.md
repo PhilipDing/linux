@@ -31,4 +31,4 @@ write Rollaend pts/2
 
 接下来就是将信息打上去，结束请Ctrl+C：
 
-若对方设定`[mesg](https://philipding.github.io/linux-command/mesg "mesg命令") n`，则此时信息将无法传给对方。
+若对方设定`[mesg](#/mesg "mesg命令") n`，则此时信息将无法传给对方。

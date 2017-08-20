@@ -1,4 +1,4 @@
-**rpmverify命令**用来验证已安装的[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")软件包的正确性。
+**rpmverify命令**用来验证已安装的[rpm](#/rpm "rpm命令")软件包的正确性。
 
 ### 语法  
 

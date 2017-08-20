@@ -1,4 +1,4 @@
-**groups命令**在标准输入输出上输出指定用户所在组的组成员，每个用户属于`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`中指定的一个组和在`/etc/group`中指定的其他组。
+**groups命令**在标准输入输出上输出指定用户所在组的组成员，每个用户属于`/etc/[passwd](#/passwd "passwd命令")`中指定的一个组和在`/etc/group`中指定的其他组。
 
 ### 语法  
 
@@ -9,7 +9,7 @@ groups(选项)(参数)
 ### 选项  
 
 ```
--[help](https://philipding.github.io/linux-command/help "help命令")：显示命令的帮助信息；
+-[help](#/help "help命令")：显示命令的帮助信息；
 --version：显示命令的版本信息。
 ```
 
@@ -23,5 +23,5 @@ groups(选项)(参数)
 
 ```
 groups linux
-linux : linux adm dialout cdrom plugdev [lpadmin](https://philipding.github.io/linux-command/lpadmin "lpadmin命令") admin sambashare
+linux : linux adm dialout cdrom plugdev [lpadmin](#/lpadmin "lpadmin命令") admin sambashare
 ```

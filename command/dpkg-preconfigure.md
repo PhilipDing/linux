@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-preconfigure命令**用于在Debian Linux中软件包安装之前询问问题。
+**[dpkg](#/dpkg "dpkg命令")-preconfigure命令**用于在Debian Linux中软件包安装之前询问问题。
 
 ### 语法  
 
@@ -23,5 +23,5 @@ dpkg-preconfigure(选项)(参数)
 导入debconf模板：
 
 ```
-dpkg-preconfigure /var/cache/apt/archives/[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")-server-5.5*.deb
+dpkg-preconfigure /var/cache/apt/archives/[mysql](#/mysql "mysql命令")-server-5.5*.deb
 ```

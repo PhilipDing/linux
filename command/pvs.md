@@ -1,4 +1,4 @@
-**pvs命令**用于输出格式化的物理卷信息报表。使用pvs命令仅能得到物理卷的概要信息，如果要得到更加详细的信息可以使用[pvdisplay](https://philipding.github.io/linux-command/pvdisplay "pvdisplay命令")命令。
+**pvs命令**用于输出格式化的物理卷信息报表。使用pvs命令仅能得到物理卷的概要信息，如果要得到更加详细的信息可以使用[pvdisplay](#/pvdisplay "pvdisplay命令")命令。
 
 ### 语法  
 
@@ -28,7 +28,7 @@ pvs                    #输出物理卷信息报表
 输出信息如下：
 
 ```
-PV         VG     [fmt](https://philipding.github.io/linux-command/fmt "fmt命令")  Attr PSize   PFree  
+PV         VG     [fmt](#/fmt "fmt命令")  Attr PSize   PFree  
 /dev/sdb1  vg1000 lvm2 --   100.00M 100.00M  
 /dev/sdb2         lvm2 --   101.98M 101.98M
 ```

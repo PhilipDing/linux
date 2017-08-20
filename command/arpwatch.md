@@ -1,4 +1,4 @@
-**arpwatch命令**用来监听网络上[arp](https://philipding.github.io/linux-command/arp "arp命令")的记录。
+**arpwatch命令**用来监听网络上[arp](#/arp "arp命令")的记录。
 
 ### 语法  
 

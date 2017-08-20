@@ -38,7 +38,7 @@ cp ../mary/homework/assign .
 
 所有目标文件指定的目录必须是己经存在的，cp命令不能创建目录。如果没有文件复制的权限，则系统会显示出错信息。
 
-将文件[file](https://philipding.github.io/linux-command/file "file命令")复制到目录`/usr/men/tmp`下，并改名为file1
+将文件[file](#/file "file命令")复制到目录`/usr/men/tmp`下，并改名为file1
 
 ```
 cp file /usr/men/tmp/file1

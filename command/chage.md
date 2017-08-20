@@ -11,7 +11,7 @@ chage [选项] 用户名
 ```
 -m：密码可更改的最小天数。为零时代表任何时候都可以更改密码。
 -M：密码保持有效的最大天数。
--[w](https://philipding.github.io/linux-command/w "w命令")：用户密码到期前，提前收到警告信息的天数。
+-[w](#/w "w命令")：用户密码到期前，提前收到警告信息的天数。
 -E：帐号到期的日期。过了这天，此帐号将不可用。
 -d：上一次更改的日期。
 -i：停滞时期。如果一个密码已过期这些天，那么此帐号将不可用。
@@ -20,7 +20,7 @@ chage [选项] 用户名
 
 ### 实例  
 
-可以编辑`/etc/[login](https://philipding.github.io/linux-command/login "login命令").defs`来设定几个参数，以后设置口令默认就按照参数设定为准：
+可以编辑`/etc/[login](#/login "login命令").defs`来设定几个参数，以后设置口令默认就按照参数设定为准：
 
 ```
 PASS_MAX_DAYS   99999
@@ -29,17 +29,17 @@ PASS_MIN_LEN    5
 PASS_WARN_AGE   7
 ```
 
-当然在`/etc/default/[useradd](https://philipding.github.io/linux-command/useradd "useradd命令")`可以找到如下2个参数进行设置：
+当然在`/etc/default/[useradd](#/useradd "useradd命令")`可以找到如下2个参数进行设置：
 
 ```
-# useradd defaults [file](https://philipding.github.io/linux-command/file "file命令")
+# useradd defaults [file](#/file "file命令")
 GROUP=100
 HOME=/home
 INACTIVE=-1
 EXPIRE=
 SHELL=/bin/bash
 SKEL=/etc/skel
-CREATE_MAIL_SPOOL=[yes](https://philipding.github.io/linux-command/yes "yes命令")
+CREATE_MAIL_SPOOL=[yes](#/yes "yes命令")
 ```
 
 通过修改配置文件，能对之后新建用户起作用，而目前系统已经存在的用户，则直接用chage来配置。

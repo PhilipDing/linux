@@ -4,7 +4,7 @@
 
 ```
 rsync [OPTION]... SRC DEST
-rsync [OPTION]... SRC [USER@][host](https://philipding.github.io/linux-command/host "host命令"):DEST
+rsync [OPTION]... SRC [USER@][host](#/host "host命令"):DEST
 rsync [OPTION]... [USER@]HOST:SRC DEST
 rsync [OPTION]... [USER@]HOST::SRC DEST
 rsync [OPTION]... SRC [USER@]HOST::DEST
@@ -14,7 +14,7 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 对应于以上六种命令格式，rsync有六种不同的工作模式：
 
 1.  拷贝本地文件。当SRC和DES路径信息都不包含有单个冒号":"分隔符时就启动这种工作模式。如：`rsync -a /data /backup`
-2.  使用一个远程shell程序(如[rsh](https://philipding.github.io/linux-command/rsh "rsh命令")、[ssh](https://philipding.github.io/linux-command/ssh "ssh命令"))来实现将本地机器的内容拷贝到远程机器。当DST路径地址包含单个冒号":"分隔符时启动该模式。如：`rsync -avz *.c foo:src`
+2.  使用一个远程shell程序(如[rsh](#/rsh "rsh命令")、[ssh](#/ssh "ssh命令"))来实现将本地机器的内容拷贝到远程机器。当DST路径地址包含单个冒号":"分隔符时启动该模式。如：`rsync -avz *.c foo:src`
 3.  使用一个远程shell程序(如rsh、ssh)来实现将远程机器的内容拷贝到本地机器。当SRC地址路径包含单个冒号":"分隔符时启动该模式。如：`rsync -avz foo:src/bar /data`
 4.  从远程rsync服务器中拷贝文件到本地机。当SRC路径信息包含"::"分隔符时启动该模式。如：`rsync -av root@192.168.78.192::www /databack`
 5.  从本地机器拷贝文件到远程rsync服务器中。当DST路径信息包含"::"分隔符时启动该模式。如：`rsync -av /databack root@192.168.78.192::www`
@@ -45,10 +45,10 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 -t, --times 保持文件时间信息。
 -S, --sparse 对稀疏文件进行特殊处理以节省DST的空间。
 -n, --dry-run现实哪些文件将被传输。
--[w](https://philipding.github.io/linux-command/w "w命令"), --whole-[file](https://philipding.github.io/linux-command/file "file命令") 拷贝文件，不进行增量检测。
+-[w](#/w "w命令"), --whole-[file](#/file "file命令") 拷贝文件，不进行增量检测。
 -x, --one-file-system 不要跨越文件系统边界。
 -B, --block-size=SIZE 检验算法使用的块尺寸，默认是700字节。
--e, --rsh=[command](https://philipding.github.io/linux-command/command "command命令") 指定使用rsh、ssh方式进行数据同步。
+-e, --rsh=[command](#/command "command命令") 指定使用rsh、ssh方式进行数据同步。
 --rsync-path=PATH 指定远程服务器上的rsync命令所在路径信息。
 -C, --cvs-exclude 使用和CVS一样的方法自动忽略文件，用来排除那些不希望传输的文件。
 --existing 仅仅更新那些已经存在于DST的文件，而不备份那些新创建的文件。
@@ -59,8 +59,8 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 --max-delete=NUM 最多删除NUM个文件。
 --partial 保留那些因故没有完全传输的文件，以是加快随后的再次传输。
 --force 强制删除目录，即使不为空。
---numeric-ids 不将数字的用户和组[id](https://philipding.github.io/linux-command/id "id命令")匹配为用户名和组名。
---timeout=[time](https://philipding.github.io/linux-command/time "time命令") [ip](https://philipding.github.io/linux-command/ip "ip命令")超时时间，单位为秒。
+--numeric-ids 不将数字的用户和组[id](#/id "id命令")匹配为用户名和组名。
+--timeout=[time](#/time "time命令") [ip](#/ip "ip命令")超时时间，单位为秒。
 -I, --ignore-times 不跳过那些有同样的时间和长度的文件。
 --size-only 当决定是否要备份文件时，仅仅察看文件大小而不考虑文件时间。
 --modify-window=NUM 决定文件是否时间相同时使用的时间戳窗口，默认为0。
@@ -68,7 +68,7 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 --compare-dest=DIR 同样比较DIR中的文件来决定是否需要备份。
 -P 等同于 --partial。
 --progress 显示备份过程。
--z, --[compress](https://philipding.github.io/linux-command/compress "compress命令") 对备份的文件在传输时进行压缩处理。
+-z, --[compress](#/compress "compress命令") 对备份的文件在传输时进行压缩处理。
 --exclude=PATTERN 指定排除不需要传输的文件模式。
 --include=PATTERN 指定不排除而需要传输的文件模式。
 --exclude-from=FILE 排除FILE中指定模式的文件。
@@ -83,7 +83,7 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 --log-format=formAT 指定日志文件格式。
 --password-file=FILE 从FILE中得到密码。
 --bwlimit=KBPS 限制I/O带宽，KBytes per second。
--h, --[help](https://philipding.github.io/linux-command/help "help命令") 显示帮助信息。
+-h, --[help](#/help "help命令") 显示帮助信息。
 ```
 
 ### 实例  
@@ -93,7 +93,7 @@ rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 首先在服务端启动ssh服务：
 
 ```
-[service](https://philipding.github.io/linux-command/service "service命令") [sshd](https://philipding.github.io/linux-command/sshd "sshd命令") start
+[service](#/service "service命令") [sshd](#/sshd "sshd命令") start
 启动 sshd： [确定]
 ```
 
@@ -106,14 +106,14 @@ rsync -vzrtopg --progress -e ssh --delete work@172.16.78.192:/www/* /databack/ex
 work@172.16.78.192's password:
 receiving file list ...
 5 files to consider
-[test](https://philipding.github.io/linux-command/test "test命令")/
+[test](#/test "test命令")/
 a
 0 100% 0.00kB/s 527:35:41 (1, 20.0% of 5)
 b
 67 100% 65.43kB/s 0:00:00 (2, 40.0% of 5)
 c
 0 100% 0.00kB/s 527:35:41 (3, 60.0% of 5)
-[dd](https://philipding.github.io/linux-command/dd "dd命令")
+[dd](#/dd "dd命令")
 100663296 100% 42.22MB/s 0:00:02 (4, 80.0% of 5)
 sent 96 bytes received 98190 bytes 11563.06 bytes/sec
 total size is 100663363 speedup is 1024.19
@@ -123,18 +123,18 @@ total size is 100663363 speedup is 1024.19
 
 **后台服务方式**
 
-启动rsync服务，编辑`/etc/xinetd.d/rsync`文件，将其中的`disable=[yes](https://philipding.github.io/linux-command/yes "yes命令")`改为`disable=no`，并重启xinetd服务，如下：
+启动rsync服务，编辑`/etc/xinetd.d/rsync`文件，将其中的`disable=[yes](#/yes "yes命令")`改为`disable=no`，并重启xinetd服务，如下：
 
 ```
-[vi](https://philipding.github.io/linux-command/vi "vi命令") /etc/xinetd.d/rsync
+[vi](#/vi "vi命令") /etc/xinetd.d/rsync
 
 #default: off
-# description: The rsync server is a good addition to an [ftp](https://philipding.github.io/linux-command/ftp "ftp命令") server, [as](https://philipding.github.io/linux-command/as "as命令") it \
+# description: The rsync server is a good addition to an [ftp](#/ftp "ftp命令") server, [as](#/as "as命令") it \
 # allows crc checksumming etc.
 service rsync {
 disable = no
 socket_type = stream
-[wait](https://philipding.github.io/linux-command/wait "wait命令") = no
+[wait](#/wait "wait命令") = no
 user = root
 server = /usr/bin/rsync
 server_args = --daemon
@@ -143,7 +143,7 @@ log_on_failure += USERID
 ```
 
 ```
-/etc/[init](https://philipding.github.io/linux-command/init "init命令").d/xinetd restart
+/etc/[init](#/init "init命令").d/xinetd restart
 停止 xinetd： [确定]
 启动 xinetd： [确定]
 ```
@@ -159,22 +159,22 @@ max connections=4
 log file=/var/log/rsyncd.log
 pid file=/var/run/rsyncd.pid
 lock file=/var/run/rsyncd.lock
-secrets file=/etc/rsyncd.[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")
+secrets file=/etc/rsyncd.[passwd](#/passwd "passwd命令")
 hosts deny=172.16.78.0/22
 
 [www]
 comment= backup web
 path=/www
-[read](https://philipding.github.io/linux-command/read "read命令") only = no
+[read](#/read "read命令") only = no
 exclude=test
-auth [users](https://philipding.github.io/linux-command/users "users命令")=work
+auth [users](#/users "users命令")=work
 ```
 
 创建密码文件，采用这种方式不能使用系统用户对客户端进行认证，所以需要创建一个密码文件，其格式为“username:password”，用户名可以和密码可以随便定义，最好不要和系统帐户一致，同时要把创建的密码文件权限设置为600，这在前面的模块参数做了详细介绍。
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") "work:abc123" > /etc/rsyncd.passwd
-[chmod](https://philipding.github.io/linux-command/chmod "chmod命令") 600 /etc/rsyncd.passwd
+[echo](#/echo "echo命令") "work:abc123" > /etc/rsyncd.passwd
+[chmod](#/chmod "chmod命令") 600 /etc/rsyncd.passwd
 ```
 
 备份，完成以上工作，现在就可以对数据进行备份了，如下：

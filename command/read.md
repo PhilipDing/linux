@@ -27,7 +27,7 @@ read 1987name
 ```
 
 ```
-read first [last](https://philipding.github.io/linux-command/last "last命令")
+read first [last](#/last "last命令")
 从标准输入读取输入到第一个空格或者回车，将输入的第一个单词放到变量first中，并将该行其他的输入放在变量last中。
 ```
 
@@ -74,7 +74,7 @@ read -d ":" var
 #read 1987name        #等待读取输入，直到回车后表示输入完毕，并将输入赋值给变量answer
 HelloWorld            #控制台输入Hello
 
-#[echo](https://philipding.github.io/linux-command/echo "echo命令") $1987name       #打印变量
+#[echo](#/echo "echo命令") $1987name       #打印变量
 HelloWorld
 ```
 
@@ -125,7 +125,7 @@ They are Tim, Tom and Helen.
 
 ```
 #!/bin/bash
-read -p "输入密码：" -s [pwd](https://philipding.github.io/linux-command/pwd "pwd命令")
+read -p "输入密码：" -s [pwd](#/pwd "pwd命令")
 echo
 echo password read, is "$pwd"
 ```
@@ -134,7 +134,7 @@ echo password read, is "$pwd"
 
 ```
 #!/bin/bash
-[stty](https://philipding.github.io/linux-command/stty "stty命令") -echo
+[stty](#/stty "stty命令") -echo
 read -p "输入密码：" pwd
 stty echo
 echo

@@ -9,7 +9,7 @@ lastb(选项)(参数)
 ### 选项  
 
 ```
--a：把从何处登入系统的主机名称或[ip](https://philipding.github.io/linux-command/ip "ip命令")地址显示在最后一行；
+-a：把从何处登入系统的主机名称或[ip](#/ip "ip命令")地址显示在最后一行；
 -d：将IP地址转换成主机名称；
 -f<记录文件>：指定记录文件；
 -n<显示列数>或-<显示列数>：设置列出名单的显示列数；
@@ -27,20 +27,20 @@ lastb(选项)(参数)
 首次运行lastb命令会报下的错误：
 
 ```
-lastb: /var/log/btmp: No such [file](https://philipding.github.io/linux-command/file "file命令") or directory
-Perhaps this file was removed by the operator to prevent logging lastb [info](https://philipding.github.io/linux-command/info "info命令").
+lastb: /var/log/btmp: No such [file](#/file "file命令") or directory
+Perhaps this file was removed by the operator to prevent logging lastb [info](#/info "info命令").
 ```
 
 只需建立这个不存在的文件即可。
 
 ```
-[touch](https://philipding.github.io/linux-command/touch "touch命令") /var/log/btmp
+[touch](#/touch "touch命令") /var/log/btmp
 ```
 
-使用[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")的登录失败不会记录在btmp文件中。
+使用[ssh](#/ssh "ssh命令")的登录失败不会记录在btmp文件中。
 
 ```
-lastb | [head](https://philipding.github.io/linux-command/head "head命令")
+lastb | [head](#/head "head命令")
 root     ssh:notty    110.84.129.3     Tue Dec 17 06:19 - 06:19  (00:00)
 root     ssh:notty    110.84.129.3     Tue Dec 17 04:05 - 04:05  (00:00)
 root     ssh:notty    110.84.129.3     Tue Dec 17 01:52 - 01:52  (00:00)

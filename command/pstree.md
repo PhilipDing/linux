@@ -24,7 +24,7 @@ pstree(选项)
 
 ### 实例  
 
-显示当前所有进程的进程号和进程[id](https://philipding.github.io/linux-command/id "id命令")
+显示当前所有进程的进程号和进程[id](#/id "id命令")
 
 ```
 pstree -p

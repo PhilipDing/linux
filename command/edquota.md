@@ -1,4 +1,4 @@
-**edquota命令**用于编辑指定用户或工作组磁盘配额。edquota预设会使用[vi](https://philipding.github.io/linux-command/vi "vi命令")来编辑使用者或群组的[quota](https://philipding.github.io/linux-command/quota "quota命令")设置。
+**edquota命令**用于编辑指定用户或工作组磁盘配额。edquota预设会使用[vi](#/vi "vi命令")来编辑使用者或群组的[quota](#/quota "quota命令")设置。
 
 ### 语法  
 
@@ -65,11 +65,11 @@ LABEL=/ / ext2 defaults,usrquota,grpquota 1 1
 *   第三个字段：文件系统类型（磁盘配额只能在ext2文件系统上实现）；
 *   第四个字段：装载文件系统是使用的选项，如果只想实现基于用户的磁盘配额，就加入usrquota关键字，只想实现基于组的磁盘配额，就加入grpqouta关键字，如果两者都需要，就全写入，中间可以用逗号分隔。
 *   第五个字段：表明该文件系统（分区）是否为只读，如果是0就表示只读，1表示可以读写。
-*   第六个字段：表示系统启动执行[fsck](https://philipding.github.io/linux-command/fsck "fsck命令")时检查的顺序。
+*   第六个字段：表示系统启动执行[fsck](#/fsck "fsck命令")时检查的顺序。
 
 注意：请特别注意这里的拼写，是usrquota和grpquota，不要写成userquota和groupquota。
 
-进入单用户模式，用[quotacheck](https://philipding.github.io/linux-command/quotacheck "quotacheck命令")生成.user或.group文件
+进入单用户模式，用[quotacheck](#/quotacheck "quotacheck命令")生成.user或.group文件
 
 quotacheck 你的目录
 
@@ -77,7 +77,7 @@ quotacheck 你的目录
 example:quotacheck / ; quotacheck /home
 ```
 
-如果单用户模式报错的话[umount](https://philipding.github.io/linux-command/umount "umount命令")你的设备`/dev/hda*`
+如果单用户模式报错的话[umount](#/umount "umount命令")你的设备`/dev/hda*`
 
 再执行就ok了，重启动系统，如果一切正常的话，quota将开始正常工作。
 
@@ -142,9 +142,9 @@ edquota -t
 edquota将打开缺省编辑器显示如下内容：
 
 ```
-[time](https://philipding.github.io/linux-command/time "time命令") units may be:days,hours,minutes,or seconds
-Grace period before enforcing soft limits for [users](https://philipding.github.io/linux-command/users "users命令"):
-/dev/sda5:block grace period:0 days,[file](https://philipding.github.io/linux-command/file "file命令") grace period:0 days
+[time](#/time "time命令") units may be:days,hours,minutes,or seconds
+Grace period before enforcing soft limits for [users](#/users "users命令"):
+/dev/sda5:block grace period:0 days,[file](#/file "file命令") grace period:0 days
 ```
 
 可以使用天、小时、分、秒为单位来设定宽限期。例如，在下面这个例子中，磁盘空间限制的宽限期为两天，而文件数量限制的宽限期只有6个小时。

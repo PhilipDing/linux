@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-reconfigure命令**是Debian Linux中重新配置已经安装过的软件包，可以将一个或者多个已安装的软件包传递给此指令，它将询问软件初次安装后的配置问题。
+**[dpkg](#/dpkg "dpkg命令")-reconfigure命令**是Debian Linux中重新配置已经安装过的软件包，可以将一个或者多个已安装的软件包传递给此指令，它将询问软件初次安装后的配置问题。
 
 当用户需要再次对软件包配置的时候，可以使用dpkg-reconfigure命令来对指定的软件包进行配置。
 
@@ -31,5 +31,5 @@ dpkg-reconfigure(选项)(参数)
 用于配置语言：
 
 ```
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") dpkg-reconfigure locales
+[sudo](#/sudo "sudo命令") dpkg-reconfigure locales
 ```

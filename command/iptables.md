@@ -21,7 +21,7 @@ iptables(选项)(参数)
 -P：定义规则链中的默认目标；
 -h：显示帮助信息；
 -p：指定要匹配的数据包协议类型；
--s：指定要匹配的数据包源[ip](https://philipding.github.io/linux-command/ip "ip命令")地址；
+-s：指定要匹配的数据包源[ip](#/ip "ip命令")地址；
 -j<目标>：指定要跳转的目标；
 -i<网络接口>：指定数据包进入本机的网络接口；
 -o<网络接口>：指定数据包要离开本机所使用的网络接口。
@@ -50,7 +50,7 @@ iptables -t 表名 <-A/I/D/R> 规则链名 [规则号] <-i/o 网卡名> -p 协�
 
 动作包括：
 
-*   **[accept](https://philipding.github.io/linux-command/accept "accept命令")**：接收数据包。
+*   **[accept](#/accept "accept命令")**：接收数据包。
 *   **DROP**：丢弃数据包。
 *   **REDIRECT**：重定向、映射、透明代理。
 *   **SNAT**：源地址转换。
@@ -76,9 +76,9 @@ iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT    #允许已�
 iptables -A OUTPUT -j ACCEPT         #允许所有本机向外的访问
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT    #允许访问22端口
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT    #允许访问80端口
-iptables -A INPUT -p tcp --dport 21 -j ACCEPT    #允许[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")服务的21端口
+iptables -A INPUT -p tcp --dport 21 -j ACCEPT    #允许[ftp](#/ftp "ftp命令")服务的21端口
 iptables -A INPUT -p tcp --dport 20 -j ACCEPT    #允许FTP服务的20端口
-iptables -A INPUT -j [reject](https://philipding.github.io/linux-command/reject "reject命令")       #禁止其他未允许的规则访问
+iptables -A INPUT -j [reject](#/reject "reject命令")       #禁止其他未允许的规则访问
 iptables -A FORWARD -j REJECT     #禁止其他未允许的规则访问
 ```
 

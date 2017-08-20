@@ -1,4 +1,4 @@
-**iostat命令**被用于监视系统输入输出设备和CPU的使用情况。它的特点是汇报磁盘活动统计情况，同时也会汇报出CPU使用情况。同[vmstat](https://philipding.github.io/linux-command/vmstat "vmstat命令")一样，iostat也有一个弱点，就是它不能对某个进程进行深入分析，仅对系统的整体情况进行分析。
+**iostat命令**被用于监视系统输入输出设备和CPU的使用情况。它的特点是汇报磁盘活动统计情况，同时也会汇报出CPU使用情况。同[vmstat](#/vmstat "vmstat命令")一样，iostat也有一个弱点，就是它不能对某个进程进行深入分析，仅对系统的整体情况进行分析。
 
 ### 语法  
 
@@ -33,7 +33,7 @@ iostat -x /dev/sda1
 Linux 2.6.18-164.el5xen (localhost.localdomain)
 2010年03月26日  
 
-avg-cpu:  %user   %[nice](https://philipding.github.io/linux-command/nice "nice命令") %system %iowait 
+avg-cpu:  %user   %[nice](#/nice "nice命令") %system %iowait 
 %steal   %idle  
             0.11    0.02    0.18    0.35   
 0.03    99.31  
@@ -44,7 +44,7 @@ sda1                0.02          0.08
 0.00          2014               4 
 ```
 
-详细说明：第二行是系统信息和监测时间，第三行和第四行显示CPU使用情况（具体内容和[mpstat](https://philipding.github.io/linux-command/mpstat "mpstat命令")命令相同）。这里主要关注后面I/O输出的信息，如下所示：
+详细说明：第二行是系统信息和监测时间，第三行和第四行显示CPU使用情况（具体内容和[mpstat](#/mpstat "mpstat命令")命令相同）。这里主要关注后面I/O输出的信息，如下所示：
 
 <table>
 
@@ -92,7 +92,7 @@ sda1                0.02          0.08
 
 <tr>
 
-<td>[w](https://philipding.github.io/linux-command/w "w命令")/s</td>
+<td>[w](#/w "w命令")/s</td>
 
 <td>每秒实际写入需求的数量</td>
 

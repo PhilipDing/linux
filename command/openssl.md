@@ -32,7 +32,7 @@ OpenSSL实现了5种信息摘要算法，分别是MD2、MD5、MDC2、SHA（SHA1�
 
 **1、消息摘要算法应用例子**
 
-用SHA1算法计算文件[file](https://philipding.github.io/linux-command/file "file命令").txt的哈西值，输出到stdout：
+用SHA1算法计算文件[file](#/file "file命令").txt的哈西值，输出到stdout：
 
 ```
 # openssl dgst -sha1 file.txt
@@ -85,7 +85,7 @@ OpenSSL实现了5种信息摘要算法，分别是MD2、MD5、MDC2、SHA（SHA1�
 用Blowfish的CFB模式加密plaintext.doc，口令从环境变量PASSWORD中取，输出到文件ciphertext.bin。
 
 ```
-# openssl bf-cfb -salt -in plaintext.doc -out ciphertext.bin -pass [env](https://philipding.github.io/linux-command/env "env命令"):PASSWORD
+# openssl bf-cfb -salt -in plaintext.doc -out ciphertext.bin -pass [env](#/env "env命令"):PASSWORD
 ```
 
 给文件ciphertext.bin用base64编码，输出到文件base64.txt。
@@ -178,7 +178,7 @@ OpenSSL实现了5种信息摘要算法，分别是MD2、MD5、MDC2、SHA（SHA1�
 # openssl rsautl -verify -pubin -inkey rsapublickey.pem -in signature.bin -out plain
 ```
 
-从X.509证书文件cert.pem中获取公钥匙，用3DES加密[mail](https://philipding.github.io/linux-command/mail "mail命令").txt，输出到文件mail.enc
+从X.509证书文件cert.pem中获取公钥匙，用3DES加密[mail](#/mail "mail命令").txt，输出到文件mail.enc
 
 ```
 # openssl smime -encrypt -in mail.txt -des3 -out mail.enc cert.pem

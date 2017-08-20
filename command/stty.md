@@ -50,14 +50,14 @@ stty eof "string"
 **屏蔽显示：**
 
 ```
-stty -[echo](https://philipding.github.io/linux-command/echo "echo命令")   #禁止回显
+stty -[echo](#/echo "echo命令")   #禁止回显
 stty echo    #打开回显
 ```
 
 测试方法:
 
 ```
-stty -echo;[read](https://philipding.github.io/linux-command/read "read命令");stty echo;read
+stty -echo;[read](#/read "read命令");stty echo;read
 ```
 
 **忽略回车符：**
@@ -74,7 +74,7 @@ timeout_read()
 {
     timeout=$1
     old_stty_settings=`stty -g`　　#save current settings
-    stty -icanon min 0 [time](https://philipding.github.io/linux-command/time "time命令") 100　　#[set](https://philipding.github.io/linux-command/set "set命令") 10seconds,not 100seconds
+    stty -icanon min 0 [time](#/time "time命令") 100　　#[set](#/set "set命令") 10seconds,not 100seconds
     eval read varname　　          #=read $varname
     stty "$old_stty_settings"　　  #recover settings
 }

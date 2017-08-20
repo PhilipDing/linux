@@ -13,7 +13,7 @@ GNU's Screen 官方站点：[http://www.gnu.org/software/screen/](http://www.gnu
 ### 语法  
 
 ```
-# screen [-AmRvx -[ls](https://philipding.github.io/linux-command/ls "ls命令") -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
+# screen [-AmRvx -[ls](#/ls "ls命令") -wipe][-d <作业名称>][-h <行数>][-r <作业名称>][-s ][-S <作业名称>]
 ```
 
 ### 选项  
@@ -54,12 +54,12 @@ C-a 0..9 -> 切换到第 0..9 个 window
 Ctrl+a [Space] -> 由视窗0循序切换到视窗9
 C-a C-a -> 在两个最近使用的 window 间切换 
 C-a x -> 锁住当前的 window，需用用户密码解锁
-C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里，每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 [logout](https://philipding.github.io/linux-command/logout "logout命令") 也不影响。 
-C-a z -> 把当前session放到后台执行，用 shell 的 [fg](https://philipding.github.io/linux-command/fg "fg命令") 命令则可回去。
-C-a [w](https://philipding.github.io/linux-command/w "w命令") -> 显示所有窗口列表
-C-a t -> [time](https://philipding.github.io/linux-command/time "time命令")，显示当前时间，和系统的 load 
-C-a k -> [kill](https://philipding.github.io/linux-command/kill "kill命令") window，强行关闭当前的 window
-C-a [ -> 进入 copy mode，在 copy mode 下可以回滚、搜索、复制就像用使用 [vi](https://philipding.github.io/linux-command/vi "vi命令") 一样
+C-a d -> detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里，每个 window 内运行的 process (无论是前台/后台)都在继续执行，即使 [logout](#/logout "logout命令") 也不影响。 
+C-a z -> 把当前session放到后台执行，用 shell 的 [fg](#/fg "fg命令") 命令则可回去。
+C-a [w](#/w "w命令") -> 显示所有窗口列表
+C-a t -> [time](#/time "time命令")，显示当前时间，和系统的 load 
+C-a k -> [kill](#/kill "kill命令") window，强行关闭当前的 window
+C-a [ -> 进入 copy mode，在 copy mode 下可以回滚、搜索、复制就像用使用 [vi](#/vi "vi命令") 一样
     C-b Backward，PageUp 
     C-f Forward，PageDown 
     H(大写) High，将光标移至左上角 
@@ -70,7 +70,7 @@ C-a [ -> 进入 copy mode，在 copy mode 下可以回滚、搜索、复制就�
     b backward one word，以字为单位往后移 
     Space 第一次按为标记区起点，第二次按为终点 
     Esc 结束 copy mode 
-C-a ] -> [paste](https://philipding.github.io/linux-command/paste "paste命令")，把刚刚在 copy mode 选定的内容贴上
+C-a ] -> [paste](#/paste "paste命令")，把刚刚在 copy mode 选定的内容贴上
 ```
 
 ### 使用 screen  
@@ -80,8 +80,8 @@ C-a ] -> [paste](https://philipding.github.io/linux-command/paste "paste命令")
 流行的Linux发行版（例如Red Hat Enterprise Linux）通常会自带screen实用程序，如果没有的话，可以从GNU screen的官方网站下载。
 
 ```
-[root@TS-DEV ~]# [yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") screen
-[root@TS-DEV ~]# [rpm](https://philipding.github.io/linux-command/rpm "rpm命令") -qa|[grep](https://philipding.github.io/linux-command/grep "grep命令") screen
+[root@TS-DEV ~]# [yum](#/yum "yum命令") [install](#/install "install命令") screen
+[root@TS-DEV ~]# [rpm](#/rpm "rpm命令") -qa|[grep](#/grep "grep命令") screen
 screen-4.0.3-4.el5
 [root@TS-DEV ~]#
 ```
@@ -126,7 +126,7 @@ Screen默认会为窗口命名为编号和窗口中运行程序名的组合，�
 
 暂时中断会话
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2015/12/105052iyv.jpg)
+![](./images/105052iyv.jpg)
 
 半个小时之后回来了，找到该screen会话：
 
@@ -134,7 +134,7 @@ Screen默认会为窗口命名为编号和窗口中运行程序名的组合，�
 [root@TS-DEV ~]# screen -ls
 ```
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2015/12/1050524wP.jpg)
+![](./images/1050524wP.jpg)
 
 重新连接会话：
 
@@ -146,13 +146,13 @@ Screen默认会为窗口命名为编号和窗口中运行程序名的组合，�
 
 当然，如果你在另一台机器上没有分离一个Screen会话，就无从恢复会话了。这时可以使用下面命令强制将这个会话从它所在的终端分离，转移到新的终端上来：
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2015/12/1050528Fl.jpg)
+![](./images/1050528Fl.jpg)
 
 **清除dead 会话**
 
 如果由于某种原因其中一个会话死掉了（例如人为杀掉该会话），这时screen -list会显示该会话为dead状态。使用screen -wipe命令清除该会话：
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2015/12/105053LNE.jpg)
+![](./images/105053LNE.jpg)
 
 **关闭或杀死窗口**
 
@@ -160,7 +160,7 @@ Screen默认会为窗口命名为编号和窗口中运行程序名的组合，�
 
 如果一个Screen会话中最后一个窗口被关闭了，那么整个Screen会话也就退出了，screen进程会被终止。
 
-除了依次退出/杀死当前Screen会话中所有窗口这种方法之外，还可以使用快捷键C-a :，然后输入quit命令退出Screen会话。需要注意的是，这样退出会杀死所有窗口并退出其中运行的所有程序。其实C-a :这个快捷键允许用户直接输入的命令有很多，包括分屏可以输入[split](https://philipding.github.io/linux-command/split "split命令")等，这也是实现Screen功能的一个途径，不过个人认为还是快捷键比较方便些。
+除了依次退出/杀死当前Screen会话中所有窗口这种方法之外，还可以使用快捷键C-a :，然后输入quit命令退出Screen会话。需要注意的是，这样退出会杀死所有窗口并退出其中运行的所有程序。其实C-a :这个快捷键允许用户直接输入的命令有很多，包括分屏可以输入[split](#/split "split命令")等，这也是实现Screen功能的一个途径，不过个人认为还是快捷键比较方便些。
 
 ### screen 高级应用   
 
@@ -185,7 +185,7 @@ Screen允许使用快捷键C-a s锁定会话。锁定以后，再进行任何输
 在Screen会话之外，可以通过screen命令操作一个Screen会话，这也为使用Screen作为脚本程序增加了便利。关于Screen在脚本中的应用超出了入门的范围，这里只看一个例子，体会一下在会话之外对Screen的操作：
 
 ```
-[root@TS-DEV ~]# screen -S sandy -X screen [ping](https://philipding.github.io/linux-command/ping "ping命令") www.baidu.com
+[root@TS-DEV ~]# screen -S sandy -X screen [ping](#/ping "ping命令") www.baidu.com
 ```
 
 这个命令在一个叫做sandy的screen会话中创建一个新窗口，并在其中运行ping命令。
@@ -196,7 +196,7 @@ Screen允许使用快捷键C-a s锁定会话。锁定以后，再进行任何输
 
 可以用C-a X快捷键关闭当前焦点所在的屏幕区块，也可以用C-a Q关闭除当前区块之外其他的所有区块。关闭的区块中的窗口并不会关闭，还可以通过窗口切换找到它。
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2015/12/1050538zX.jpg)
+![](./images/1050538zX.jpg)
 
 **C/P模式和操作**
 
@@ -204,10 +204,10 @@ screen的另一个很强大的功能就是可以在不同窗口之间进行复�
 
 一般情况下，可以移动光标到指定位置，按下空格设置一个开头标记，然后移动光标到结尾位置，按下空格设置第二个标记，同时会将两个标记之间的部分储存在copy/paste buffer中，并退出copy/paste模式。在正常模式下，可以使用快捷键C-a ]将储存在buffer中的内容粘贴到当前窗口。
 
-![](https://philipding.github.io/linux-command/wp-content/uploads/2015/12/105054so0.jpg)
+![](./images/105054so0.jpg)
 
 **更多screen功能**
 
 同大多数UNIX程序一样，GNU Screen提供了丰富强大的定制功能。你可以在Screen的默认两级配置文件/etc/screenrc和$HOME/.screenrc中指定更多，例如设定screen选项，定制绑定键，设定screen会话自启动窗口，启用多用户模式，定制用户访问权限控制等等。如果你愿意的话，也可以自己指定screen配置文件。
 
-以多用户功能为例，screen默认是以单用户模式运行的，你需要在配置文件中指定multiuser on 来打开多用户模式，通过acl*（acladd,acldel,aclchg...）命令，你可以灵活配置其他用户访问你的screen会话。更多配置文件内容请参考screen的[man](https://philipding.github.io/linux-command/man "man命令")页。
+以多用户功能为例，screen默认是以单用户模式运行的，你需要在配置文件中指定multiuser on 来打开多用户模式，通过acl*（acladd,acldel,aclchg...）命令，你可以灵活配置其他用户访问你的screen会话。更多配置文件内容请参考screen的[man](#/man "man命令")页。

@@ -11,9 +11,9 @@ seq [选项]... 首数 增量 尾数
 ### 选项  
 
 ```
--f, --format=格式        使用[printf](https://philipding.github.io/linux-command/printf "printf命令") 样式的浮点格式
+-f, --format=格式        使用[printf](#/printf "printf命令") 样式的浮点格式
 -s, --separator=字符串   使用指定字符串分隔数字（默认使用：\n）
--[w](https://philipding.github.io/linux-command/w "w命令"), --equal-width        在列前添加0 使得宽度相同
+-[w](#/w "w命令"), --equal-width        在列前添加0 使得宽度相同
 ```
 
 ### 实例  
@@ -30,7 +30,7 @@ seq [选项]... 首数 增量 尾数
 `%`后面指定数字的位数 默认是`%g`，`%3g`那么数字位数不足部分是空格。
 
 ```
-#[sed](https://philipding.github.io/linux-command/sed "sed命令") -f"%03g" 9 11
+#[sed](#/sed "sed命令") -f"%03g" 9 11
 #seq -f"str%03g" 9 11
 str009
 str010
@@ -61,7 +61,7 @@ str009 str010 str011
 要指定`/t`做为分隔符号：
 
 ```
-seq -s"`[echo](https://philipding.github.io/linux-command/echo "echo命令") -e "/t"`" 9 11
+seq -s"`[echo](#/echo "echo命令") -e "/t"`" 9 11
 ```
 
 指定`\n`作为分隔符号：

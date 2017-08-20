@@ -15,4 +15,4 @@ showmount(选项)(参数)
 
 ### 参数  
 
-NFS服务器：指定NFS服务器的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或者主机名。
+NFS服务器：指定NFS服务器的[ip](#/ip "ip命令")地址或者主机名。

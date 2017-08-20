@@ -27,19 +27,19 @@ dumpe2fs(选项)(参数)
 dumpe2fs /dev/hda1
 dumpe2fs 1.39 (29-May-2006)
 Filesystem volume name:   /
-[last](https://philipding.github.io/linux-command/last "last命令") mounted on:          <not available>
+[last](#/last "last命令") mounted on:          <not available>
 Filesystem UUID:          845ccd40-1f3b-4729-a63d-cb80f51b082a
 Filesystem magic number:  0xEF53
 Filesystem revision #:    1 (dynamic)
 Filesystem features:      has_journal ext_attr resize_inode dir_index filetype needs_recovery sparse_super large_file
-Default [mount](https://philipding.github.io/linux-command/mount "mount命令") options:    user_xattr acl
+Default [mount](#/mount "mount命令") options:    user_xattr acl
 Filesystem state:         clean
 Errors behavior:          Continue
-Filesystem OS [type](https://philipding.github.io/linux-command/type "type命令"):       Linux
+Filesystem OS [type](#/type "type命令"):       Linux
 Inode count:              5242880
 Block count:              5241817
 Reserved block count:     262090
-[free](https://philipding.github.io/linux-command/free "free命令") blocks:              4434157
+[free](#/free "free命令") blocks:              4434157
 Free inodes:              5170836
 First block:              0
 Block size:               4096
@@ -50,8 +50,8 @@ Fragments per group:      32768
 Inodes per group:         32768
 Inode blocks per group:   1024
 Filesystem created:       Sun Mar 24 02:09:14 2013
-Last mount [time](https://philipding.github.io/linux-command/time "time命令"):          Thu Aug  1 16:42:07 2013
-Last [write](https://philipding.github.io/linux-command/write "write命令") time:          Thu Aug  1 16:42:07 2013
+Last mount [time](#/time "time命令"):          Thu Aug  1 16:42:07 2013
+Last [write](#/write "write命令") time:          Thu Aug  1 16:42:07 2013
 Mount count:              10
 Maximum mount count:      -1
 Last checked:             Sun Mar 24 02:09:14 2013
@@ -68,7 +68,7 @@ Journal backup:           inode blocks
 Journal size:             128M
 
 Group 0: (Blocks 0-32767)
-  Primary superblock [at](https://philipding.github.io/linux-command/at "at命令") 0, Group descriptors at 1-2
+  Primary superblock [at](#/at "at命令") 0, Group descriptors at 1-2
   Reserved GDT blocks at 3-1024
   Block bitmap at 1025 (+1025), Inode bitmap at 1026 (+1026)
   Inode table at 1027-2050 (+1027)

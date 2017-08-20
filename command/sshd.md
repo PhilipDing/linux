@@ -17,7 +17,7 @@ sshd(选项)
 -f：指定服务器的配置文件；
 -g：指定客户端登录时的过期时间，如果在此期限内，用户没有正确认证，则服务器断开次客户端的连接；
 -h：指定读取主机key文件；
--i：[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")以inetd方式运行；
+-i：[ssh](#/ssh "ssh命令")以inetd方式运行；
 -o：指定ssh的配置选项；
 -p：静默模式，没有任何信息写入日志；
 -t：测试模式。

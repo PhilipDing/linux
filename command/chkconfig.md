@@ -24,7 +24,7 @@ chkconfig(选项)
 *   等级5表示：带图形界面的多用户模式
 *   等级6表示：重新启动
 
-需要说明的是，level选项可以指定要查看的运行级而不一定是当前运行级。对于每个运行级，只能有一个启动脚本或者停止脚本。当切换运行级时，[init](https://philipding.github.io/linux-command/init "init命令")不会重新启动已经启动的服务，也不会再次去停止已经停止的服务。
+需要说明的是，level选项可以指定要查看的运行级而不一定是当前运行级。对于每个运行级，只能有一个启动脚本或者停止脚本。当切换运行级时，[init](#/init "init命令")不会重新启动已经启动的服务，也不会再次去停止已经停止的服务。
 
 运行级文件：
 
@@ -42,7 +42,7 @@ chkconfig(选项)
 
 ```
 chkconfig --list             #列出所有的系统服务。
-chkconfig --add [httpd](https://philipding.github.io/linux-command/httpd "httpd命令")        #增加httpd服务。
+chkconfig --add [httpd](#/httpd "httpd命令")        #增加httpd服务。
 chkconfig --del httpd        #删除httpd服务。
 chkconfig --level httpd 2345 on        #设置httpd在运行级别为2、3、4、5的情况下都是on（开启）的状态。
 chkconfig --list               #列出系统所有的服务启动情况。

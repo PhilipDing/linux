@@ -23,7 +23,7 @@ lsusb(选项)
 插入usb鼠标后执行lsusb的输出内容如下:
 
 ```
-Bus 005 Device 001: [id](https://philipding.github.io/linux-command/id "id命令") 0000:0000 
+Bus 005 Device 001: [id](#/id "id命令") 0000:0000 
 Bus 001 Device 001: ID 0000:0000 
 Bus 004 Device 001: ID 0000:0000 
 Bus 003 Device 001: ID 0000:0000 
@@ -35,7 +35,7 @@ Bus 002 Device 001: ID 0000:0000
 
 **Bus 005**
 
-表示第五个usb主控制器(机器上总共有5个usb主控制器 -- 可以通过命令[lspci](https://philipding.github.io/linux-command/lspci "lspci命令") | [grep](https://philipding.github.io/linux-command/grep "grep命令") USB查看)
+表示第五个usb主控制器(机器上总共有5个usb主控制器 -- 可以通过命令[lspci](#/lspci "lspci命令") | [grep](#/grep "grep命令") USB查看)
 
 **Device 006**
 

@@ -6,7 +6,7 @@ Ctrl+O：保存文件内容，如果是新文件，需要输入文件名；
 Ctrl+R：在当前光标位置插入一个指定的文本文件内容；
 Ctrl+Y：向前翻页；
 Ctrl+V：向后翻页；
-Ctrl+[w](https://philipding.github.io/linux-command/w "w命令")：对文件进行搜索；
+Ctrl+[w](#/w "w命令")：对文件进行搜索；
 Ctrl+K：剪切当前文件行到粘贴缓冲区；
 Ctrl+U：粘贴缓冲区中的内容到当前光标所在位置；
 Ctrl+C：显示当前光标位置；

@@ -1,4 +1,4 @@
-**cdrecord命令**用于Linux系统下光盘刻录，它支持[cd](https://philipding.github.io/linux-command/cd "cd命令")和DVD格式。linux下一般都带有cdrecord软件。
+**cdrecord命令**用于Linux系统下光盘刻录，它支持[cd](#/cd "cd命令")和DVD格式。linux下一般都带有cdrecord软件。
 
 ### 语法  
 
@@ -22,7 +22,7 @@ ISO文件：指定刻录光盘使用的ISO映像文件。
 
 ### 实例  
 
-查看系统所有 CD-R([w](https://philipding.github.io/linux-command/w "w命令")) 设备：
+查看系统所有 CD-R([w](#/w "w命令")) 设备：
 
 ```
 cdrecord -scanbus

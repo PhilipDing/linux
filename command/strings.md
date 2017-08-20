@@ -3,7 +3,7 @@
 ### 语法  
 
 ```
-strings [ -a ] [ - ] [ -o ] [ -t Format ] [ -n Number ] [ -Number ] [ [file](https://philipding.github.io/linux-command/file "file命令") ... ]
+strings [ -a ] [ - ] [ -o ] [ -t Format ] [ -n Number ] [ -Number ] [ [file](#/file "file命令") ... ]
 ```
 
 ### 选项  
@@ -22,7 +22,7 @@ strings [ -a ] [ - ] [ -o ] [ -t Format ] [ -n Number ] [ -Number ] [ [file](htt
 
 ### 实例  
 
-列出[ls](https://philipding.github.io/linux-command/ls "ls命令")中所有的ASCII文本：
+列出[ls](#/ls "ls命令")中所有的ASCII文本：
 
 ```
 strings /bin/ls
@@ -31,11 +31,11 @@ strings /bin/ls
 列出ls中所有的ASCII文本：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") /bin/ls strings
+[cat](#/cat "cat命令") /bin/ls strings
 ```
 
 查找ls中包含libc的字符串，不区分大小写：
 
 ```
-strings /bin/ls | [grep](https://philipding.github.io/linux-command/grep "grep命令") -i libc
+strings /bin/ls | [grep](#/grep "grep命令") -i libc
 ```

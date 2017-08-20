@@ -26,24 +26,24 @@ root             pts/0    221.6.45.34      Tue Dec 17 09:40:48 +0800 2013
 bin                                        **Never logged in**
 daemon                                     **Never logged in**
 adm                                        **Never logged in**
-[lp](https://philipding.github.io/linux-command/lp "lp命令")                                         **Never logged in**
-[sync](https://philipding.github.io/linux-command/sync "sync命令")                                       **Never logged in**
-[shutdown](https://philipding.github.io/linux-command/shutdown "shutdown命令")                                   **Never logged in**
-[halt](https://philipding.github.io/linux-command/halt "halt命令")                                       **Never logged in**
-[mail](https://philipding.github.io/linux-command/mail "mail命令")                                       **Never logged in**
+[lp](#/lp "lp命令")                                         **Never logged in**
+[sync](#/sync "sync命令")                                       **Never logged in**
+[shutdown](#/shutdown "shutdown命令")                                   **Never logged in**
+[halt](#/halt "halt命令")                                       **Never logged in**
+[mail](#/mail "mail命令")                                       **Never logged in**
 news                                       **Never logged in**
 uucp                                       **Never logged in**
 operator                                   **Never logged in**
 games                                      **Never logged in**
 gopher                                     **Never logged in**
-[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")                                        **Never logged in**
+[ftp](#/ftp "ftp命令")                                        **Never logged in**
 nobody                                     **Never logged in**
 vcsa                                       **Never logged in**
 ntp                                        **Never logged in**
-[sshd](https://philipding.github.io/linux-command/sshd "sshd命令")                                       **Never logged in**
+[sshd](#/sshd "sshd命令")                                       **Never logged in**
 nscd                                       **Never logged in**
 ldap                                       **Never logged in**
 postfix                                    **Never logged in**
 www                                        **Never logged in**
-[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")                                      **Never logged in**
+[mysql](#/mysql "mysql命令")                                      **Never logged in**
 ```

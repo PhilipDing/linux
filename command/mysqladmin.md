@@ -1,4 +1,4 @@
-**mysqladmin命令**是[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")服务器管理任务的客户端工具，它可以检查mytsql服务器的配置和当前工作状态，创建和删除数据库，创建用户和修改用户密码等操作。
+**mysqladmin命令**是[mysql](#/mysql "mysql命令")服务器管理任务的客户端工具，它可以检查mytsql服务器的配置和当前工作状态，创建和删除数据库，创建用户和修改用户密码等操作。
 
 ### 语法  
 
@@ -9,10 +9,10 @@ mysqladmin(选项)(参数)
 ### 选项  
 
 ```
--h：MySQL服务器主机名或[ip](https://philipding.github.io/linux-command/ip "ip命令")地址；
+-h：MySQL服务器主机名或[ip](#/ip "ip命令")地址；
 -u：连接MySQL服务器的用户名；
 -p：连接MySQL服务器的密码；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助信息。
+--[help](#/help "help命令")：显示帮助信息。
 ```
 
 ### 参数  
@@ -29,13 +29,13 @@ flush-hosts：清空所有缓存的主机；
 flush-logs：清空所有日志；
 flush-tables：清空所有表；
 flush-privileges：再次装载授权表(同reload)；
-[kill](https://philipding.github.io/linux-command/kill "kill命令") [id](https://philipding.github.io/linux-command/id "id命令"),id,...：杀死mysql线程；
+[kill](#/kill "kill命令") [id](#/id "id命令"),id,...：杀死mysql线程；
 password 新口令：将老密码改为新密码；
-[ping](https://philipding.github.io/linux-command/ping "ping命令")：检查mysqld是否活着；
+[ping](#/ping "ping命令")：检查mysqld是否活着；
 processlist：显示服务其中活跃线程列表；
 reload：重载授权表；
 refresh：清空所有表并关闭和打开日志文件；
-[shutdown](https://philipding.github.io/linux-command/shutdown "shutdown命令")：关掉服务器；
+[shutdown](#/shutdown "shutdown命令")：关掉服务器；
 status：给出服务器的简短状态消息；
 variables：打印出可用变量；
 version：得到服务器的版本信息。

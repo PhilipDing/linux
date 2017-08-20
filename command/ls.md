@@ -19,7 +19,7 @@ ls（选项）（参数）
 -d：仅显示目录名，而不显示目录下的内容列表。显示符号链接文件本身，而不显示其所指向的目录列表；
 -f：此参数的效果和同时指定“aU”参数相同，并关闭“lst”参数的效果；
 -i：显示文件索引节点号（inode）。一个索引节点代表一个文件；
---[file](https://philipding.github.io/linux-command/file "file命令")-[type](https://philipding.github.io/linux-command/type "type命令")：与“-F”选项的功能相同，但是不显示“*”；
+--[file](#/file "file命令")-[type](#/type "type命令")：与“-F”选项的功能相同，但是不显示“*”；
 -k：以KB（千字节）为单位显示文件大小；
 -l：以长格式显示目录下的内容列表。输出的信息从左到右依次包括文件名，文件类型、权限模式、硬连接数、所有者、组、文件大小和文件的最后修改时间等；
 -m：用“,”号区隔每个文件和目录的名称；
@@ -29,7 +29,7 @@ ls（选项）（参数）
 -t：用文件和目录的更改时间排序；
 -L：如果遇到性质为符号链接的文件或目录，直接列出该链接所指向的原始文件或目录；
 -R：递归处理，将指定目录下的所有文件及子目录一并处理；
---full-[time](https://philipding.github.io/linux-command/time "time命令")：列出完整的日期与时间；
+--full-[time](#/time "time命令")：列出完整的日期与时间；
 --color[=WHEN]：使用不同的颜色高亮显示不同类型的。
 ```
 
@@ -43,7 +43,7 @@ ls（选项）（参数）
 
 ```
 [root@localhost ~]# ls
-anaconda-ks.cfg  [install](https://philipding.github.io/linux-command/install "install命令").log  install.log.syslog  satools
+anaconda-ks.cfg  [install](#/install "install命令").log  install.log.syslog  satools
 ```
 
 显示当前目录下包括影藏文件在内的所有文件列表
@@ -51,7 +51,7 @@ anaconda-ks.cfg  [install](https://philipding.github.io/linux-command/install "i
 ```
 [root@localhost ~]# ls -a
 .   anaconda-ks.cfg  .bash_logout   .bashrc  install.log         .mysql_history  satools  .tcshrc   .vimrc
-..  .bash_history    .bash_profile  .cshrc   install.log.syslog  .rnd            .[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")     .viminfo
+..  .bash_history    .bash_profile  .cshrc   install.log.syslog  .rnd            .[ssh](#/ssh "ssh命令")     .viminfo
 ```
 
 输出长格式列表
@@ -101,7 +101,7 @@ tmp  root  etc  dev  lib  boot  sys  proc  data  home  bin  sbin  usr  var  lost
 anaconda-ks.cfg  install.log  install.log.syslog  satools
 
 ./satools:
-black.txt  freemem.sh  [iptables](https://philipding.github.io/linux-command/iptables "iptables命令").sh  lnmp.sh  [mysql](https://philipding.github.io/linux-command/mysql "mysql命令")  php502_check.sh  ssh_safe.sh
+black.txt  freemem.sh  [iptables](#/iptables "iptables命令").sh  lnmp.sh  [mysql](#/mysql "mysql命令")  php502_check.sh  ssh_safe.sh
 
 ```
 
@@ -198,7 +198,7 @@ drwxr-xr-x  19 root root 4.0K Jun 11 23:38 var
 显示文件夹信息
 
 ```
-[root@localhost /]# ls -[ld](https://philipding.github.io/linux-command/ld "ld命令") /etc/
+[root@localhost /]# ls -[ld](#/ld "ld命令") /etc/
 
 drwxr-xr-x 75 root root 4096 Oct 16 04:02 /etc/
 
@@ -269,7 +269,7 @@ drwxrwxrwt   3 root root 98304 Oct 16 08:54 tmp
 ```
 [root@localhost nginx-1.2.1]# ls -F
 
-auto/  CHANGES  CHANGES.ru  conf/  configure*  contrib/  html/  LICENSE  Makefile  [man](https://philipding.github.io/linux-command/man "man命令")/  objs/  README  src/
+auto/  CHANGES  CHANGES.ru  conf/  configure*  contrib/  html/  LICENSE  Makefile  [man](#/man "man命令")/  objs/  README  src/
 
 ```
 

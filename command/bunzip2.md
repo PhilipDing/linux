@@ -1,4 +1,4 @@
-**bunzip2命令**解压缩由[bzip2](https://philipding.github.io/linux-command/bzip2 "bzip2命令")指令创建的”.bz2"压缩包。对文件进行压缩与解压缩。此命令类似于“[gzip](https://philipding.github.io/linux-command/gzip "gzip命令")/[gunzip](https://philipding.github.io/linux-command/gunzip "gunzip命令")”命令，只能对文件进行压缩。对于目录只能压缩目录下的所有文件，压缩完成后，在目录下生成以“.bz2”为后缀的压缩包。bunzip2其实是bzip2的符号链接，即软链接，因此压缩解压都可以通过bzip2实现。
+**bunzip2命令**解压缩由[bzip2](#/bzip2 "bzip2命令")指令创建的”.bz2"压缩包。对文件进行压缩与解压缩。此命令类似于“[gzip](#/gzip "gzip命令")/[gunzip](#/gunzip "gunzip命令")”命令，只能对文件进行压缩。对于目录只能压缩目录下的所有文件，压缩完成后，在目录下生成以“.bz2”为后缀的压缩包。bunzip2其实是bzip2的符号链接，即软链接，因此压缩解压都可以通过bzip2实现。
 
 ### 语法  
 
@@ -22,7 +22,7 @@ bunzip2(选项)(参数)
 
 ### 实例  
 
-将`/opt`目录下的etc.[zip](https://philipding.github.io/linux-command/zip "zip命令")、var.zip和backup.zip进行压缩，设置压缩率为最高，同时在压缩完毕后不删除原始文件，显示压缩过程的详细信息。
+将`/opt`目录下的etc.[zip](#/zip "zip命令")、var.zip和backup.zip进行压缩，设置压缩率为最高，同时在压缩完毕后不删除原始文件，显示压缩过程的详细信息。
 
 ```
 bzip2 -9vk /opt/etc.zip /opt/var.zip /opt/backup.zip

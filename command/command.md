@@ -12,7 +12,7 @@ command(参数)
 
 ### 实例  
 
-使用command命令调用执行`[echo](https://philipding.github.io/linux-command/echo "echo命令") Linux`，输入如下命令：
+使用command命令调用执行`[echo](#/echo "echo命令") Linux`，输入如下命令：
 
 ```
 command echo Linux            #调用执行shell内部指令

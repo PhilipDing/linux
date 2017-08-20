@@ -1,4 +1,4 @@
-**ftpwho命令**[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")服务器套件proftpd的工作指令，用于显示当前每个ftp会话信息。
+**ftpwho命令**[ftp](#/ftp "ftp命令")服务器套件proftpd的工作指令，用于显示当前每个ftp会话信息。
 
 ### 语法  
 

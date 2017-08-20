@@ -32,7 +32,7 @@ hdparm(选项)(参数)
 -T：平谷硬盘快取的读取效率；
 -u<0或1>：在硬盘存取时，允许其他中断要求同时执行；
 -v：显示硬盘的相关设定；
--[w](https://philipding.github.io/linux-command/w "w命令")<0或1>：设定硬盘的写入快取；
+-[w](#/w "w命令")<0或1>：设定硬盘的写入快取；
 -X<传输模式>：设定硬盘的传输模式；
 -y：使IDE硬盘进入省电模式；
 -Y：使IDE硬盘进入睡眠模式；
@@ -41,7 +41,7 @@ hdparm(选项)(参数)
 
 ### 参数  
 
-设备文件：指定[id](https://philipding.github.io/linux-command/id "id命令")驱动对应的设备文件名。
+设备文件：指定[id](#/id "id命令")驱动对应的设备文件名。
 
 ### 实例  
 
@@ -51,7 +51,7 @@ hdparm(选项)(参数)
 hdparm /dev/sda
 /dev/sda:
 IO_support = 0 (default 16-bit)
-[readonly](https://philipding.github.io/linux-command/readonly "readonly命令") = 0 (off)
+[readonly](#/readonly "readonly命令") = 0 (off)
 readahead = 256 (on)
 geometry = 19457［柱面数］/255［磁头数］/63［扇区数］, sectors = 312581808［总扇区数］, start = 0［起始扇区数］
 
@@ -101,6 +101,6 @@ hdparm -m    #参数值为整数值如8 /dev/sda
 
 ```
 检查：smartctl -l selftest /dev/sda
-卸载：[umount](https://philipding.github.io/linux-command/umount "umount命令") /dev/sda*
-修复：[badblocks](https://philipding.github.io/linux-command/badblocks "badblocks命令") /dev/sda
+卸载：[umount](#/umount "umount命令") /dev/sda*
+修复：[badblocks](#/badblocks "badblocks命令") /dev/sda
 ```

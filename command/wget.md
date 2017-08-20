@@ -23,13 +23,13 @@ wget(选项)(参数)
 -l<目录列表>：设置顺着的目录列表，多个目录用“，”分隔；
 -L：仅顺着关联的连接；
 -r：递归下载方式；
--[nc](https://philipding.github.io/linux-command/nc_netcat "nc命令")：文件存在时，下载文件不覆盖原有文件；
+-[nc](#/nc_netcat "nc命令")：文件存在时，下载文件不覆盖原有文件；
 -nv：下载时只显示更新和出错信息，不显示指令的详细执行过程；
 -q：不显示指令执行过程；
 -nh：不查询主机名称；
 -v：显示详细执行过程；
 -V：显示版本信息；
---passive-[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")：使用被动模式PASV连接FTP服务器；
+--passive-[ftp](#/ftp "ftp命令")：使用被动模式PASV连接FTP服务器；
 --follow-ftp：从HTML文件中下载FTP连接文件。
 ```
 
@@ -42,7 +42,7 @@ URL：下载指定的URL地址。
 **使用wget下载单个文件**
 
 ```
-wget http://www.linuxde.net/testfile.[zip](https://philipding.github.io/linux-command/zip "zip命令")
+wget http://www.linuxde.net/testfile.[zip](#/zip "zip命令")
 ```
 
 以下的例子是从网络下载一个文件并保存在当前目录，在下载的过程中会显示进度条，包含（下载完成百分比，已经下载的字节，当前下载速度，剩余下载时间）。
@@ -50,7 +50,7 @@ wget http://www.linuxde.net/testfile.[zip](https://philipding.github.io/linux-co
 **下载并以不同的文件名保存**
 
 ```
-wget -O wordpress.zip http://www.linuxde.net/download.aspx?[id](https://philipding.github.io/linux-command/id "id命令")=1080
+wget -O wordpress.zip http://www.linuxde.net/download.aspx?[id](#/id "id命令")=1080
 ```
 
 wget默认会以最后一个符合`/`的后面的字符来命令，对于动态链接的下载通常文件名会不正确。
@@ -61,7 +61,7 @@ wget默认会以最后一个符合`/`的后面的字符来命令，对于动态�
 wget http://www.linuxde.net/download?id=1
 ```
 
-即使下载的文件是zip格式，它仍然以`download.[php](https://philipding.github.io/linux-command/php "php命令")?id=1080`命令。
+即使下载的文件是zip格式，它仍然以`download.[php](#/php "php命令")?id=1080`命令。
 
 正确：为了解决这个问题，我们可以使用参数`-O`来指定一个文件名：
 
@@ -97,7 +97,7 @@ Output will be written to `wget-log'.
 对于下载非常大的文件的时候，我们可以使用参数`-b`进行后台下载，你可以使用以下命令来察看下载进度：
 
 ```
-[tail](https://philipding.github.io/linux-command/tail "tail命令") -f wget-log
+[tail](#/tail "tail命令") -f wget-log
 ```
 
 **伪装代理名称下载**
@@ -119,7 +119,7 @@ wget --spider URL
 如果下载链接正确，将会显示:
 
 ```
-Spider mode enabled. Check if remote [file](https://philipding.github.io/linux-command/file "file命令") exists.
+Spider mode enabled. Check if remote [file](#/file "file命令") exists.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Remote file exists and could contain further links,
@@ -158,7 +158,7 @@ wget -i filelist.txt
 首先，保存一份下载链接文件：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") > filelist.txt
+[cat](#/cat "cat命令") > filelist.txt
 url1
 url2
 url3
@@ -183,7 +183,7 @@ wget --mirror -p --convert-links -P ./LOCAL URL
 **过滤指定格式下载**
 
 ```
-wget --[reject](https://philipding.github.io/linux-command/reject "reject命令")=gif ur
+wget --[reject](#/reject "reject命令")=gif ur
 ```
 
 下载一个网站，但你不希望下载图片，可以使用这条命令。

@@ -24,7 +24,7 @@
 **-R/-r** 此参数的效果和指定“-d recurse”参数相同。
 **-s** 不显示错误信息。
 **-v** 反转查找。
-**-[w](https://philipding.github.io/linux-command/w "w命令")** 只显示全字符合的列。
+**-[w](#/w "w命令")** 只显示全字符合的列。
 **-x** 只显示全列符合的列。
 **-y** 此参数效果跟“-i”相同。
 **-o** 只输出文件中匹配到的部分。
@@ -66,14 +66,14 @@ grep "match_pattern" file_name --color=auto
 ```
 grep -E "[1-9]+"
 或
-[egrep](https://philipding.github.io/linux-command/egrep "egrep命令") "[1-9]+"
+[egrep](#/egrep "egrep命令") "[1-9]+"
 
 ```
 
 只输出文件中匹配到的部分 **-o** 选项：
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") this is a [test](https://philipding.github.io/linux-command/test "test命令") line. | grep -o -E "[a-z]+\."
+[echo](#/echo "echo命令") this is a [test](#/test "test命令") line. | grep -o -E "[a-z]+\."
 line.
 
 echo this is a test line. | egrep -o "[a-z]+\."
@@ -93,7 +93,7 @@ grep -c "text" file_name
 ```
 grep "text" -n file_name
 或
-[cat](https://philipding.github.io/linux-command/cat "cat命令") file_name | grep "text" -n
+[cat](#/cat "cat命令") file_name | grep "text" -n
 
 #多个文件
 grep "text" -n file_1 file_2
@@ -154,7 +154,7 @@ echo aaa bbb ccc ddd eee | grep -f patfile -o
 在grep搜索结果中包括或者排除指定文件：
 
 ```
-#只在目录中所有的.[php](https://philipding.github.io/linux-command/php "php命令")和.html文件中递归搜索字符"main()"
+#只在目录中所有的.[php](#/php "php命令")和.html文件中递归搜索字符"main()"
 grep "main()" . -r --include *.{php,html}
 
 #在搜索结果中排除所有README文件
@@ -165,7 +165,7 @@ grep "main()" . -r --exclude-from filelist
 
 ```
 
-使用0值字节后缀的grep与[xargs](https://philipding.github.io/linux-command/xargs "xargs命令")：
+使用0值字节后缀的grep与[xargs](#/xargs "xargs命令")：
 
 ```
 #测试文件：
@@ -173,7 +173,7 @@ echo "aaa" > file1
 echo "bbb" > file2
 echo "aaa" > file3
 
-grep "aaa" [file](https://philipding.github.io/linux-command/file "file命令")* -lZ | xargs -0 [rm](https://philipding.github.io/linux-command/rm "rm命令")
+grep "aaa" [file](#/file "file命令")* -lZ | xargs -0 [rm](#/rm "rm命令")
 
 #执行后会删除file1和file3，grep输出用-Z选项来指定以0值字节作为终结符文件名（\0），xargs -0 读取输入并用0值字节终结符分隔文件名，然后删除匹配文件，-Z通常和-l结合使用。
 
@@ -192,7 +192,7 @@ grep -q "test" filename
 
 ```
 #显示匹配某个结果之后的3行，使用 -A 选项：
-[seq](https://philipding.github.io/linux-command/seq "seq命令") 10 | grep "5" -A 3
+[seq](#/seq "seq命令") 10 | grep "5" -A 3
 5
 6
 7
@@ -216,7 +216,7 @@ seq 10 | grep "5" -C 3
 8
 
 #如果匹配结果有多个，会用“--”作为各匹配结果之间的分隔符：
-echo -e "a\nb\[nc](https://philipding.github.io/linux-command/nc_netcat "nc命令")\na\nb\nc" | grep a -A 1
+echo -e "a\nb\[nc](#/nc_netcat "nc命令")\na\nb\nc" | grep a -A 1
 a
 b
 --

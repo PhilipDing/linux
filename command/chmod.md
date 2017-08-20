@@ -7,7 +7,7 @@
 `o` Other，除了文件或目录拥有者或所属群组之外，其他用户皆属于这个范围；  
 `a` All，即全部的用户，包含拥有者，所属群组以及其他用户；  
 `r` 读取权限，数字代号为“4”;  
-`[w](https://philipding.github.io/linux-command/w "w命令")` 写入权限，数字代号为“2”；  
+`[w](#/w "w命令")` 写入权限，数字代号为“2”；  
 `x` 执行或切换权限，数字代号为“1”；  
 `-` 不具任何权限，数字代号为“0”；  
 `s` 特殊功能说明：变更文件或目录的权限。
@@ -38,11 +38,11 @@ chmod(选项)(参数)
 
 ### 知识扩展和实例  
 
-Linux用 户分为：拥有者、组群(Group)、其他（other），Linux系统中，预设的情況下，系统中所有的帐号与一般身份使用者，以及root的相关信 息， 都是记录在`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`文件中。每个人的密码则是记录在`/etc/shadow`文件下。 此外，所有的组群名称记录在`/etc/group`內！
+Linux用 户分为：拥有者、组群(Group)、其他（other），Linux系统中，预设的情況下，系统中所有的帐号与一般身份使用者，以及root的相关信 息， 都是记录在`/etc/[passwd](#/passwd "passwd命令")`文件中。每个人的密码则是记录在`/etc/shadow`文件下。 此外，所有的组群名称记录在`/etc/group`內！
 
 linux文件的用户权限的分析图
 
-![linux文件的用户权限的分析图](https://philipding.github.io/linux-command/wp-content/uploads/2013/11/chmod.gif)
+![linux文件的用户权限的分析图](./images/chmod.gif)
 
 例：rwx　rw-　r--
 
@@ -60,6 +60,6 @@ chmod a+x f01　　//对文件f01的u,g,o都设置可执行属性
 文件的属主和属组属性设置
 
 ```
-[chown](https://philipding.github.io/linux-command/chown "chown命令") user:market f01　　//把文件f01给uesr，添加到market组
+[chown](#/chown "chown命令") user:market f01　　//把文件f01给uesr，添加到market组
 ll -d f1  查看目录f1的属性
 ```

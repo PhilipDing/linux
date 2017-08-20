@@ -13,7 +13,7 @@ usage: mii-tool [-VvRrwl] [-A media,... | -F media] [interface ...]
 -v 显示网络接口的信息；
 -R 重设MII到开启状态；
 -r 重启自动协商模式；
--[w](https://philipding.github.io/linux-command/w "w命令") 查看网络接口连接的状态变化；
+-[w](#/w "w命令") 查看网络接口连接的状态变化；
 -l 写入事件到系统日志；
 -A 指令特定的网络接口；
 -F 更改网络接口协商方式；
@@ -29,7 +29,7 @@ media: 100baseT4, 100baseTx-FD, 100baseTx-HD, 10baseT-FD, 10baseT-HD,
 ```
 [root@localhost ~]# mii-tool -v eth0
 eth0: negotiated 100baseTx-FD, link ok
-  product [info](https://philipding.github.io/linux-command/info "info命令"): vendor 00:50:ef, model 60 [rev](https://philipding.github.io/linux-command/rev "rev命令") 8
+  product [info](#/info "info命令"): vendor 00:50:ef, model 60 [rev](#/rev "rev命令") 8
   basic mode:   autonegotiation enabled
   basic status: autonegotiation complete, link ok
   capabilities: 100baseTx-FD 100baseTx-HD 10baseT-FD 10baseT-HD
@@ -56,7 +56,7 @@ eth0: 100 Mbit, full duplex, link ok
   advertising:  100baseTx-FD 100baseTx-HD 10baseT-FD 10baseT-HD
 ```
 
-注：是不是已经改过来了？当然，我们也一样用[ethtool](https://philipding.github.io/linux-command/ethtool "ethtool命令")工具来更改，比如执行下面的命令：
+注：是不是已经改过来了？当然，我们也一样用[ethtool](#/ethtool "ethtool命令")工具来更改，比如执行下面的命令：
 
 ```
 [root@localhost ~]# ethtool -s eth0 speed 100 duplex full

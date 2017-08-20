@@ -22,13 +22,13 @@ shell变量：声明shell变量，格式为“变量名=值”。
 
 ### 实例  
 
-首先使用declare命令定义shell变量"[test](https://philipding.github.io/linux-command/test "test命令")"，并且将其值设置为"[man](https://philipding.github.io/linux-command/man "man命令").linuxde.net"，输入如下命令：
+首先使用declare命令定义shell变量"[test](#/test "test命令")"，并且将其值设置为"[man](#/man "man命令").linuxde.net"，输入如下命令：
 
 ```
 declare test='man.linuxde.net'    #定义并初始化shell变量
 ```
 
-上面的命令执行后，再使用[echo](https://philipding.github.io/linux-command/echo "echo命令")命令将该shell变量值输出，输入如下命令：
+上面的命令执行后，再使用[echo](#/echo "echo命令")命令将该shell变量值输出，输入如下命令：
 
 ```
 echo $test                        #输出shell变量的值

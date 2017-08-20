@@ -15,7 +15,7 @@ host(选项)(参数)
 -r：在查询域名时，不使用递归的查询方式；
 -t<类型>：指定查询的域名信息类型；
 -v：显示指令执行的详细信息；
--[w](https://philipding.github.io/linux-command/w "w命令")：如果域名服务器没有给出应答信息，则总是等待，直到域名服务器给出应答；
+-[w](#/w "w命令")：如果域名服务器没有给出应答信息，则总是等待，直到域名服务器给出应答；
 -W<时间>：指定域名查询的最长时间，如果在指定时间内域名服务器没有给出应答信息，则退出指令；
 -4：使用IPv4；
 -6：使用IPv6.
@@ -29,12 +29,12 @@ host(选项)(参数)
 
 ```
 [root@localhost ~]# host www.linuxde.net 
-www.linuxde.net is an [alias](https://philipding.github.io/linux-command/alias "alias命令") for host.1.linuxde.net.
+www.linuxde.net is an [alias](#/alias "alias命令") for host.1.linuxde.net.
 host.1.linuxde.net has address 100.42.212.8
 
 [root@localhost ~]# host -a www.linuxde.net
 Trying "www.linuxde.net"
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, [id](https://philipding.github.io/linux-command/id "id命令"): 34671
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, [id](#/id "id命令"): 34671
 ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
 
 ;; QUESTION SECTION:

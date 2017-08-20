@@ -11,7 +11,7 @@ which(选项)(参数)
 ```
 -n<文件名长度>：制定文件名长度，指定的长度必须大于或等于所有文件中最长的文件名；
 -p<文件名长度>：与-n参数相同，但此处的<文件名长度>包含了文件的路径；
--[w](https://philipding.github.io/linux-command/w "w命令")：指定输出时栏位的宽度；
+-[w](#/w "w命令")：指定输出时栏位的宽度；
 -V：显示版本信息。
 ```
 
@@ -24,7 +24,7 @@ which(选项)(参数)
 查找文件、显示命令路径：
 
 ```
-[root@localhost ~]# which [pwd](https://philipding.github.io/linux-command/pwd "pwd命令")
+[root@localhost ~]# which [pwd](#/pwd "pwd命令")
 /bin/pwd
 
 [root@localhost ~]#  which adduser

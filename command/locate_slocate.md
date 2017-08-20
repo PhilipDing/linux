@@ -1,6 +1,6 @@
 **locate命令**和**slocate命令**都用来查找文件或目录。
 
-locate命令其实是`[find](https://philipding.github.io/linux-command/find "find命令") -name`的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库`/var/lib/locatedb`，这个数据库中含有本地所有文件信息。Linux系统自动创建这个数据库，并且每天自动更新一次，所以使用locate命令查不到最新变动过的文件。为了避免这种情况，可以在使用locate之前，先使用[updatedb](https://philipding.github.io/linux-command/updatedb "updatedb命令")命令，手动更新数据库。
+locate命令其实是`[find](#/find "find命令") -name`的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库`/var/lib/locatedb`，这个数据库中含有本地所有文件信息。Linux系统自动创建这个数据库，并且每天自动更新一次，所以使用locate命令查不到最新变动过的文件。为了避免这种情况，可以在使用locate之前，先使用[updatedb](#/updatedb "updatedb命令")命令，手动更新数据库。
 
 ### 语法  
 
@@ -13,7 +13,7 @@ locate/slocate(选项)(参数)
 ```
 -d<目录>或--database=<目录>：指定数据库所在的目录；
 -u：更新slocate数据库；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+--[help](#/help "help命令")：显示帮助；
 --version：显示版本信息。
 ```
 

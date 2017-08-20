@@ -15,7 +15,7 @@ emacs(选项)(参数)
 -t<文件>：启动emacs编辑器时，把指定的文件作为中端，不适用标准输入（stdin）与标准输出（stdout）；
 -f<函数>：执行指定lisp（广泛应用于人工智能领域的编程语言）函数；
 -l<lisp代码文件>：加载指定的lisp代码文件；
--[batch](https://philipding.github.io/linux-command/batch "batch命令")：以批处理模式运行emacs编辑器。
+-[batch](#/batch "batch命令")：以批处理模式运行emacs编辑器。
 ```
 
 ### 参数  
@@ -35,7 +35,7 @@ C-g : 取消未完成的命令
 编辑
 
 ```
-C-z (redefined): Undo；原来C-z是挂起Emacs（然后用[fg](https://philipding.github.io/linux-command/fg "fg命令")命令调出）；C-x u 是默认的命令； 移动一下光标，再C-z就可以redo
+C-z (redefined): Undo；原来C-z是挂起Emacs（然后用[fg](#/fg "fg命令")命令调出）；C-x u 是默认的命令； 移动一下光标，再C-z就可以redo
 M-d : 删除光标后的词语
 ```
 
@@ -70,7 +70,7 @@ C-x b : 切换到前一个编辑的buffer
 C-x C-b : 列出当前所有buffer
 C-x C-s : 保存当前buffer
 C-x s : 保存所有未保存的buffer，会提示你是否需要保存
-C-x C-[w](https://philipding.github.io/linux-command/w "w命令") : 文件另存为
+C-x C-[w](#/w "w命令") : 文件另存为
 ```
 
 拷贝与粘贴
@@ -135,7 +135,7 @@ C-h ? : 查看帮助信息
 C-h f : 查看一个函数
 C-h v : 查看一个变量
 C-h k : 查看一个键绑定 (C－h c 也是查看键绑定，但是信息较简略)
-C-h C-f : 查看一个函数的[info](https://philipding.github.io/linux-command/info "info命令")，非常有用
+C-h C-f : 查看一个函数的[info](#/info "info命令")，非常有用
 C-h i : 看Info
 ```
 

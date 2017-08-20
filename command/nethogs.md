@@ -1,4 +1,4 @@
-有很多适用于Linux系统的开源网络监视工具。比如说，你可以用命令iftop来检查带宽使用情况。[netstat](https://philipding.github.io/linux-command/netstat "netstat命令")用来查看接口统计报告，还有[top](https://philipding.github.io/linux-command/top "top命令")监控系统当前运行进程。但是如果你想要找一个能够按进程实时统计网络带宽利用率的工具，那么NetHogs值得一看。
+有很多适用于Linux系统的开源网络监视工具。比如说，你可以用命令iftop来检查带宽使用情况。[netstat](#/netstat "netstat命令")用来查看接口统计报告，还有[top](#/top "top命令")监控系统当前运行进程。但是如果你想要找一个能够按进程实时统计网络带宽利用率的工具，那么NetHogs值得一看。
 
 **NetHogs**是一个开源的命令行工具（类似于Linux的top命令），用来按进程或程序实时统计网络带宽使用率。
 
@@ -10,19 +10,19 @@
 
 ### 在RHEL、CentOS和Fedora下安装NetHogs  
 
-要安装NetHogs，你必须要启用你所用Linux下的EPEL源。然后运行下面的[yum](https://philipding.github.io/linux-command/yum "yum命令")命令下载安装NetHogs包。
+要安装NetHogs，你必须要启用你所用Linux下的EPEL源。然后运行下面的[yum](#/yum "yum命令")命令下载安装NetHogs包。
 
 ```
-# yum [install](https://philipding.github.io/linux-command/install "install命令") nethogs
+# yum [install](#/install "install命令") nethogs
 
 ```
 
 ### 在Ubuntu、Linux mint和Debian下安装NetHogs  
 
-键入[apt-get](https://philipding.github.io/linux-command/apt-get "apt-get命令")命令安装NetHogs包：
+键入[apt-get](#/apt-get "apt-get命令")命令安装NetHogs包：
 
 ```
-$ [sudo](https://philipding.github.io/linux-command/sudo "sudo命令") apt-get install nethogs
+$ [sudo](#/sudo "sudo命令") apt-get install nethogs
 
 ```
 
@@ -42,7 +42,7 @@ $ sudo nethogs
 
 ```
 
-![nethogs](https://philipding.github.io/linux-command/wp-content/uploads/2015/10/nethogs.jpg)
+![nethogs](./images/nethogs.jpg)
 
 Ubuntu 12.10 下的NetHogs预览
 
@@ -106,4 +106,4 @@ $ sudo nethogs eth0 eth1
 *   s : 按发送流量排序
 *   q : 退出命令提示符
 
-关于NetHogs命令行工具的完整参数列表，可以参考NetHogs的手册，使用方法是在终端里输入`[man](https://philipding.github.io/linux-command/man "man命令") nethogs`或者`sudo man nethogs`，更多信息请参考[NetHogs项目主页](http://nethogs.sourceforge.net/)。
+关于NetHogs命令行工具的完整参数列表，可以参考NetHogs的手册，使用方法是在终端里输入`[man](#/man "man命令") nethogs`或者`sudo man nethogs`，更多信息请参考[NetHogs项目主页](http://nethogs.sourceforge.net/)。

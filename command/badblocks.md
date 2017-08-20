@@ -13,7 +13,7 @@ badblock(选项)(参数)
 -o<输出文件>：将检查的结果写入指定的输出文件；
 -s：在检查时显示进度；
 -v：执行时显示详细的信息；
--[w](https://philipding.github.io/linux-command/w "w命令")：在检查时，执行写入测试。
+-[w](#/w "w命令")：在检查时，执行写入测试。
 ```
 
 ### 参数  
@@ -33,7 +33,7 @@ badblocks -b 4096 -c 16 /dev/hda1 -o hda-badblocks-list
 hda-badblocks-list是个文本文件，内容如下：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") hda-badblocks-list
+[cat](#/cat "cat命令") hda-badblocks-list
 51249
 51250
 51251
@@ -54,7 +54,7 @@ badblocks -b 4096 -c 1 /dev/hda1 -o hda-badblocks-list.1 63000 51000
 
 ### 其他  
 
-**1、[fsck](https://philipding.github.io/linux-command/fsck "fsck命令")使用badblocks的信息**
+**1、[fsck](#/fsck "fsck命令")使用badblocks的信息**
 
 badblocks只会在日志文件中标记出坏道的信息，但若希望在检测磁盘时也能跳过这些坏块不检测，可以使用fsck的-l参数：
 
@@ -64,12 +64,12 @@ fsck.ext3 -l /tmp/hda-badblock-list.final /dev/hda1
 
 **2、在创建文件系统前检测坏道**
 
-badblocks可以随[e2fsck](https://philipding.github.io/linux-command/e2fsck "e2fsck命令")和[mke2fs](https://philipding.github.io/linux-command/mke2fs "mke2fs命令")的-c删除一起运行（对ext3文件系统也一样），在创建文件系统前就先检测坏道信息：
+badblocks可以随[e2fsck](#/e2fsck "e2fsck命令")和[mke2fs](#/mke2fs "mke2fs命令")的-c删除一起运行（对ext3文件系统也一样），在创建文件系统前就先检测坏道信息：
 
 ```
-[mkfs](https://philipding.github.io/linux-command/mkfs "mkfs命令").ext3 -c /dev/hda1
+[mkfs](#/mkfs "mkfs命令").ext3 -c /dev/hda1
 ```
 
 代码表示使用-c在创建文件系统前检查坏道的硬盘。
 
-这个操作已经很清楚地告知我们可以采用`mkfs.ext3 -c`选项用`[read](https://philipding.github.io/linux-command/read "read命令")-only`方式检查硬盘。这个命令会在格式化硬盘时检查硬盘，并标出错误的硬盘“block”。用这个方法格式化硬盘，需要有相当大的耐心，因为命令运行后，会一个个用读的方式检查硬盘。
+这个操作已经很清楚地告知我们可以采用`mkfs.ext3 -c`选项用`[read](#/read "read命令")-only`方式检查硬盘。这个命令会在格式化硬盘时检查硬盘，并标出错误的硬盘“block”。用这个方法格式化硬盘，需要有相当大的耐心，因为命令运行后，会一个个用读的方式检查硬盘。

@@ -9,7 +9,7 @@ ipcrm [ -m SharedMemoryID ] [ -M SharedMemoryKey ] [ -q MessageID ] [ -Q Message
 ### 选项  
 
 ```
--m SharedMemory [id](https://philipding.github.io/linux-command/id "id命令") 删除共享内存标识 SharedMemoryID。与 SharedMemoryID 有关联的共享内存段以及数据结构都会在最后一次拆离操作后删除。
+-m SharedMemory [id](#/id "id命令") 删除共享内存标识 SharedMemoryID。与 SharedMemoryID 有关联的共享内存段以及数据结构都会在最后一次拆离操作后删除。
 -M SharedMemoryKey 删除用关键字 SharedMemoryKey 创建的共享内存标识。与其相关的共享内存段和数据结构段都将在最后一次拆离操作后删除。
 -q MessageID 删除消息队列标识 MessageID 和与其相关的消息队列和数据结构。
 -Q MessageKey 删除由关键字 MessageKey 创建的消息队列标识和与其相关的消息队列和数据结构。
@@ -17,7 +17,7 @@ ipcrm [ -m SharedMemoryID ] [ -M SharedMemoryKey ] [ -q MessageID ] [ -Q Message
 -S SemaphoreKey 删除由关键字 SemaphoreKey 创建的信号标识和与其相关的信号量集和数据结构。
 ```
 
-msgctl、shmctl 和 semctl 子例程提供了删除操作的细节。标识和关键字可以用 [ipcs](https://philipding.github.io/linux-command/ipcs "ipcs命令") 命令找到。
+msgctl、shmctl 和 semctl 子例程提供了删除操作的细节。标识和关键字可以用 [ipcs](#/ipcs "ipcs命令") 命令找到。
 
 ### 示例  
 

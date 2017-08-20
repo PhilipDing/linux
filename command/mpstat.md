@@ -1,4 +1,4 @@
-**mpstat命令**指令主要用于多CPU环境下，它显示各个可用CPU的状态系你想。这些信息存放在`/proc/[stat](https://philipding.github.io/linux-command/stat "stat命令")`文件中。在多CPUs系统里，其不但能查看所有CPU的平均状况信息，而且能够查看特定CPU的信息。
+**mpstat命令**指令主要用于多CPU环境下，它显示各个可用CPU的状态系你想。这些信息存放在`/proc/[stat](#/stat "stat命令")`文件中。在多CPUs系统里，其不但能查看所有CPU的平均状况信息，而且能够查看特定CPU的信息。
 
 ### 语法  
 
@@ -24,7 +24,7 @@ mpstat(选项)(参数)
 ```
 mpstat
 Linux 2.6.9-5.31AXsmp (builder.redflag-linux.com) 12/16/2005
-09:38:46 AM CPU %user %[nice](https://philipding.github.io/linux-command/nice "nice命令") %system %iowait %irq %soft %idle intr/s
+09:38:46 AM CPU %user %[nice](#/nice "nice命令") %system %iowait %irq %soft %idle intr/s
 09:38:48 AM all 23.28 0.00 1.75     0.50 0.00 0.00 74.47 1018.59
 ```
 
@@ -46,7 +46,7 @@ Linux 2.6.18-164.el5 (server.sys.com)    01/04/2010
 在后台开一个2G的文件
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") 1.img &
+[cat](#/cat "cat命令") 1.img &
 ```
 
 然后在另一个终端运行mpstat命令
@@ -82,4 +82,4 @@ Linux 2.6.18-164.el5 (server.sys.com)    01/04/2010
 Average:     all    9.27    0.00   16.18    0.30    1.50    7.64    0.00   65.11   2173.54
 ```
 
-上两表显示出当要正确反映系统的情况，需要正确使用命令的参数。[vmstat](https://philipding.github.io/linux-command/vmstat "vmstat命令") 和[iostat](https://philipding.github.io/linux-command/iostat "iostat命令") 也需要注意这一问题。
+上两表显示出当要正确反映系统的情况，需要正确使用命令的参数。[vmstat](#/vmstat "vmstat命令") 和[iostat](#/iostat "iostat命令") 也需要注意这一问题。

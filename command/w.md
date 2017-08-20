@@ -25,6 +25,6 @@ w(选项)(参数)
 ```
 w
  20:39:37 up 136 days,  3:58,  1 user,  load average: 0.00, 0.00, 0.00
-USER     TTY      FROM              [login](https://philipding.github.io/linux-command/login "login命令")@   IDLE   JCPU   PCPU WHAT
+USER     TTY      FROM              [login](#/login "login命令")@   IDLE   JCPU   PCPU WHAT
 root     pts/0    222.94.97.122    20:39    1.00s  0.00s  0.00s w
 ```

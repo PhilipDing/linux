@@ -11,7 +11,7 @@ grpunconv
 未关闭的情况
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") /etc/gshadow | [grep](https://philipding.github.io/linux-command/grep "grep命令") cdy
+[cat](#/cat "cat命令") /etc/gshadow | [grep](#/grep "grep命令") cdy
 cdy:123456::
 ```
 

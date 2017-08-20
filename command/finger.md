@@ -27,7 +27,7 @@ finger(选项)(参数)
 
 ```
 [root@localhost root]# finger
-[login](https://philipding.github.io/linux-command/login "login命令") Name Tty Idle Login [time](https://philipding.github.io/linux-command/time "time命令") Office Office Phone
+[login](#/login "login命令") Name Tty Idle Login [time](#/time "time命令") Office Office Phone
 root root tty1 2 Dec 18 13
 root root pts/0 1 Dec 18 13
 root root *pts/1 Dec 18 13

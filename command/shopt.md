@@ -35,7 +35,7 @@ extdebug        off
 ...
 ```
 
-如图上所示，选项"cdspell"的状态为"off"，即关闭[cd](https://philipding.github.io/linux-command/cd "cd命令")拼写检查选项。现在，可以使用shopt命令将其开启，输入如下命令：
+如图上所示，选项"cdspell"的状态为"off"，即关闭[cd](#/cd "cd命令")拼写检查选项。现在，可以使用shopt命令将其开启，输入如下命令：
 
 ```
 shopt -s cdspell          #开启cd拼写检查

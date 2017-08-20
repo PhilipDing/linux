@@ -45,7 +45,7 @@ passwd(选项)(参数)
 例如：jack:X:503:504:::/home/jack/:/bin/bash
 jack　　//用户名
 X　　//口令、密码
-503　　//用户[id](https://philipding.github.io/linux-command/id "id命令")（0代表root、普通新建用户从500开始）
+503　　//用户[id](#/id "id命令")（0代表root、普通新建用户从500开始）
 504　　//所在组
 :　　//描述
 /home/jack/　　//用户主目录
@@ -96,7 +96,7 @@ passwd: all authentication tokens updated successfully. //更改成功；
 Locking password for user linuxde.
 passwd: Success           //锁定成功；
 
-[linuxde@localhost ~]# [su](https://philipding.github.io/linux-command/su "su命令") linuxde   //通过su切换到linuxde用户；
+[linuxde@localhost ~]# [su](#/su "su命令") linuxde   //通过su切换到linuxde用户；
 [linuxde@localhost ~]$ passwd      //linuxde来更改密码；
 Changing password for user linuxde.
 Changing password for linuxde

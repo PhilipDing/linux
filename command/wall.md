@@ -13,7 +13,7 @@ wall(参数)
 ### 实例  
 
 ```
-[root@localhost ~]# wall this is a [test](https://philipding.github.io/linux-command/test "test命令") line
+[root@localhost ~]# wall this is a [test](#/test "test命令") line
 
 Broadcast message from root (pts/1) (Fri Dec 20 11:36:51 2013):
 

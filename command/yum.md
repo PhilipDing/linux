@@ -1,4 +1,4 @@
-**yum命令**是在Fedora和RedHat以及SUSE中基于[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")的软件包管理器，它可以使系统管理人员交互和自动化地更细与管理RPM软件包，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软体包，无须繁琐地一次次下载、安装。
+**yum命令**是在Fedora和RedHat以及SUSE中基于[rpm](#/rpm "rpm命令")的软件包管理器，它可以使系统管理人员交互和自动化地更细与管理RPM软件包，能够从指定的服务器自动下载RPM包并且安装，可以自动处理依赖性关系，并且一次安装所有依赖的软体包，无须繁琐地一次次下载、安装。
 
 yum提供了查找、安装、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。
 
@@ -12,7 +12,7 @@ yum(选项)(参数)
 
 ```
 -h：显示帮助信息；
--y：对所有的提问都回答“[yes](https://philipding.github.io/linux-command/yes "yes命令")”；
+-y：对所有的提问都回答“[yes](#/yes "yes命令")”；
 -c：指定配置文件；
 -q：安静模式；
 -v：详细模式；
@@ -25,13 +25,13 @@ yum(选项)(参数)
 ### 参数  
 
 ```
-[install](https://philipding.github.io/linux-command/install "install命令")：安装rpm软件包；
+[install](#/install "install命令")：安装rpm软件包；
 update：更新rpm软件包；
 check-update：检查是否有可用的更新rpm软件包；
 remove：删除指定的rpm软件包；
 list：显示软件包的信息；
 search：检查软件包的信息；
-[info](https://philipding.github.io/linux-command/info "info命令")：显示指定的rpm软件包的描述信息和概要信息；
+[info](#/info "info命令")：显示指定的rpm软件包的描述信息和概要信息；
 clean：清理yum过期的缓存；
 shell：进入yum的shell提示符；
 resolvedep：显示rpm软件包的依赖关系；

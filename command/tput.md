@@ -2,7 +2,7 @@
 
 ### 什么是 terminfo 数据库？  
 
-UNIX 系统上的 terminfo 数据库用于定义终端和打印机的属性及功能，包括各设备（例如，终端和打印机）的行数和列数以及要发送至该设备的文本的属性。UNIX 中的几个常用程序都依赖 terminfo 数据库提供这些属性以及许多其他内容，其中包括 [vi](https://philipding.github.io/linux-command/vi "vi命令") 和 [emacs](https://philipding.github.io/linux-command/emacs "emacs命令") 编辑器以及 curses 和 [man](https://philipding.github.io/linux-command/man "man命令") 程序。
+UNIX 系统上的 terminfo 数据库用于定义终端和打印机的属性及功能，包括各设备（例如，终端和打印机）的行数和列数以及要发送至该设备的文本的属性。UNIX 中的几个常用程序都依赖 terminfo 数据库提供这些属性以及许多其他内容，其中包括 [vi](#/vi "vi命令") 和 [emacs](#/emacs "emacs命令") 编辑器以及 curses 和 [man](#/man "man命令") 程序。
 
 与 UNIX 中的大多数命令一样，tput 命令既可以用在 shell 命令行中也可以用在 shell 脚本中。为让您更好地理解 tput，本文首先从命令行讲起，然后紧接着讲述 shell 脚本示例。
 
@@ -11,13 +11,13 @@ UNIX 系统上的 terminfo 数据库用于定义终端和打印机的属性及�
 在 UNIX shell 脚本中或在命令行中，移动光标或更改光标属性可能是非常有用的。有些情况下，您可能需要输入敏感信息（如密码），或在屏幕上两个不同的区域输入信息。在此类情况下，使用 tput 可能会对您有所帮助。
 
 ```
-tput [clear](https://philipding.github.io/linux-command/clear "clear命令") # 清屏
+tput [clear](#/clear "clear命令") # 清屏
 tput sc # 保存当前光标位置
-tput cup 10 13 # 将光标移动到 row [col](https://philipding.github.io/linux-command/col "col命令")
+tput cup 10 13 # 将光标移动到 row [col](#/col "col命令")
 tput civis # 光标不可见
 tput cnorm # 光标可见
 tput rc # 显示输出
-[exit](https://philipding.github.io/linux-command/exit "exit命令") 0
+[exit](#/exit "exit命令") 0
 ```
 
 **移动光标**
@@ -31,7 +31,7 @@ tput rc # 显示输出
 另一种有用的光标定位技巧是移动光标，执行用于显示信息的命令，然后返回到前一光标位置：
 
 ```
-(tput sc ; tput cup 23 45 ; [echo](https://philipding.github.io/linux-command/echo "echo命令") “Input from tput/echo [at](https://philipding.github.io/linux-command/at "at命令") 23/45” ; tput rc)
+(tput sc ; tput cup 23 45 ; [echo](#/echo "echo命令") “Input from tput/echo [at](#/at "at命令") 23/45” ; tput rc)
 ```
 
 下面我们分析一下 subshell 命令：
@@ -58,7 +58,7 @@ echo “Input from tput/echo at 23/45”
 tput rc
 ```
 
-在显示了这些信息之后，光标必须返回到使用 tput sc 保存的原始位置。要使光标返回到其上次保存的位置，请包括 rc 选项或“[restore](https://philipding.github.io/linux-command/restore "restore命令") cursor position”。
+在显示了这些信息之后，光标必须返回到使用 tput sc 保存的原始位置。要使光标返回到其上次保存的位置，请包括 rc 选项或“[restore](#/restore "restore命令") cursor position”。
 
 注意：由于本文首先详细介绍了通过命令行执行 tput，因此您可能会觉得在自己的 subshell 中执行命令要比单独执行每条命令然后在每条命令执行之前显示提示更简洁。
 
@@ -87,7 +87,7 @@ tput rc
 tput setb 6 tput setf 4
 ```
 
-要反显当前的颜色方案，只需执行`tput [rev](https://philipding.github.io/linux-command/rev "rev命令")`。
+要反显当前的颜色方案，只需执行`tput [rev](#/rev "rev命令")`。
 
 有时，仅为文本着色还不够，也就是说，您想要通过另一种方式引起用户的注意。可以通过两种方式达到这一目的：一是将文本设置为粗体，二是为文本添加下划线。
 
@@ -99,7 +99,7 @@ tput setb 6 tput setf 4
 
 ```
 #!/bin/bash
-[printf](https://philipding.github.io/linux-command/printf "printf命令") $(tput setaf 2; tput bold)'color show\n\n'$(tput sgr0)
+[printf](#/printf "printf命令") $(tput setaf 2; tput bold)'color show\n\n'$(tput sgr0)
 
 for((i=0; i<=7; i++)); do
     echo $(tput setaf $i)"show me the money"$(tput sgr0)
@@ -162,7 +162,7 @@ function format_output(){
     printf "$setcolor$setbgcolor$setbold$setunderline$str$normal\n"
 }
 
-format_output "Yesterday Once [more](https://philipding.github.io/linux-command/more "more命令")" 2 5 1 1
+format_output "Yesterday Once [more](#/more "more命令")" 2 5 1 1
 
 exit 0
 ```
@@ -173,9 +173,9 @@ exit 0
 #!/bin/bash
 # clear the screen
 tput clear
-# Move cursor to screen location X,Y ([top](https://philipding.github.io/linux-command/top "top命令") left is 0,0)
+# Move cursor to screen location X,Y ([top](#/top "top命令") left is 0,0)
 tput cup 3 15
-# [set](https://philipding.github.io/linux-command/set "set命令") a foreground colour using ANSI escape
+# [set](#/set "set命令") a foreground colour using ANSI escape
 tput setaf 3
 echo "XYX Corp LTD."
 tput sgr0
@@ -187,7 +187,7 @@ tput sgr0
 tput cup 7 15
 echo "1\. User Management"
 tput cup 8 15
-echo "2\. [service](https://philipding.github.io/linux-command/service "service命令") Management"
+echo "2\. [service](#/service "service命令") Management"
 tput cup 9 15
 echo "3\. Process Management"
 tput cup 10 15
@@ -195,7 +195,7 @@ echo "4\. Backup"
 # Set bold mode
 tput bold
 tput cup 12 15
-[read](https://philipding.github.io/linux-command/read "read命令") -p "Enter your choice [1-4] " choice
+[read](#/read "read命令") -p "Enter your choice [1-4] " choice
 tput clear
 tput sgr0
 tput rc

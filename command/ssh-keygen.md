@@ -1,4 +1,4 @@
-**[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")-keygen命令**用于为“ssh”生成、管理和转换认证密钥，它支持RSA和DSA两种认证密钥。
+**[ssh](#/ssh "ssh命令")-keygen命令**用于为“ssh”生成、管理和转换认证密钥，它支持RSA和DSA两种认证密钥。
 
 ### 语法  
 

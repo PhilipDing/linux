@@ -22,7 +22,7 @@ lspci(选项)
 
 ```
 [root@localhost ~]# lspci
-00:00.0 [host](https://philipding.github.io/linux-command/host "host命令") bridge: Intel Corporation 5500 I/O Hub to ESI Port ([rev](https://philipding.github.io/linux-command/rev "rev命令") 22)
+00:00.0 [host](#/host "host命令") bridge: Intel Corporation 5500 I/O Hub to ESI Port ([rev](#/rev "rev命令") 22)
 00:01.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 1 (rev 22)
 00:02.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 2 (rev 22)
 00:03.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 3 (rev 22)
@@ -59,7 +59,7 @@ lspci(选项)
 00:1d.3 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #6
 00:1d.7 USB controller: Intel Corporation 82801JI (ICH10 Family) USB2 EHCI Controller #1
 00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev 90)
-00:1f.0 ISA bridge: Intel Corporation 82801JIR (ICH10R) [lpc](https://philipding.github.io/linux-command/lpc "lpc命令") Interface Controller
+00:1f.0 ISA bridge: Intel Corporation 82801JIR (ICH10R) [lpc](#/lpc "lpc命令") Interface Controller
 00:1f.2 IDE interface: Intel Corporation 82801JI (ICH10 Family) 4 port SATA IDE Controller #1
 00:1f.3 SMBus: Intel Corporation 82801JI (ICH10 Family) SMBus Controller
 00:1f.5 IDE interface: Intel Corporation 82801JI (ICH10 Family) 2 port SATA IDE Controller #2

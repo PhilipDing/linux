@@ -10,10 +10,10 @@ slabtop(选项)
 
 ```
 --delay=n, -d n：每n秒更新一次显示的信息，默认是每3秒；
---[sort](https://philipding.github.io/linux-command/sort "sort命令")=S, -s S：指定排序标准进行排序（排序标准，参照下面或者[man](https://philipding.github.io/linux-command/man "man命令")手册）；
+--[sort](#/sort "sort命令")=S, -s S：指定排序标准进行排序（排序标准，参照下面或者[man](#/man "man命令")手册）；
 --once, -o：显示一次后退出；
 --version, -V：显示版本；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助信息。
+--[help](#/help "help命令")：显示帮助信息。
 ```
 
 排序标准：

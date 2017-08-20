@@ -1,4 +1,4 @@
-**[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")-copy-[id](https://philipding.github.io/linux-command/id "id命令")命令**可以把本地主机的公钥复制到远程主机的authorized_keys文件上，ssh-copy-id命令也会给远程主机的用户主目录（home）和`~/.ssh`, 和`~/.ssh/authorized_keys`设置合适的权限。
+**[ssh](#/ssh "ssh命令")-copy-[id](#/id "id命令")命令**可以把本地主机的公钥复制到远程主机的authorized_keys文件上，ssh-copy-id命令也会给远程主机的用户主目录（home）和`~/.ssh`, 和`~/.ssh/authorized_keys`设置合适的权限。
 
 ### 语法  
 

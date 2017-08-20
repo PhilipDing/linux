@@ -1,4 +1,4 @@
-**bzmore命令**用于查看[bzip2](https://philipding.github.io/linux-command/bzip2 "bzip2命令")压缩过的文本文件的内容，当下一屏显示不下时可以实现分屏显示。
+**bzmore命令**用于查看[bzip2](#/bzip2 "bzip2命令")压缩过的文本文件的内容，当下一屏显示不下时可以实现分屏显示。
 
 ### 语法  
 

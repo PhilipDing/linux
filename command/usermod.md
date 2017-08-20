@@ -1,4 +1,4 @@
-**usermod命令**用于修改用户的基本信息。usermod命令不允许你改变正在线上的使用者帐号名称。当usermod命令用来改变user [id](https://philipding.github.io/linux-command/id "id命令")，必须确认这名user没在电脑上执行任何程序。你需手动更改使用者的[crontab](https://philipding.github.io/linux-command/crontab "crontab命令")档。也需手动更改使用者的[at](https://philipding.github.io/linux-command/at "at命令")工作档。采用NIS server须在server上更动相关的NIS设定。
+**usermod命令**用于修改用户的基本信息。usermod命令不允许你改变正在线上的使用者帐号名称。当usermod命令用来改变user [id](#/id "id命令")，必须确认这名user没在电脑上执行任何程序。你需手动更改使用者的[crontab](#/crontab "crontab命令")档。也需手动更改使用者的[at](#/at "at命令")工作档。采用NIS server须在server上更动相关的NIS设定。
 
 ### 语法  
 

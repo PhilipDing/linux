@@ -29,21 +29,21 @@ mount(选项)(参数)
 mount -t auto /dev/cdrom /mnt/cdrom
 mount: mount point /mnt/cdrom does not exist           /mnt/cdrom目录不存在，需要先创建。
 
-[cd](https://philipding.github.io/linux-command/cd "cd命令") /mnt
--bash: cd: /mnt: No such [file](https://philipding.github.io/linux-command/file "file命令") or directory
+[cd](#/cd "cd命令") /mnt
+-bash: cd: /mnt: No such [file](#/file "file命令") or directory
 
-[mkdir](https://philipding.github.io/linux-command/mkdir "mkdir命令") -p /mnt/cdrom    创建/mnt/cdrom目录
-[ls](https://philipding.github.io/linux-command/ls "ls命令")
+[mkdir](#/mkdir "mkdir命令") -p /mnt/cdrom    创建/mnt/cdrom目录
+[ls](#/ls "ls命令")
 bin   dev  home    lib         media  mnt  proc  sbin     srv  tmp  var
 boot  etc  initrd  lost+found  misc   opt  root  selinux  sys  usr
 
 mount -t auto /dev/cdrom /mnt/cdrom     挂载cdrom
-mount: block device /dev/cdrom is [write](https://philipding.github.io/linux-command/write "write命令")-protected, mounting [read](https://philipding.github.io/linux-command/read "read命令")-only     挂载成功
+mount: block device /dev/cdrom is [write](#/write "write命令")-protected, mounting [read](#/read "read命令")-only     挂载成功
 
 ll /mnt/cdrom    查看cdrom里面内容
 total 859
 dr-xr-xr-x  4 root root   2048 Sep  4  2005 CentOS
--r--r--r--  2 root root   8859 Mar 19  2005 centosdocs-[man](https://philipding.github.io/linux-command/man "man命令").css
+-r--r--r--  2 root root   8859 Mar 19  2005 centosdocs-[man](#/man "man命令").css
 -r--r--r--  9 root root  18009 Mar  1  2005 GPL
 dr-xr-xr-x  2 root root 241664 May  7 02:32 headers
 dr-xr-xr-x  4 root root   2048 May  7 02:23 images
@@ -51,7 +51,7 @@ dr-xr-xr-x  2 root root   4096 May  7 02:23 isolinux
 dr-xr-xr-x  2 root root  18432 May  2 18:50 NOTES
 -r--r--r--  2 root root   5443 May  7 01:49 RELEASE-NOTES-en.html
 dr-xr-xr-x  2 root root   2048 May  7 02:34 repodata
--r--r--r--  9 root root   1795 Mar  1  2005 [rpm](https://philipding.github.io/linux-command/rpm "rpm命令")-GPG-KEY
+-r--r--r--  9 root root   1795 Mar  1  2005 [rpm](#/rpm "rpm命令")-GPG-KEY
 -r--r--r--  2 root root   1795 Mar  1  2005 RPM-GPG-KEY-centos4
 -r--r--r--  1 root root 571730 May  7 01:39 yumgroups.xml
 ```

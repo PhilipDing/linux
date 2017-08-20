@@ -4,11 +4,11 @@
 
 [[隐藏](javascript:content_index_toggleToc())] <script type="text/javascript" language="javascript">window.content_index_showTocToggle=true;function content_index_toggleToc(){var tts="显示";var tth="隐藏";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}</script>
 
-*   [安装inotify-tools](https://philipding.github.io/linux-command/inotifywait#安装inotify-tools "安装inotify-tools")
-*   [inotify相关参数](https://philipding.github.io/linux-command/inotifywait#inotify相关参数 "inotify相关参数")
-*   [inotifywait命令使用](https://philipding.github.io/linux-command/inotifywait#inotifywait命令使用 "inotifywait命令使用")
-*   [inotifywait命令参数](https://philipding.github.io/linux-command/inotifywait#inotifywait命令参数 "inotifywait命令参数")
-    *   [可监听的事件](https://philipding.github.io/linux-command/inotifywait#可监听的事件 "可监听的事件")
+*   [安装inotify-tools](#/inotifywait#安装inotify-tools "安装inotify-tools")
+*   [inotify相关参数](#/inotifywait#inotify相关参数 "inotify相关参数")
+*   [inotifywait命令使用](#/inotifywait#inotifywait命令使用 "inotifywait命令使用")
+*   [inotifywait命令参数](#/inotifywait#inotifywait命令参数 "inotifywait命令参数")
+    *   [可监听的事件](#/inotifywait#可监听的事件 "可监听的事件")
 
 </div>
 
@@ -21,7 +21,7 @@
 
 开始之前需要检测系统内核是否支持inotify：
 
-使用`[uname](https://philipding.github.io/linux-command/uname "uname命令") -r`命令检查Linux内核，如果低于2.6.13，就需要重新编译内核加入inotify的支持。
+使用`[uname](#/uname "uname命令") -r`命令检查Linux内核，如果低于2.6.13，就需要重新编译内核加入inotify的支持。
 
 使用`ll /proc/sys/fs/inotify`命令，是否有以下三条信息输出，如果没有表示不支持。
 
@@ -41,11 +41,11 @@ total 0
 
 ```
 #CentOS release 5.8/64位：
-[tar](https://philipding.github.io/linux-command/tar "tar命令") zxvf inotify-tools-3.14.tar.gz
-[cd](https://philipding.github.io/linux-command/cd "cd命令") inotify-tools-3.14
+[tar](#/tar "tar命令") zxvf inotify-tools-3.14.tar.gz
+[cd](#/cd "cd命令") inotify-tools-3.14
 ./configure
-[make](https://philipding.github.io/linux-command/make "make命令")
-make [install](https://philipding.github.io/linux-command/install "install命令")
+[make](#/make "make命令")
+make [install](#/install "install命令")
 ```
 
 其他Linux发行版安装方法可以参见：[https://github.com/rvoicilas/inotify-tools/wiki#wiki-getting](https://github.com/rvoicilas/inotify-tools/wiki#wiki-getting)
@@ -55,25 +55,25 @@ make [install](https://philipding.github.io/linux-command/install "install命令
 inotify定义了下列的接口参数，可以用来限制inotify消耗kernel memory的大小。由于这些参数都是内存参数，因此，可以根据应用需求，实时的调节其大小：
 
 *   `/proc/sys/fs/inotify/max_queued_evnets`表示调用inotify_init时分配给inotify instance中可排队的event的数目的最大值，超出这个值的事件被丢弃，但会触发IN_Q_OVERFLOW事件。
-*   `/proc/sys/fs/inotify/max_user_instances`表示每一个real user [id](https://philipding.github.io/linux-command/id "id命令")可创建的inotify instatnces的数量上限。
+*   `/proc/sys/fs/inotify/max_user_instances`表示每一个real user [id](#/id "id命令")可创建的inotify instatnces的数量上限。
 *   `/proc/sys/fs/inotify/max_user_watches`表示每个inotify instatnces可监控的最大目录数量。如果监控的文件数目巨大，需要根据情况，适当增加此值的大小。
 
 根据以上在32位或者64位系统都可以执行：
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") 104857600 > /proc/sys/fs/inotify/max_user_watches
+[echo](#/echo "echo命令") 104857600 > /proc/sys/fs/inotify/max_user_watches
 echo 'echo 104857600 > /proc/sys/fs/inotify/max_user_watches' >> /etc/rc.local
 ```
 
 如果遇到以下错误：
 
 ```
-inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot open shared object [file](https://philipding.github.io/linux-command/file "file命令"): No such file or directory 
+inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot open shared object [file](#/file "file命令"): No such file or directory 
 ```
 
 ```
 **解决方法：**
-32位系统：[ln](https://philipding.github.io/linux-command/ln "ln命令") -s /usr/local/lib/libinotifytools.so.0 /usr/lib/libinotifytools.so.0
+32位系统：[ln](#/ln "ln命令") -s /usr/local/lib/libinotifytools.so.0 /usr/lib/libinotifytools.so.0
 64位系统：ln -s /usr/local/lib/libinotifytools.so.0 /usr/lib64/libinotifytools.so.0
 ```
 
@@ -83,7 +83,7 @@ inotifywait: error while loading shared libraries: libinotifytools.so.0: cannot 
 #!/bin/bash
 #filename watchdir.sh
 path=$1
-/usr/local/bin/inotifywait -mrq --timefmt '%d/%m/%y/%H:%M' --format '%T %[w](https://philipding.github.io/linux-command/w "w命令") %f' -e modify,delete,create,attrib $path
+/usr/local/bin/inotifywait -mrq --timefmt '%d/%m/%y/%H:%M' --format '%T %[w](#/w "w命令") %f' -e modify,delete,create,attrib $path
 
 执行输出：
 ./watchdir.sh /data/wsdata/tools/

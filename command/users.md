@@ -9,7 +9,7 @@ users(选项)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：显示命令的帮助信息；
+--[help](#/help "help命令")：显示命令的帮助信息；
 --version：显示命令的版本信息。
 ```
 

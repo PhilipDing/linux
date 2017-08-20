@@ -1,4 +1,4 @@
-**zfore命令**强制为[gzip](https://philipding.github.io/linux-command/gzip "gzip命令")格式的压缩文件添加“.gz”后缀。
+**zfore命令**强制为[gzip](#/gzip "gzip命令")格式的压缩文件添加“.gz”后缀。
 
 ### 语法  
 

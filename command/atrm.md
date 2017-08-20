@@ -21,7 +21,7 @@ atrm(选项)(参数)
 删除已经排队的任务
 
 ```
-[atq](https://philipding.github.io/linux-command/atq "atq命令")        //显示当前已经设置的任务
+[atq](#/atq "atq命令")        //显示当前已经设置的任务
 2 Mon May 17 08:00:00 2010 a root
 1 Sat May 15 17:00:00 2010 a root
 

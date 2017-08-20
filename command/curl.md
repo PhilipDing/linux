@@ -1,4 +1,4 @@
-**curl命令**是一个利用URL规则在命令行下工作的文件传输工具。它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称curl为下载工具。作为一款强力工具，curl支持包括HTTP、HTTPS、[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")等众多协议，还支持POST、cookies、认证、从指定偏移处下载部分文件、用户代理字符串、限速、文件大小、进度条等特征。做网页处理流程和数据检索自动化，curl可以祝一臂之力。
+**curl命令**是一个利用URL规则在命令行下工作的文件传输工具。它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称curl为下载工具。作为一款强力工具，curl支持包括HTTP、HTTPS、[ftp](#/ftp "ftp命令")等众多协议，还支持POST、cookies、认证、从指定偏移处下载部分文件、用户代理字符串、限速、文件大小、进度条等特征。做网页处理流程和数据检索自动化，curl可以祝一臂之力。
 
 ### 语法  
 
@@ -38,7 +38,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-b/--cookie <name=string/[file](https://philipding.github.io/linux-command/file "file命令")></td>
+<td>-b/--cookie <name=string/[file](#/file "file命令")></td>
 
 <td>cookie字符串或文件读取位置</td>
 
@@ -70,7 +70,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-C/--continue-[at](https://philipding.github.io/linux-command/at "at命令") <offset></td>
+<td>-C/--continue-[at](#/at "at命令") <offset></td>
 
 <td>断点续转</td>
 
@@ -134,7 +134,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-D/--[dump](https://philipding.github.io/linux-command/dump "dump命令")-header <file></td>
+<td>-D/--[dump](#/dump "dump命令")-header <file></td>
 
 <td>把header信息写入到该文件中</td>
 
@@ -166,7 +166,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-E/--cert <cert[:[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")]></td>
+<td>-E/--cert <cert[:[passwd](#/passwd "passwd命令")]></td>
 
 <td>客户端证书文件和密码 (SSL)</td>
 
@@ -174,7 +174,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>     --cert-[type](https://philipding.github.io/linux-command/type "type命令") <type></td>
+<td>     --cert-[type](#/type "type命令") <type></td>
 
 <td>证书文件类型 (DER/PEM/ENG) (SSL)</td>
 
@@ -240,7 +240,7 @@ curl(选项)(参数)
 
 <td>     --compressed</td>
 
-<td>要求返回是压缩的形势 (using deflate or [gzip](https://philipding.github.io/linux-command/gzip "gzip命令"))</td>
+<td>要求返回是压缩的形势 (using deflate or [gzip](#/gzip "gzip命令"))</td>
 
 </tr>
 
@@ -254,7 +254,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>     --create-[dirs](https://philipding.github.io/linux-command/dirs "dirs命令")</td>
+<td>     --create-[dirs](#/dirs "dirs命令")</td>
 
 <td>建立本地目录的目录层次结构</td>
 
@@ -302,7 +302,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>     --ftp-skip-pasv-[ip](https://philipding.github.io/linux-command/ip "ip命令")</td>
+<td>     --ftp-skip-pasv-[ip](#/ip "ip命令")</td>
 
 <td>使用PASV的时候,忽略该IP地址</td>
 
@@ -382,7 +382,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-I/--[head](https://philipding.github.io/linux-command/head "head命令")</td>
+<td>-I/--[head](#/head "head命令")</td>
 
 <td>只显示请求头信息</td>
 
@@ -454,7 +454,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-m/--max-[time](https://philipding.github.io/linux-command/time "time命令") <seconds></td>
+<td>-m/--max-[time](#/time "time命令") <seconds></td>
 
 <td>设置最大传输时间</td>
 
@@ -662,7 +662,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>     --socks4 <[host](https://philipding.github.io/linux-command/host "host命令")[:port]></td>
+<td>     --socks4 <[host](#/host "host命令")[:port]></td>
 
 <td>用socks4代理给定主机和端口</td>
 
@@ -686,7 +686,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-t/--[telnet](https://philipding.github.io/linux-command/telnet "telnet命令")-option <OPT=val></td>
+<td>-t/--[telnet](#/telnet "telnet命令")-option <OPT=val></td>
 
 <td>Telnet选项设置</td>
 
@@ -750,7 +750,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-[w](https://philipding.github.io/linux-command/w "w命令")/--[write](https://philipding.github.io/linux-command/write "write命令")-out [format]</td>
+<td>-[w](#/w "w命令")/--[write](#/write "write命令")-out [format]</td>
 
 <td>什么输出完成后</td>
 
@@ -766,7 +766,7 @@ curl(选项)(参数)
 
 <tr>
 
-<td>-X/--request <[command](https://philipding.github.io/linux-command/command "command命令")></td>
+<td>-X/--request <[command](#/command "command命令")></td>
 
 <td>指定什么命令</td>
 
@@ -796,7 +796,7 @@ curl(选项)(参数)
 
 **文件下载**
 
-curl命令可以用来执行下载、发送各种HTTP请求，指定HTTP头部等操作。如果系统没有curl可以使用`[yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") curl`安装，也可以下载安装。curl是将下载文件输出到stdout，将进度信息输出到stderr，不显示进度信息使用`--silent`选项。
+curl命令可以用来执行下载、发送各种HTTP请求，指定HTTP头部等操作。如果系统没有curl可以使用`[yum](#/yum "yum命令") [install](#/install "install命令") curl`安装，也可以下载安装。curl是将下载文件输出到stdout，将进度信息输出到stderr，不显示进度信息使用`--silent`选项。
 
 ```
 curl URL --silent
@@ -807,13 +807,13 @@ curl URL --silent
 使用选项`-O`将下载的数据写入到文件，必须使用文件的绝对地址：
 
 ```
-curl http://[man](https://philipding.github.io/linux-command/man "man命令").linuxde.net/text.iso --silent -O
+curl http://[man](#/man "man命令").linuxde.net/text.iso --silent -O
 ```
 
 选项`-o`将下载数据写入到指定名称的文件中，并使用`--progress`显示进度条：
 
 ```
-curl https://philipding.github.io/linux-command/[test](https://philipding.github.io/linux-command/test "test命令").iso -o filename.iso --progress
+curl #/[test](#/test "test命令").iso -o filename.iso --progress
 ######################################### 100.0%
 ```
 
@@ -864,7 +864,7 @@ curl URL -A "Mozilla/5.0"
 其他HTTP头部信息也可以使用curl来发送，使用`-H`"头部信息" 传递多个头部信息，例如：
 
 ```
-curl -H "Host:man.linuxde.net" -H "[accept](https://philipding.github.io/linux-command/accept "accept命令")-language:zh-cn" URL
+curl -H "Host:man.linuxde.net" -H "[accept](#/accept "accept命令")-language:zh-cn" URL
 ```
 
 **curl的带宽控制和下载配额**
@@ -890,7 +890,7 @@ curl URL --max-filesize bytes
 使用curl选项 -u 可以完成HTTP或者FTP的认证，可以指定密码，也可以不指定密码在后续操作中输入密码：
 
 ```
-curl -u user:[pwd](https://philipding.github.io/linux-command/pwd "pwd命令") http://man.linuxde.net
+curl -u user:[pwd](#/pwd "pwd命令") http://man.linuxde.net
 curl -u user http://man.linuxde.net
 ```
 
@@ -902,9 +902,9 @@ curl -u user http://man.linuxde.net
 [root@localhost text]# curl -I http://man.linuxde.net
 HTTP/1.1 200 OK
 Server: nginx/1.2.5
-[date](https://philipding.github.io/linux-command/date "date命令"): Mon, 10 Dec 2012 09:24:34 GMT
+[date](#/date "date命令"): Mon, 10 Dec 2012 09:24:34 GMT
 Content-Type: text/html; charset=UTF-8
 Connection: keep-alive
 Vary: Accept-Encoding
-X-Pingback: https://philipding.github.io/linux-command/xmlrpc.[php](https://philipding.github.io/linux-command/php "php命令")
+X-Pingback: #/xmlrpc.[php](#/php "php命令")
 ```

@@ -1,4 +1,4 @@
-**[dpkg](https://philipding.github.io/linux-command/dpkg "dpkg命令")-deb命令**是Debian Linux下的软件包管理工具，它可以对软件包执行打包和解包操作以及提供软件包信息。
+**[dpkg](#/dpkg "dpkg命令")-deb命令**是Debian Linux下的软件包管理工具，它可以对软件包执行打包和解包操作以及提供软件包信息。
 
 ### 语法  
 
@@ -14,7 +14,7 @@ dpkg-deb(选项)(参数)
 -f：把字段内容打印到标准输出；
 -x：将软件包中的文件释放到指定目录下；
 -X：将软件包中的文件释放到指定目录下，并显示释放文件的详细过程；
--[w](https://philipding.github.io/linux-command/w "w命令")：显示软件包的信息；
+-[w](#/w "w命令")：显示软件包的信息；
 -l：显示软件包的详细信息；
 -R：提取控制信息和存档的清单文件；
 -b：创建debian软件包。

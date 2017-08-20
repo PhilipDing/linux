@@ -1,4 +1,4 @@
-**setsebool命令**是用来修改SElinux策略内各项规则的布尔值。setsebool命令和[getsebool](https://philipding.github.io/linux-command/getsebool "getsebool命令")命令是SELinux修改和查询布尔值的一套工具组。SELinux的策略与规则管理相关命令：[seinfo](https://philipding.github.io/linux-command/seinfo "seinfo命令")命令、[sesearch](https://philipding.github.io/linux-command/sesearch "sesearch命令")命令、getsebool命令、setsebool命令、[semanage](https://philipding.github.io/linux-command/semanage "semanage命令")命令。
+**setsebool命令**是用来修改SElinux策略内各项规则的布尔值。setsebool命令和[getsebool](#/getsebool "getsebool命令")命令是SELinux修改和查询布尔值的一套工具组。SELinux的策略与规则管理相关命令：[seinfo](#/seinfo "seinfo命令")命令、[sesearch](#/sesearch "sesearch命令")命令、getsebool命令、setsebool命令、[semanage](#/semanage "semanage命令")命令。
 
 ### 语法  
 
@@ -20,7 +20,7 @@ setsebool [-P] 布尔值=[0|1]
 setsebool -P allow_ftpd_anon_write=1
 ```
 
-如果你希望你的[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")用户可以访问自己的家目录的话，需要开启：
+如果你希望你的[ftp](#/ftp "ftp命令")用户可以访问自己的家目录的话，需要开启：
 
 ```
 setsebool -P ftp_home_dir 1
@@ -48,10 +48,10 @@ setsebool -P httpd_enable_cgi 1
 
 ```
 setsebool -P httpd_enable_homedirs 1
-[chcon](https://philipding.github.io/linux-command/chcon "chcon命令") -R -t httpd_sys_content_t ~user/public_html
+[chcon](#/chcon "chcon命令") -R -t httpd_sys_content_t ~user/public_html
 ```
 
-允许[httpd](https://philipding.github.io/linux-command/httpd "httpd命令")访问终端：
+允许[httpd](#/httpd "httpd命令")访问终端：
 
 ```
 setsebool -P httpd_tty_comm 1
@@ -61,7 +61,7 @@ setsebool -P httpd_tty_comm 1
 
 ```
 setsebool -P httpd_disable_trans 1
-[service](https://philipding.github.io/linux-command/service "service命令") httpd restart
+[service](#/service "service命令") httpd restart
 ```
 
 关于named、master更新selinux设定：
@@ -120,7 +120,7 @@ setsebool -P smbd_disable_trans 1
 service smb restart
 ```
 
-允许[rsync](https://philipding.github.io/linux-command/rsync "rsync命令")其他用户写入时：
+允许[rsync](#/rsync "rsync命令")其他用户写入时：
 
 ```
 setsebool -P allow_rsync_anon_write=1

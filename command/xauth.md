@@ -20,8 +20,8 @@ xauth(选项)(参数)
 
 *   add：添加认证条目到认证文件中；
 *   extract：将指定的设备内容加入到指定的密码文件中；
-*   [info](https://philipding.github.io/linux-command/info "info命令")：显示授权文件相关信息；
-*   [exit](https://philipding.github.io/linux-command/exit "exit命令")：退出交互模式；
+*   [info](#/info "info命令")：显示授权文件相关信息；
+*   [exit](#/exit "exit命令")：退出交互模式；
 *   list：列出给定的显示设备的内容；
 *   merge：合并多个授权文件内容；
 *   extract：将指定设备内容写入指定的授权文件；

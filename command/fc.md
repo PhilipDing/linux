@@ -1,4 +1,4 @@
-**fc命令**自动掉用[vi](https://philipding.github.io/linux-command/vi "vi命令")编辑器修改已有历史命令，当保存时立即执行修改后的命令，也可以用来显示历史命令。fc命令编辑历史命令时，会自动调用vi编辑器。fc保存文件后，会自动执行所编辑过的命令。
+**fc命令**自动掉用[vi](#/vi "vi命令")编辑器修改已有历史命令，当保存时立即执行修改后的命令，也可以用来显示历史命令。fc命令编辑历史命令时，会自动调用vi编辑器。fc保存文件后，会自动执行所编辑过的命令。
 
 ### 语法  
 
@@ -25,13 +25,13 @@ fc(选项)(参数)
 
 ```
 [root@localhost ~]# fc -l -10     #显示10条历史命令
-1039     [type](https://philipding.github.io/linux-command/type "type命令") -a [grep](https://philipding.github.io/linux-command/grep "grep命令")
-1040     [export](https://philipding.github.io/linux-command/export "export命令")
-1041     [history](https://philipding.github.io/linux-command/history "history命令") 10
-1042     [ulimit](https://philipding.github.io/linux-command/ulimit "ulimit命令") -a
-1043     [shopt](https://philipding.github.io/linux-command/shopt "shopt命令")
-1044     [help](https://philipding.github.io/linux-command/help "help命令") [ls](https://philipding.github.io/linux-command/ls "ls命令")
-1045     help [env](https://philipding.github.io/linux-command/env "env命令")
+1039     [type](#/type "type命令") -a [grep](#/grep "grep命令")
+1040     [export](#/export "export命令")
+1041     [history](#/history "history命令") 10
+1042     [ulimit](#/ulimit "ulimit命令") -a
+1043     [shopt](#/shopt "shopt命令")
+1044     [help](#/help "help命令") [ls](#/ls "ls命令")
+1045     help [env](#/env "env命令")
 1046     help short
 1047     help shopt
 1048     showkey -a

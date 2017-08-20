@@ -21,13 +21,13 @@ watch(选项)(参数)
 ### 实例  
 
 ```
-#watch [uptime](https://philipding.github.io/linux-command/uptime "uptime命令")
+#watch [uptime](#/uptime "uptime命令")
 #watch -t uptime
-#watch -d -n 1 [netstat](https://philipding.github.io/linux-command/netstat "netstat命令") -ntlp
-#watch -d '[ls](https://philipding.github.io/linux-command/ls "ls命令") -l | [fgrep](https://philipding.github.io/linux-command/fgrep "fgrep命令") goface'     //监测goface的文件
+#watch -d -n 1 [netstat](#/netstat "netstat命令") -ntlp
+#watch -d '[ls](#/ls "ls命令") -l | [fgrep](#/fgrep "fgrep命令") goface'     //监测goface的文件
 #watch -t -differences=cumulative uptime
-#watch -n 60 from            //监控[mail](https://philipding.github.io/linux-command/mail "mail命令")
-#watch -n 1 "[df](https://philipding.github.io/linux-command/df "df命令") -i;df"       //监测磁盘inode和block数目变化情况
+#watch -n 60 from            //监控[mail](#/mail "mail命令")
+#watch -n 1 "[df](#/df "df命令") -i;df"       //监测磁盘inode和block数目变化情况
 ```
 
 FreeBSD和Linux下watch命令的不同，在Linux下，watch是周期性的执行下个程序，并全屏显示执行结果，如：`watch -n 1 -d netstat -ant`，而在FreeBSD下的watch命令是查看其它用户的正在运行的操作，watch允许你偷看其它terminal正在做什么，该命令只能让超级用户使用。

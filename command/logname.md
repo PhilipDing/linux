@@ -9,6 +9,6 @@ logname(选项)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+--[help](#/help "help命令")：在线帮助；
 --vesion：显示版本信息。
 ```

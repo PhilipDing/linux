@@ -18,7 +18,7 @@ nice(选项)(参数)
 
 ### 实例  
 
-新建一个进程并设置优先级，将当前目录下的documents目录打包，但不希望[tar](https://philipding.github.io/linux-command/tar "tar命令")占用太多CPU：
+新建一个进程并设置优先级，将当前目录下的documents目录打包，但不希望[tar](#/tar "tar命令")占用太多CPU：
 
 ```
 nice -19 tar zcf pack.tar.gz documents

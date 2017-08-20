@@ -25,8 +25,8 @@ pvck(选项)(参数)
 ```
 pvck -v /dev/sdb1    #检查物理卷元数据
 Scanning /dev/sdb1  
-Found label on /dev/sdb1, sector 1, [type](https://philipding.github.io/linux-command/type "type命令")=LVM2 001  
+Found label on /dev/sdb1, sector 1, [type](#/type "type命令")=LVM2 001  
 Found text metadata area: offset=4096, size=192512 
-Found LVM2 metadata record [at](https://philipding.github.io/linux-command/at "at命令") offset=125952,  
+Found LVM2 metadata record [at](#/at "at命令") offset=125952,  
 size=70656, offset2=0 size2=0
 ```

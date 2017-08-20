@@ -21,14 +21,14 @@ od(选项)(参数)
 -i：此参数的效果和同时指定“-td2”参数相同；
 -j<字符数目>或--skip-bytes=<字符数目>：略过设置的字符数目；
 -l：此参数的效果和同时指定“-td4”参数相同；
--N<字符数目>或--[read](https://philipding.github.io/linux-command/read "read命令")-bytes=<字符数目>：到设置的字符树目为止；
+-N<字符数目>或--[read](#/read "read命令")-bytes=<字符数目>：到设置的字符树目为止；
 -o：此参数的效果和同时指定“-to2”参数相同；
 -s<字符串字符数>或--strings=<字符串字符数>：只显示符合指定的字符数目的字符串；
 -t<输出格式>或--format=<输出格式>：设置输出格式；
 -v或--output-duplicates：输出时不省略重复的数据；
--[w](https://philipding.github.io/linux-command/w "w命令")<每列字符数>或--width=<每列字符数>：设置每列的最大字符数；
+-[w](#/w "w命令")<每列字符数>或--width=<每列字符数>：设置每列的最大字符数；
 -x：此参数的效果和同时指定“-h”参数相同；
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+--[help](#/help "help命令")：在线帮助；
 --version：显示版本信息。
 ```
 
@@ -39,8 +39,8 @@ od(选项)(参数)
 ### 实例  
 
 ```
-[linuxde@localhost ~]$ [echo](https://philipding.github.io/linux-command/echo "echo命令") abcdef g > tmp
-[linuxde@localhost ~]$ [cat](https://philipding.github.io/linux-command/cat "cat命令") tmp
+[linuxde@localhost ~]$ [echo](#/echo "echo命令") abcdef g > tmp
+[linuxde@localhost ~]$ [cat](#/cat "cat命令") tmp
 abcdef g
 ```
 

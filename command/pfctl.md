@@ -1,4 +1,4 @@
-**pfctl命令**是PF防火墙的配置命令，PF防火墙( 全称：Packet Filter )是UNIX LIKE系统上进行TCP/[ip](https://philipding.github.io/linux-command/ip "ip命令")流量过滤和网络地址转换的软件系统。PF同样也能提供TCP/IP流量的整形和控制，并且提供带宽控制和数据包优先集控制。PF最早是由Daniel Hartmeier开发的，现在的开发和维护由Daniel和openBSD小组的其他成员负责。
+**pfctl命令**是PF防火墙的配置命令，PF防火墙( 全称：Packet Filter )是UNIX LIKE系统上进行TCP/[ip](#/ip "ip命令")流量过滤和网络地址转换的软件系统。PF同样也能提供TCP/IP流量的整形和控制，并且提供带宽控制和数据包优先集控制。PF最早是由Daniel Hartmeier开发的，现在的开发和维护由Daniel和openBSD小组的其他成员负责。
 
 PF防火墙的功能很多，本站只列举一些基本配置。
 
@@ -7,7 +7,7 @@ PF防火墙的功能很多，本站只列举一些基本配置。
 要激活pf并且使它在启动时调用配置文件，编辑`/etc/rc.conf`文件，修改配置pf的一行：
 
 ```
-pf=[yes](https://philipding.github.io/linux-command/yes "yes命令")
+pf=[yes](#/yes "yes命令")
 ```
 
 重启操作系统让配置生效。
@@ -51,9 +51,9 @@ pf=[yes](https://philipding.github.io/linux-command/yes "yes命令")
 
 # pfctl -sn 显示当前的NAT规则
 # pfctl -sr 显示当前的过滤规则
-# pfctl -[ss](https://philipding.github.io/linux-command/ss "ss命令") 显示当前的状态表
+# pfctl -[ss](#/ss "ss命令") 显示当前的状态表
 # pfctl -si 显示过滤状态和计数
 # pfctl -sa 显示任何可显示的
 ```
 
-完整的命令列表，请参阅pfctl的[man](https://philipding.github.io/linux-command/man "man命令")手册页。
+完整的命令列表，请参阅pfctl的[man](#/man "man命令")手册页。

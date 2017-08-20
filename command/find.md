@@ -4,21 +4,21 @@
 
 [[隐藏](javascript:content_index_toggleToc())] <script type="text/javascript" language="javascript">window.content_index_showTocToggle=true;function content_index_toggleToc(){var tts="显示";var tth="隐藏";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}</script>
 
-*   [语法](https://philipding.github.io/linux-command/find#语法 "语法")
-*   [选项](https://philipding.github.io/linux-command/find#选项 "选项")
-*   [参数](https://philipding.github.io/linux-command/find#参数 "参数")
-*   [实例](https://philipding.github.io/linux-command/find#实例 "实例")
-    *   [根据文件或者正则表达式进行匹配](https://philipding.github.io/linux-command/find#根据文件或者正则表达式进行匹配 "根据文件或者正则表达式进行匹配")
-    *   [否定参数](https://philipding.github.io/linux-command/find#否定参数 "否定参数")
-    *   [根据文件类型进行搜索](https://philipding.github.io/linux-command/find#根据文件类型进行搜索 "根据文件类型进行搜索")
-    *   [基于目录深度搜索](https://philipding.github.io/linux-command/find#基于目录深度搜索 "基于目录深度搜索")
-    *   [根据文件时间戳进行搜索](https://philipding.github.io/linux-command/find#根据文件时间戳进行搜索 "根据文件时间戳进行搜索")
-    *   [根据文件大小进行匹配](https://philipding.github.io/linux-command/find#根据文件大小进行匹配 "根据文件大小进行匹配")
-    *   [删除匹配文件](https://philipding.github.io/linux-command/find#删除匹配文件 "删除匹配文件")
-    *   [根据文件权限/所有权进行匹配](https://philipding.github.io/linux-command/find#根据文件权限/所有权进行匹配 "根据文件权限/所有权进行匹配")
-    *   [借助-exec选项与其他命令结合使用](https://philipding.github.io/linux-command/find#借助-exec选项与其他命令结合使用 "借助-exec选项与其他命令结合使用")
-    *   [搜索但跳出指定的目录](https://philipding.github.io/linux-command/find#搜索但跳出指定的目录 "搜索但跳出指定的目录")
-    *   [find其他技巧收集](https://philipding.github.io/linux-command/find#find其他技巧收集 "find其他技巧收集")
+*   [语法](#/find#语法 "语法")
+*   [选项](#/find#选项 "选项")
+*   [参数](#/find#参数 "参数")
+*   [实例](#/find#实例 "实例")
+    *   [根据文件或者正则表达式进行匹配](#/find#根据文件或者正则表达式进行匹配 "根据文件或者正则表达式进行匹配")
+    *   [否定参数](#/find#否定参数 "否定参数")
+    *   [根据文件类型进行搜索](#/find#根据文件类型进行搜索 "根据文件类型进行搜索")
+    *   [基于目录深度搜索](#/find#基于目录深度搜索 "基于目录深度搜索")
+    *   [根据文件时间戳进行搜索](#/find#根据文件时间戳进行搜索 "根据文件时间戳进行搜索")
+    *   [根据文件大小进行匹配](#/find#根据文件大小进行匹配 "根据文件大小进行匹配")
+    *   [删除匹配文件](#/find#删除匹配文件 "删除匹配文件")
+    *   [根据文件权限/所有权进行匹配](#/find#根据文件权限/所有权进行匹配 "根据文件权限/所有权进行匹配")
+    *   [借助-exec选项与其他命令结合使用](#/find#借助-exec选项与其他命令结合使用 "借助-exec选项与其他命令结合使用")
+    *   [搜索但跳出指定的目录](#/find#搜索但跳出指定的目录 "搜索但跳出指定的目录")
+    *   [find其他技巧收集](#/find#find其他技巧收集 "find其他技巧收集")
 
 </div>
 
@@ -42,17 +42,17 @@ find(选项)(参数)
 -daystart：从本日开始计算时间；
 -depth：从指定目录下最深层的子目录开始查找；
 -expty：寻找文件大小为0 Byte的文件，或目录下没有任何子目录或文件的空目录；
--[exec](https://philipding.github.io/linux-command/exec "exec命令")<执行指令>：假设find指令的回传值为True，就执行该指令；
+-[exec](#/exec "exec命令")<执行指令>：假设find指令的回传值为True，就执行该指令；
 -false：将find指令的回传值皆设为False；
--fls<列表文件>：此参数的效果和指定“-[ls](https://philipding.github.io/linux-command/ls "ls命令")”参数类似，但会把结果保存为指定的列表文件；
+-fls<列表文件>：此参数的效果和指定“-[ls](#/ls "ls命令")”参数类似，但会把结果保存为指定的列表文件；
 -follow：排除符号连接；
 -fprint<列表文件>：此参数的效果和指定“-print”参数类似，但会把结果保存成指定的列表文件；
 -fprint0<列表文件>：此参数的效果和指定“-print0”参数类似，但会把结果保存成指定的列表文件；
--fprintf<列表文件><输出格式>：此参数的效果和指定“-[printf](https://philipding.github.io/linux-command/printf "printf命令")”参数类似，但会把结果保存成指定的列表文件；
+-fprintf<列表文件><输出格式>：此参数的效果和指定“-[printf](#/printf "printf命令")”参数类似，但会把结果保存成指定的列表文件；
 -fstype<文件系统类型>：只寻找该文件系统类型下的文件或目录；
 -gid<群组识别码>：查找符合指定之群组识别码的文件或目录；
 -group<群组名称>：查找符合指定之群组名称的文件或目录；
--[help](https://philipding.github.io/linux-command/help "help命令")或——help：在线帮助；
+-[help](#/help "help命令")或——help：在线帮助；
 -ilname<范本样式>：此参数的效果和指定“-lname”参数类似，但忽略字符大小写的差别；
 -iname<范本样式>：此参数的效果和指定“-name”参数类似，但忽略字符大小写的差别；
 -inum<inode编号>：查找符合指定的inode编号的文件或目录；
@@ -64,7 +64,7 @@ find(选项)(参数)
 -maxdepth<目录层级>：设置最大目录层级；
 -mindepth<目录层级>：设置最小目录层级；
 -mmin<分钟>：查找在指定时间曾被更改过的文件或目录，单位以分钟计算；
--[mount](https://philipding.github.io/linux-command/mount "mount命令")：此参数的效果和指定“-xdev”相同；
+-[mount](#/mount "mount命令")：此参数的效果和指定“-xdev”相同；
 -mtime<24小时数>：查找在指定时间曾被更改过的文件或目录，单位以24小时计算；
 -name<范本样式>：指定字符串作为寻找文件或目录的范本样式；
 -newer<参考文件或目录>：查找其更改时间较指定文件或目录的更改时间更接近现在的文件或目录；
@@ -87,7 +87,7 @@ find(选项)(参数)
 -user<拥有者名称>：查找符和指定的拥有者名称的文件或目录；
 -version或——version：显示版本信息；
 -xdev：将范围局限在先行的文件系统中；
--xtype<文件类型>：此参数的效果和指定“-[type](https://philipding.github.io/linux-command/type "type命令")”参数类似，差别在于它针对符号连接检查。
+-xtype<文件类型>：此参数的效果和指定“-[type](#/type "type命令")”参数类似，差别在于它针对符号连接检查。
 ```
 
 ### 参数  
@@ -218,7 +218,7 @@ find . -type f -atime +7
 find . -type f -amin +10
 ```
 
-找出比[file](https://philipding.github.io/linux-command/file "file命令").log修改时间更长的所有文件
+找出比[file](#/file "file命令").log修改时间更长的所有文件
 
 ```
 find . -type f -newer file.log
@@ -234,7 +234,7 @@ find . -type f -size 文件大小单元
 
 *   **b** —— 块（512字节）
 *   **c** —— 字节
-*   **[w](https://philipding.github.io/linux-command/w "w命令")** —— 字（2字节）
+*   **[w](#/w "w命令")** —— 字（2字节）
 *   **k** —— 千字节
 *   **M** —— 兆字节
 *   **G** —— 吉字节
@@ -273,7 +273,7 @@ find . -type f -name "*.txt" -delete
 find . -type f -perm 777
 ```
 
-找出当前目录下权限不是644的[php](https://philipding.github.io/linux-command/php "php命令")文件
+找出当前目录下权限不是644的[php](#/php "php命令")文件
 
 ```
 find . -type f -name "*.php" ! -perm 644
@@ -296,7 +296,7 @@ find . -type f -group sunk
 找出当前目录下所有root的文件，并把所有权更改为用户tom
 
 ```
-find .-type f -user root -exec [chown](https://philipding.github.io/linux-command/chown "chown命令") tom {} \;
+find .-type f -user root -exec [chown](#/chown "chown命令") tom {} \;
 ```
 
 上例中，**{}** 用于与**-exec**选项结合使用来匹配所有文件，然后会被替换为相应的文件名。
@@ -304,7 +304,7 @@ find .-type f -user root -exec [chown](https://philipding.github.io/linux-comman
 找出自己家目录下所有的.txt文件并删除
 
 ```
-find $HOME/. -name "*.txt" -ok [rm](https://philipding.github.io/linux-command/rm "rm命令") {} \;
+find $HOME/. -name "*.txt" -ok [rm](#/rm "rm命令") {} \;
 ```
 
 上例中，**-ok**和**-exec**行为一样，不过它会给出提示，是否执行相应的操作。
@@ -312,13 +312,13 @@ find $HOME/. -name "*.txt" -ok [rm](https://philipding.github.io/linux-command/r
 查找当前目录下所有.txt文件并把他们拼接起来写入到all.txt文件中
 
 ```
-find . -type f -name "*.txt" -exec [cat](https://philipding.github.io/linux-command/cat "cat命令") {} \;> all.txt
+find . -type f -name "*.txt" -exec [cat](#/cat "cat命令") {} \;> all.txt
 ```
 
 将30天前的.log文件移动到old目录中
 
 ```
-find . -type f -mtime +30 -name "*.log" -exec [cp](https://philipding.github.io/linux-command/cp "cp命令") {} old \;
+find . -type f -mtime +30 -name "*.log" -exec [cp](#/cp "cp命令") {} old \;
 ```
 
 找出当前目录下所有.txt文件并以“File:文件名”的形式打印出来

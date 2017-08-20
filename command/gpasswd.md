@@ -34,7 +34,7 @@ gpasswd groupname
 所以使用`gpasswd groupname`设定密码，就是让知道该群组密码的人可以暂时切换具备groupname群组功能的。
 
 ```
-gpasswd -A peter [users](https://philipding.github.io/linux-command/users "users命令")
+gpasswd -A peter [users](#/users "users命令")
 ```
 
 这样peter就是users群组的管理员，就可以执行下面的操作:
@@ -44,7 +44,7 @@ gpasswd -a mary users
 gpasswd -a allen users
 ```
 
-注意：添加用户到某一个组 可以使用`[usermod](https://philipding.github.io/linux-command/usermod "usermod命令") -G group_name user_name`这个命令可以添加一个用户到指定的组，但是以前添加的组就会清空掉。
+注意：添加用户到某一个组 可以使用`[usermod](#/usermod "usermod命令") -G group_name user_name`这个命令可以添加一个用户到指定的组，但是以前添加的组就会清空掉。
 
 所以想要添加一个用户到一个组，同时保留以前添加的组时，请使用gpasswd这个命令来添加操作用户：
 

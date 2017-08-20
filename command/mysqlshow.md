@@ -1,4 +1,4 @@
-**mysqlshow命令**用于显示[mysql](https://philipding.github.io/linux-command/mysql "mysql命令")服务器中数据库、表和列表信息。
+**mysqlshow命令**用于显示[mysql](#/mysql "mysql命令")服务器中数据库、表和列表信息。
 
 ### 语法  
 
@@ -9,7 +9,7 @@ mysqlshow(选项)(参数)
 ### 选项  
 
 ```
--h：MySQL服务器的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或主机名；
+-h：MySQL服务器的[ip](#/ip "ip命令")地址或主机名；
 -u：连接MySQL服务器的用户名；
 -p：连接MySQL服务器的密码；
 --count：显示每个数据表中数据的行数；

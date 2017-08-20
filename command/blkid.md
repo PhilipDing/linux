@@ -4,7 +4,7 @@
 
 ```
 blkid -L | -U
-blkid [-c ] [-ghlLv] [-o] [-s ][-t ] [-[w](https://philipding.github.io/linux-command/w "w命令") ] [ ...]
+blkid [-c ] [-ghlLv] [-o] [-s ][-t ] [-[w](#/w "w命令") ] [ ...]
 blkid -p [-s ] [-O ] [-S ][-o] ...
 blkid -i [-s ] [-o] ...
 ```
@@ -12,27 +12,27 @@ blkid -i [-s ] [-o] ...
 ### 选项  
 
 ```
--c <[file](https://philipding.github.io/linux-command/file "file命令")>   指定cache文件(default: /etc/blkid.tab, /dev/null = none)
+-c <[file](#/file "file命令")>   指定cache文件(default: /etc/blkid.tab, /dev/null = none)
 -d          don't encode non-printing characters
 -h          显示帮助信息
 -g          garbage collect the blkid cache
 -o <format> 指定输出格式
--k          list all known filesystems/RAIDs and [exit](https://philipding.github.io/linux-command/exit "exit命令")
+-k          list all known filesystems/RAIDs and [exit](#/exit "exit命令")
 -s <tag>    显示指定信息，默认显示所有信息
--t <token>  [find](https://philipding.github.io/linux-command/find "find命令") device with a specific token (NAME=value pair)
--l          [look](https://philipding.github.io/linux-command/look "look命令") up only first device with token specified by -t
+-t <token>  [find](#/find "find命令") device with a specific token (NAME=value pair)
+-l          [look](#/look "look命令") up only first device with token specified by -t
 -L <label>  convert LABEL to device name
 -U <uuid>   convert UUID to device name
 -v          显示版本信息
--w <file>   [write](https://philipding.github.io/linux-command/write "write命令") cache to different file (/dev/null = no write)
+-w <file>   [write](#/write "write命令") cache to different file (/dev/null = no write)
 <dev>       specify device(s) to probe (default: all devices)
 Low-level probing options:
 -p          low-level superblocks probing (bypass cache)
 -i          gather information about I/O limits
 -S <size>   overwrite device size
--O <offset> probe [at](https://philipding.github.io/linux-command/at "at命令") the given offset
+-O <offset> probe [at](#/at "at命令") the given offset
 -u <list>   filter by "usage" (e.g. -u filesystem,raid)
--n <list>   filter by filesystem [type](https://philipding.github.io/linux-command/type "type命令") (e.g. -n vfat,ext3)
+-n <list>   filter by filesystem [type](#/type "type命令") (e.g. -n vfat,ext3)
 ```
 
 ### 实例  
@@ -40,7 +40,7 @@ Low-level probing options:
 1、列出当前系统中所有已挂载文件系统的类型：
 
 ```
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") blkid
+[sudo](#/sudo "sudo命令") blkid
 ```
 
 2、显示指定设备 UUID：

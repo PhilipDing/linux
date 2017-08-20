@@ -1,6 +1,6 @@
-**readelf命令**用来显示一个或者多个elf格式的目标文件的信息，可以通过它的选项来控制显示哪些信息。这里的elf-[file](https://philipding.github.io/linux-command/file "file命令")(s)就表示那些被检查的文件。可以支持32位，64位的elf格式文件，也支持包含elf文件的文档（这里一般指的是使用ar命令将一些elf文件打包之后生成的例如lib*.a之类的“静态库”文件）。 
+**readelf命令**用来显示一个或者多个elf格式的目标文件的信息，可以通过它的选项来控制显示哪些信息。这里的elf-[file](#/file "file命令")(s)就表示那些被检查的文件。可以支持32位，64位的elf格式文件，也支持包含elf文件的文档（这里一般指的是使用ar命令将一些elf文件打包之后生成的例如lib*.a之类的“静态库”文件）。 
 
-这个程序和[objdump](https://philipding.github.io/linux-command/objdump "objdump命令")提供的功能类似，但是它显示的信息更为具体，并且它不依赖BFD库(BFD库是一个GNU项目，它的目标就是希望通过一种统一的接口来处理不同的目标文件)，所以即使BFD库有什么bug存在的话也不会影响到readelf程序。 
+这个程序和[objdump](#/objdump "objdump命令")提供的功能类似，但是它显示的信息更为具体，并且它不依赖BFD库(BFD库是一个GNU项目，它的目标就是希望通过一种统一的接口来处理不同的目标文件)，所以即使BFD库有什么bug存在的话也不会影响到readelf程序。 
 
 运行readelf的时候，除了-v和-H之外，其它的选项必须有一个被指定。 
 
@@ -47,7 +47,7 @@ elf文件头描述elf文件的总体信息。包括：系统相关，类型相�
 --sections 显示节头信息(如果有的话)。 
 
 -g 
---section-[groups](https://philipding.github.io/linux-command/groups "groups命令") 显示节组信息(如果有的话)。 
+--section-[groups](#/groups "groups命令") 显示节组信息(如果有的话)。 
 
 -t 
 --section-details 显示节的详细信息(-S的)。 
@@ -72,18 +72,18 @@ elf文件头描述elf文件的总体信息。包括：系统相关，类型相�
 --dynamic 显示动态段的信息。 
 
 -V 
---version-[info](https://philipding.github.io/linux-command/info "info命令") 显示版本段的信息。 
+--version-[info](#/info "info命令") 显示版本段的信息。 
 
 -A 
---[arch](https://philipding.github.io/linux-command/arch "arch命令")-specific 显示CPU构架信息。 
+--[arch](#/arch "arch命令")-specific 显示CPU构架信息。 
 
 -D 
 --use-dynamic 使用动态段中的符号表显示符号，而不是使用符号段。 
 
 -x <number or name> 
---hex-[dump](https://philipding.github.io/linux-command/dump "dump命令")=<number or name> 以16进制方式显示指定段内内容。number指定段表中段的索引,或字符串指定文件中的段名。 
+--hex-[dump](#/dump "dump命令")=<number or name> 以16进制方式显示指定段内内容。number指定段表中段的索引,或字符串指定文件中的段名。 
 
--[w](https://philipding.github.io/linux-command/w "w命令")[liaprmfFsoR] or 
+-[w](#/w "w命令")[liaprmfFsoR] or 
 --debug-dump[=line,=info,=abbrev,=pubnames,=aranges,=macro,=frames,=frames-interp,=str,=loc,=Ranges] 显示调试段中指定的内容。 
 
 -I 
@@ -93,7 +93,7 @@ elf文件头描述elf文件的总体信息。包括：系统相关，类型相�
 --version 显示readelf的版本信息。 
 
 -H 
---[help](https://philipding.github.io/linux-command/help "help命令") 显示readelf所支持的命令行选项。 
+--[help](#/help "help命令") 显示readelf所支持的命令行选项。 
 
 -W 
 --wide 宽行输出。 
@@ -110,7 +110,7 @@ elf文件头描述elf文件的总体信息。包括：系统相关，类型相�
 1)查看可执行程序的源代码如下： 
 
 ```
-[root@localhost [test](https://philipding.github.io/linux-command/test "test命令")]$ [cat](https://philipding.github.io/linux-command/cat "cat命令") main.cpp 
+[root@localhost [test](#/test "test命令")]$ [cat](#/cat "cat命令") main.cpp 
 #include <iostream> 
 using std::cout; 
 using std::endl; 
@@ -139,7 +139,7 @@ void  my_print()
 3)编译之后，查看生成的文件： 
 
 ```
-[root@localhost test]$ [ls](https://philipding.github.io/linux-command/ls "ls命令") -l 
+[root@localhost test]$ [ls](#/ls "ls命令") -l 
 总计 64 
 -rwxr-xr-x 1 quietheart quietheart  6700 07-07 18:04 main 
 -rw-r--r-- 1 quietheart quietheart   201 07-07 18:02 main.cpp 
@@ -209,7 +209,7 @@ ELF Header:
   Version:                           1 (current) 
   OS/ABI:                            UNIX - System V 
   ABI Version:                       0 
-  [type](https://philipding.github.io/linux-command/type "type命令"):                              [exec](https://philipding.github.io/linux-command/exec "exec命令") (Executable file) 
+  [type](#/type "type命令"):                              [exec](#/exec "exec命令") (Executable file) 
   Machine:                           Intel 80386 
   Version:                           0x1 
   Entry point address:               0x8048580 
@@ -317,13 +317,13 @@ ELF Header:
 [root@localhost test]$ readelf -l main 
 Elf file type is EXEC (Executable file) 
 Entry point 0x8048580 
-There are 8 program headers, starting [at](https://philipding.github.io/linux-command/at "at命令") offset 52 
+There are 8 program headers, starting [at](#/at "at命令") offset 52 
 
 Program Headers: 
   Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align 
   PHDR           0x000034 0x08048034 0x08048034 0x00100 0x00100 R E 0x4 
   INTERP         0x000134 0x08048134 0x08048134 0x00013 0x00013 R   0x1 
-      [Requesting program interpreter: /lib/[ld](https://philipding.github.io/linux-command/ld "ld命令")-linux.so.2] 
+      [Requesting program interpreter: /lib/[ld](#/ld "ld命令")-linux.so.2] 
   LOAD           0x000000 0x08048000 0x08048000 0x00970 0x00970 R E 0x1000 
   LOAD           0x000970 0x08049970 0x08049970 0x00130 0x001c8 RW  0x1000 
   DYNAMIC        0x000988 0x08049988 0x08049988 0x000e0 0x000e0 RW  0x4 
@@ -335,7 +335,7 @@ Section to Segment mapping:
   Segment Sections... 
    00     
    01     .interp 
-   02     .interp .note.ABI-tag .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .[init](https://philipding.github.io/linux-command/init "init命令") .plt .text .fini .rodata .eh_frame_hdr .eh_frame 
+   02     .interp .note.ABI-tag .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .[init](#/init "init命令") .plt .text .fini .rodata .eh_frame_hdr .eh_frame 
    03     .ctors .dtors .jcr .dynamic .got .got.plt .data .bss 
    04     .dynamic 
    05     .note.ABI-tag 
@@ -428,7 +428,7 @@ Section Headers:
   [27] .symtab           SYMTAB          00000000 001128 000510 10     28  53  4 
   [28] .strtab           STRTAB          00000000 001638 0003f4 00      0   0  1 
 Key to Flags: 
-  W ([write](https://philipding.github.io/linux-command/write "write命令")), A (alloc), X (execute), M (merge), S (strings) 
+  W ([write](#/write "write命令")), A (alloc), X (execute), M (merge), S (strings) 
   I (info), L (link order), G (group), x (unknown) 
   O (extra OS processing required) o (OS specific), p (processor specific) 
 ```

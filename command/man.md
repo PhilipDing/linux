@@ -10,7 +10,7 @@ man(选项)(参数)
 
 ```
 -a：在所有的man帮助手册中搜索；
--f：等价于[whatis](https://philipding.github.io/linux-command/whatis "whatis命令")指令，显示给定关键字的简短描述信息；
+-f：等价于[whatis](#/whatis "whatis命令")指令，显示给定关键字的简短描述信息；
 -P：指定内容时使用分页程序；
 -M：指定man手册搜索的路径。
 ```
@@ -22,12 +22,12 @@ man(选项)(参数)
 
 ### 实例  
 
-我们输入`man [ls](https://philipding.github.io/linux-command/ls "ls命令")`，它会在最左上角显示“LS（1）”，在这里，“LS”表示手册名称，而“（1）”表示该手册位于第一节章，同样，我们输`man [ifconfig](https://philipding.github.io/linux-command/ifconfig "ifconfig命令")`它会在最左上角显示“IFCONFIG（8）”。也可以这样输入命令：“man [章节号] 手册名称”。
+我们输入`man [ls](#/ls "ls命令")`，它会在最左上角显示“LS（1）”，在这里，“LS”表示手册名称，而“（1）”表示该手册位于第一节章，同样，我们输`man [ifconfig](#/ifconfig "ifconfig命令")`它会在最左上角显示“IFCONFIG（8）”。也可以这样输入命令：“man [章节号] 手册名称”。
 
 man是按照手册的章节号的顺序进行搜索的，比如：
 
 ```
-man [sleep](https://philipding.github.io/linux-command/sleep "sleep命令")
+man [sleep](#/sleep "sleep命令")
 ```
 
 只会显示sleep命令的手册,如果想查看库函数sleep，就要输入:

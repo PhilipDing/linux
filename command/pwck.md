@@ -1,4 +1,4 @@
-**pwck命令**用来验证系统认证文件`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`和`/etc/shadow`的内容和格式的完整性。
+**pwck命令**用来验证系统认证文件`/etc/[passwd](#/passwd "passwd命令")`和`/etc/shadow`的内容和格式的完整性。
 
 ### 语法  
 
@@ -10,7 +10,7 @@ pwck(选项)(参数)
 
 ```
 -q：仅报告错误信息；
--s：以用户[id](https://philipding.github.io/linux-command/id "id命令")排序文件“/etc/passwd”和“/etc/shadow”;
+-s：以用户[id](#/id "id命令")排序文件“/etc/passwd”和“/etc/shadow”;
 -r：只读方式运行指令。
 ```
 
@@ -23,7 +23,7 @@ pwck(选项)(参数)
 
 ```
 pwck /etc/passwd
-user '[lp](https://philipding.github.io/linux-command/lp "lp命令")': directory '/var/spool/lpd' does not exist
+user '[lp](#/lp "lp命令")': directory '/var/spool/lpd' does not exist
 user 'news': directory '/var/spool/news' does not exist
 user 'uucp': directory '/var/spool/uucp' does not exist
 user 'www-data': directory '/var/www' does not exist

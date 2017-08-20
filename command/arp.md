@@ -1,4 +1,4 @@
-**arp命令**用于操作主机的arp缓冲区，它可以显示arp缓冲区中的所有条目、删除指定的条目或者添加静态的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址与MAC地址对应关系。
+**arp命令**用于操作主机的arp缓冲区，它可以显示arp缓冲区中的所有条目、删除指定的条目或者添加静态的[ip](#/ip "ip命令")地址与MAC地址对应关系。
 
 ### 语法  
 

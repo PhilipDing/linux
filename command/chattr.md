@@ -36,7 +36,7 @@ chattr(选项)
 chattr +i /etc/fstab
 ```
 
-然后试一下[rm](https://philipding.github.io/linux-command/rm "rm命令")、[mv](https://philipding.github.io/linux-command/mv "mv命令")、[rename](https://philipding.github.io/linux-command/rename "rename命令")等命令操作于该文件，都是得到Operation not permitted的结果。
+然后试一下[rm](#/rm "rm命令")、[mv](#/mv "mv命令")、[rename](#/rename "rename命令")等命令操作于该文件，都是得到Operation not permitted的结果。
 
 让某个文件只能往里面追加内容，不能删除，一些日志文件适用于这种操作：
 

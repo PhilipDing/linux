@@ -13,7 +13,7 @@ cksum(选项)(参数)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+--[help](#/help "help命令")：在线帮助；
 --version：显示版本信息。
 ```
 

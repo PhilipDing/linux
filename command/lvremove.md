@@ -1,4 +1,4 @@
-**lvremove命令**用于删除指定LVM逻辑卷。如果逻辑卷已经使用[mount](https://philipding.github.io/linux-command/mount "mount命令")命令加载，则不能使用lvremove命令删除。必须使用[umount](https://philipding.github.io/linux-command/umount "umount命令")命令卸载后，逻辑卷方可被删除。
+**lvremove命令**用于删除指定LVM逻辑卷。如果逻辑卷已经使用[mount](#/mount "mount命令")命令加载，则不能使用lvremove命令删除。必须使用[umount](#/umount "umount命令")命令卸载后，逻辑卷方可被删除。
 
 ### 语法  
 

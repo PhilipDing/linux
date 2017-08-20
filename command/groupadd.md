@@ -9,9 +9,9 @@ groupadd(选项)(参数)
 ### 选项  
 
 ```
--g：指定新建工作组的[id](https://philipding.github.io/linux-command/id "id命令")；
+-g：指定新建工作组的[id](#/id "id命令")；
 -r：创建系统工作组，系统工作组的组ID小于500；
--K：覆盖配置文件“/ect/[login](https://philipding.github.io/linux-command/login "login命令").defs”；
+-K：覆盖配置文件“/ect/[login](#/login "login命令").defs”；
 -o：允许添加组ID号不唯一的工作组。
 ```
 
@@ -27,4 +27,4 @@ groupadd(选项)(参数)
 groupadd -g 344 linuxde
 ```
 
-此时在`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`文件中产生一个组ID（GID）是344的项目。
+此时在`/etc/[passwd](#/passwd "passwd命令")`文件中产生一个组ID（GID）是344的项目。

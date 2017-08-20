@@ -1,17 +1,17 @@
-**ngrep命令**是[grep](https://philipding.github.io/linux-command/grep "grep命令")命令的网络版，他力求更多的grep特征，用于搜寻指定的数据包。正由于安装ngrep需用到libpcap库， 所以支持大量的操作系统和网络协议。能识别TCP、UDP和ICMP包，理解bpf的过滤机制。
+**ngrep命令**是[grep](#/grep "grep命令")命令的网络版，他力求更多的grep特征，用于搜寻指定的数据包。正由于安装ngrep需用到libpcap库， 所以支持大量的操作系统和网络协议。能识别TCP、UDP和ICMP包，理解bpf的过滤机制。
 
 ### 安装  
 
-ngrep命令的下载地址：http://ngrep.sourceforge.net/，libpcap下载地址：http://www.[tcpdump](https://philipding.github.io/linux-command/tcpdump "tcpdump命令").org/。先用`[yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") libpcap`完全安装libpcap，注意有时候用libpcap安装包安装的不完整会影响ngrep的使用。
+ngrep命令的下载地址：http://ngrep.sourceforge.net/，libpcap下载地址：http://www.[tcpdump](#/tcpdump "tcpdump命令").org/。先用`[yum](#/yum "yum命令") [install](#/install "install命令") libpcap`完全安装libpcap，注意有时候用libpcap安装包安装的不完整会影响ngrep的使用。
 
 如果yum无法安装就用以下步骤安装libpcap：
 
 ```
-[wget](https://philipding.github.io/linux-command/wget "wget命令") http://www.tcpdump.org/release/libpcap-1.3.0.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz
+[wget](#/wget "wget命令") http://www.tcpdump.org/release/libpcap-1.3.0.[tar](#/tar "tar命令").gz
 tar -zxf libpcap-1.3.0.tar.gz
-[cd](https://philipding.github.io/linux-command/cd "cd命令") libpcap-1.3.0
+[cd](#/cd "cd命令") libpcap-1.3.0
 ./configure
-[make](https://philipding.github.io/linux-command/make "make命令") && make install
+[make](#/make "make命令") && make install
 ```
 
 ngrep的安装就是 configure/make/make install 三部曲。
@@ -28,8 +28,8 @@ ngrep的安装就是 configure/make/make install 三部曲。
 
 ```
 ngrep <-LhNXViwqpevxlDtTRM> <-IO pcap_dump> <-n num> <-d dev> <-A num>
-<-s snaplen> <-S limitlen> <-[w](https://philipding.github.io/linux-command/w "w命令") normal|byline|single|none> <-c cols>
-<-P char> <-F [file](https://philipding.github.io/linux-command/file "file命令")> <match expression> <bpf filter>
+<-s snaplen> <-S limitlen> <-[w](#/w "w命令") normal|byline|single|none> <-c cols>
+<-P char> <-F [file](#/file "file命令")> <match expression> <bpf filter>
 ```
 
 ### 选项  
@@ -44,15 +44,15 @@ ngrep <-LhNXViwqpevxlDtTRM> <-IO pcap_dump> <-n num> <-d dev> <-A num>
 -w ：整字匹配
 -p ：不使用混杂模式
 -l ：make stdout line buffered
--D ：replay pcap_dumps with their recorded [time](https://philipding.github.io/linux-command/time "time命令") intervals
+-D ：replay pcap_dumps with their recorded [time](#/time "time命令") intervals
 -t ：在每个匹配的包之前显示时间戳
 -T ：显示上一个匹配的数据包之间的时间间隔
 -M ：仅进行单行匹配
 -I ：从文件中读取数据进行匹配
 -O ：将匹配的数据保存到文件
 -n ：仅捕获指定数目的数据包进行查看
--A ：匹配到数据包后[dump](https://philipding.github.io/linux-command/dump "dump命令")随后的指定数目的数据包
--s ：[set](https://philipding.github.io/linux-command/set "set命令") the bpf caplen
+-A ：匹配到数据包后[dump](#/dump "dump命令")随后的指定数目的数据包
+-s ：[set](#/set "set命令") the bpf caplen
 -S ：set the limitlen on matched packets
 -W ：设置显示格式byline将解析包中的换行符
 -c ：强制显示列的宽度
@@ -97,10 +97,10 @@ match: \.flv
 ```
 T(6) 10.132.34.23:24860 -> 61.142.208.154:80 [AP]
 GET /f59.c31.56.com/flvdownload/12/19/ggyg7741@56.com_56flv_zhajm_119556973
-97.flv HTTP/1.1..[accept](https://philipding.github.io/linux-command/accept "accept命令"): */*..Referer: http://www.56.com/flashApp/v_player_
-site.swf..x-flash-version: 9,0,45,0..UA-CPU: x86..Accept-Encoding: [gzip](https://philipding.github.io/linux-command/gzip "gzip命令"), de
+97.flv HTTP/1.1..[accept](#/accept "accept命令"): */*..Referer: http://www.56.com/flashApp/v_player_
+site.swf..x-flash-version: 9,0,45,0..UA-CPU: x86..Accept-Encoding: [gzip](#/gzip "gzip命令"), de
 flate..User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET
-CLR 2.0.50727; .NET CLR 3.0.04506.30)..[host](https://philipding.github.io/linux-command/host "host命令"): f59.r.56.com..Connection: Keep
+CLR 2.0.50727; .NET CLR 3.0.04506.30)..[host](#/host "host命令"): f59.r.56.com..Connection: Keep
 -Alive..Cookie: whistoryview=23423759-23635627-23423344-23171935-23058374-2
 3081156-23207350-22395727-; geoip=............; wl_all_s=y....
 ```
@@ -120,7 +120,7 @@ User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.5072
 7; .NET CLR 3.0.04506.30).
 Host: www.google.cn.
 Connection: Keep-Alive.
-Cookie: PREF=[id](https://philipding.github.io/linux-command/id "id命令")=a0b2932c336477e9:TB=4:NW=1:TM=1187877372:LM=1187956074:S=Y1Fzndp
+Cookie: PREF=[id](#/id "id命令")=a0b2932c336477e9:TB=4:NW=1:TM=1187877372:LM=1187956074:S=Y1Fzndp
 rT3vFo7ac; SID=DQAAAHcAAABJCEXeOVLHu2rIfb5BfKP3GG9PbhJDEkXsLTV8y0f_lvSd2Y46Q0FPt
 83CnEs9rxA1xBDM9mLR8-ckWeScyOQA8PyYnX5u5OjFvjfRbDg_FDZfwxhRzqS9KPZv26pjnsUxs0FDM
 1xpJ5AgDn38pXtlCdkksJ0-cbiIWoA61oHWMg; NID=7=AvJxn5B6YOLLxoYz4LLzhIbNsQUQiulRS6U

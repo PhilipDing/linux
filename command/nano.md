@@ -1,6 +1,6 @@
-**nano**是一个字符终端的文本编辑器，有点像DOS下的editor程序。它比[vi](https://philipding.github.io/linux-command/vi "vi命令")/vim要简单得多，比较适合Linux初学者使用。某些Linux发行版的默认编辑器就是nano。
+**nano**是一个字符终端的文本编辑器，有点像DOS下的editor程序。它比[vi](#/vi "vi命令")/vim要简单得多，比较适合Linux初学者使用。某些Linux发行版的默认编辑器就是nano。
 
-nano命令可以打开指定文件进行编辑，默认情况下它会自动断行，即在一行中输入过长的内容时自动拆分成几行，但用这种方式来处理某些文件可能会带来问题，比如Linux系统的配置文件，自动断行就会使本来只能写在一行上的内容折断成多行了，有可能造成系统不灵了。因此，如果你想避免这种情况出现，就加上`-[w](https://philipding.github.io/linux-command/w "w命令")`选项吧。
+nano命令可以打开指定文件进行编辑，默认情况下它会自动断行，即在一行中输入过长的内容时自动拆分成几行，但用这种方式来处理某些文件可能会带来问题，比如Linux系统的配置文件，自动断行就会使本来只能写在一行上的内容折断成多行了，有可能造成系统不灵了。因此，如果你想避免这种情况出现，就加上`-[w](#/w "w命令")`选项吧。
 
 ### 语法  
 
@@ -11,7 +11,7 @@ nano [选项] [[+行,列] 文件名]...
 ### 选项  
 
 ```
- -h, -?         --[help](https://philipding.github.io/linux-command/help "help命令")                  显示此信息
+ -h, -?         --[help](#/help "help命令")                  显示此信息
  +行,列                                 从所指列数与行数开始
  -A             --smarthome             启用智能 HOME 键
  -B             --backup                储存既有文件的备份
@@ -36,7 +36,7 @@ nano [选项] [[+行,列] 文件名]...
  -c             --const                 持续显示游标位置
  -d             --rebinddelete          修正退格键/删除键混淆问题
  -i             --autoindent            自动缩进新行
- -k             --[cut](https://philipding.github.io/linux-command/cut "cut命令")                   从游标剪切至行尾
+ -k             --[cut](#/cut "cut命令")                   从游标剪切至行尾
  -l             --nofollow              不要依照符号连结，而是覆盖
  -m             --mouse                 启用鼠标功能
  -o <目录>      --operatingdir=<目录>   设定操作目录
@@ -44,7 +44,7 @@ nano [选项] [[+行,列] 文件名]...
  -q             --quiet                 沉默忽略启动问题, 比如rc 文件错误
  -r <#列数>     --fill=<#列数>          设定折行宽度为 #列数
  -s <程序>      --speller=<程序>        启用替代的拼写检查程序
- -t             --[tempfile](https://philipding.github.io/linux-command/tempfile "tempfile命令")              离开时自动储存，不要提示
+ -t             --[tempfile](#/tempfile "tempfile命令")              离开时自动储存，不要提示
  -u             --undo                  允许通用撤销[试验性特性]
  -v             --view                  查看(只读)模式
  -w             --nowrap                不要自动换行
@@ -52,7 +52,7 @@ nano [选项] [[+行,列] 文件名]...
  -z             --suspend               启用暂停功能
  -$             --softwrap              启用软换行
  -a, -b, -e,
- -f, -g, -j                             (忽略，为与[pico](https://philipding.github.io/linux-command/pico "pico命令") 相容)
+ -f, -g, -j                             (忽略，为与[pico](#/pico "pico命令") 相容)
 ```
 
 ### 用法  

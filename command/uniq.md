@@ -1,4 +1,4 @@
-**uniq命令**用于报告或忽略文件中的重复行，一般与[sort](https://philipding.github.io/linux-command/sort "sort命令")命令结合使用。
+**uniq命令**用于报告或忽略文件中的重复行，一般与[sort](#/sort "sort命令")命令结合使用。
 
 ### 语法  
 
@@ -14,7 +14,7 @@ uniq(选项)(参数)
 -f<栏位>或--skip-fields=<栏位>：忽略比较指定的栏位；
 -s<字符位置>或--skip-chars=<字符位置>：忽略比较指定的字符；
 -u或——unique：仅显示出一次的行列；
--[w](https://philipding.github.io/linux-command/w "w命令")<字符位置>或--check-chars=<字符位置>：指定要比较的字符。
+-[w](#/w "w命令")<字符位置>或--check-chars=<字符位置>：指定要比较的字符。
 ```
 
 ### 参数  
@@ -27,7 +27,7 @@ uniq(选项)(参数)
 删除重复行：
 
 ```
-uniq [file](https://philipding.github.io/linux-command/file "file命令").txt
+uniq [file](#/file "file命令").txt
 sort file.txt | uniq
 sort -u file.txt
 

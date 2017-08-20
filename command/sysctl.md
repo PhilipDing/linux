@@ -1,4 +1,4 @@
-**sysctl命令**被用于在内核运行时动态地修改内核的运行参数，可用的内核参数在目录`/proc/sys`中。它包含一些TCP/[ip](https://philipding.github.io/linux-command/ip "ip命令")堆栈和虚拟内存系统的高级选项， 这可以让有经验的管理员提高引人注目的系统性能。用sysctl可以读取设置超过五百个系统变量。
+**sysctl命令**被用于在内核运行时动态地修改内核的运行参数，可用的内核参数在目录`/proc/sys`中。它包含一些TCP/[ip](#/ip "ip命令")堆栈和虚拟内存系统的高级选项， 这可以让有经验的管理员提高引人注目的系统性能。用sysctl可以读取设置超过五百个系统变量。
 
 ### 语法  
 
@@ -12,7 +12,7 @@ sysctl(选项)(参数)
 -n：打印值时不打印关键字；
 -e：忽略未知关键字错误；
 -N：仅打印名称；
--[w](https://philipding.github.io/linux-command/w "w命令")：当改变sysctl设置时使用此项；
+-[w](#/w "w命令")：当改变sysctl设置时使用此项；
 -p：从配置文件“/etc/sysctl.conf”加载内核参数设置；
 -a：打印当前所有可用的内核参数变量和值；
 -A：以表格方式打印当前所有可用的内核参数变量和值。
@@ -41,7 +41,7 @@ kern.maxfiles: 2088 -> 5000
 
 您可以使用sysctl修改系统变量，也可以通过编辑sysctl.conf文件来修改系统变量。sysctl.conf看起来很像rc.conf。它用`variable=value`的形式来设定值。指定的值在系统进入多用户模式之后被设定。并不是所有的变量都可以在这个模式下设定。
 
-sysctl变量的设置通常是字符串、数字或者布尔型。（布尔型用 1 来表示'[yes](https://philipding.github.io/linux-command/yes "yes命令")'，用 0 来表示'no'）。
+sysctl变量的设置通常是字符串、数字或者布尔型。（布尔型用 1 来表示'[yes](#/yes "yes命令")'，用 0 来表示'no'）。
 
 ```
 sysctl -w kernel.sysrq=0
@@ -65,7 +65,7 @@ sysctl -w net.ipv4.tcp_sack=1
 如果该文件为空，则输入以下内容，否则请根据情况自己做调整：
 
 ```
-# Controls source [route](https://philipding.github.io/linux-command/route "route命令") verification
+# Controls source [route](#/route "route命令") verification
 # Default should work for all interfaces
 net.ipv4.conf.default.rp_filter = 1
 # net.ipv4.conf.all.rp_filter = 1
@@ -97,14 +97,14 @@ net.ipv4.conf.default.accept_redirects = 0
 # net.ipv4.conf.lo.accept_redirects = 0
 # net.ipv4.conf.eth0.accept_redirects = 0
 
-# [enable](https://philipding.github.io/linux-command/enable "enable命令") Log Spoofed Packets, Source Routed Packets, Redirect Packets
+# [enable](#/enable "enable命令") Log Spoofed Packets, Source Routed Packets, Redirect Packets
 # Default should work for all interfaces
 net.ipv4.conf.default.log_martians = 1
 # net.ipv4.conf.all.log_martians = 1
 # net.ipv4.conf.lo.log_martians = 1
 # net.ipv4.conf.eth0.log_martians = 1
 
-# Decrease the [time](https://philipding.github.io/linux-command/time "time命令") default value for tcp_fin_timeout connection
+# Decrease the [time](#/time "time命令") default value for tcp_fin_timeout connection
 net.ipv4.tcp_fin_timeout = 25
 
 # Decrease the time default value for tcp_keepalive_time connection
@@ -131,10 +131,10 @@ net.ipv4.icmp_echo_ignore_broadcasts = 1
 # Enable bad error message Protection
 net.ipv4.icmp_ignore_bogus_error_responses = 1
 
-# [make](https://philipding.github.io/linux-command/make "make命令") [more](https://philipding.github.io/linux-command/more "more命令") local ports available
+# [make](#/make "make命令") [more](#/more "more命令") local ports available
 # net.ipv4.ip_local_port_range = 1024 65000
 
-# [set](https://philipding.github.io/linux-command/set "set命令") TCP Re-Ordering value in kernel to ‘5′
+# [set](#/set "set命令") TCP Re-Ordering value in kernel to ‘5′
 net.ipv4.tcp_reordering = 5
 
 # Lower syn retry rates
@@ -150,7 +150,7 @@ net.core.netdev_max_backlog = 1024
 # Increase the maximum number of skb-heads to be cached
 net.core.hot_list_length = 256
 
-# Increase the tcp-time-[wait](https://philipding.github.io/linux-command/wait "wait命令") buckets pool size
+# Increase the tcp-time-[wait](#/wait "wait命令") buckets pool size
 net.ipv4.tcp_max_tw_buckets = 360000
 
 # This will increase the amount of memory available for socket input/output queues
@@ -164,7 +164,7 @@ net.ipv4.tcp_mem = 8388608 8388608 8388608
 net.core.optmem_max = 40960
 ```
 
-如果希望屏蔽别人 [ping](https://philipding.github.io/linux-command/ping "ping命令") 你的主机，则加入以下代码：
+如果希望屏蔽别人 [ping](#/ping "ping命令") 你的主机，则加入以下代码：
 
 ```
 # Disable ping requests

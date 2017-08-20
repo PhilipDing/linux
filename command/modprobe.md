@@ -1,6 +1,6 @@
 **modprobe命令**用于智能地向内核中加载模块或者从内核中移除模块。
 
-modprobe可载入指定的个别模块，或是载入一组相依的模块。modprobe会根据[depmod](https://philipding.github.io/linux-command/depmod "depmod命令")所产生的相依关系，决定要载入哪些模块。若在载入过程中发生错误，在modprobe会卸载整组的模块。
+modprobe可载入指定的个别模块，或是载入一组相依的模块。modprobe会根据[depmod](#/depmod "depmod命令")所产生的相依关系，决定要载入哪些模块。若在载入过程中发生错误，在modprobe会卸载整组的模块。
 
 ### 语法  
 
@@ -16,10 +16,10 @@ modprobe(选项)(参数)
 -d或--debug：使用排错模式；
 -l或--list：显示可用的模块；
 -r或--remove：模块闲置不用时，即自动卸载模块；
--t或--[type](https://philipding.github.io/linux-command/type "type命令")：指定模块类型；
+-t或--[type](#/type "type命令")：指定模块类型；
 -v或--verbose：执行时显示详细的信息；
 -V或--version：显示版本信息；
--[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助。
+-[help](#/help "help命令")：显示帮助。
 ```
 
 ### 参数  
@@ -34,7 +34,7 @@ modprobe(选项)(参数)
 modprobe -c
 ```
 
-这里，可以查看modules的配置文件，比如模块的[alias](https://philipding.github.io/linux-command/alias "alias命令")别名是什么等。会打印许多行信息，例如其中的一行会类似如下：
+这里，可以查看modules的配置文件，比如模块的[alias](#/alias "alias命令")别名是什么等。会打印许多行信息，例如其中的一行会类似如下：
 
 ```
 alias symbol:ip_conntrack_unregister_notifier ip_conntrack
@@ -46,7 +46,7 @@ alias symbol:ip_conntrack_unregister_notifier ip_conntrack
 modprobe -l
 ```
 
-这里，我们能查看到我们所需要的模块，然后根据我们的需要来挂载；其实`modprobe -l`读取的模块列表就位于`/lib/modules/`[uname](https://philipding.github.io/linux-command/uname "uname命令") -r``目录中；其中`uname -r`是内核的版本，例如输出结果的其中一行是：
+这里，我们能查看到我们所需要的模块，然后根据我们的需要来挂载；其实`modprobe -l`读取的模块列表就位于`/lib/modules/`[uname](#/uname "uname命令") -r``目录中；其中`uname -r`是内核的版本，例如输出结果的其中一行是：
 
 ```
 /lib/modules/2.6.18-348.6.1.el5/kernel/net/netfilter/xt_statistic.ko
@@ -58,7 +58,7 @@ modprobe -l
 modprobe vfat
 ```
 
-这里，使用格式`modprobe 模块名`来挂载一个模块。挂载之后，用[lsmod](https://philipding.github.io/linux-command/lsmod "lsmod命令")可以查看已经挂载的模块。模块名是不能带有后缀的，我们通过`modprobe -l`所看到的模块，都是带有`.ko`或`.o`后缀。
+这里，使用格式`modprobe 模块名`来挂载一个模块。挂载之后，用[lsmod](#/lsmod "lsmod命令")可以查看已经挂载的模块。模块名是不能带有后缀的，我们通过`modprobe -l`所看到的模块，都是带有`.ko`或`.o`后缀。
 
 **移除已经加载的模块：**
 
@@ -66,4 +66,4 @@ modprobe vfat
 modprobe -r 模块名
 ```
 
-这里，移除已加载的模块，和[rmmod](https://philipding.github.io/linux-command/rmmod "rmmod命令")功能相同。
+这里，移除已加载的模块，和[rmmod](#/rmmod "rmmod命令")功能相同。

@@ -12,7 +12,7 @@ grpck(选项)
 
 ```
 -r：只读模式；
--s：排序组[id](https://philipding.github.io/linux-command/id "id命令")。
+-s：排序组[id](#/id "id命令")。
 ```
 
 ### 实例  
@@ -27,12 +27,12 @@ grpck /etc/group /etc/gshadow   //后面两句一样，如果没有输出信息�
 测试错误的实例：
 
 ```
-**[echo](https://philipding.github.io/linux-command/echo "echo命令") check_user:x: >> /etc/group    //添加一行错误的格式数据
-[cat](https://philipding.github.io/linux-command/cat "cat命令") /etc/group | [grep](https://philipding.github.io/linux-command/grep "grep命令") check_user**
+**[echo](#/echo "echo命令") check_user:x: >> /etc/group    //添加一行错误的格式数据
+[cat](#/cat "cat命令") /etc/group | [grep](#/grep "grep命令") check_user**
 check_user:x:  //这儿GID字段为空，是错误的。
 
 **grpck /etc/group**
-invalid group [file](https://philipding.github.io/linux-command/file "file命令") entry
+invalid group [file](#/file "file命令") entry
 delete line 'check_user:x:'? y      //提示是否删除
 grpck: the files have been updated  //这时已经删除了错误的行，提示文件已经更新。
 

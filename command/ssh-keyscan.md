@@ -1,4 +1,4 @@
-**[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")-keyscan命令**是一个收集大量主机公钥的使用工具。
+**[ssh](#/ssh "ssh命令")-keyscan命令**是一个收集大量主机公钥的使用工具。
 
 ### 语法  
 

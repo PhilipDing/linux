@@ -14,7 +14,7 @@
 生成一个大小为100KB的测试文件：
 
 ```
-[root@localhost split]# [dd](https://philipding.github.io/linux-command/dd "dd命令") if=/dev/zero bs=100k count=1 of=[date](https://philipding.github.io/linux-command/date "date命令").[file](https://philipding.github.io/linux-command/file "file命令")
+[root@localhost split]# [dd](#/dd "dd命令") if=/dev/zero bs=100k count=1 of=[date](#/date "date命令").[file](#/file "file命令")
 1+0 records in
 1+0 records out
 102400 bytes (102 kB) copied, 0.00043 seconds, 238 MB/s
@@ -24,7 +24,7 @@
 
 ```
 [root@localhost split]# split -b 10k date.file 
-[root@localhost split]# [ls](https://philipding.github.io/linux-command/ls "ls命令")
+[root@localhost split]# [ls](#/ls "ls命令")
 date.file  xaa  xab  xac  xad  xae  xaf  xag  xah  xai  xaj
 ```
 

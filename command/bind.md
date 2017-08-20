@@ -20,7 +20,7 @@ bind(选项)
 ### 实例  
 
 ```
-bind -x '"\C-l":[ls](https://philipding.github.io/linux-command/ls "ls命令") -l'    #直接按 CTRL+L 就列出目录
+bind -x '"\C-l":[ls](#/ls "ls命令") -l'    #直接按 CTRL+L 就列出目录
 ```
 
 其中keyseq可以使用`showkey -a`命令来获取：

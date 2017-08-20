@@ -21,9 +21,9 @@ init(选项)(参数)
 
 几个常用的命令
 
-查看系统进程命令：`[ps](https://philipding.github.io/linux-command/ps "ps命令") -ef | [head](https://philipding.github.io/linux-command/head "head命令")`  
-查看init的配置文件：`[more](https://philipding.github.io/linux-command/more "more命令") /etc/inittab`  
-查看系统当前运行的级别：`[runlevel](https://philipding.github.io/linux-command/runlevel "runlevel命令")`
+查看系统进程命令：`[ps](#/ps "ps命令") -ef | [head](#/head "head命令")`  
+查看init的配置文件：`[more](#/more "more命令") /etc/inittab`  
+查看系统当前运行的级别：`[runlevel](#/runlevel "runlevel命令")`
 
 **运行级别**
 

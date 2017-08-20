@@ -10,7 +10,7 @@ mkisofs(选项)(参数)
 
 ```
 -a或--all：mkisofs通常不处理备份文件。使用此参数可以把备份文件加到映像文件中；
--A<应用程序[id](https://philipding.github.io/linux-command/id "id命令")>或-appid<应用程序ID>：指定光盘的应用程序ID；
+-A<应用程序[id](#/id "id命令")>或-appid<应用程序ID>：指定光盘的应用程序ID；
 -abstract<摘要文件>：指定摘要文件的文件名；
 -b<开机映像文件>或-eltorito-boot<开机映像文件>：指定在制作可开机光盘时所需的开机映像文件；
 -biblio<ISBN文件>：指定ISBN文件的文件名，ISBN文件位于光盘根目录下，记录光盘的ISBN；
@@ -26,7 +26,7 @@ mkisofs(选项)(参数)
 -J或-joliet：使用Joliet格式的目录与文件名称；
 -l或-full-iso9660-filenames：使用ISO 9660 32字符长度的文件名；
 -L或-allow-leading-dots：允许文件名的第一个字符为句号；
--log-[file](https://philipding.github.io/linux-command/file "file命令")<记录文件>：在执行过程中若有错误信息，预设会显示在屏幕上；
+-log-[file](#/file "file命令")<记录文件>：在执行过程中若有错误信息，预设会显示在屏幕上；
 -m<目录或文件名>或-exclude<目录或文件名>：指定的目录或文件名将不会房入映像文件中；
 -M<映像文件>或-prev-session<映像文件>：与指定的映像文件合并；
 -N或-omit-version-number：省略ISO 9660文件中的版本信息；
@@ -57,25 +57,25 @@ linux中用mkisofs命令把文件制作成ISO步骤：
 把NFS服务器上的目录挂载到本地/mnt/nfs/的目录：
 
 ```
-[mount](https://philipding.github.io/linux-command/mount "mount命令") -t nfs 10.0.2.2:/linuxos/rhel4.0_update3/ /mnt/nfs/
+[mount](#/mount "mount命令") -t nfs 10.0.2.2:/linuxos/rhel4.0_update3/ /mnt/nfs/
 ```
 
 把已挂载的文件复制到本地：
 
 ```
-[cp](https://philipding.github.io/linux-command/cp "cp命令") -a /mnt/NFS/* /root/Decp -a /mnt/nfs/* /root/Desktop/rhel4.0/&sktop/rhel4.0/&
+[cp](#/cp "cp命令") -a /mnt/NFS/* /root/Decp -a /mnt/nfs/* /root/Desktop/rhel4.0/&sktop/rhel4.0/&
 ```
 
-查找boot.[cat](https://philipding.github.io/linux-command/cat "cat命令")文件并删除掉：
+查找boot.[cat](#/cat "cat命令")文件并删除掉：
 
 ```
-[find](https://philipding.github.io/linux-command/find "find命令") rhel4.0/ -name boot.cat | [xargs](https://philipding.github.io/linux-command/xargs "xargs命令") [rm](https://philipding.github.io/linux-command/rm "rm命令")
+[find](#/find "find命令") rhel4.0/ -name boot.cat | [xargs](#/xargs "xargs命令") [rm](#/rm "rm命令")
 ```
 
 查找TRANS.TBL文件并删除掉：
 
 ```
-find rhel4.0/ -name TRANS.TBL -[exec](https://philipding.github.io/linux-command/exec "exec命令") rm {} \;
+find rhel4.0/ -name TRANS.TBL -[exec](#/exec "exec命令") rm {} \;
 ```
 
 复制本地的所需文件到指定目录：
@@ -87,5 +87,5 @@ cp /usr/share/comps/i386/.discinfo rhel4.0/
 把指定目录下的所有文件制作成ISO文件：
 
 ```
-mkisofs -R -J -T -v -no-emul-boot -boot-load-size 4 -boot-[info](https://philipding.github.io/linux-command/info "info命令")-table -V RHEL4ASDVD -b isolinux/isolinux.bin -c isolinux/boot.cat -o /RHEL4AS.iso rhel4.0/
+mkisofs -R -J -T -v -no-emul-boot -boot-load-size 4 -boot-[info](#/info "info命令")-table -V RHEL4ASDVD -b isolinux/isolinux.bin -c isolinux/boot.cat -o /RHEL4AS.iso rhel4.0/
 ```

@@ -21,15 +21,15 @@ restorecon [-iFnrRv] [-e excludedir ] [-o filename ] [-f filename | pathname...]
 
 ### 实例  
 
-假设CentOS安装了apache，网页默认的主目录是`/var/www/html`，我们经常遇到这样的问题，在其他目录中创建了一个网页文件，然后用[mv](https://philipding.github.io/linux-command/mv "mv命令")移动到网页默认目录`/var/www/html`中，但是在浏览器中却打不开这个文件，这很可能是因为这个文件的SELinux配置信息是继承原来那个目录的，与`/var/www/html`目录不同，使用mv移动的时候，这个SELinux配置信息也一起移动过来了，从而导致无法打开页面，具体请看下面的实例：
+假设CentOS安装了apache，网页默认的主目录是`/var/www/html`，我们经常遇到这样的问题，在其他目录中创建了一个网页文件，然后用[mv](#/mv "mv命令")移动到网页默认目录`/var/www/html`中，但是在浏览器中却打不开这个文件，这很可能是因为这个文件的SELinux配置信息是继承原来那个目录的，与`/var/www/html`目录不同，使用mv移动的时候，这个SELinux配置信息也一起移动过来了，从而导致无法打开页面，具体请看下面的实例：
 
 <pre style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">/*使用CentOS举例,如果默认没有安装apache，确保网络连接，使用下面的命令安装*/
-[root@linuxde.net ~]# [yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") [httpd](https://philipding.github.io/linux-command/httpd "httpd命令")
+[root@linuxde.net ~]# [yum](#/yum "yum命令") [install](#/install "install命令") [httpd](#/httpd "httpd命令")
  /*我们在root的家目录新建一个html文件*/
-[root@linuxde.net ~]# [pwd](https://philipding.github.io/linux-command/pwd "pwd命令")
+[root@linuxde.net ~]# [pwd](#/pwd "pwd命令")
 /root
 
-[root@linuxde.net ~]# [vi](https://philipding.github.io/linux-command/vi "vi命令") index.html
+[root@linuxde.net ~]# [vi](#/vi "vi命令") index.html
 
 /*随便输入一段文字，保存退出*/
 welcome to www.linuxde.net
@@ -45,9 +45,9 @@ welcome to www.linuxde.net
  * 而index.html文件的SELinux配置信息却是tcontext=后面的部分，
  * 从tcontext=的第三段“admin_home_t”不难看出，这个文件的SELinux配置信息是root用户家目录的。
  */
-[type](https://philipding.github.io/linux-command/type "type命令")=AVC msg=audit(1378974214.610:465): avc:  denied  { open } for  pid=2359 [comm](https://philipding.github.io/linux-command/comm "comm命令")="httpd" path="/var/www/html/index.html" dev="sda1" ino=1317685 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=[file](https://philipding.github.io/linux-command/file "file命令")
+[type](#/type "type命令")=AVC msg=audit(1378974214.610:465): avc:  denied  { open } for  pid=2359 [comm](#/comm "comm命令")="httpd" path="/var/www/html/index.html" dev="sda1" ino=1317685 scontext=system_u:system_r:httpd_t:s0 tcontext=unconfined_u:object_r:admin_home_t:s0 tclass=[file](#/file "file命令")
 
-/*使用[ls](https://philipding.github.io/linux-command/ls "ls命令") -Z也可以看出,文件和目录的SELinux信息不匹配*/
+/*使用[ls](#/ls "ls命令") -Z也可以看出,文件和目录的SELinux信息不匹配*/
 [root@linuxde.net html]# ls -Z /var/www/html/
 .... unconfined_u:object_r:admin_home_t:s0 index.html
 

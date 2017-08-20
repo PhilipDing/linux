@@ -85,7 +85,7 @@ Supported sysfs devices:
         pnp0
         sequencer2
         sequencer
-        [seq](https://philipding.github.io/linux-command/seq "seq命令")
+        [seq](#/seq "seq命令")
         system
         timer
 Supported sysfs modules:
@@ -114,7 +114,7 @@ Supported sysfs modules:
         e1000e
         edac_mc
         ehci_hcd
-        [exportfs](https://philipding.github.io/linux-command/exportfs "exportfs命令")
+        [exportfs](#/exportfs "exportfs命令")
         ext3
         hwmon
         i2c_core
@@ -133,7 +133,7 @@ Supported sysfs modules:
         keyboard
         libata
         lockd
-        [lp](https://philipding.github.io/linux-command/lp "lp命令")
+        [lp](#/lp "lp命令")
         md_mod
         mousedev
         mpt2sas

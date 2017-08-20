@@ -26,7 +26,7 @@ ethtool [-s] ethX [speed 10|100|1000] [duplex half|full] [autoneg on|off] [port 
 -g Display the rx/tx ring parameter information of the specified ethernet card。
 -G change the rx/tx ring setting of the specified ethernet card。
 -i 显示网卡驱动的信息，如驱动的名称、版本等。
--d 显示register [dump](https://philipding.github.io/linux-command/dump "dump命令")信息, 部分网卡驱动不支持该选项。
+-d 显示register [dump](#/dump "dump命令")信息, 部分网卡驱动不支持该选项。
 -e 显示EEPROM dump信息，部分网卡驱动不支持该选项。
 -E 修改网卡EEPROM byte。
 -k 显示网卡Offload参数的状态：on 或 off，包括rx-checksumming、tx-checksumming等。
@@ -40,7 +40,7 @@ ethtool [-s] ethX [speed 10|100|1000] [duplex half|full] [autoneg on|off] [port 
 
 ### 数据来源  
 
-Ethtool命令显示的信息来源于网卡驱动层，即TCP/[ip](https://philipding.github.io/linux-command/ip "ip命令")协议的链路层。该命令在Linux内核中实现的逻辑层次为：
+Ethtool命令显示的信息来源于网卡驱动层，即TCP/[ip](#/ip "ip命令")协议的链路层。该命令在Linux内核中实现的逻辑层次为：
 
 最重要的结构体`struct ethtool_ops`，该结构体成员为用于显示或修改以太网卡配置的一系列函数指针，见下表中的第二列。
 
@@ -118,7 +118,7 @@ Ethtool命令显示的信息来源于网卡驱动层，即TCP/[ip](https://phili
 
 <td>网卡bnx2自己固定的信息，如：  
 ——————————————————–  
-driver: bnx2 version: 1.4.30 firmware-version: 1.8.0.5 bus-[info](https://philipding.github.io/linux-command/info "info命令"): 0000:09:00.0  
+driver: bnx2 version: 1.4.30 firmware-version: 1.8.0.5 bus-[info](#/info "info命令"): 0000:09:00.0  
 ——————————————————–</td>
 
 </tr>
@@ -169,7 +169,7 @@ driver: bnx2 version: 1.4.30 firmware-version: 1.8.0.5 bus-[info](https://philip
 
 <td>self_test</td>
 
-<td>通过配置网卡寄存器，逐一测试网卡的硬件模块：registers，memory，loopback，Link [stat](https://philipding.github.io/linux-command/stat "stat命令")，interrupt。</td>
+<td>通过配置网卡寄存器，逐一测试网卡的硬件模块：registers，memory，loopback，Link [stat](#/stat "stat命令")，interrupt。</td>
 
 </tr>
 

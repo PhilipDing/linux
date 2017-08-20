@@ -14,8 +14,8 @@ who(选项)(参数)
 -m：此参数的效果和指定"am i"字符串相同；
 -q或--count：只显示登入系统的帐号名称和总人数；
 -s：此参数将忽略不予处理，仅负责解决who指令其他版本的兼容性问题；
--[w](https://philipding.github.io/linux-command/w "w命令")或-T或--[mesg](https://philipding.github.io/linux-command/mesg "mesg命令")或--message或--writable：显示用户的信息状态栏；
---[help](https://philipding.github.io/linux-command/help "help命令")：在线帮助；
+-[w](#/w "w命令")或-T或--[mesg](#/mesg "mesg命令")或--message或--writable：显示用户的信息状态栏；
+--[help](#/help "help命令")：在线帮助；
 --version：显示版本信息。
 ```
 
@@ -32,10 +32,10 @@ root     pts/1        2013-12-20 10:37 (180.111.155.40)
 
 [root@localhost ~]# who -q
 root root
-# [users](https://philipding.github.io/linux-command/users "users命令")=2
+# [users](#/users "users命令")=2
 
 [root@localhost ~]# who -H
-NAME     LINE         [time](https://philipding.github.io/linux-command/time "time命令")             COMMENT
+NAME     LINE         [time](#/time "time命令")             COMMENT
 root     pts/0        2013-08-19 15:04 (192.168.0.134)
 root     pts/1        2013-12-20 10:37 (180.111.155.40)
 

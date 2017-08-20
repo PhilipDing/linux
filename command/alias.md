@@ -26,19 +26,19 @@ alias(选项)(参数)
 alias 新的命令='原命令 -选项/参数'
 ```
 
-例如：`alias l=‘[ls](https://philipding.github.io/linux-command/ls "ls命令") -lsh'`将重新定义ls命令，现在只需输入l就可以列目录了。直接输入 alias 命令会列出当前系统中所有已经定义的命令别名。
+例如：`alias l=‘[ls](#/ls "ls命令") -lsh'`将重新定义ls命令，现在只需输入l就可以列目录了。直接输入 alias 命令会列出当前系统中所有已经定义的命令别名。
 
-要删除一个别名，可以使用 [unalias](https://philipding.github.io/linux-command/unalias "unalias命令") 命令，如 unalias l。
+要删除一个别名，可以使用 [unalias](#/unalias "unalias命令") 命令，如 unalias l。
 
 **查看系统已经设置的别名：**
 
 ```
 alias -p
-alias [cp](https://philipding.github.io/linux-command/cp "cp命令")='cp -i'
+alias [cp](#/cp "cp命令")='cp -i'
 alias l.='ls -d .* --color=tty'
 alias ll='ls -l --color=tty'
 alias ls='ls --color=tty'
-alias [mv](https://philipding.github.io/linux-command/mv "mv命令")='mv -i'
-alias [rm](https://philipding.github.io/linux-command/rm "rm命令")='rm -i'
-alias [which](https://philipding.github.io/linux-command/which "which命令")='alias | /usr/bin/which --tty-only --[read](https://philipding.github.io/linux-command/read "read命令")-alias --show-dot --show-tilde'
+alias [mv](#/mv "mv命令")='mv -i'
+alias [rm](#/rm "rm命令")='rm -i'
+alias [which](#/which "which命令")='alias | /usr/bin/which --tty-only --[read](#/read "read命令")-alias --show-dot --show-tilde'
 ```

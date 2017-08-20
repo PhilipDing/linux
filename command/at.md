@@ -1,6 +1,6 @@
-**at命令**用于在指定时间执行命令。at允许使用一套相当复杂的指定时间的方法。它能够接受在当天的hh:mm（小时:分钟）式的时间指定。假如该时间已过去，那么就放在第二天执行。当然也能够使用midnight（深夜），noon（中午），teatime（饮茶时间，一般是下午4点）等比较模糊的 词语来指定时间。用户还能够采用12小时计时制，即在时间后面加上AM（上午）或PM（下午）来说明是上午还是下午。 也能够指定命令执行的具体日期，指定格式为month day（月 日）或mm/[dd](https://philipding.github.io/linux-command/dd "dd命令")/yy（月/日/年）或dd.mm.yy（日.月.年）。指定的日期必须跟在指定时间的后面。
+**at命令**用于在指定时间执行命令。at允许使用一套相当复杂的指定时间的方法。它能够接受在当天的hh:mm（小时:分钟）式的时间指定。假如该时间已过去，那么就放在第二天执行。当然也能够使用midnight（深夜），noon（中午），teatime（饮茶时间，一般是下午4点）等比较模糊的 词语来指定时间。用户还能够采用12小时计时制，即在时间后面加上AM（上午）或PM（下午）来说明是上午还是下午。 也能够指定命令执行的具体日期，指定格式为month day（月 日）或mm/[dd](#/dd "dd命令")/yy（月/日/年）或dd.mm.yy（日.月.年）。指定的日期必须跟在指定时间的后面。
 
-上面介绍的都是绝对计时法，其实还能够使用相对计时法，这对于安排不久就要执行的命令是很有好处的。指定格式为：`now + count [time](https://philipding.github.io/linux-command/time "time命令")-units`，now就是当前时间，time-units是时间单位，这里能够是minutes（分钟）、hours（小时）、days（天）、weeks（星期）。count是时间的数量，究竟是几天，还是几小时，等等。 更有一种计时方法就是直接使用today（今天）、tomorrow（明天）来指定完成命令的时间。
+上面介绍的都是绝对计时法，其实还能够使用相对计时法，这对于安排不久就要执行的命令是很有好处的。指定格式为：`now + count [time](#/time "time命令")-units`，now就是当前时间，time-units是时间单位，这里能够是minutes（分钟）、hours（小时）、days（天）、weeks（星期）。count是时间的数量，究竟是几天，还是几小时，等等。 更有一种计时方法就是直接使用today（今天）、tomorrow（明天）来指定完成命令的时间。
 
 ### 语法  
 
@@ -15,7 +15,7 @@ at(选项)(参数)
 -q：指定新任务的队列名称；
 -l：显示待执行任务的列表；
 -d：删除指定的待执行任务；
--m：任务执行完成后向用户发送E-[mail](https://philipding.github.io/linux-command/mail "mail命令")。
+-m：任务执行完成后向用户发送E-[mail](#/mail "mail命令")。
 ```
 
 ### 参数  
@@ -24,7 +24,7 @@ at(选项)(参数)
 
 ### 实例  
 
-三天后的下午 5 点锺执行`/bin/[ls](https://philipding.github.io/linux-command/ls "ls命令")`：
+三天后的下午 5 点锺执行`/bin/[ls](#/ls "ls命令")`：
 
 ```
 [root@localhost ~]# at 5pm+3 days
@@ -37,12 +37,12 @@ job 7 at 2013-01-08 17:00
 
 ```
 [root@localhost ~]# at 17:20 tomorrow
-at> [date](https://philipding.github.io/linux-command/date "date命令") >/root/2013.log
+at> [date](#/date "date命令") >/root/2013.log
 at> <EOT>
 job 8 at 2013-01-06 17:20
 ```
 
-计划任务设定后，在没有执行之前我们可以用[atq](https://philipding.github.io/linux-command/atq "atq命令")命令来查看系统没有执行工作任务：
+计划任务设定后，在没有执行之前我们可以用[atq](#/atq "atq命令")命令来查看系统没有执行工作任务：
 
 ```
 [root@localhost ~]# atq
@@ -57,7 +57,7 @@ job 8 at 2013-01-06 17:20
 8       2013-01-06 17:20 a root
 7       2013-01-08 17:00 a root
 
-[root@localhost ~]# [atrm](https://philipding.github.io/linux-command/atrm "atrm命令") 7
+[root@localhost ~]# [atrm](#/atrm "atrm命令") 7
 [root@localhost ~]# atq
 8       2013-01-06 17:20 a root
 ```
@@ -69,6 +69,6 @@ job 8 at 2013-01-06 17:20
 #!/bin/sh
 # atrun uid=0 gid=0
 # mail     root 0
-[umask](https://philipding.github.io/linux-command/umask "umask命令") 22此处省略n个字符
+[umask](#/umask "umask命令") 22此处省略n个字符
 date >/root/2013.log
 ```

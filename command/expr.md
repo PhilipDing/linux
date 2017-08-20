@@ -17,7 +17,7 @@ expr(选项)(参数)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：显示指令的帮助信息；
+--[help](#/help "help命令")：显示指令的帮助信息；
 --version：显示指令版本信息。
 ```
 

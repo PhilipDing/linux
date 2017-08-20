@@ -1,4 +1,4 @@
-**fuser命令**用于报告进程使用的文件和网络套接字。fuser命令列出了本地进程的进程号，那些本地进程使用[file](https://philipding.github.io/linux-command/file "file命令")，参数指定的本地或远程文件。对于阻塞特别设备，此命令列出了使用该设备上任何文件的进程。
+**fuser命令**用于报告进程使用的文件和网络套接字。fuser命令列出了本地进程的进程号，那些本地进程使用[file](#/file "file命令")，参数指定的本地或远程文件。对于阻塞特别设备，此命令列出了使用该设备上任何文件的进程。
 
 每个进程号后面都跟随一个字母，该字母指示进程如何使用文件。
 
@@ -33,7 +33,7 @@ fuser(选项)(参数)
 
 ### 实例  
 
-要列出使用`/etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")`文件的本地进程的进程号，请输入：
+要列出使用`/etc/[passwd](#/passwd "passwd命令")`文件的本地进程的进程号，请输入：
 
 ```
 fuser /etc/passwd

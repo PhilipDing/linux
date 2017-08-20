@@ -1,11 +1,11 @@
 **apropos命令**在一些特定的包含系统命令的简短描述的数据库文件里查找关键字，然后把结果送到标准输出。 
 
-如果你不知道完成某个特定任务所需要命令的名称，可以使用一个关键字通过Linux apropos实用程序来搜索它。该实用程序可以搜索关键字并且显示所有包含匹配项的[man](https://philipding.github.io/linux-command/man "man命令")页面的简短描述。另外，使用man实用程序和-k（关键字）选项，可以得到和用Linux apropos实用程序相同的结果（实际上是相同的命令）。
+如果你不知道完成某个特定任务所需要命令的名称，可以使用一个关键字通过Linux apropos实用程序来搜索它。该实用程序可以搜索关键字并且显示所有包含匹配项的[man](#/man "man命令")页面的简短描述。另外，使用man实用程序和-k（关键字）选项，可以得到和用Linux apropos实用程序相同的结果（实际上是相同的命令）。
 
 ### 语法  
 
 ```
-apropos [-dalhvV] [-e|-[w](https://philipding.github.io/linux-command/w "w命令")|-r] [-s section] [-m system[,...]] [-M path] [-L locale] [-C [file](https://philipding.github.io/linux-command/file "file命令")] keyword ...
+apropos [-dalhvV] [-e|-[w](#/w "w命令")|-r] [-s section] [-m system[,...]] [-M path] [-L locale] [-C [file](#/file "file命令")] keyword ...
 ```
 
 ### 选项  
@@ -23,7 +23,7 @@ apropos [-dalhvV] [-e|-[w](https://philipding.github.io/linux-command/w "w命令
 -M path, --manpath=path：指定从其它以冒号分隔的手册页层次查找。默认使用$MANPATH环境变量。这个选项覆盖$MANPATH的内容。
 -L locale, --locale=locale：apropos调用C函数setlocale来得到当前本地化信息，包括$LC_MESSAGE和$LANG。使用该选项提供一个locale字符串来临时更改本地化信息。
 -C file, --config-file=file：使用这个用户配置文件而不是默认的~/.manpath。
--h, --[help](https://philipding.github.io/linux-command/help "help命令")：打印帮助信息并退出。
+-h, --[help](#/help "help命令")：打印帮助信息并退出。
 -V, --version：打印版本信息并退出。
 ```
 
@@ -34,12 +34,12 @@ apropos [-dalhvV] [-e|-[w](https://philipding.github.io/linux-command/w "w命令
 ### 实例  
 
 ```
-[root@localhost ~]# man -k [who](https://philipding.github.io/linux-command/who "who命令")
-[at](https://philipding.github.io/linux-command/at "at命令").allow [at]        (5)  - determine who can submit [jobs](https://philipding.github.io/linux-command/jobs "jobs命令") via at or [batch](https://philipding.github.io/linux-command/batch "batch命令")
+[root@localhost ~]# man -k [who](#/who "who命令")
+[at](#/at "at命令").allow [at]        (5)  - determine who can submit [jobs](#/jobs "jobs命令") via at or [batch](#/batch "batch命令")
 at.deny [at]         (5)  - determine who can submit jobs via at or batch
-[jwhois](https://philipding.github.io/linux-command/jwhois "jwhois命令")               (1)  - client for the whois [service](https://philipding.github.io/linux-command/service "service命令")
-jwhois              ([rpm](https://philipding.github.io/linux-command/rpm "rpm命令")) - Internet whois/nicname client.
-Net::LDAP::Extension::[whoami](https://philipding.github.io/linux-command/whoami "whoami命令") (3pm)  - LDAP Who am I? Operation
+[jwhois](#/jwhois "jwhois命令")               (1)  - client for the whois [service](#/service "service命令")
+jwhois              ([rpm](#/rpm "rpm命令")) - Internet whois/nicname client.
+Net::LDAP::Extension::[whoami](#/whoami "whoami命令") (3pm)  - LDAP Who am I? Operation
 w                    (1)  - Show who is logged on and what they are doing
 who                  (1p)  - display who is on the system
 who                  (1)  - show who is logged on
@@ -57,7 +57,7 @@ who                  (1)  - show who is logged on
 whoami               (1)  - print effective userid
 ```
 
-查找手册页名字和描述中包含[emacs](https://philipding.github.io/linux-command/emacs "emacs命令")和[vi](https://philipding.github.io/linux-command/vi "vi命令")的手册页：
+查找手册页名字和描述中包含[emacs](#/emacs "emacs命令")和[vi](#/vi "vi命令")的手册页：
 
 ```
 apropos -a emacs vi

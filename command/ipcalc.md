@@ -1,4 +1,4 @@
-**ipcalc命令**是一个简单的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址计算器，可以完成简单的IP地址计算任务。
+**ipcalc命令**是一个简单的[ip](#/ip "ip命令")地址计算器，可以完成简单的IP地址计算任务。
 
 ### 语法  
 
@@ -15,7 +15,7 @@ ipcalc(选项)
 -p：显示给定的掩码或IP地址的前缀；
 -n：由给定的IP地址和网络掩码计算网络地址；
 -s：安静模式；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助信息。
+--[help](#/help "help命令")：显示帮助信息。
 ```
 
 ### 实例  
@@ -28,7 +28,7 @@ PREFIX=24
 NETWORK=192.168.2.0
 
 [root@localhost ~]# ipcalc -h 127.0.0.1
-[hostname](https://philipding.github.io/linux-command/hostname "hostname命令")=localhost.localdomain
+[hostname](#/hostname "hostname命令")=localhost.localdomain
 
 [root@localhost ~]# ipcalc -m 192.168.2.1
 NETMASK=255.255.255.0

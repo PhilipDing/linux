@@ -1,4 +1,4 @@
-**ftptop命令**类似于[top](https://philipding.github.io/linux-command/top "top命令")命令的显示风格显示proftpd服务器的连接状态。
+**ftptop命令**类似于[top](#/top "top命令")命令的显示风格显示proftpd服务器的连接状态。
 
 ### 语法  
 

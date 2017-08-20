@@ -1,4 +1,4 @@
-**set命令**作用主要是显示系统中已经存在的shell变量，以及设置shell变量的新变量值。使用set更改shell特性时，符号"+"和"-"的作用分别是打开和关闭指定的模式。set命令不能够定义新的shell变量。如果要定义新的变量，可以使用[declare](https://philipding.github.io/linux-command/declare "declare命令")命令以`变量名=值`的格式进行定义即可。
+**set命令**作用主要是显示系统中已经存在的shell变量，以及设置shell变量的新变量值。使用set更改shell特性时，符号"+"和"-"的作用分别是打开和关闭指定的模式。set命令不能够定义新的shell变量。如果要定义新的变量，可以使用[declare](#/declare "declare命令")命令以`变量名=值`的格式进行定义即可。
 
 ### 语法  
 
@@ -16,7 +16,7 @@ set(选项)(参数)
 -e：若指令传回值不等于0，则立即退出shell。
 -f：取消使用通配符。
 -h：自动记录函数的所在位置。
--H Shell：可利用"!"加<指令编号>的方式来执行[history](https://philipding.github.io/linux-command/history "history命令")中记录的指令。
+-H Shell：可利用"!"加<指令编号>的方式来执行[history](#/history "history命令")中记录的指令。
 -k：指令所给的参数都会被视为此指令的环境变量。
 -l：记录for循环的变量名称。
 -m：使用监视模式。
@@ -47,7 +47,7 @@ declare mylove='Visual C++'   #定义新环境变量
 set -a mylove                 #设置为环境变量
 ```
 
-执行该命令后，将会新添加对应的环境变量。用户可以使用[env](https://philipding.github.io/linux-command/env "env命令")命令和[grep](https://philipding.github.io/linux-command/grep "grep命令")命令分别显示和搜索环境变量"mylove"，输入命令如下：
+执行该命令后，将会新添加对应的环境变量。用户可以使用[env](#/env "env命令")命令和[grep](#/grep "grep命令")命令分别显示和搜索环境变量"mylove"，输入命令如下：
 
 ```
 env | grep mylove             #显示环境变量值

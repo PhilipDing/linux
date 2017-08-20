@@ -10,11 +10,11 @@ nmap(选项)(参数)
 
 ```
 -O：激活操作探测；
--P0：值进行扫描，不[ping](https://philipding.github.io/linux-command/ping "ping命令")主机；
+-P0：值进行扫描，不[ping](#/ping "ping命令")主机；
 -PT：是同TCP的ping；
 -sV：探测服务版本信息；
 -sP：ping扫描，仅发现目标主机是否存活；
--[ps](https://philipding.github.io/linux-command/ps "ps命令")：发送同步（SYN）报文；
+-[ps](#/ps "ps命令")：发送同步（SYN）报文；
 -PU：发送udp ping；
 -PE：强制执行直接的ICMPping；
 -PB：默认模式，可以使用ICMPping和TCPping；
@@ -36,14 +36,14 @@ nmap(选项)(参数)
 
 ### 参数  
 
-[ip](https://philipding.github.io/linux-command/ip "ip命令")地址：指定待扫描报文中的TCP地址。
+[ip](#/ip "ip命令")地址：指定待扫描报文中的TCP地址。
 
 ### 实例  
 
 **安装nmap**
 
 ```
-[yum](https://philipding.github.io/linux-command/yum "yum命令") [install](https://philipding.github.io/linux-command/install "install命令") nmap
+[yum](#/yum "yum命令") [install](#/install "install命令") nmap
 ```
 
 **使用nmap扫描www.linuxde.net的开放端口**
@@ -51,12 +51,12 @@ nmap(选项)(参数)
 ```
 [root@localhost ~]# nmap www.linuxde.net
 
-Starting Nmap 4.11 ( http://www.insecure.org/nmap/ ) [at](https://philipding.github.io/linux-command/at "at命令") 2013-12-28 00:06 CST
+Starting Nmap 4.11 ( http://www.insecure.org/nmap/ ) [at](#/at "at命令") 2013-12-28 00:06 CST
 Interesting ports on 100-42-212-8.static.webnx.com (100.42.212.8):
 Not shown: 1678 filtered ports
-PORT   STATE [service](https://philipding.github.io/linux-command/service "service命令")
-22/tcp open  [ssh](https://philipding.github.io/linux-command/ssh "ssh命令")
+PORT   STATE [service](#/service "service命令")
+22/tcp open  [ssh](#/ssh "ssh命令")
 80/tcp open  http
 
-Nmap finished: 1 IP address (1 [host](https://philipding.github.io/linux-command/host "host命令") up) scanned in 45.870 seconds
+Nmap finished: 1 IP address (1 [host](#/host "host命令") up) scanned in 45.870 seconds
 ```

@@ -1,4 +1,4 @@
-**pidof命令**用于查找指定名称的进程的进程号[id](https://philipding.github.io/linux-command/id "id命令")号。
+**pidof命令**用于查找指定名称的进程的进程号[id](#/id "id命令")号。
 
 ### 语法  
 
@@ -28,6 +28,6 @@ pidof nginx
 pidof crond
 1509
 
-pidof [init](https://philipding.github.io/linux-command/init "init命令")
+pidof [init](#/init "init命令")
 1
 ```

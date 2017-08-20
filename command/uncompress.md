@@ -1,4 +1,4 @@
-**uncompress命令**用来解压缩由[compress](https://philipding.github.io/linux-command/compress "compress命令")命令压缩后产生的“.Z”压缩包。
+**uncompress命令**用来解压缩由[compress](#/compress "compress命令")命令压缩后产生的“.Z”压缩包。
 
 ### 语法  
 

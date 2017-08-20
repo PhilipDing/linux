@@ -1,4 +1,4 @@
-**telnet命令**用于登录远程主机，对远程主机进行管理。telnet因为采用明文传送报文，安全性不好，很多Linux服务器都不开放telnet服务，而改用更安全的[ssh](https://philipding.github.io/linux-command/ssh "ssh命令")方式了。但仍然有很多别的系统可能采用了telnet方式来提供远程登录，因此弄清楚telnet客户端的使用方式仍是很有必要的。
+**telnet命令**用于登录远程主机，对远程主机进行管理。telnet因为采用明文传送报文，安全性不好，很多Linux服务器都不开放telnet服务，而改用更安全的[ssh](#/ssh "ssh命令")方式了。但仍然有很多别的系统可能采用了telnet方式来提供远程登录，因此弄清楚telnet客户端的使用方式仍是很有必要的。
 
 ### 语法  
 
@@ -23,8 +23,8 @@ telnet(选项)(参数)
 -l<用户名称>：指定要登入远端主机的用户名称；
 -L：允许输出8位字符资料；
 -n<记录文件>：指定文件记录相关信息；
--r：使用类似[rlogin](https://philipding.github.io/linux-command/rlogin "rlogin命令")指令的用户界面；
--S<服务类型>：设置telnet连线所需的[ip](https://philipding.github.io/linux-command/ip "ip命令") TOS信息；
+-r：使用类似[rlogin](#/rlogin "rlogin命令")指令的用户界面；
+-S<服务类型>：设置telnet连线所需的[ip](#/ip "ip命令") TOS信息；
 -x：假设主机有支持数据加密的功能，就使用它；
 -X<认证形态>：关闭指定的认证形态。
 ```
@@ -44,7 +44,7 @@ Escape character is '^]'.
 
     localhost (Linux release 2.6.18-274.18.1.el5 #1 SMP Thu Feb 9 12:45:44 EST 2012) (1)
 
-[login](https://philipding.github.io/linux-command/login "login命令"): root
+[login](#/login "login命令"): root
 Password: 
 Login incorrect
 ```

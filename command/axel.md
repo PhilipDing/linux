@@ -1,10 +1,10 @@
-**axel**是Linux下一个不错的HTTP/[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")高速下载工具。支持多线程下载、断点续传，且可以从多个地址或者从一个地址的多个连接来下载同一个文件。适合网速不给力时多线程下载提高下载速度。比如在国内VPS或服务器上下载lnmp一键安装包用Axel就比[wget](https://philipding.github.io/linux-command/wget "wget命令")快。
+**axel**是Linux下一个不错的HTTP/[ftp](#/ftp "ftp命令")高速下载工具。支持多线程下载、断点续传，且可以从多个地址或者从一个地址的多个连接来下载同一个文件。适合网速不给力时多线程下载提高下载速度。比如在国内VPS或服务器上下载lnmp一键安装包用Axel就比[wget](#/wget "wget命令")快。
 
 ### 安装  
 
 CentOS安装Axel：
 
-目前[yum](https://philipding.github.io/linux-command/yum "yum命令")源上没有Axel，我们可以到http://pkgs.repoforge.org/axel/下载[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")包安装。
+目前[yum](#/yum "yum命令")源上没有Axel，我们可以到http://pkgs.repoforge.org/axel/下载[rpm](#/rpm "rpm命令")包安装。
 
 32位CentOS执行下面命令：
 
@@ -23,7 +23,7 @@ rpm -ivh axel-2.4-1.el5.rf.x86_64.rpm
 Debian/Ubuntu安装Axel：
 
 ```
-[apt-get](https://philipding.github.io/linux-command/apt-get "apt-get命令") [install](https://philipding.github.io/linux-command/install "install命令") axel
+[apt-get](#/apt-get "apt-get命令") [install](#/install "install命令") axel
 ```
 
 ### 语法  
@@ -45,7 +45,7 @@ axel [options] url1 [url2] [url...]
 --quiet ， -q                静默模式
 --verbose ，-v               更多状态信息
 --alternate ， -a            Alternate progress indicator
---[help](https://philipding.github.io/linux-command/help "help命令") ，-h                  帮助
+--[help](#/help "help命令") ，-h                  帮助
 --version ，-V               版本信息
 ```
 
@@ -54,7 +54,7 @@ axel [options] url1 [url2] [url...]
 如下载lnmp安装包指定10个线程，存到/tmp/：
 
 ```
-axel -n 10 -o /tmp/ http://www.linuxde.net/lnmp.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz
+axel -n 10 -o /tmp/ http://www.linuxde.net/lnmp.[tar](#/tar "tar命令").gz
 ```
 
 如果下载过程中下载中断可以再执行下载命令即可恢复上次的下载进度。

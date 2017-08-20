@@ -29,7 +29,7 @@ vmstat(选项)(参数)
 ```
 vmstat 3
 procs -----------memory---------- ---swap-- -----io---- --system-- -----cpu------
- r  b   swpd   [free](https://philipding.github.io/linux-command/free "free命令")   buff  cache   si   so    bi    bo   in   cs us sy [id](https://philipding.github.io/linux-command/id "id命令") wa st
+ r  b   swpd   [free](#/free "free命令")   buff  cache   si   so    bi    bo   in   cs us sy [id](#/id "id命令") wa st
  0  0    320  42188 167332 1534368    0    0     4     7    1    0  0  0 99  0  0
  0  0    320  42188 167332 1534392    0    0     0     0 1002   39  0  0 100  0  0
  0  0    320  42188 167336 1534392    0    0     0    19 1002   44  0  0 100  0  0
@@ -75,7 +75,7 @@ system（系统）
 
 CPU（以百分比表示）
 
-*   us: 用户进程执行时间百分比(user [time](https://philipding.github.io/linux-command/time "time命令"))
+*   us: 用户进程执行时间百分比(user [time](#/time "time命令"))
 
 us的值比较高时，说明用户进程消耗的CPU时间多，但是如果长期超50%的使用，那么我们就该考虑优化程序算法或者进行加速。
 

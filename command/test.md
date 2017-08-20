@@ -23,7 +23,7 @@ test(选项)
 -s<文件>：如果文件的长度不为零，则为真；
 -S<文件>：如果文件为一个套接字特殊文件，则为真；
 -u<文件>：如果设置了文件的SUID位，则为真；
--[w](https://philipding.github.io/linux-command/w "w命令")<文件>：如果文件可写，则为真；
+-[w](#/w "w命令")<文件>：如果文件可写，则为真；
 -x<文件>：如果文件可执行，则为真。
 ```
 
@@ -67,12 +67,12 @@ test 整数1 -ne 整数2    #整数1不等于整数2
 test File1 –ef File2    两个文件是否为同一个文件，可用于硬连接。主要判断两个文件是否指向同一个inode。
 test File1 –nt File2    判断文件1是否比文件2新
 test File1 –ot File2    判断文件1比是否文件2旧
-test –b [file](https://philipding.github.io/linux-command/file "file命令")   #文件是否块设备文件
+test –b [file](#/file "file命令")   #文件是否块设备文件
 test –c File   #文件并且是字符设备文件
 test –d File   #文件并且是目录
 test –e File   #文件是否存在 （常用）
 test –f File   #文件是否为正规文件 （常用）
-test –g File   #文件是否是设置了组[id](https://philipding.github.io/linux-command/id "id命令")
+test –g File   #文件是否是设置了组[id](#/id "id命令")
 test –G File   #文件属于的有效组ID
 test –h File   #文件是否是一个符号链接（同-L）
 test –k File   #文件是否设置了Sticky bit位
@@ -83,7 +83,7 @@ test –p File   #文件是一个命名管道
 test –r File   #文件是否可读
 test –s File   #文件是否是非空白文件
 test –t FD     #文件描述符是在一个终端打开的
-test –u File   #文件存在并且设置了它的[set](https://philipding.github.io/linux-command/set "set命令")-user-id位
+test –u File   #文件存在并且设置了它的[set](#/set "set命令")-user-id位
 test –w File   #文件是否存在并可写
 test –x File   #文件属否存在并可执行
 ```

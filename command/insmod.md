@@ -32,7 +32,7 @@ insmod(选项)(参数)
 [root@localhost boot]# insmod /lib/modules/2.6.
 18-8.el5/kernel/drivers/md/raid1.ko  
 
-[root@localhost boot]# [lsmod](https://philipding.github.io/linux-command/lsmod "lsmod命令") | [grep](https://philipding.github.io/linux-command/grep "grep命令") raid1
+[root@localhost boot]# [lsmod](#/lsmod "lsmod命令") | [grep](#/grep "grep命令") raid1
 raid1                  25153  0
 ```
 

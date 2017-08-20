@@ -29,10 +29,10 @@ sudo(选项)(参数)
 
 配置sudo必须通过编辑`/etc/sudoers`文件，而且只有超级用户才可以修改它，还必须使用visudo编辑。之所以使用visudo有两个原因，一是它能够防止两个用户同时修改它；二是它也能进行有限的语法检查。所以，即使只有你一个超级用户，你也最好用visudo来检查一下语法。
 
-visudo默认的是在[vi](https://philipding.github.io/linux-command/vi "vi命令")里打开配置文件，用vi来修改文件。我们可以在编译时修改这个默认项。visudo不会擅自保存带有语法错误的配置文件，它会提示你出现的问题，并询问该如何处理，就像：
+visudo默认的是在[vi](#/vi "vi命令")里打开配置文件，用vi来修改文件。我们可以在编译时修改这个默认项。visudo不会擅自保存带有语法错误的配置文件，它会提示你出现的问题，并询问该如何处理，就像：
 
 ```
->>> sudoers [file](https://philipding.github.io/linux-command/file "file命令"): syntax error, line 22 <<
+>>> sudoers [file](#/file "file命令"): syntax error, line 22 <<
 ```
 
 此时我们有三种选择：键入“e”是重新编辑，键入“x”是不保存退出，键入“Q”是退出并保存。如果真选择Q，那么sudo将不会再运行，直到错误被纠正。
@@ -40,7 +40,7 @@ visudo默认的是在[vi](https://philipding.github.io/linux-command/vi "vi命�
 现在，我们一起来看一下神秘的配置文件，学一下如何编写它。让我们从一个简单的例子开始：让用户Foobar可以通过sudo执行所有root可执行的命令。以root身份用visudo打开配置文件，可以看到类似下面几行：
 
 ```
-# Runas [alias](https://philipding.github.io/linux-command/alias "alias命令") specification
+# Runas [alias](#/alias "alias命令") specification
 # User privilege specificationroot    ALL=(ALL)ALL
 ```
 
@@ -53,15 +53,15 @@ foobar ALL=(ALL)    ALL
 保存退出后，切换到foobar用户，我们用它的身份执行命令：
 
 ```
-[foobar@localhost ~]$ [ls](https://philipding.github.io/linux-command/ls "ls命令") /root
+[foobar@localhost ~]$ [ls](#/ls "ls命令") /root
 ls: /root: 权限不够
 
 [foobar@localhost ~]$ sudo ls /root
 PassWord:
-anaconda-ks.cfg Desktop [install](https://philipding.github.io/linux-command/install "install命令").log install.log.syslog
+anaconda-ks.cfg Desktop [install](#/install "install命令").log install.log.syslog
 ```
 
-好了，我们限制一下foobar的权利，不让他为所欲为。比如我们只想让他像root那样使用ls和[ifconfig](https://philipding.github.io/linux-command/ifconfig "ifconfig命令")，把那一行改为：
+好了，我们限制一下foobar的权利，不让他为所欲为。比如我们只想让他像root那样使用ls和[ifconfig](#/ifconfig "ifconfig命令")，把那一行改为：
 
 ```
 foobar localhost=    /sbin/ifconfig,   /bin/ls
@@ -70,14 +70,14 @@ foobar localhost=    /sbin/ifconfig,   /bin/ls
 再来执行命令：
 
 ```
-[foobar@localhost ~]$ sudo [head](https://philipding.github.io/linux-command/head "head命令") -5 /etc/shadow
+[foobar@localhost ~]$ sudo [head](#/head "head命令") -5 /etc/shadow
 Password:
-Sorry, user foobar is not allowed to execute '/usr/bin/head -5 /etc/shadow' [as](https://philipding.github.io/linux-command/as "as命令") root on localhost.localdomain.
+Sorry, user foobar is not allowed to execute '/usr/bin/head -5 /etc/shadow' [as](#/as "as命令") root on localhost.localdomain.
 
 [foobar@localhost ~]$ sudo /sbin/ifconfigeth0      Linkencap:Ethernet HWaddr 00:14:85:EC:E9:9B...
 ```
 
-现在让我们来看一下那三个ALL到底是什么意思。第一个ALL是指网络中的主机，我们后面把它改成了主机名，它指明foobar可以在此主机上执行后面的命令。第二个括号里的ALL是指目标用户，也就是以谁的身份去执行命令。最后一个ALL当然就是指命令名了。例如，我们想让foobar用户在linux主机上以jimmy或rene的身份执行[kill](https://philipding.github.io/linux-command/kill "kill命令")命令，这样编写配置文件：
+现在让我们来看一下那三个ALL到底是什么意思。第一个ALL是指网络中的主机，我们后面把它改成了主机名，它指明foobar可以在此主机上执行后面的命令。第二个括号里的ALL是指目标用户，也就是以谁的身份去执行命令。最后一个ALL当然就是指命令名了。例如，我们想让foobar用户在linux主机上以jimmy或rene的身份执行[kill](#/kill "kill命令")命令，这样编写配置文件：
 
 ```
 foobar    linux=(jimmy,rene)    /bin/kill
@@ -98,7 +98,7 @@ Defaults    env_reset
 另一个问题是，很多时候，我们本来就登录了，每次使用sudo还要输入密码就显得烦琐了。我们可不可以不再输入密码呢？当然可以，我们这样修改配置文件：
 
 ```
-foobar localhost=NOPASSWD:     /bin/[cat](https://philipding.github.io/linux-command/cat "cat命令"), /bin/ls
+foobar localhost=NOPASSWD:     /bin/[cat](#/cat "cat命令"), /bin/ls
 ```
 
 再来sudo一下：
@@ -115,7 +115,7 @@ install.log.syslog
 sudo为安全考虑得很周到，不仅可以记录日志，还能在有必要时向系统管理员报告。但是，sudo的日志功能不是自动的，必须由管理员开启。这样来做：
 
 ```
-[touch](https://philipding.github.io/linux-command/touch "touch命令") /var/log/sudo
+[touch](#/touch "touch命令") /var/log/sudo
 vi /etc/syslog.conf
 ```
 
@@ -128,7 +128,7 @@ local2.debug                    /var/log/sudo
 重启日志守候进程，
 
 ```
-[ps](https://philipding.github.io/linux-command/ps "ps命令") aux [grep](https://philipding.github.io/linux-command/grep "grep命令") syslogd
+[ps](#/ps "ps命令") aux [grep](#/grep "grep命令") syslogd
 ```
 
 把得到的syslogd进程的PID（输出的第二列是PID）填入下面：
@@ -144,7 +144,7 @@ kill –HUP PID
 Desktop install.log
 install.log.syslog
 $cat /var/log/sudoJul 28 22:52:54 localhost sudo:   foobar :
-TTY=pts/1 ; [pwd](https://philipding.github.io/linux-command/pwd "pwd命令")=/home/foobar ; USER=root ; [command](https://philipding.github.io/linux-command/command "command命令")=/bin/ls /root
+TTY=pts/1 ; [pwd](#/pwd "pwd命令")=/home/foobar ; USER=root ; [command](#/command "command命令")=/bin/ls /root
 ```
 
 不过，有一个小小的“缺陷”，sudo记录日志并不是很忠实：

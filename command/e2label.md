@@ -20,11 +20,11 @@ label=//ext3 defaults 1 1
 /dev/hda7 /usr ext3 defaults 1 1
 ```
 
-第二行的意思很容易懂，就是把`/dev/hda7` [mount](https://philipding.github.io/linux-command/mount "mount命令")到`/usr`上。第一行没有指明分区，意思是把label(卷标)为/ 的分区mount到/上。这样写的好处在于即使如果把硬盘从主板上的ide0(hda) 换到ide2(hdc)上，系统仍然可以自动挂载正确的分区。通常Linux安装的时候已经自动指定了卷标。如果是手动增加的新分区，可以用下边的命令为 其指定卷标：
+第二行的意思很容易懂，就是把`/dev/hda7` [mount](#/mount "mount命令")到`/usr`上。第一行没有指明分区，意思是把label(卷标)为/ 的分区mount到/上。这样写的好处在于即使如果把硬盘从主板上的ide0(hda) 换到ide2(hdc)上，系统仍然可以自动挂载正确的分区。通常Linux安装的时候已经自动指定了卷标。如果是手动增加的新分区，可以用下边的命令为 其指定卷标：
 
 ```
 e2label /dev/hdax /new
-[mkdir](https://philipding.github.io/linux-command/mkdir "mkdir命令") /new
+[mkdir](#/mkdir "mkdir命令") /new
 ```
 
 然后在`/etc/fstab`里加入：

@@ -1,6 +1,6 @@
-在 X 系统里面，从一个窗口复制一段文字到另一个窗口，有两套机制，分别是 Selections 和 [cut](https://philipding.github.io/linux-command/cut "cut命令") buffers。
+在 X 系统里面，从一个窗口复制一段文字到另一个窗口，有两套机制，分别是 Selections 和 [cut](#/cut "cut命令") buffers。
 
-常用的 copy & [paste](https://philipding.github.io/linux-command/paste "paste命令") 是利用的 cut buffers 机制;另外用鼠标选中一段文字，然后在另一个窗口按鼠标中键实现复制，利用的是 selections 机制。selection 又可以分为 master 和 slave selection。
+常用的 copy & [paste](#/paste "paste命令") 是利用的 cut buffers 机制;另外用鼠标选中一段文字，然后在另一个窗口按鼠标中键实现复制，利用的是 selections 机制。selection 又可以分为 master 和 slave selection。
 
 当用鼠标选中一段文件，这段文字就自动被复制到 master selection。然后在另一个地方按鼠标中键，就自动把 master selection 的内容粘贴出来。
 
@@ -8,7 +8,7 @@
 
 我忍受不了这种折磨，所以发现了 xclip， 方便的管理 X selections 里面内容的工具。
 
-比如如下命令就把文件 /etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令") 的内容复制到 X master selections 里面了。
+比如如下命令就把文件 /etc/[passwd](#/passwd "passwd命令") 的内容复制到 X master selections 里面了。
 
 ```
 xclip -i /etc/passwd

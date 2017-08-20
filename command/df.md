@@ -17,13 +17,13 @@ df(选项)(参数)
 -k或--kilobytes：指定区块大小为1024字节；
 -l或--local：仅显示本地端的文件系统；
 -m或--megabytes：指定区块大小为1048576字节；
---no-[sync](https://philipding.github.io/linux-command/sync "sync命令")：在取得磁盘使用信息前，不要执行sync指令，此为预设值；
+--no-[sync](#/sync "sync命令")：在取得磁盘使用信息前，不要执行sync指令，此为预设值；
 -P或--portability：使用POSIX的输出格式；
 --sync：在取得磁盘使用信息前，先执行sync指令；
--t<文件系统类型>或--[type](https://philipding.github.io/linux-command/type "type命令")=<文件系统类型>：仅显示指定文件系统类型的磁盘信息；
+-t<文件系统类型>或--[type](#/type "type命令")=<文件系统类型>：仅显示指定文件系统类型的磁盘信息；
 -T或--print-type：显示文件系统的类型；
 -x<文件系统类型>或--exclude-type=<文件系统类型>：不要显示指定文件系统类型的磁盘信息；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+--[help](#/help "help命令")：显示帮助；
 --version：显示版本信息。
 ```
 

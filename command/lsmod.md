@@ -39,7 +39,7 @@ button                 10705  0
 battery                13637  0
 asus_acpi              19289  0
 ac                      9157  0
-[lp](https://philipding.github.io/linux-command/lp "lp命令")                     15849  0
+[lp](#/lp "lp命令")                     15849  0
 snd_hda_intel         401453  0
 snd_seq_dummy           7877  0
 snd_seq_oss            32577  0
@@ -90,4 +90,4 @@ ehci_hcd               34509  0
 *   第3列：表示依赖模块的个数。
 *   第4列：表示依赖模块的内容。
 
-通常在使用lsmod命令时，都会采用类似`lsmod | [grep](https://philipding.github.io/linux-command/grep "grep命令") -i ext3`这样的命令来查询当前系统是否加载了某些模块。
+通常在使用lsmod命令时，都会采用类似`lsmod | [grep](#/grep "grep命令") -i ext3`这样的命令来查询当前系统是否加载了某些模块。

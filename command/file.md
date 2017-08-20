@@ -27,7 +27,7 @@ file(选项)(参数)
 显示文件类型
 
 ```
-[root@localhost ~]# file [install](https://philipding.github.io/linux-command/install "install命令").log
+[root@localhost ~]# file [install](#/install "install命令").log
 install.log: UTF-8 Unicode text
 
 [root@localhost ~]# file -b install.log      <== 不显示文件名称
@@ -44,7 +44,7 @@ text/plain; charset=utf-8
 显示符号链接的文件类型
 
 ```
-[root@localhost ~]# [ls](https://philipding.github.io/linux-command/ls "ls命令") -l /var/[mail](https://philipding.github.io/linux-command/mail "mail命令")
+[root@localhost ~]# [ls](#/ls "ls命令") -l /var/[mail](#/mail "mail命令")
 lrwxrwxrwx 1 root root 10 08-13 00:11 /var/mail -> spool/mail
 
 [root@localhost ~]# file /var/mail

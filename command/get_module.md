@@ -8,10 +8,10 @@ get_module 模块名
 
 ### 实例  
 
-使用[lsmod](https://philipding.github.io/linux-command/lsmod "lsmod命令")命令查看内核模块：
+使用[lsmod](#/lsmod "lsmod命令")命令查看内核模块：
 
 ```
-lsmod | [head](https://philipding.github.io/linux-command/head "head命令") -5
+lsmod | [head](#/head "head命令") -5
 Module                  Size  Used by
 ipv6                  272801  15
 xfrm_nalgo             13381  1 ipv6
@@ -36,9 +36,9 @@ Sections:
         .bss                 : 0xf8f36000
         .data.read_mostly    : 0xf8f34d20
         .data                : 0xf8f2f7a0
-        .[exit](https://philipding.github.io/linux-command/exit "exit命令").text           : 0xf8f1a234
+        .[exit](#/exit "exit命令").text           : 0xf8f1a234
         .gnu.linkonce.this_module : 0xf8f34e00
-        .[init](https://philipding.github.io/linux-command/init "init命令").data           : 0xf8a16a60
+        .[init](#/init "init命令").data           : 0xf8a16a60
         .init.text           : 0xf8a16000
         .module_sig          : 0xf8f37960
         .rodata.str1.1       : 0xf8f1ae46

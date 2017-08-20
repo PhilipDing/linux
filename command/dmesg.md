@@ -17,8 +17,8 @@ dmesg(选项)
 ### 实例  
 
 ```
-[root@localhost ~]# dmesg | [head](https://philipding.github.io/linux-command/head "head命令")
-Linux version 2.6.18-348.6.1.el5 (mockbuild@builder17.centos.org) ([gcc](https://philipding.github.io/linux-command/gcc "gcc命令") version 4.1.2 20080704 (Red Hat 4.1.2-54)) #1 SMP Tue May 21 15:34:22 EDT 2013
+[root@localhost ~]# dmesg | [head](#/head "head命令")
+Linux version 2.6.18-348.6.1.el5 (mockbuild@builder17.centos.org) ([gcc](#/gcc "gcc命令") version 4.1.2 20080704 (Red Hat 4.1.2-54)) #1 SMP Tue May 21 15:34:22 EDT 2013
 BIOS-provided physical RAM map:
  BIOS-e820: 0000000000010000 - 000000000009f400 (usable)
  BIOS-e820: 000000000009f400 - 00000000000a0000 (reserved)

@@ -36,7 +36,7 @@ ulimit(选项)
 
 ```
 [root@localhost ~]# ulimit -a
-core [file](https://philipding.github.io/linux-command/file "file命令") size          (blocks, -c) 0           #core文件的最大值为100 blocks。
+core [file](#/file "file命令") size          (blocks, -c) 0           #core文件的最大值为100 blocks。
 data seg size           (kbytes, -d) unlimited   #进程的数据段可以任意大。
 scheduling priority             (-e) 0
 file size               (blocks, -f) unlimited   #文件可以任意大。
@@ -46,7 +46,7 @@ max memory size         (kbytes, -m) unlimited   #一个任务的常驻物理内
 open files                      (-n) 1024        #一个任务最多可以同时打开1024的文件。
 pipe size            (512 bytes, -p) 8           #管道的最大空间为4096字节。
 POSIX message queues     (bytes, -q) 819200      #POSIX的消息队列的最大值为819200字节。
-real-[time](https://philipding.github.io/linux-command/time "time命令") priority              (-r) 0
+real-[time](#/time "time命令") priority              (-r) 0
 stack size              (kbytes, -s) 10240       #进程的栈的最大值为10240字节。
 cpu time               (seconds, -t) unlimited   #进程使用的CPU时间。
 max user processes              (-u) 98304       #当前用户同时打开的进程（包括线程）的最大个数为98304。

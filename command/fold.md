@@ -11,7 +11,7 @@ fold(选项)(参数)
 ```
 -b或——bytes：以Byte为单位计算列宽，而非采用行数编号为单位；
 -s或——spaces：以空格字符作为换列点；
--[w](https://philipding.github.io/linux-command/w "w命令")<每列行数>或--width<每列行数>：设置每列的最大行数。
+-[w](#/w "w命令")<每列行数>或--width<每列行数>：设置每列的最大行数。
 ```
 
 ### 参数  

@@ -12,7 +12,7 @@ dhclient(选项)(参数)
 0：指定dhcp客户端监听的端口号；
 -d：总是以前台方式运行程序；
 -q：安静模式，不打印任何错误的提示信息；
--r：释放[ip](https://philipding.github.io/linux-command/ip "ip命令")地址。
+-r：释放[ip](#/ip "ip命令")地址。
 ```
 
 ### 参数  

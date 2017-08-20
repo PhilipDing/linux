@@ -4,44 +4,44 @@
 
 [[隐藏](javascript:content_index_toggleToc())] <script type="text/javascript" language="javascript">window.content_index_showTocToggle=true;function content_index_toggleToc(){var tts="显示";var tth="隐藏";if(window.content_index_showTocToggle){window.content_index_showTocToggle=false;document.getElementById("content-index-contents").style.display="none";document.getElementById("content-index-togglelink").innerHTML=tts}else{window.content_index_showTocToggle=true;document.getElementById("content-index-contents").style.display="block";document.getElementById("content-index-togglelink").innerHTML=tth}}</script>
 
-*   [awk命令格式和选项](https://philipding.github.io/linux-command/awk#awk命令格式和选项 "awk命令格式和选项")
-*   [awk模式和操作](https://philipding.github.io/linux-command/awk#awk模式和操作 "awk模式和操作")
-    *   [模式](https://philipding.github.io/linux-command/awk#模式 "模式")
-    *   [操作](https://philipding.github.io/linux-command/awk#操作 "操作")
-*   [awk脚本基本结构](https://philipding.github.io/linux-command/awk#awk脚本基本结构 "awk脚本基本结构")
-    *   [awk的工作原理](https://philipding.github.io/linux-command/awk#awk的工作原理 "awk的工作原理")
-*   [awk内置变量（预定义变量）](https://philipding.github.io/linux-command/awk#awk内置变量（预定义变量） "awk内置变量（预定义变量）")
-*   [将外部变量值传递给awk](https://philipding.github.io/linux-command/awk#将外部变量值传递给awk "将外部变量值传递给awk")
-*   [awk运算与判断](https://philipding.github.io/linux-command/awk#awk运算与判断 "awk运算与判断")
-    *   [算术运算符](https://philipding.github.io/linux-command/awk#算术运算符 "算术运算符")
-    *   [赋值运算符](https://philipding.github.io/linux-command/awk#赋值运算符 "赋值运算符")
-    *   [逻辑运算符](https://philipding.github.io/linux-command/awk#逻辑运算符 "逻辑运算符")
-    *   [正则运算符](https://philipding.github.io/linux-command/awk#正则运算符 "正则运算符")
-    *   [关系运算符](https://philipding.github.io/linux-command/awk#关系运算符 "关系运算符")
-    *   [其它运算符](https://philipding.github.io/linux-command/awk#其它运算符 "其它运算符")
-    *   [运算级优先级表](https://philipding.github.io/linux-command/awk#运算级优先级表 "运算级优先级表")
-*   [awk高级输入输出](https://philipding.github.io/linux-command/awk#awk高级输入输出 "awk高级输入输出")
-    *   [读取下一条记录](https://philipding.github.io/linux-command/awk#读取下一条记录 "读取下一条记录")
-    *   [简单地读取一条记录](https://philipding.github.io/linux-command/awk#简单地读取一条记录 "简单地读取一条记录")
-    *   [关闭文件](https://philipding.github.io/linux-command/awk#关闭文件 "关闭文件")
-    *   [输出到一个文件](https://philipding.github.io/linux-command/awk#输出到一个文件 "输出到一个文件")
-*   [设置字段定界符](https://philipding.github.io/linux-command/awk#设置字段定界符 "设置字段定界符")
-*   [流程控制语句](https://philipding.github.io/linux-command/awk#流程控制语句 "流程控制语句")
-    *   [条件判断语句](https://philipding.github.io/linux-command/awk#条件判断语句 "条件判断语句")
-    *   [循环语句](https://philipding.github.io/linux-command/awk#循环语句 "循环语句")
-        *   [while语句](https://philipding.github.io/linux-command/awk#while语句 "while语句")
-        *   [for循环](https://philipding.github.io/linux-command/awk#for循环 "for循环")
-        *   [do循环](https://philipding.github.io/linux-command/awk#do循环 "do循环")
-    *   [其他语句](https://philipding.github.io/linux-command/awk#其他语句 "其他语句")
-*   [数组应用](https://philipding.github.io/linux-command/awk#数组应用 "数组应用")
-    *   [数组的定义](https://philipding.github.io/linux-command/awk#数组的定义 "数组的定义")
-    *   [数组相关函数](https://philipding.github.io/linux-command/awk#数组相关函数 "数组相关函数")
-    *   [二维、多维数组使用](https://philipding.github.io/linux-command/awk#二维、多维数组使用 "二维、多维数组使用")
-*   [内置函数](https://philipding.github.io/linux-command/awk#内置函数 "内置函数")
-    *   [算术函数](https://philipding.github.io/linux-command/awk#算术函数 "算术函数")
-    *   [字符串函数](https://philipding.github.io/linux-command/awk#字符串函数 "字符串函数")
-    *   [一般函数](https://philipding.github.io/linux-command/awk#一般函数 "一般函数")
-    *   [时间函数](https://philipding.github.io/linux-command/awk#时间函数 "时间函数")
+*   [awk命令格式和选项](#/awk#awk命令格式和选项 "awk命令格式和选项")
+*   [awk模式和操作](#/awk#awk模式和操作 "awk模式和操作")
+    *   [模式](#/awk#模式 "模式")
+    *   [操作](#/awk#操作 "操作")
+*   [awk脚本基本结构](#/awk#awk脚本基本结构 "awk脚本基本结构")
+    *   [awk的工作原理](#/awk#awk的工作原理 "awk的工作原理")
+*   [awk内置变量（预定义变量）](#/awk#awk内置变量（预定义变量） "awk内置变量（预定义变量）")
+*   [将外部变量值传递给awk](#/awk#将外部变量值传递给awk "将外部变量值传递给awk")
+*   [awk运算与判断](#/awk#awk运算与判断 "awk运算与判断")
+    *   [算术运算符](#/awk#算术运算符 "算术运算符")
+    *   [赋值运算符](#/awk#赋值运算符 "赋值运算符")
+    *   [逻辑运算符](#/awk#逻辑运算符 "逻辑运算符")
+    *   [正则运算符](#/awk#正则运算符 "正则运算符")
+    *   [关系运算符](#/awk#关系运算符 "关系运算符")
+    *   [其它运算符](#/awk#其它运算符 "其它运算符")
+    *   [运算级优先级表](#/awk#运算级优先级表 "运算级优先级表")
+*   [awk高级输入输出](#/awk#awk高级输入输出 "awk高级输入输出")
+    *   [读取下一条记录](#/awk#读取下一条记录 "读取下一条记录")
+    *   [简单地读取一条记录](#/awk#简单地读取一条记录 "简单地读取一条记录")
+    *   [关闭文件](#/awk#关闭文件 "关闭文件")
+    *   [输出到一个文件](#/awk#输出到一个文件 "输出到一个文件")
+*   [设置字段定界符](#/awk#设置字段定界符 "设置字段定界符")
+*   [流程控制语句](#/awk#流程控制语句 "流程控制语句")
+    *   [条件判断语句](#/awk#条件判断语句 "条件判断语句")
+    *   [循环语句](#/awk#循环语句 "循环语句")
+        *   [while语句](#/awk#while语句 "while语句")
+        *   [for循环](#/awk#for循环 "for循环")
+        *   [do循环](#/awk#do循环 "do循环")
+    *   [其他语句](#/awk#其他语句 "其他语句")
+*   [数组应用](#/awk#数组应用 "数组应用")
+    *   [数组的定义](#/awk#数组的定义 "数组的定义")
+    *   [数组相关函数](#/awk#数组相关函数 "数组相关函数")
+    *   [二维、多维数组使用](#/awk#二维、多维数组使用 "二维、多维数组使用")
+*   [内置函数](#/awk#内置函数 "内置函数")
+    *   [算术函数](#/awk#算术函数 "算术函数")
+    *   [字符串函数](#/awk#字符串函数 "字符串函数")
+    *   [一般函数](#/awk#一般函数 "一般函数")
+    *   [时间函数](#/awk#时间函数 "时间函数")
 
 </div>
 
@@ -52,7 +52,7 @@
 **语法形式**
 
 ```
-awk [options] 'script' var=value [file](https://philipding.github.io/linux-command/file "file命令")(s)
+awk [options] 'script' var=value [file](#/file "file命令")(s)
 awk [options] -f scriptfile var=value file(s)
 ```
 
@@ -74,16 +74,16 @@ awk脚本是由模式和操作组成的。
 *   /正则表达式/：使用通配符的扩展集。
 *   关系表达式：使用运算符进行操作，可以是字符串或数字的比较测试。
 *   模式匹配表达式：用运算符`~`（匹配）和`~!`（不匹配）。
-*   BEGIN语句块、pattern语句块、END语句块：参见[awk的工作原理](https://philipding.github.io/linux-command/awk#awk的工作原理)
+*   BEGIN语句块、pattern语句块、END语句块：参见[awk的工作原理](#/awk#awk的工作原理)
 
 ### 操作  
 
 操作由一个或多个命令、函数、表达式组成，之间由换行符或分号隔开，并位于大括号内，主要部分是：
 
-*   [变量](https://philipding.github.io/linux-command/awk#awk内置变量（预定义变量）)或[数组](https://philipding.github.io/linux-command/awk#数组应用)赋值
-*   [输出命令](https://philipding.github.io/linux-command/awk#awk高级输入输出)
-*   [内置函数](https://philipding.github.io/linux-command/awk#内置函数)
-*   [控制流语句](https://philipding.github.io/linux-command/awk#流程控制语句)
+*   [变量](#/awk#awk内置变量（预定义变量）)或[数组](#/awk#数组应用)赋值
+*   [输出命令](#/awk#awk高级输入输出)
+*   [内置函数](#/awk#内置函数)
+*   [控制流语句](#/awk#流程控制语句)
 
 ## awk脚本基本结构  
 
@@ -117,7 +117,7 @@ awk 'BEGIN{ commands } pattern{ commands } END{ commands }'
 **示例**
 
 ```
-[echo](https://philipding.github.io/linux-command/echo "echo命令") -e "A line 1nA line 2" | awk 'BEGIN{ print "Start" } { print } END{ print "End" }'
+[echo](#/echo "echo命令") -e "A line 1nA line 2" | awk 'BEGIN{ print "Start" } { print } END{ print "End" }'
 Start
 A line 1
 A line 2
@@ -210,7 +210,7 @@ awk 'END{ print NR }' filename
 一个每一行中第一个字段值累加的例子：
 
 ```
-[seq](https://philipding.github.io/linux-command/seq "seq命令") 5 | awk 'BEGIN{ [sum](https://philipding.github.io/linux-command/sum "sum命令")=0; print "总和：" } { print $1"+"; sum+=$1 } END{ print "等于"; print sum }' 
+[seq](#/seq "seq命令") 5 | awk 'BEGIN{ [sum](#/sum "sum命令")=0; print "总和：" } { print $1"+"; sum+=$1 } END{ print "等于"; print sum }' 
 总和：
 1+
 2+
@@ -551,7 +551,7 @@ awk 'BEGIN{a="b";arr[0]="b";arr["b"]="c";print (a in arr);}'
 
 ### 运算级优先级表  
 
-![级别越高越优先](https://philipding.github.io/linux-command/wp-content/uploads/2013/12/1225512if.gif)  
+![级别越高越优先](./images/1225512if.gif)  
 级别越高越优先
 
 ## awk高级输入输出  
@@ -561,7 +561,7 @@ awk 'BEGIN{a="b";arr[0]="b";arr["b"]="c";print (a in arr);}'
 awk中`next`语句使用：在循环逐行匹配，如果遇到next，就会跳过当前行，直接忽略下面语句。而进行下一行匹配。net语句一般用于多行合并：
 
 ```
-[cat](https://philipding.github.io/linux-command/cat "cat命令") text.txt
+[cat](#/cat "cat命令") text.txt
 a
 b
 c
@@ -580,9 +580,9 @@ awk 'NR%2==1{next}{print NR,$0;}' text.txt
 ```
 cat text.txt
 web01[192.168.2.100]
-[httpd](https://philipding.github.io/linux-command/httpd "httpd命令")            ok
+[httpd](#/httpd "httpd命令")            ok
 tomcat               ok
-[sendmail](https://philipding.github.io/linux-command/sendmail "sendmail命令")               ok
+[sendmail](#/sendmail "sendmail命令")               ok
 web02[192.168.2.101]
 httpd            ok
 postfix               ok
@@ -590,7 +590,7 @@ web03[192.168.2.102]
 mysqld            ok
 httpd               ok
 0
-awk '/^web/{T=$0;next;}{print T":t"$0;}' [test](https://philipding.github.io/linux-command/test "test命令").txt
+awk '/^web/{T=$0;next;}{print T":t"$0;}' [test](#/test "test命令").txt
 web01[192.168.2.100]:   httpd            ok
 web01[192.168.2.100]:   tomcat               ok
 web01[192.168.2.100]:   sendmail               ok
@@ -613,19 +613,19 @@ awk getline从整体上来说，用法说明：
 
 **示例：**
 
-执行linux的`[date](https://philipding.github.io/linux-command/date "date命令")`命令，并通过管道输出给`getline`，然后再把输出赋值给自定义变量out，并打印它：
+执行linux的`[date](#/date "date命令")`命令，并通过管道输出给`getline`，然后再把输出赋值给自定义变量out，并打印它：
 
 ```
 awk 'BEGIN{ "date" | getline out; print out }' test
 ```
 
-执行shell的date命令，并通过管道输出给getline，然后getline从管道中读取并将输入赋值给out，[split](https://philipding.github.io/linux-command/split "split命令")函数把变量out转化成数组mon，然后打印数组mon的第二个元素：
+执行shell的date命令，并通过管道输出给getline，然后getline从管道中读取并将输入赋值给out，[split](#/split "split命令")函数把变量out转化成数组mon，然后打印数组mon的第二个元素：
 
 ```
 awk 'BEGIN{ "date" | getline out; split(out,mon); print mon[2] }' test
 ```
 
-命令[ls](https://philipding.github.io/linux-command/ls "ls命令")的输出传递给geline作为输入，循环使getline从ls的输出中读取一行，并把它打印到屏幕。这里没有输入文件，因为BEGIN块在打开输入文件前执行，所以可以忽略输入文件。
+命令[ls](#/ls "ls命令")的输出传递给geline作为输入，循环使getline从ls的输出中读取一行，并把它打印到屏幕。这里没有输入文件，因为BEGIN块在打开输入文件前执行，所以可以忽略输入文件。
 
 ```
 awk 'BEGIN{ while( "ls" | getline) print }'
@@ -646,7 +646,7 @@ filename可以是getline打开的文件，也可以是stdin，包含文件名的
 awk中允许用如下方式将结果输出到一个文件：
 
 ```
-echo | awk '{[printf](https://philipding.github.io/linux-command/printf "printf命令")("hello word!n") > "datafile"}'
+echo | awk '{[printf](#/printf "printf命令")("hello word!n") > "datafile"}'
 或
 echo | awk '{printf("hello word!n") >> "datafile"}'
 ```
@@ -656,7 +656,7 @@ echo | awk '{printf("hello word!n") >> "datafile"}'
 默认的字段定界符是空格，可以使用`-F "定界符"`  明确指定一个定界符：
 
 ```
-awk -F: '{ print $NF }' /etc/[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")
+awk -F: '{ print $NF }' /etc/[passwd](#/passwd "passwd命令")
 或
 awk 'BEGIN{ FS=":" } { print $NF }' /etc/passwd
 ```
@@ -665,7 +665,7 @@ awk 'BEGIN{ FS=":" } { print $NF }' /etc/passwd
 
 ## 流程控制语句  
 
-在linux awk的while、do-while和for语句中允许使用break,continue语句来控制流程走向，也允许使用[exit](https://philipding.github.io/linux-command/exit "exit命令")这样的语句来退出。break中断当前正在执行的循环并跳到循环外执行下一条语句。if 是流程选择用法。awk中，流程控制语句，语法结构，与c语言类型。有了这些语句，其实很多shell程序都可以交给awk，而且性能是非常快的。下面是各个语句用法。
+在linux awk的while、do-while和for语句中允许使用break,continue语句来控制流程走向，也允许使用[exit](#/exit "exit命令")这样的语句来退出。break中断当前正在执行的循环并跳到循环外执行下一条语句。if 是流程选择用法。awk中，流程控制语句，语法结构，与c语言类型。有了这些语句，其实很多shell程序都可以交给awk，而且性能是非常快的。下面是各个语句用法。
 
 ### 条件判断语句  
 
@@ -755,9 +755,9 @@ for(k in ENVIRON){
 TERM=linux
 G_BROKEN_FILENAMES=1
 SHLVL=1
-[pwd](https://philipding.github.io/linux-command/pwd "pwd命令")=/root/text
+[pwd](#/pwd "pwd命令")=/root/text
 ...
-[logname](https://philipding.github.io/linux-command/logname "logname命令")=root
+[logname](#/logname "logname命令")=root
 HOME=/root
 SSH_CLIENT=192.168.1.21 53087 22
 ```
@@ -827,7 +827,7 @@ Array[2]="kai"
 
 ```
 Array["first"]="www"
-Array["[last](https://philipding.github.io/linux-command/last "last命令")"]="name"
+Array["[last](#/last "last命令")"]="name"
 Array["birth"]="1987"
 ```
 
@@ -845,7 +845,7 @@ Array["birth"]="1987"
 **得到数组长度：**
 
 ```
-awk 'BEGIN{[info](https://philipding.github.io/linux-command/info "info命令")="it is a test";lens=split(info,tA," ");print length(tA),lens;}'
+awk 'BEGIN{[info](#/info "info命令")="it is a test";lens=split(info,tA," ");print length(tA),lens;}'
 4 4
 ```
 
@@ -1042,7 +1042,7 @@ awk内置函数，主要分以下3种类似：算数函数、字符串函数、�
 
 <tr>
 
-<td>srand( [[expr](https://philipding.github.io/linux-command/expr "expr命令")] )</td>
+<td>srand( [[expr](#/expr "expr命令")] )</td>
 
 <td>将 rand 函数的种子值设置为 Expr 参数的值，或如果省略 Expr 参数则使用某天的时间。返回先前的种子值。</td>
 
@@ -1371,7 +1371,7 @@ awk 'BEGIN{n1=124.113;n2=-1.224;n3=1.2345; printf("%.2f,%.2u,%.2g,%X,%on",n1,n2,
 
 <tr>
 
-<td>system([command](https://philipding.github.io/linux-command/command "command命令") )</td>
+<td>system([command](#/command "command命令") )</td>
 
 <td>执行 Command 参数指定的命令，并返回退出状态。等同于 system 子例程。</td>
 
@@ -1410,7 +1410,7 @@ awk 'BEGIN{n1=124.113;n2=-1.224;n3=1.2345; printf("%.2f,%.2u,%.2g,%X,%on",n1,n2,
 ```
 awk 'BEGIN{while("cat /etc/passwd"|getline){print $0;};close("/etc/passwd");}'
 root:x:0:0:root:/root:/bin/bash
-bin:x:1:1:bin:/bin:/sbin/[nologin](https://philipding.github.io/linux-command/nologin "nologin命令")
+bin:x:1:1:bin:/bin:/sbin/[nologin](#/nologin "nologin命令")
 daemon:x:2:2:daemon:/sbin:/sbin/nologin
 ```
 
@@ -1469,7 +1469,7 @@ b返回值，是执行结果。
 
 <tr>
 
-<td>mktime( YYYY MM [dd](https://philipding.github.io/linux-command/dd "dd命令") HH MM [ss](https://philipding.github.io/linux-command/ss "ss命令")[ DST])</td>
+<td>mktime( YYYY MM [dd](#/dd "dd命令") HH MM [ss](#/ss "ss命令")[ DST])</td>
 
 <td>生成时间格式</td>
 
@@ -1663,7 +1663,7 @@ awk 'BEGIN{tstamp1=mktime("2001 01 01 12 12 12");tstamp2=systime();print tstamp2
 
 <tr>
 
-<td>%[w](https://philipding.github.io/linux-command/w "w命令")</td>
+<td>%[w](#/w "w命令")</td>
 
 <td>十进制表示的星期几(星期天是0)</td>
 

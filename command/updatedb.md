@@ -1,4 +1,4 @@
-**updatedb命令**用来创建或更新[slocate](https://philipding.github.io/linux-command/locate_slocate "slocate命令")命令所必需的数据库文件。updatedb命令的执行过程较长，因为在执行时它会遍历整个系统的目录树，并将所有的文件信息写入slocate数据库文件中。
+**updatedb命令**用来创建或更新[slocate](#/locate_slocate "slocate命令")命令所必需的数据库文件。updatedb命令的执行过程较长，因为在执行时它会遍历整个系统的目录树，并将所有的文件信息写入slocate数据库文件中。
 
 补充说明：slocate本身具有一个数据库，里面存放了系统中文件与目录的相关信息。
 

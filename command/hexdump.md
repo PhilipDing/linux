@@ -20,7 +20,7 @@ hexdump [选项] [文件]...
 -e 指定格式字符串，格式字符串包含在一对单引号中，格式字符串形如：'a/b "format1" "format2"'。
 ```
 
-每个格式字符串由三部分组成，每个由空格分隔，第一个形如a/b，b表示对每b个输入字节应用format1格式，a表示对每a个输入字节应用format2格式，一般a>b，且b只能为1，2，4，另外a可以省略，省略则a=1。format1和format2中可以使用类似[printf](https://philipding.github.io/linux-command/printf "printf命令")的格式字符串，如：
+每个格式字符串由三部分组成，每个由空格分隔，第一个形如a/b，b表示对每b个输入字节应用format1格式，a表示对每a个输入字节应用format2格式，一般a>b，且b只能为1，2，4，另外a可以省略，省略则a=1。format1和format2中可以使用类似[printf](#/printf "printf命令")的格式字符串，如：
 
 ```
 %02d：两位十进制
@@ -43,7 +43,7 @@ hexdump [选项] [文件]...
 ### 实例  
 
 ```
-hexdump -e '16/1 "%02X " "  |  "' -e '16/1 "%_p" "\n"' [test](https://philipding.github.io/linux-command/test "test命令")
+hexdump -e '16/1 "%02X " "  |  "' -e '16/1 "%_p" "\n"' [test](#/test "test命令")
 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F  |  ................  
 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F  |  ................  
 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F  |   !"#$%&'()*+,-./ 

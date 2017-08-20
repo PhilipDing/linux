@@ -24,14 +24,14 @@ readonly(选项)(参数)
 
 ```
 [root@localhost ~]# readonly     #显示只读变量
-[declare](https://philipding.github.io/linux-command/declare "declare命令") -ar BASH_VERSINFO='([0]="3" [1]="2" [2]="25" [3]="1" [4]="release" [5]="i686-redhat-linux-gnu")'
+[declare](#/declare "declare命令") -ar BASH_VERSINFO='([0]="3" [1]="2" [2]="25" [3]="1" [4]="release" [5]="i686-redhat-linux-gnu")'
 declare -ir EUID="0"
 declare -ir PPID="31436"
-declare -r SHELLOPTS="braceexpand:[emacs](https://philipding.github.io/linux-command/emacs "emacs命令"):hashall:histexpand:[history](https://philipding.github.io/linux-command/history "history命令"):interactive-comments:monitor"
+declare -r SHELLOPTS="braceexpand:[emacs](#/emacs "emacs命令"):hashall:histexpand:[history](#/history "history命令"):interactive-comments:monitor"
 declare -ir UID="0"
 ```
 
-对于只读变量而言，若用户对其值进行修改，则会立即报错。例如，使用该指令定义一个只读变量"[test](https://philipding.github.io/linux-command/test "test命令")"，并且将其值初始化为"ok"，输入如下命令：
+对于只读变量而言，若用户对其值进行修改，则会立即报错。例如，使用该指令定义一个只读变量"[test](#/test "test命令")"，并且将其值初始化为"ok"，输入如下命令：
 
 ```
 [root@localhost ~]# readonly test='ok'        #定义只读变量并初始化 

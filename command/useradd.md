@@ -1,4 +1,4 @@
-**useradd命令**用于Linux中创建的新的系统用户。useradd可用来建立用户帐号。帐号建好之后，再用[passwd](https://philipding.github.io/linux-command/passwd "passwd命令")设定帐号的密码．而可用[userdel](https://philipding.github.io/linux-command/userdel "userdel命令")删除帐号。使用useradd指令所建立的帐号，实际上是保存在`/etc/passwd`文本文件中。
+**useradd命令**用于Linux中创建的新的系统用户。useradd可用来建立用户帐号。帐号建好之后，再用[passwd](#/passwd "passwd命令")设定帐号的密码．而可用[userdel](#/userdel "userdel命令")删除帐号。使用useradd指令所建立的帐号，实际上是保存在`/etc/passwd`文本文件中。
 
 在Slackware中，adduser指令是个script程序，利用交谈的方式取得输入的用户帐号资料，然后再交由真正建立帐号的useradd命令建立新用户，如此可方便管理员建立用户帐号。在Red Hat Linux中，**adduser命令**则是useradd命令的符号连接，两者实际上是同一个指令。
 
@@ -23,7 +23,7 @@ useradd(选项)(参数)
 -n：取消建立以用户名称为名的群组；
 -r：建立系统帐号；
 -s<shell>：指定用户登入后所使用的shell；
--u<uid>：指定用户[id](https://philipding.github.io/linux-command/id "id命令")。
+-u<uid>：指定用户[id](#/id "id命令")。
 ```
 
 ### 参数  
@@ -44,4 +44,4 @@ useradd –g sales jack –G company,employees    //-g：加入主要组、-G：
 useradd caojh -u 544
 ```
 
-需要说明的是，设定ID值时尽量要大于500，以免冲突。因为Linux安装后会建立一些特殊用户，一般0到499之间的值留给bin、[mail](https://philipding.github.io/linux-command/mail "mail命令")这样的系统账号。
+需要说明的是，设定ID值时尽量要大于500，以免冲突。因为Linux安装后会建立一些特殊用户，一般0到499之间的值留给bin、[mail](#/mail "mail命令")这样的系统账号。

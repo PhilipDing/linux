@@ -54,7 +54,7 @@ lilo(选项)
 
 LILO 的配置都是通过位于 /etc/lilo.conf 的一个配置文件来完成的。清单 1 给出了一个示例配置，使用的是我的家用机器，支持 Linux 和 Windows 机器的双重引导。了解我的工作站的基本配置，就可以想像出这些配置是如何与实际机器相关联的：
 
-主 HDD（物理磁盘 1）上安装了 Windows XP（最初机器上只有它）。在 Linux 术语中，这个 HDD 是 /dev/hda（在 [grub](https://philipding.github.io/linux-command/grub "grub命令") 术语中是 hd0,0）。
+主 HDD（物理磁盘 1）上安装了 Windows XP（最初机器上只有它）。在 Linux 术语中，这个 HDD 是 /dev/hda（在 [grub](#/grub "grub命令") 术语中是 hd0,0）。
 
 从 HDD（物理磁盘 2）上安装了 Red Hat Linux；root 分区位于这个硬盘驱动器的第三个分区，即 /dev/hdb3（在 GRUB 术语中是 hd1,3）。
 
@@ -63,7 +63,7 @@ lilo.conf 示例文件：
 ```
 boot=/dev/hda
 map=/boot/map
-[install](https://philipding.github.io/linux-command/install "install命令")=/boot/boot.b
+[install](#/install "install命令")=/boot/boot.b
 prompt
 timeout=100
 compact
@@ -71,7 +71,7 @@ default=Linux
 image=/boot/vmlinuz-2.4.18-14
 	label=Linux
 	root=/dev/hdb3
-	[read](https://philipding.github.io/linux-command/read "read命令")-only
+	[read](#/read "read命令")-only
 	password=linux
 other=/dev/hda
 	label=WindowsXP
@@ -94,7 +94,7 @@ other=/dev/hda
 *   other= 的动作类似于 image 和 root 选项的组合，但是用于除了 Linux 以外的其他操作系统。 在我们的示例中，它告诉 LILO 到哪里去找到 Windows OS（位于第一块硬盘的第一个分区）。如果先安装 Windows，后安装 Linux，通常会是这样。
 *   label= 与所有其他 label 选项相同。
 
-在 lilo.conf 文件中可以使用很多其他参数，不过清单 1 中的参数就足以让机器可用了。要获得关于 lilo.conf 的这些以及其他参数的 进一步资料，请参考手册页（[man](https://philipding.github.io/linux-command/man "man命令") lilo.conf）。由于在引导时不会读取 lilo.conf，所以，当这个文件有改动时，需要“更新”MBR。 如果不完成此步骤就重新引导，那么对 lilo.conf 的修改不会在启动中反映出来。与先前将 LILO 写入 MBR 类似，需要运行：
+在 lilo.conf 文件中可以使用很多其他参数，不过清单 1 中的参数就足以让机器可用了。要获得关于 lilo.conf 的这些以及其他参数的 进一步资料，请参考手册页（[man](#/man "man命令") lilo.conf）。由于在引导时不会读取 lilo.conf，所以，当这个文件有改动时，需要“更新”MBR。 如果不完成此步骤就重新引导，那么对 lilo.conf 的修改不会在启动中反映出来。与先前将 LILO 写入 MBR 类似，需要运行：
 
 ```
 /sbin/lilo -v -v

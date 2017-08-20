@@ -9,11 +9,11 @@ Linux版本下载地址：[http://code.google.com/p/iperf/downloads/list](http:/
 对于windows版的iperf，直接将解压出来的iperf.exe和cygwin1.dll复制到%systemroot%目录即可，对于linux版的iperf，请使用如下命令安装：
 
 ```
-[gunzip](https://philipding.github.io/linux-command/gunzip "gunzip命令") -c iperf-<version>.[tar](https://philipding.github.io/linux-command/tar "tar命令").gz | tar -xvf -
-[cd](https://philipding.github.io/linux-command/cd "cd命令") iperf-<version>
+[gunzip](#/gunzip "gunzip命令") -c iperf-<version>.[tar](#/tar "tar命令").gz | tar -xvf -
+[cd](#/cd "cd命令") iperf-<version>
 ./configure
-[make](https://philipding.github.io/linux-command/make "make命令")
-make [install](https://philipding.github.io/linux-command/install "install命令")
+[make](#/make "make命令")
+make [install](#/install "install命令")
 ```
 
 ### 选项  
@@ -93,7 +93,7 @@ make [install](https://philipding.github.io/linux-command/install "install命令
 
 <tr>
 
-<td>-[w](https://philipding.github.io/linux-command/w "w命令"), --window #[KM]</td>
+<td>-[w](#/w "w命令"), --window #[KM]</td>
 
 <td>设置套接字缓冲区为指定大小。对于TCP方式，此设置为TCP窗口大小。对于UDP方式，此设置为接受UDP数据包的缓冲区大小，限制可以接受数据包的最大值。</td>
 
@@ -101,7 +101,7 @@ make [install](https://philipding.github.io/linux-command/install "install命令
 
 <tr>
 
-<td>-B, --[bind](https://philipding.github.io/linux-command/bind "bind命令") [host](https://philipding.github.io/linux-command/host "host命令")</td>
+<td>-B, --[bind](#/bind "bind命令") [host](#/host "host命令")</td>
 
 <td>绑定到主机的多个地址中的一个。对于客户端来说，这个参数设置了出栈接口。对于服务器端来说，这个参数设置入栈接口。这个参数只用于具有多网络接口的主机。在Iperf的UDP模式下，此参数用于绑定和加入一个多播组。使用范围在224.0.0.0至239.255.255.255的多播地址。参考-T参数。</td>
 
@@ -119,7 +119,7 @@ make [install](https://philipding.github.io/linux-command/install "install命令
 
 <td>-M, --mss #[KM}</td>
 
-<td>通过TCP_MAXSEG选项尝试设置TCP最大信息段的值。MSS值的大小通常是TCP/[ip](https://philipding.github.io/linux-command/ip "ip命令")头减去40字节。在以太网中，MSS值 为1460字节（MTU1500字节）。许多操作系统不支持此选项。</td>
+<td>通过TCP_MAXSEG选项尝试设置TCP最大信息段的值。MSS值的大小通常是TCP/[ip](#/ip "ip命令")头减去40字节。在以太网中，MSS值 为1460字节（MTU1500字节）。许多操作系统不支持此选项。</td>
 
 </tr>
 
@@ -127,7 +127,7 @@ make [install](https://philipding.github.io/linux-command/install "install命令
 
 <td>-N, --nodelay</td>
 
-<td>设置TCP无延迟选项，禁用Nagle's运算法则。通常情况此选项对于交互程序，例如[telnet](https://philipding.github.io/linux-command/telnet "telnet命令")，是禁用的。</td>
+<td>设置TCP无延迟选项，禁用Nagle's运算法则。通常情况此选项对于交互程序，例如[telnet](#/telnet "telnet命令")，是禁用的。</td>
 
 </tr>
 
@@ -244,7 +244,7 @@ make [install](https://philipding.github.io/linux-command/install "install命令
 
 <tr>
 
-<td>-t, --[time](https://philipding.github.io/linux-command/time "time命令") #</td>
+<td>-t, --[time](#/time "time命令") #</td>
 
 <td>设置传输的总时间。Iperf在指定的时间内，重复的发送指定长度的数据包。默认是10秒钟。参考-l与-n选项。</td>
 
@@ -292,7 +292,7 @@ IPTOS_LOWCOST minimize cost 0x02</td>
 <td>-F (from v1.2 or higher)</td>
 
 <td>使用特定的数据流测量带宽，例如指定的文件。  
-$ iperf -c <server address> -F <[file](https://philipding.github.io/linux-command/file "file命令")-name></td>
+$ iperf -c <server address> -F <[file](#/file "file命令")-name></td>
 
 </tr>
 
@@ -312,7 +312,7 @@ $ iperf -c <server address> -F <[file](https://philipding.github.io/linux-comman
 
 <tr>
 
-<td>-h, --[help](https://philipding.github.io/linux-command/help "help命令")</td>
+<td>-h, --[help](#/help "help命令")</td>
 
 <td>显示命令行参考并退出 。</td>
 

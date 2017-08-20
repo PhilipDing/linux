@@ -1,4 +1,4 @@
-**lftpget命令**通过调用[lftp](https://philipding.github.io/linux-command/lftp "lftp命令")指令下载指定的文件。
+**lftpget命令**通过调用[lftp](#/lftp "lftp命令")指令下载指定的文件。
 
 ### 语法  
 

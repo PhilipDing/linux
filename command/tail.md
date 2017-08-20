@@ -18,9 +18,9 @@ tail(选项)(参数)
 -n<N>或——line=<N>：输出文件的尾部N（N位数字）行内容。
 --pid=<进程号>：与“-f”选项连用，当指定的进程号的进程终止后，自动退出tail命令；
 -q或——quiet或——silent：当有多个文件参数时，不输出各个文件名；
--s<秒数>或——[sleep](https://philipding.github.io/linux-command/sleep "sleep命令")-interal=<秒数>：与“-f”选项连用，指定监视文件变化时间隔的秒数；
+-s<秒数>或——[sleep](#/sleep "sleep命令")-interal=<秒数>：与“-f”选项连用，指定监视文件变化时间隔的秒数；
 -v或——verbose：当有多个文件参数时，总是输出各个文件名；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示指令的帮助信息；
+--[help](#/help "help命令")：显示指令的帮助信息；
 --version：显示指令的版本信息。
 ```
 
@@ -31,7 +31,7 @@ tail(选项)(参数)
 ### 实例  
 
 ```
-tail [file](https://philipding.github.io/linux-command/file "file命令") （显示文件file的最后10行）
+tail [file](#/file "file命令") （显示文件file的最后10行）
 tail +20 file （显示文件file的内容，从第20行至文件末尾）
 tail -c 10 file （显示文件file的最后10个字符）
 ```

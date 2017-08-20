@@ -13,7 +13,7 @@ talk(参数)
 
 ### 实例  
 
-例如登录在主机rs6000.cic.[test](https://philipding.github.io/linux-command/test "test命令").com上的用户jdx希望和登录在主机tirc.cs.test.com上的用户wangxz进行交谈，则可以输入下面的命令：
+例如登录在主机rs6000.cic.[test](#/test "test命令").com上的用户jdx希望和登录在主机tirc.cs.test.com上的用户wangxz进行交谈，则可以输入下面的命令：
 
 ```
 talk wangxz@tirc.cs.test.com
@@ -22,7 +22,7 @@ talk wangxz@tirc.cs.test.com
 Internet上的相关程序（Talk Daemon）就会传送一条信息邀请wangxz来交谈，这时用户wangxz的屏幕上就会出现如下信息，并响铃提示：
 
 ```
-Message from Talk_Daemon@tirc.cs.test.com [at](https://philipding.github.io/linux-command/at "at命令") 21:44 …
+Message from Talk_Daemon@tirc.cs.test.com [at](#/at "at命令") 21:44 …
 talk: connection requested by jdx@rs6000.cic.test.com
 talk: respond with:  talk jdx@rs6000.cic.test.com
 ```
@@ -35,7 +35,7 @@ talk jdx@rs6000.cic.test.com
 
 之后，连接建立成功，两个用户就可以进行交谈了。这时，双方的终端屏幕上都将显示信息**[Connection established]**并响铃，同时屏幕被linux中talk命令程序以一条水平线分割为上下两部分，上半部分用来显示用户自己输入的内容，下半部分用来显示对方输入的内容。两个用户可以同时输入，他们输入的内容将会立即显示在双方的屏幕上。
 
-在用户进行输入时，可按**BACKSPACE**见来更正前一个字符，也可按**CTRL+[w](https://philipding.github.io/linux-command/w "w命令")**来删除一个完整的单词，或者用**CTRL+U**来删除一整行，另外，用户还可以通过按**CTRL+L**来刷新屏幕。如果要结束交谈，可由任何一方按下**CTRL+C**来中断连接，但在结束对话前最好道声“再见”，并等待对方回应。linux中talk命令程序结束时，在屏幕上将回显示一条信息：
+在用户进行输入时，可按**BACKSPACE**见来更正前一个字符，也可按**CTRL+[w](#/w "w命令")**来删除一个完整的单词，或者用**CTRL+U**来删除一整行，另外，用户还可以通过按**CTRL+L**来刷新屏幕。如果要结束交谈，可由任何一方按下**CTRL+C**来中断连接，但在结束对话前最好道声“再见”，并等待对方回应。linux中talk命令程序结束时，在屏幕上将回显示一条信息：
 
 ```
 [Connection closing. Exiting]
@@ -64,7 +64,7 @@ talk jdx@rs6000.cic.test.com
 如果用户在做某些紧急工作（如编辑邮件）时不希望被linux中talk命令的邀请打搅，他可以使用命令：
 
 ```
-[mesg](https://philipding.github.io/linux-command/mesg "mesg命令") n
+[mesg](#/mesg "mesg命令") n
 ```
 
 来暂时拒绝交谈，这时如果有用户邀请他交谈，只能得到提示信息：

@@ -21,5 +21,5 @@ wait %1       #等待作业号为3的作业完成
 执行上面的指令后，将输出指定作业号的指令，如下所示：
 
 ```
-[find](https://philipding.github.io/linux-command/find "find命令") / -name password
+[find](#/find "find命令") / -name password
 ```

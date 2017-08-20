@@ -3,7 +3,7 @@
 ### 语法  
 
 ```
-bash [options] [[file](https://philipding.github.io/linux-command/file "file命令")]
+bash [options] [[file](#/file "file命令")]
 ```
 
 ### 选项  
@@ -22,20 +22,20 @@ bash [options] [[file](https://philipding.github.io/linux-command/file "file命�
 ```
 [root@AY1307311912260196fcZ satools]# sh -x check_ssh_login.sh
 + DEFINE=30
-+ [cat](https://philipding.github.io/linux-command/cat "cat命令") /var/log/secure
-+ [awk](https://philipding.github.io/linux-command/awk "awk命令") '/Failed/ {++[ip](https://philipding.github.io/linux-command/ip "ip命令")[$(NF-3)]} END {for (i in ip) print i"="ip[i]}'
++ [cat](#/cat "cat命令") /var/log/secure
++ [awk](#/awk "awk命令") '/Failed/ {++[ip](#/ip "ip命令")[$(NF-3)]} END {for (i in ip) print i"="ip[i]}'
 ++ cat /root/satools/black.txt
 + for i in '`cat /root/satools/black.txt`'
-++ [echo](https://philipding.github.io/linux-command/echo "echo命令") 121.42.0.16=1427
+++ [echo](#/echo "echo命令") 121.42.0.16=1427
 ++ awk -F= '{print $1}'
 + IP=121.42.0.16
 ++ echo 121.42.0.16=1427
 ++ awk -F= '{print $2}'
 + NUM=1427
 + '[' 1427 -gt 30 ']'
-+ [grep](https://philipding.github.io/linux-command/grep "grep命令") 121.42.0.16 /etc/hosts.deny
++ [grep](#/grep "grep命令") 121.42.0.16 /etc/hosts.deny
 + '[' 1 -gt 0 ']'
-+ echo [sshd](https://philipding.github.io/linux-command/sshd "sshd命令"):121.42.0.16
++ echo [sshd](#/sshd "sshd命令"):121.42.0.16
 + echo vsftpd:121.42.0.16
 + for i in '`cat /root/satools/black.txt`'
 ++ echo 121.42.0.72=276

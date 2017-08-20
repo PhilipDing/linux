@@ -1,4 +1,4 @@
-**rpm2cpio命令**用于将[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")软件包转换为[cpio](https://philipding.github.io/linux-command/cpio "cpio命令")格式的文件。
+**rpm2cpio命令**用于将[rpm](#/rpm "rpm命令")软件包转换为[cpio](#/cpio "cpio命令")格式的文件。
 
 ### 语法  
 

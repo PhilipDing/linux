@@ -19,7 +19,7 @@ tftp(选项)(参数)
 
 ### 参数  
 
-主机：指定tftp要联机的tftp服务器的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或主机名。
+主机：指定tftp要联机的tftp服务器的[ip](#/ip "ip命令")地址或主机名。
 
 ### 实例  
 
@@ -27,15 +27,15 @@ tftp(选项)(参数)
 
 需要安装xinetd、tftp和tftp-server 3个软件
 
-如果能上网，通过[yum](https://philipding.github.io/linux-command/yum "yum命令")安装：
+如果能上网，通过[yum](#/yum "yum命令")安装：
 
 ```
-yum [install](https://philipding.github.io/linux-command/install "install命令") xinetd
+yum [install](#/install "install命令") xinetd
 yum install tftp
 yum install tftp-server
 ```
 
-如果不能上网，可以直接安装提供的[rpm](https://philipding.github.io/linux-command/rpm "rpm命令")包：
+如果不能上网，可以直接安装提供的[rpm](#/rpm "rpm命令")包：
 
 ```
 rpm -ivh xinetd-2.3.14-18.fc9.i386.rpm
@@ -45,14 +45,14 @@ rpm -ivh tftp-server-0.48-3.fc9.i386.rpm
 
 **2、配置tftp服务器**
 
-修改/etc/xinetd.d/tftp文件，将其中的disable=[yes](https://philipding.github.io/linux-command/yes "yes命令")改为disable=no。主要是设置TFTP服务器的根目录，开启服务。修改后的文件如下：
+修改/etc/xinetd.d/tftp文件，将其中的disable=[yes](#/yes "yes命令")改为disable=no。主要是设置TFTP服务器的根目录，开启服务。修改后的文件如下：
 
 ```
-[service](https://philipding.github.io/linux-command/service "service命令") tftp
+[service](#/service "service命令") tftp
 {
        socket_type           =dgram
        protocol              =udp
-       [wait](https://philipding.github.io/linux-command/wait "wait命令")                  =yes
+       [wait](#/wait "wait命令")                  =yes
        user                  =root
        server                =/usr/sbin/in.tftpd
        server_args           =-s  /home/mike/tftpboot -c
@@ -63,13 +63,13 @@ rpm -ivh tftp-server-0.48-3.fc9.i386.rpm
 }
 ```
 
-说明：修改项`server_args= -s <path> -c`，其中<path>处可以改为你的tftp-server的根目录，参数-s指定[chroot](https://philipding.github.io/linux-command/chroot "chroot命令")，-c指定了可以创建文件。
+说明：修改项`server_args= -s <path> -c`，其中<path>处可以改为你的tftp-server的根目录，参数-s指定[chroot](#/chroot "chroot命令")，-c指定了可以创建文件。
 
 **3、启动tftp服务器并关闭防火墙**
 
 ```
-/etc/[init](https://philipding.github.io/linux-command/init "init命令").d/[iptables](https://philipding.github.io/linux-command/iptables "iptables命令") stop        //关闭防火墙
-[sudo](https://philipding.github.io/linux-command/sudo "sudo命令") /sbin/service xinetd start
+/etc/[init](#/init "init命令").d/[iptables](#/iptables "iptables命令") stop        //关闭防火墙
+[sudo](#/sudo "sudo命令") /sbin/service xinetd start
 或
 service xinetd restart
 /etc/init.d/xinetd start
@@ -80,7 +80,7 @@ service xinetd restart
 4、查看tftp服务是否开启
 
 ```
-[netstat](https://philipding.github.io/linux-command/netstat "netstat命令") -a | [grep](https://philipding.github.io/linux-command/grep "grep命令") tftp
+[netstat](#/netstat "netstat命令") -a | [grep](#/grep "grep命令") tftp
 ```
 
 显示结果为`udp 0 0 *:tftp *:*`表明服务已经开启，就表明tftp配置成功了。
@@ -91,7 +91,7 @@ service xinetd restart
 
 ```
 tftp 192.168.1.2
-tftp>get <download [file](https://philipding.github.io/linux-command/file "file命令")> 
+tftp>get <download [file](#/file "file命令")> 
 
 tftp>put <upload file>
 tftp>q
@@ -117,7 +117,7 @@ tftp your-ip-address
 *   ascii：ascii 传送模式
 *   rexmt：设置包传输的超时时间
 *   timeout：设置重传的超时时间
-*   [help](https://philipding.github.io/linux-command/help "help命令")：帮助信息
+*   [help](#/help "help命令")：帮助信息
 *   ? ：帮助信息
 
 **7、如果老是出现“AVC Denial, click icon to view”的错误，并不能传输文件，需要作如下修改**
@@ -129,7 +129,7 @@ tftp your-ip-address
 命令格式为：
 
 ```
-tftp [option] ... [host](https://philipding.github.io/linux-command/host "host命令") [port]
+tftp [option] ... [host](#/host "host命令") [port]
 ```
 
 如果要下载或上传文件的话是一定要用这些option的。

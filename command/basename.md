@@ -1,4 +1,4 @@
-**basename命令**用于打印目录或者文件的基本名称。basename和[dirname](https://philipding.github.io/linux-command/dirname "dirname命令")命令通常用于shell脚本中的命令替换来指定和指定的输入文件名称有所差异的输出文件名称。
+**basename命令**用于打印目录或者文件的基本名称。basename和[dirname](#/dirname "dirname命令")命令通常用于shell脚本中的命令替换来指定和指定的输入文件名称有所差异的输出文件名称。
 
 ### 语法  
 
@@ -9,7 +9,7 @@ basename(选项)(参数)
 ### 选项  
 
 ```
---[help](https://philipding.github.io/linux-command/help "help命令")：显示帮助；
+--[help](#/help "help命令")：显示帮助；
 --version：显示版本号。
 ```
 

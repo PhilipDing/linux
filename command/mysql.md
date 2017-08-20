@@ -9,7 +9,7 @@ mysql(选项)(参数)
 ### 选项  
 
 ```
--h：MySQL服务器的[ip](https://philipding.github.io/linux-command/ip "ip命令")地址或主机名；
+-h：MySQL服务器的[ip](#/ip "ip命令")地址或主机名；
 -u：连接MySQL服务器的用户名；
 -e：执行mysql内部命令；
 -p：连接MySQL服务器的密码。

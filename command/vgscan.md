@@ -1,4 +1,4 @@
-**vgscan命令**查找系统中存在的LVM卷组，并显示找到的卷组列表。vgscan命令仅显示找到的卷组的名称和LVM元数据类型，要得到卷组的详细信息需要使用[vgdisplay](https://philipding.github.io/linux-command/vgdisplay "vgdisplay命令")命令。
+**vgscan命令**查找系统中存在的LVM卷组，并显示找到的卷组列表。vgscan命令仅显示找到的卷组的名称和LVM元数据类型，要得到卷组的详细信息需要使用[vgdisplay](#/vgdisplay "vgdisplay命令")命令。
 
 ### 语法  
 
@@ -24,7 +24,7 @@ vgscan(选项)
 输出信息如下：
 
 ```
-Found volume group "vg2000" using metadata [type](https://philipding.github.io/linux-command/type "type命令") lvm2  
+Found volume group "vg2000" using metadata [type](#/type "type命令") lvm2  
 Found volume group "vg1000" using metadata type lvm2 
 ```
 

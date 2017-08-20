@@ -27,7 +27,7 @@ mkinitrd(选项)(参数)
 ### 实例  
 
 ```
-[root@localhost tmp]# mkinitrd -v -f myinitrd.img $([uname](https://philipding.github.io/linux-command/uname "uname命令") -r)
+[root@localhost tmp]# mkinitrd -v -f myinitrd.img $([uname](#/uname "uname命令") -r)
 Creating initramfs
 WARNING: using /tmp for temporary files
 Looking for deps of module ide-disk
@@ -35,7 +35,7 @@ Looking for deps of module ext3  jbd
 Looking for deps of module jbd
 Using modules:  ./kernel/fs/jbd/jbd.ko ./kernel/fs/ext3/ext3.ko
 /sbin/nash -> /tmp/initrd.Vz3928/bin/nash
-/sbin/[insmod](https://philipding.github.io/linux-command/insmod "insmod命令").static -> /tmp/initrd.Vz3928/bin/insmod
+/sbin/[insmod](#/insmod "insmod命令").static -> /tmp/initrd.Vz3928/bin/insmod
 /sbin/udev.static -> /tmp/initrd.Vz3928/sbin/udev
 /etc/udev/udev.conf -> /tmp/initrd.Vz3928/etc/udev/udev.conf
 copy from /lib/modules/2.6.9-5.EL/./kernel/fs/jbd/jbd.ko(elf32-i386) to /tmp/initrd.Vz3928/lib/jbd.ko(elf32-i386)
@@ -43,11 +43,11 @@ copy from /lib/modules/2.6.9-5.EL/./kernel/fs/ext3/ext3.ko(elf32-i386) to /tmp/i
 Loading module jbd
 Loading module ext3
 
-[root@localhost tmp]# [file](https://philipding.github.io/linux-command/file "file命令") myinitrd.img
-myinitrd.img: [gzip](https://philipding.github.io/linux-command/gzip "gzip命令") compressed data, from Unix, max compression
+[root@localhost tmp]# [file](#/file "file命令") myinitrd.img
+myinitrd.img: [gzip](#/gzip "gzip命令") compressed data, from Unix, max compression
 
-[root@localhost tmp]# [mv](https://philipding.github.io/linux-command/mv "mv命令") myinitrd.img  myinitrd.img.gz
+[root@localhost tmp]# [mv](#/mv "mv命令") myinitrd.img  myinitrd.img.gz
 [root@localhost tmp]# gzip -d myinitrd.img.gz
 [root@localhost tmp]# file myinitrd.img
-myinitrd.img: ASCII [cpio](https://philipding.github.io/linux-command/cpio "cpio命令") archive (SVR4 with no CRC)
+myinitrd.img: ASCII [cpio](#/cpio "cpio命令") archive (SVR4 with no CRC)
 ```

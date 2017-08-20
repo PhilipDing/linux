@@ -3,9 +3,9 @@
 ### 选项  
 
 ```
--A "<args>" 在使用 [tcpdump](https://philipding.github.io/linux-command/tcpdump "tcpdump命令") 风格打印输出信息时，同时再调用tcpdump中的参数， 默认已经带有“-n,-l”，所以一般看到的都是[ip](https://philipding.github.io/linux-command/ip "ip命令")地址，而没有主机名的打印，注意这个是在tcpreplay使用了-v参数时才能使用，不带-v不会报错，但是没有实际意义。格式：-vA “nnt”表示以tcpdump风格输出报文信息，并且不打印时间戳、主机名、端口服务名称。注意不要使用-c参数来指定打印的数据报文的个数，这样发送出去的报文也会变少。
+-A "<args>" 在使用 [tcpdump](#/tcpdump "tcpdump命令") 风格打印输出信息时，同时再调用tcpdump中的参数， 默认已经带有“-n,-l”，所以一般看到的都是[ip](#/ip "ip命令")地址，而没有主机名的打印，注意这个是在tcpreplay使用了-v参数时才能使用，不带-v不会报错，但是没有实际意义。格式：-vA “nnt”表示以tcpdump风格输出报文信息，并且不打印时间戳、主机名、端口服务名称。注意不要使用-c参数来指定打印的数据报文的个数，这样发送出去的报文也会变少。
 -c <cachefile> 双网卡回放报文必选参数，后面紧跟cache文件名，该文件为tcpprep根据对应的pcap文件构造出来。 
--D 把应用层的数据，使用[dump](https://philipding.github.io/linux-command/dump "dump命令") mode写入到指定文件中去，和-[w](https://philipding.github.io/linux-command/w "w命令")、-W 参数一起使用。 
+-D 把应用层的数据，使用[dump](#/dump "dump命令") mode写入到指定文件中去，和-[w](#/w "w命令")、-W 参数一起使用。 
 -e <ip1:ip2> 指定端点的ip，即把发送报文的和接收的报文的ip都修改称对应的参数值中指定的ip，但是这样发送的出的报文不会区分client和server。。 
 -f <configfile> 指定配置文件。
 -F 在发送报文时，自动纠正错误的校验和。对测试DUT的校验和检验。
@@ -19,7 +19,7 @@
 -l <loop> 指定循环的次数。
 -L <limit> 指定最大的发包数量。可以在确认连接的调试时使用。 
 -m <multiple> 指定一个倍数值，就是必默认发送速率要快多少倍的速率发送报文。 加大发送的速率后，对于DUT可能意味着有更多的并发连接和连接数，特别是对于BT报文的重放， 因为连接的超时是固定的，如果速率增大的话， 留在session表中的连接数量增大，还可以通过修改连接的超时时间来达到该目的。
--M 表示不发送“火星”的ip报文，[man](https://philipding.github.io/linux-command/man "man命令")文件中的定义是 0/8、172/8、 255/8。
+-M 表示不发送“火星”的ip报文，[man](#/man "man命令")文件中的定义是 0/8、172/8、 255/8。
 -n 在使用-S参数，不对混杂模式进行侦听。
 -N <CIDR1:CIDR2,...> 通过伪造的NAT，重写IP地址。这个参数应该有很重要的应用，目前没有测试使用。
 -O 没有测试使用。
@@ -31,13 +31,13 @@
 -T Truncate packets > 截去报文中MTU大于标准值的部分再发送出去，默认是不发送，skip掉。
 -v 每发送一个报文都以 tcpdump 的风格打印出对应的信息。
 -V 查看版本号。
--w <[file](https://philipding.github.io/linux-command/file "file命令")> 将主网卡发送的报文写入一个文件中，参数后紧跟文件名。
+-w <[file](#/file "file命令")> 将主网卡发送的报文写入一个文件中，参数后紧跟文件名。
 
 ```
 
 ### 实例  
 
-**1、重放在客户端 [ftp](https://philipding.github.io/linux-command/ftp "ftp命令") 连接的报文 **
+**1、重放在客户端 [ftp](#/ftp "ftp命令") 连接的报文 **
 
 a、在客户端使用 ethereal 抓包，存为 ftp.pcap 文件。
 
@@ -73,7 +73,7 @@ c、使用 tcpreplay 重放报文。 
 [root@A ~]# tcpreplay -c bt.cache -i eth0 -j eth1 bt.pcap -v –R 
 ```
 
-**3、重放 [tftp](https://philipding.github.io/linux-command/tftp "tftp命令") 服务器上抓到的报文 **
+**3、重放 [tftp](#/tftp "tftp命令") 服务器上抓到的报文 **
 
 a、在 tftp 服务器上使用 ethereal 抓包，存为 tftp.pcap 文件。 
 

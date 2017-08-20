@@ -10,12 +10,12 @@ lynx(选项)(参数)
 
 ```
 -case：在搜索字符串时，区分大小写；
--[ftp](https://philipding.github.io/linux-command/ftp "ftp命令")：关闭ftp功能；
+-[ftp](#/ftp "ftp命令")：关闭ftp功能；
 -nobrowse：关闭目录浏览功能；
 -noclor：关闭色彩显示模式；
 -reload：更新代理服务器的缓存，只对首页有效；
 --color：如果系统支持彩色模式，则激活彩色模式；
---[help](https://philipding.github.io/linux-command/help "help命令")：显示指令的帮助信息；
+--[help](#/help "help命令")：显示指令的帮助信息；
 --versiom：显示指令的版本信息。
 ```
 
@@ -57,7 +57,7 @@ E：编辑选中的文件。
 f：为当前文件显示一个选项菜单。
 m：修改选中文件的名字或位置。
 r：删除选中的文件。
-t：Tag highlighted [file](https://philipding.github.io/linux-command/file "file命令")。
+t：Tag highlighted [file](#/file "file命令")。
 u：上载一个文件到当前目录。
 ```
 
@@ -77,7 +77,7 @@ k：显示键盘命令列表。
 l：列出当前页上所有链接的地址。
 m：回到首页 。
 o：设置选项。
-p：把当前页输出到文件，e-[mail](https://philipding.github.io/linux-command/mail "mail命令")，打印机或其他地方。
+p：把当前页输出到文件，e-[mail](#/mail "mail命令")，打印机或其他地方。
 q：退出。
 /：在当前页内查找字符串。
 s：在外部搜索输入的字符串。
@@ -94,9 +94,9 @@ _：清除当前任务的所有授权信息。
 *：图形链接模式的切换开关。
 @：8位传输模式或CJK模式的切换开关。
 [：pseudo_inlines 模式的切换开关。
-]：为当前页或当前链接发送一个“[head](https://philipding.github.io/linux-command/head "head命令")”请求。
+]：为当前页或当前链接发送一个“[head](#/head "head命令")”请求。
 Ctrl+r：重新装如当前页并且刷新屏幕。
-Ctrl+[w](https://philipding.github.io/linux-command/w "w命令")：刷新屏幕。
+Ctrl+[w](#/w "w命令")：刷新屏幕。
 Ctrl+u：删除输入的行。
 Ctrl+g：取消输入或者传送。
 Ctrl+t：跟踪模式的切换开关。
