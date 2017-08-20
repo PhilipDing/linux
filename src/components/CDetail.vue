@@ -44,6 +44,7 @@ export default {
     }
 
     img {
+        max-width: 900px;
         width: 100%;
     }
 
