@@ -16,7 +16,7 @@ export default {
     },
     methods: {
         loadContent() {
-            this.name = 'lc-' + this.command.replace('/', '_');
+            this.name = 'lc-' + this.command.replace('/', '_').toLowerCase();
         }
     },
     mounted() {

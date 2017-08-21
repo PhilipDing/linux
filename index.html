@@ -23,7 +23,9 @@
     <script>
         (function() {
             if('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/linux-command/service-worker.js');
+                if (window.location.hostname !== 'localhost') {
+                    navigator.serviceWorker.register('/linux-command/service-worker.js');
+                }
             }
         })();
     </script>

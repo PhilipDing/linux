@@ -4,7 +4,7 @@
             <router-link :to="{ name: 'home' }">
                 <img class="logo" src="../assets/logo.svg">
             </router-link>
-            <c-input class="search" :command="command" @selected="onItemSelected"></c-input>
+            <c-input class="search" ::autofocus="false" :command="command" @selected="onItemSelected"></c-input>
             <div class="placeholder"></div>
         </header>
 

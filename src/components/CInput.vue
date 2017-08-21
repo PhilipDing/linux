@@ -2,7 +2,7 @@
     <div class="c-input">
         <input
             v-model.trim="searchKey"
-            autofocus
+            :autofocus="autofocus"
             :placeholder="placeholder"
             @blur="onBlur"
             @keyup.up="onUp"
@@ -31,6 +31,10 @@ import Vue from 'vue'
 
 export default {
     props: {
+        autofocus: {
+            type: Boolean,
+            default: true
+        },
         command: {
             type: Array,
             default: []
@@ -108,7 +112,7 @@ export default {
         kPoint(val) {
             val = val || '';
             const rest = val.substr(this.searchKey.length);
-            return `<span style="color:#f00;">${this.searchKey}</span>${rest}`;
+            return `<span style="color:#f00;">${(this.searchKey || '').toLowerCase()}</span>${rest}`;
         },
     },
     watch: {
@@ -127,7 +131,7 @@ export default {
             }
 
             this.displaySearchList = true;
-            this.filtered = this.command.filter(c => c.title.indexOf(value) === 0);
+            this.filtered = this.command.filter(c => c.title.indexOf(value.toLowerCase()) === 0);
         }
     }
 }

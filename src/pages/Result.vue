@@ -8,6 +8,7 @@
                 class="search"
                 :command="command"
                 :auto-complete="showDetail"
+                :autofocus="false"
                 :default-value="$route.params.command"
                 @selected="onItemSelected"
                 @changed="onChanged">
@@ -48,10 +49,10 @@ export default {
                 return
             }
 
-            this.$router.push({ name: 'detail', params: { command } })
+            this.$router.push({ name: 'detail', params: { command: command.toLowerCase() } })
         },
         loadContent() {
-            const findOne = this.command.find(c => c.title === this.$route.params.command)
+            const findOne = this.command.find(c => c.title.toLowerCase() === this.$route.params.command.toLowerCase())
             this.showDetail = !!findOne;
         }
     },

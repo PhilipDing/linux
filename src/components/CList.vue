@@ -12,7 +12,14 @@
 
 <script>
 export default {
-    props: ['command', 'searchKey'],
+    props: {
+        command: {
+            default: []
+        },
+        searchKey: {
+            default: ''
+        }
+    },
     data() {
         return {
             filtered: []
@@ -20,12 +27,12 @@ export default {
     },
     methods: {
         kPoint(val) {
-            return val.replace(this.searchKey, '<span style="color:#f00;">' + this.searchKey + '</span>');
+            return val.replace((this.searchKey || '').toLowerCase(), '<span style="color:#f00;">' + (this.searchKey || '').toLowerCase() + '</span>');
         }
     },
     watch: {
         searchKey(val) {
-            this.filtered = this.command.filter(c => c.title.indexOf(val) > -1);
+            this.filtered = this.command.filter(c => c.title.indexOf((val || '').toLowerCase()) > -1);
         }
     }
 }

@@ -45,7 +45,11 @@ export default {
     },
     methods: {
         onItemSelected({ command }) {
-            this.$router.push({ name: 'detail', params: { command } })
+            if (!command) {
+                return;
+            }
+
+            this.$router.push({ name: 'detail', params: { command: command.toLowerCase() } })
         }
     },
     components: {

@@ -6,8 +6,6 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
-var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-var WebpackPwaManifest = require('webpack-pwa-manifest')
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -32,30 +30,6 @@ module.exports = merge(baseWebpackConfig, {
       filename: 'index.html',
       template: 'index.html',
       inject: true
-    }),
-    new FaviconsWebpackPlugin({
-        logo: './build/icon.svg',
-        icons: {
-            android: false,
-            appleIcon: true,
-            appleStartup: false,
-            coast: false,
-            favicons: true,
-            firefox: false,
-            opengraph: false,
-            twitter: false,
-            yandex: false,
-            windows: false
-          }
-    }),
-    new WebpackPwaManifest({
-        name: 'Linux命令搜索',
-        short_name: 'Linux命令搜索',
-        description: 'Linux命令搜索',
-        icons: [{
-            src: path.resolve('build/icon.png'),
-            sizes: [96, 128, 192, 256, 384, 512]
-        }]
     }),
     new FriendlyErrorsPlugin()
   ]
