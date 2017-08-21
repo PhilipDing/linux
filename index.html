@@ -20,6 +20,13 @@
 
 <body>
     <div id="app"></div>
+    <script>
+        (function() {
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/linux-command/service-worker.js');
+            }
+        })();
+    </script>
 </body>
 
 </html>

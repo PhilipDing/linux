@@ -8,6 +8,11 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+var WebpackPwaManifest = require('webpack-pwa-manifest')
+
+const PUBLIC_PATH = 'https://philipding.github.io/linux-command';
 
 var env = config.build.env
 
@@ -52,7 +57,6 @@ var webpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: config.build.index,
       template: 'index.html',
-      favicon: './build/favicon.ico',
       inject: true,
       minify: {
         removeComments: true,
@@ -91,7 +95,47 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    new FaviconsWebpackPlugin({
+        logo: './build/icon.svg',
+        icons: {
+            android: false,
+            appleIcon: true,
+            appleStartup: false,
+            coast: false,
+            favicons: true,
+            firefox: false,
+            opengraph: false,
+            twitter: false,
+            yandex: false,
+            windows: false
+          }
+    }),
+    new WebpackPwaManifest({
+        name: 'Linux命令搜索',
+        short_name: 'Linux命令搜索',
+        description: 'Linux命令搜索',
+        icons: [{
+            src: path.resolve('build/icon.png'),
+            sizes: [96, 128, 192, 256, 384, 512]
+        }]
+    }),
+    new SWPrecacheWebpackPlugin({
+        cacheId: 'linux-command',
+        dontCacheBustUrlsMatching: /\.\w{8}\./,
+        filename: 'service-worker.js',
+        logger(message) {
+            if (message.indexOf('Total precache size is') === 0) {
+              // This message occurs for every build and is a bit too noisy.
+              return;
+            }
+            console.log(message);
+        },
+        minify: true,
+        navigateFallback: PUBLIC_PATH + '/index.html',
+        navigateFallbackWhitelist: [/^(?!\/__).*/],
+        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/, /icons-.*/, /\.cache$/]
+    })
   ]
 })
 
