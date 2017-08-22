@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <a class="github" href="https://github.com/PhilipDing/linux-command">
+        <a class="github" href="https://github.com/PhilipDing/linux">
             <img src="../assets/github.svg">
         </a>
         <div class="logo">
@@ -72,34 +72,34 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         background: #e5e5e5;
         color: #e5e5e5;
         &:before {
             content: '';
             position: absolute;
-            border-top: 15px solid;
-            border-right: 15px solid;
-            border-left: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            right: 30px;
+            border-top: 20px solid;
+            border-right: 20px solid;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            right: 40px;
             top: 0;
         }
         &:after {
             content: '';
             position: absolute;
-            border-top: 15px solid;
-            border-right: 15px solid;
-            border-left: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            top: 30px;
+            border-top: 20px solid;
+            border-right: 20px solid;
+            border-left: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            top: 40px;
             right: 0;
         }
         img {
-            height: 26px;
-            top: 9px;
-            right: 7px;
+            height: 30px;
+            top: 15px;
+            right: 13px;
             position: absolute;
             transform: rotate(45deg);
             z-index: 10;

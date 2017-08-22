@@ -12,7 +12,7 @@ var SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 var WebpackPwaManifest = require('webpack-pwa-manifest')
 
-const PUBLIC_PATH = 'https://philipding.github.io/linux-command';
+const PUBLIC_PATH = 'https://philipding.github.io/linux';
 
 var env = config.build.env
 
@@ -121,7 +121,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         }]
     }),
     new SWPrecacheWebpackPlugin({
-        cacheId: 'linux-command',
+        cacheId: 'linux',
         dontCacheBustUrlsMatching: /\.\w{8}\./,
         filename: 'service-worker.js',
         logger(message) {

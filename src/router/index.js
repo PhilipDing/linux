@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const base = process.env.NODE_ENV === 'production' ? '/linux-command' : '/';
+const base = process.env.NODE_ENV === 'production' ? '/linux' : '/';
 
 export default new Router({
     base,
