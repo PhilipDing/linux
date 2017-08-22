@@ -98,10 +98,12 @@ var webpackConfig = merge(baseWebpackConfig, {
     ]),
     new FaviconsWebpackPlugin({
         logo: './build/icon.svg',
+        title: 'Linux命令搜索',
+        prefix: 'icons/',
         icons: {
             android: false,
             appleIcon: true,
-            appleStartup: false,
+            appleStartup: true,
             coast: false,
             favicons: true,
             firefox: false,
@@ -134,7 +136,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         minify: true,
         navigateFallback: PUBLIC_PATH + '/index.html',
         navigateFallbackWhitelist: [/^(?!\/__).*/],
-        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/, /icons-.*/, /\.cache$/]
+        staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/, /icons?.*/, /\.cache$/]
     })
   ]
 })
