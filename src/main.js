@@ -22,5 +22,5 @@ new Vue({
   components: { App }
 })
 
-console.log(`★★★★★数据来源于http://man.linuxde.net/★★★★★
-★★★★★界面仿自https://jaywcjlove.github.io/linux-command/★★★★★`);
+console.log(`★★★★★ 数据来源于http://man.linuxde.net/ ★★★★★
+★★★★★ 界面仿自https://jaywcjlove.github.io/linux-command/ ★★★★★`);

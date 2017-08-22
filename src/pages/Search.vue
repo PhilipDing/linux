@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <a class="github" href="https://github.com/PhilipDing/linux-command">
+            <img src="../assets/github.svg">
+        </a>
         <div class="logo">
             <router-link :to="{ name: 'home' }">
                 <img src="../assets/logo.svg">
@@ -64,6 +67,44 @@ export default {
     margin: 0 auto;
     font-size: 14px;
     padding: 0 10px;
+
+    .github {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background: #e5e5e5;
+        color: #e5e5e5;
+        &:before {
+            content: '';
+            position: absolute;
+            border-top: 15px solid;
+            border-right: 15px solid;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            right: 30px;
+            top: 0;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            border-top: 15px solid;
+            border-right: 15px solid;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            top: 30px;
+            right: 0;
+        }
+        img {
+            height: 26px;
+            top: 9px;
+            right: 7px;
+            position: absolute;
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+    }
 
     .logo {
         text-align: center;
