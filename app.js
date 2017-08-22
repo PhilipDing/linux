@@ -156,7 +156,7 @@ const crawlCommand = () => {
 }
 
 const crawlImages = () => {
-    return new Promise(() => {
+    return new Promise(resolve => {
         console.log('start crawl images.');
 
         const c = new Crawler({
