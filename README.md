@@ -4,7 +4,7 @@
 使用Vue+Vue Router实现本站全部功能，支持PC+Mobile。
 
 界面参考  https://jaywcjlove.github.io/linux-command/ ，但有些微区别：
-1. 命令更全，现收录550+个命令
+1. 命令更全，现收录550+个命令
 2. 在命令的解释中支持图片显示，如```screen```等
 3. 单页应用，理论上搜索速度更快
 
