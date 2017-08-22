@@ -1,0 +1,40 @@
+{
+  "icons": [
+    {
+      "src": "linux/icon_512x512.12bdc1be6dc4c17ef4dca549704742d9.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "linux/icon_384x384.cd8f3e04af5d8f1569d0765878dcec5d.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "linux/icon_256x256.6cb05e015c0df3430a814b380749b6c9.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "linux/icon_192x192.76c43af95fcb2986875fd0f330855969.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "linux/icon_128x128.9bc9d2ce3372ebfaba43b3c211c3ce23.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "linux/icon_96x96.59ed9be39dda533a5b5f76a316e827c2.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Linux命令搜索",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "short_name": "Linux命令搜索",
+  "description": "Linux命令搜索"
+}
