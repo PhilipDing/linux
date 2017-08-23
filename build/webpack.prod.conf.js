@@ -99,11 +99,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     new FaviconsWebpackPlugin({
         logo: './build/icon.svg',
         title: 'Linux命令搜索',
-        prefix: 'icons/',
+        prefix: 'icons-[hash]/',
         icons: {
             android: false,
             appleIcon: true,
-            appleStartup: true,
+            appleStartup: false,
             coast: false,
             favicons: true,
             firefox: false,
