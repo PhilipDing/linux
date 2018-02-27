@@ -1326,14 +1326,14 @@ export default [
                         "desc": "基于RPM的软件包管理器"
                     },
                     {
-                        "title": "dpkg-trigger",
-                        "link": "http://man.linuxde.net/dpkg-trigger",
-                        "desc": "Debian Linux下的软件包触发器"
-                    },
-                    {
                         "title": "rpm",
                         "link": "http://man.linuxde.net/rpm",
                         "desc": "RPM软件包的管理工具"
+                    },
+                    {
+                        "title": "dpkg-trigger",
+                        "link": "http://man.linuxde.net/dpkg-trigger",
+                        "desc": "Debian Linux下的软件包触发器"
                     },
                     {
                         "title": "rcconf",
@@ -2000,14 +2000,14 @@ export default [
                         "desc": "报告或忽略文件中的重复行"
                     },
                     {
-                        "title": "tee",
-                        "link": "http://man.linuxde.net/tee",
-                        "desc": "把数据重定向到给定文件和屏幕上"
-                    },
-                    {
                         "title": "paste",
                         "link": "http://man.linuxde.net/paste",
                         "desc": "将多个文件按列队列合并"
+                    },
+                    {
+                        "title": "tee",
+                        "link": "http://man.linuxde.net/tee",
+                        "desc": "把数据重定向到给定文件和屏幕上"
                     },
                     {
                         "title": "sort",
@@ -2151,14 +2151,14 @@ export default [
                         "desc": "创一个bz2文件压缩包"
                     },
                     {
-                        "title": "gunzip",
-                        "link": "http://man.linuxde.net/gunzip",
-                        "desc": "用来解压缩文件"
-                    },
-                    {
                         "title": "bzdiff",
                         "link": "http://man.linuxde.net/bzdiff",
                         "desc": "直接比较两个.bz2压缩包中文件的不同"
+                    },
+                    {
+                        "title": "gunzip",
+                        "link": "http://man.linuxde.net/gunzip",
+                        "desc": "用来解压缩文件"
                     },
                     {
                         "title": "zip",

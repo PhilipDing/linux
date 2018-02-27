@@ -18,10 +18,10 @@ const crawlCategory = () => {
                     reject();
                 } else {
                     const $ = res.$;
-                    $('.c_box').each(function() {
-                        const title = $(this).find('.hd h3').text();
+                    $('#tags-list dl').each(function() {
+                        const title = $(this).find('h3').text();
                         const category = [];
-                        $(this).find('.bd li').each(function() {
+                        $(this).find('dd').each(function() {
                             const $link = $(this).find('a');
                             category.push({
                                 title: $link.text(),
@@ -61,12 +61,12 @@ const crawlSubCategory = () => {
                     const $ = res.$;
                     const link = decodeURI(res.request.uri.href);
                     const category = [];
-                    $('.item').each(function() {
+                    $('#arcs-list li').each(function() {
                         const $this = $(this);
                         const cmd = {
-                            title: $this.find('a').text(),
-                            link: $this.find('a').attr('href'),
-                            desc: $this.find('.des').text()
+                            title: $this.find('.title').text(),
+                            link: $this.find('.title').attr('href'),
+                            desc: $this.find('.desc').text()
                         };
                         category.push(cmd);
                         commands.push(cmd);
@@ -121,10 +121,11 @@ const crawlCommand = () => {
 
                     const $ = res.$;
                     const title = res.request.path.substr(1);
-                    $('.post_bd.post .content-index').remove()
-                    const content = $('.post_bd.post').html();
+                    $('#main-single #arc-body #content-index').remove();
+                    // $('#main-single #ad-arc-top').remove();
+                    const content = $('#main-single #arc-body').html();
 
-                    $('.post_bd.post img').each(function() {
+                    $('#main-single #arc-body img').each(function() {
                         images.push($(this).attr('src'));
                     });
 
@@ -133,6 +134,8 @@ const crawlCommand = () => {
                                  .replace(/<\/pre>/gi,'\n```')
                                  .replace(/<span.*?>/gi,'')
                                  .replace(/<\/span>/gi,'')
+                                 .replace(/<(tab)>/gi, '&lt;$1&gt;')
+                                 .replace(/<(esc)>/gi, '&lt;$1&gt;')
                                  .replace(/http:\/\/man.linuxde.net\//gi, '#/')
                                  .replace(/#\/wp-content.*\/(.*\.*)/gi, './images/$1')
 

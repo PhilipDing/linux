@@ -1,130 +1,5 @@
 export default [
     {
-        "title": "restorecon",
-        "link": "http://man.linuxde.net/restorecon",
-        "desc": "恢复文件的安全上下文"
-    },
-    {
-        "title": "semanage",
-        "link": "http://man.linuxde.net/semanage",
-        "desc": "默认目录的安全上下文查询与修改"
-    },
-    {
-        "title": "setsebool",
-        "link": "http://man.linuxde.net/setsebool",
-        "desc": "修改SElinux策略内各项规则的布尔值"
-    },
-    {
-        "title": "getsebool",
-        "link": "http://man.linuxde.net/getsebool",
-        "desc": "查询SElinux策略内各项规则的布尔值"
-    },
-    {
-        "title": "sesearch",
-        "link": "http://man.linuxde.net/sesearch",
-        "desc": "查询SELinux策略的规则详情"
-    },
-    {
-        "title": "seinfo",
-        "link": "http://man.linuxde.net/seinfo",
-        "desc": "查询SELinux的策略提供多少相关规则"
-    },
-    {
-        "title": "chcon",
-        "link": "http://man.linuxde.net/chcon",
-        "desc": "修改对象（文件）的安全上下文"
-    },
-    {
-        "title": "halt",
-        "link": "http://man.linuxde.net/halt",
-        "desc": "关闭正在运行的Linux操作系统"
-    },
-    {
-        "title": "ctrlaltdel",
-        "link": "http://man.linuxde.net/ctrlaltdel",
-        "desc": "设置组合键Ctrl+Alt+Del的功能"
-    },
-    {
-        "title": "reboot",
-        "link": "http://man.linuxde.net/reboot",
-        "desc": "重新启动正在运行的Linux操作系统"
-    },
-    {
-        "title": "shutdown",
-        "link": "http://man.linuxde.net/shutdown",
-        "desc": "用来执行系统关机的命令"
-    },
-    {
-        "title": "poweroff",
-        "link": "http://man.linuxde.net/poweroff",
-        "desc": "用来关闭计算机操作系统并且切断系统电源"
-    },
-    {
-        "title": "hping3",
-        "link": "http://man.linuxde.net/hping3",
-        "desc": "测试网络及主机的安全"
-    },
-    {
-        "title": "iperf",
-        "link": "http://man.linuxde.net/iperf",
-        "desc": "网络性能测试工具"
-    },
-    {
-        "title": "host",
-        "link": "http://man.linuxde.net/host",
-        "desc": "常用的分析域名查询工具"
-    },
-    {
-        "title": "tracepath",
-        "link": "http://man.linuxde.net/tracepath",
-        "desc": "追踪目的主机经过的路由信息"
-    },
-    {
-        "title": "arpwatch",
-        "link": "http://man.linuxde.net/arpwatch",
-        "desc": "监听网络上ARP的记录"
-    },
-    {
-        "title": "nslookup",
-        "link": "http://man.linuxde.net/nslookup",
-        "desc": "查询域名DNS信息的工具"
-    },
-    {
-        "title": "arping",
-        "link": "http://man.linuxde.net/arping",
-        "desc": "通过发送ARP协议报文测试网络"
-    },
-    {
-        "title": "nc/netcat",
-        "link": "http://man.linuxde.net/nc_netcat",
-        "desc": "用来设置路由器"
-    },
-    {
-        "title": "dig",
-        "link": "http://man.linuxde.net/dig",
-        "desc": "域名查询工具"
-    },
-    {
-        "title": "arp",
-        "link": "http://man.linuxde.net/arp",
-        "desc": "显示和修改IP到MAC转换表"
-    },
-    {
-        "title": "ping",
-        "link": "http://man.linuxde.net/ping",
-        "desc": "测试主机之间网络的连通性"
-    },
-    {
-        "title": "traceroute",
-        "link": "http://man.linuxde.net/traceroute",
-        "desc": "显示数据包到主机间的路径"
-    },
-    {
-        "title": "netstat",
-        "link": "http://man.linuxde.net/netstat",
-        "desc": "查看Linux中网络系统状态信息"
-    },
-    {
         "title": "ipcrm",
         "link": "http://man.linuxde.net/ipcrm",
         "desc": "删除消息队列、信号集、或者共享内存标识"
@@ -250,199 +125,49 @@ export default [
         "desc": "在指定时间执行一个任务"
     },
     {
-        "title": "tcpreplay",
-        "link": "http://man.linuxde.net/tcpreplay",
-        "desc": "将PCAP包重新发送，用于性能或者功能测试"
+        "title": "xclip",
+        "link": "http://man.linuxde.net/xclip",
+        "desc": "管理 X 粘贴板"
     },
     {
-        "title": "pfctl",
-        "link": "http://man.linuxde.net/pfctl",
-        "desc": "PF防火墙的配置命令"
+        "title": "xset",
+        "link": "http://man.linuxde.net/xset",
+        "desc": "设置X-Window系统中的用户爱好的实用工具"
     },
     {
-        "title": "iptraf",
-        "link": "http://man.linuxde.net/iptraf",
-        "desc": "实时地监视网卡流量"
+        "title": "xlsfonts",
+        "link": "http://man.linuxde.net/xlsfonts",
+        "desc": "列出X Server使用的字体"
     },
     {
-        "title": "ss",
-        "link": "http://man.linuxde.net/ss",
-        "desc": "获取socket统计信息"
+        "title": "xhost",
+        "link": "http://man.linuxde.net/xhost",
+        "desc": "制哪些X客户端能够在X服务器上显示"
     },
     {
-        "title": "nstat/rtacct",
-        "link": "http://man.linuxde.net/nstat_rtacct",
-        "desc": "监视SNMP计数器和网络接口状态"
+        "title": "xlsatoms",
+        "link": "http://man.linuxde.net/xlsatoms",
+        "desc": "列出X服务器内部所有定义的原子成分"
     },
     {
-        "title": "lnstat",
-        "link": "http://man.linuxde.net/lnstat",
-        "desc": "显示Linux系统的网路状态"
+        "title": "xauth",
+        "link": "http://man.linuxde.net/xauth",
+        "desc": "显示和编辑被用于连接X服务器的认证信息"
     },
     {
-        "title": "arptables",
-        "link": "http://man.linuxde.net/arptables",
-        "desc": "管理ARP包过滤规则表"
+        "title": "xlsclients",
+        "link": "http://man.linuxde.net/xlsclients",
+        "desc": "列出显示器中的客户端应用程序"
     },
     {
-        "title": "arpd",
-        "link": "http://man.linuxde.net/arpd",
-        "desc": "收集免费ARP信息"
+        "title": "xinit",
+        "link": "http://man.linuxde.net/xinit",
+        "desc": "是Linux下X-Window系统的初始化程序"
     },
     {
-        "title": "tcpdump",
-        "link": "http://man.linuxde.net/tcpdump",
-        "desc": "一款sniffer工具"
-    },
-    {
-        "title": "ip",
-        "link": "http://man.linuxde.net/ip",
-        "desc": "网络配置工具"
-    },
-    {
-        "title": "ip6tables-restore",
-        "link": "http://man.linuxde.net/ip6tables-restore",
-        "desc": "还原ip6tables表"
-    },
-    {
-        "title": "ip6tables-save",
-        "link": "http://man.linuxde.net/ip6tables-save",
-        "desc": "保存ip6tables表配置"
-    },
-    {
-        "title": "ip6tables",
-        "link": "http://man.linuxde.net/ip6tables",
-        "desc": "linux中防火墙软件"
-    },
-    {
-        "title": "iptables-restore",
-        "link": "http://man.linuxde.net/iptables-restore",
-        "desc": "还原iptables表的配置"
-    },
-    {
-        "title": "iptables-save",
-        "link": "http://man.linuxde.net/iptables-save",
-        "desc": "备份iptables的表配置"
-    },
-    {
-        "title": "iptables",
-        "link": "http://man.linuxde.net/iptables",
-        "desc": "Linux上常用的防火墙软件"
-    },
-    {
-        "title": "repquota",
-        "link": "http://man.linuxde.net/repquota",
-        "desc": "报表的格式输出磁盘空间限制的状态"
-    },
-    {
-        "title": "e2label",
-        "link": "http://man.linuxde.net/e2label",
-        "desc": "设置第二扩展文件系统的卷标"
-    },
-    {
-        "title": "findfs",
-        "link": "http://man.linuxde.net/findfs",
-        "desc": "标签或UUID查找文件系统"
-    },
-    {
-        "title": "resize2fs",
-        "link": "http://man.linuxde.net/resize2fs",
-        "desc": " ext2/ext2文件系统重新设置大小"
-    },
-    {
-        "title": "e2image",
-        "link": "http://man.linuxde.net/e2image",
-        "desc": "将处于危险状态的文件系统保存到文件中"
-    },
-    {
-        "title": "tune2fs",
-        "link": "http://man.linuxde.net/tune2fs",
-        "desc": "调整或查看ext2/ext3文件系统的文件系统参数"
-    },
-    {
-        "title": "sync",
-        "link": "http://man.linuxde.net/sync",
-        "desc": "用于强制被改变的内容立刻写入磁盘"
-    },
-    {
-        "title": "swapoff",
-        "link": "http://man.linuxde.net/swapoff",
-        "desc": "关闭指定的交换空间"
-    },
-    {
-        "title": "swapon",
-        "link": "http://man.linuxde.net/swapon",
-        "desc": "激活Linux系统中交换空间"
-    },
-    {
-        "title": "quota",
-        "link": "http://man.linuxde.net/quota",
-        "desc": "显示磁盘已使用的空间与限制"
-    },
-    {
-        "title": "quotastats",
-        "link": "http://man.linuxde.net/quotastats",
-        "desc": "显示系统当前的磁盘配额运行状态信息"
-    },
-    {
-        "title": "edquota",
-        "link": "http://man.linuxde.net/edquota",
-        "desc": "用于编辑指定用户或工作组磁盘配额"
-    },
-    {
-        "title": "quotaon",
-        "link": "http://man.linuxde.net/quotaon",
-        "desc": "激活Linux内核中指定文件系统的磁盘配额功能"
-    },
-    {
-        "title": "quotacheck",
-        "link": "http://man.linuxde.net/quotacheck",
-        "desc": "检查磁盘的使用空间与限制"
-    },
-    {
-        "title": "quotaoff",
-        "link": "http://man.linuxde.net/quotaoff",
-        "desc": "关闭Linux内核中指定文件系统的磁盘配额功能"
-    },
-    {
-        "title": "mkfs",
-        "link": "http://man.linuxde.net/mkfs",
-        "desc": "用于在设备上创建Linux文件系统"
-    },
-    {
-        "title": "mountpoint",
-        "link": "http://man.linuxde.net/mountpoint",
-        "desc": "用来判断指定的目录是否是加载点"
-    },
-    {
-        "title": "umount",
-        "link": "http://man.linuxde.net/umount",
-        "desc": "用于卸载已经加载的文件系统"
-    },
-    {
-        "title": "e2fsck",
-        "link": "http://man.linuxde.net/e2fsck",
-        "desc": "用于检查第二扩展文件系统的完整性"
-    },
-    {
-        "title": "dumpe2fs",
-        "link": "http://man.linuxde.net/dumpe2fs",
-        "desc": "用于打印“ext2/ext3”文件系统的超级块和快组信息"
-    },
-    {
-        "title": "mount",
-        "link": "http://man.linuxde.net/mount",
-        "desc": "用于加载文件系统到指定的加载点"
-    },
-    {
-        "title": "fsck",
-        "link": "http://man.linuxde.net/fsck",
-        "desc": "检查并且试图修复文件系统中的错误"
-    },
-    {
-        "title": "mke2fs",
-        "link": "http://man.linuxde.net/mke2fs",
-        "desc": "创建磁盘分区上的“etc2/etc3”文件系统"
+        "title": "startx",
+        "link": "http://man.linuxde.net/startx",
+        "desc": "用来启动X Window"
     },
     {
         "title": "chage",
@@ -620,6 +345,41 @@ export default [
         "desc": "列出目前与过去登入系统的用户相关信息"
     },
     {
+        "title": "restorecon",
+        "link": "http://man.linuxde.net/restorecon",
+        "desc": "恢复文件的安全上下文"
+    },
+    {
+        "title": "semanage",
+        "link": "http://man.linuxde.net/semanage",
+        "desc": "默认目录的安全上下文查询与修改"
+    },
+    {
+        "title": "setsebool",
+        "link": "http://man.linuxde.net/setsebool",
+        "desc": "修改SElinux策略内各项规则的布尔值"
+    },
+    {
+        "title": "getsebool",
+        "link": "http://man.linuxde.net/getsebool",
+        "desc": "查询SElinux策略内各项规则的布尔值"
+    },
+    {
+        "title": "sesearch",
+        "link": "http://man.linuxde.net/sesearch",
+        "desc": "查询SELinux策略的规则详情"
+    },
+    {
+        "title": "seinfo",
+        "link": "http://man.linuxde.net/seinfo",
+        "desc": "查询SELinux的策略提供多少相关规则"
+    },
+    {
+        "title": "chcon",
+        "link": "http://man.linuxde.net/chcon",
+        "desc": "修改对象（文件）的安全上下文"
+    },
+    {
         "title": "axel",
         "link": "http://man.linuxde.net/axel",
         "desc": "多线程下载工具"
@@ -705,49 +465,289 @@ export default [
         "desc": "优秀的文件客户端程序"
     },
     {
-        "title": "xclip",
-        "link": "http://man.linuxde.net/xclip",
-        "desc": "管理 X 粘贴板"
+        "title": "halt",
+        "link": "http://man.linuxde.net/halt",
+        "desc": "关闭正在运行的Linux操作系统"
     },
     {
-        "title": "xset",
-        "link": "http://man.linuxde.net/xset",
-        "desc": "设置X-Window系统中的用户爱好的实用工具"
+        "title": "ctrlaltdel",
+        "link": "http://man.linuxde.net/ctrlaltdel",
+        "desc": "设置组合键Ctrl+Alt+Del的功能"
     },
     {
-        "title": "xlsfonts",
-        "link": "http://man.linuxde.net/xlsfonts",
-        "desc": "列出X Server使用的字体"
+        "title": "reboot",
+        "link": "http://man.linuxde.net/reboot",
+        "desc": "重新启动正在运行的Linux操作系统"
     },
     {
-        "title": "xhost",
-        "link": "http://man.linuxde.net/xhost",
-        "desc": "制哪些X客户端能够在X服务器上显示"
+        "title": "shutdown",
+        "link": "http://man.linuxde.net/shutdown",
+        "desc": "用来执行系统关机的命令"
     },
     {
-        "title": "xlsatoms",
-        "link": "http://man.linuxde.net/xlsatoms",
-        "desc": "列出X服务器内部所有定义的原子成分"
+        "title": "poweroff",
+        "link": "http://man.linuxde.net/poweroff",
+        "desc": "用来关闭计算机操作系统并且切断系统电源"
     },
     {
-        "title": "xauth",
-        "link": "http://man.linuxde.net/xauth",
-        "desc": "显示和编辑被用于连接X服务器的认证信息"
+        "title": "repquota",
+        "link": "http://man.linuxde.net/repquota",
+        "desc": "报表的格式输出磁盘空间限制的状态"
     },
     {
-        "title": "xlsclients",
-        "link": "http://man.linuxde.net/xlsclients",
-        "desc": "列出显示器中的客户端应用程序"
+        "title": "e2label",
+        "link": "http://man.linuxde.net/e2label",
+        "desc": "设置第二扩展文件系统的卷标"
     },
     {
-        "title": "xinit",
-        "link": "http://man.linuxde.net/xinit",
-        "desc": "是Linux下X-Window系统的初始化程序"
+        "title": "findfs",
+        "link": "http://man.linuxde.net/findfs",
+        "desc": "标签或UUID查找文件系统"
     },
     {
-        "title": "startx",
-        "link": "http://man.linuxde.net/startx",
-        "desc": "用来启动X Window"
+        "title": "resize2fs",
+        "link": "http://man.linuxde.net/resize2fs",
+        "desc": " ext2/ext2文件系统重新设置大小"
+    },
+    {
+        "title": "e2image",
+        "link": "http://man.linuxde.net/e2image",
+        "desc": "将处于危险状态的文件系统保存到文件中"
+    },
+    {
+        "title": "tune2fs",
+        "link": "http://man.linuxde.net/tune2fs",
+        "desc": "调整或查看ext2/ext3文件系统的文件系统参数"
+    },
+    {
+        "title": "sync",
+        "link": "http://man.linuxde.net/sync",
+        "desc": "用于强制被改变的内容立刻写入磁盘"
+    },
+    {
+        "title": "swapoff",
+        "link": "http://man.linuxde.net/swapoff",
+        "desc": "关闭指定的交换空间"
+    },
+    {
+        "title": "swapon",
+        "link": "http://man.linuxde.net/swapon",
+        "desc": "激活Linux系统中交换空间"
+    },
+    {
+        "title": "quota",
+        "link": "http://man.linuxde.net/quota",
+        "desc": "显示磁盘已使用的空间与限制"
+    },
+    {
+        "title": "quotastats",
+        "link": "http://man.linuxde.net/quotastats",
+        "desc": "显示系统当前的磁盘配额运行状态信息"
+    },
+    {
+        "title": "edquota",
+        "link": "http://man.linuxde.net/edquota",
+        "desc": "用于编辑指定用户或工作组磁盘配额"
+    },
+    {
+        "title": "quotaon",
+        "link": "http://man.linuxde.net/quotaon",
+        "desc": "激活Linux内核中指定文件系统的磁盘配额功能"
+    },
+    {
+        "title": "quotacheck",
+        "link": "http://man.linuxde.net/quotacheck",
+        "desc": "检查磁盘的使用空间与限制"
+    },
+    {
+        "title": "quotaoff",
+        "link": "http://man.linuxde.net/quotaoff",
+        "desc": "关闭Linux内核中指定文件系统的磁盘配额功能"
+    },
+    {
+        "title": "mkfs",
+        "link": "http://man.linuxde.net/mkfs",
+        "desc": "用于在设备上创建Linux文件系统"
+    },
+    {
+        "title": "mountpoint",
+        "link": "http://man.linuxde.net/mountpoint",
+        "desc": "用来判断指定的目录是否是加载点"
+    },
+    {
+        "title": "umount",
+        "link": "http://man.linuxde.net/umount",
+        "desc": "用于卸载已经加载的文件系统"
+    },
+    {
+        "title": "e2fsck",
+        "link": "http://man.linuxde.net/e2fsck",
+        "desc": "用于检查第二扩展文件系统的完整性"
+    },
+    {
+        "title": "dumpe2fs",
+        "link": "http://man.linuxde.net/dumpe2fs",
+        "desc": "用于打印“ext2/ext3”文件系统的超级块和快组信息"
+    },
+    {
+        "title": "mount",
+        "link": "http://man.linuxde.net/mount",
+        "desc": "用于加载文件系统到指定的加载点"
+    },
+    {
+        "title": "fsck",
+        "link": "http://man.linuxde.net/fsck",
+        "desc": "检查并且试图修复文件系统中的错误"
+    },
+    {
+        "title": "mke2fs",
+        "link": "http://man.linuxde.net/mke2fs",
+        "desc": "创建磁盘分区上的“etc2/etc3”文件系统"
+    },
+    {
+        "title": "tcpreplay",
+        "link": "http://man.linuxde.net/tcpreplay",
+        "desc": "将PCAP包重新发送，用于性能或者功能测试"
+    },
+    {
+        "title": "pfctl",
+        "link": "http://man.linuxde.net/pfctl",
+        "desc": "PF防火墙的配置命令"
+    },
+    {
+        "title": "iptraf",
+        "link": "http://man.linuxde.net/iptraf",
+        "desc": "实时地监视网卡流量"
+    },
+    {
+        "title": "ss",
+        "link": "http://man.linuxde.net/ss",
+        "desc": "获取socket统计信息"
+    },
+    {
+        "title": "nstat/rtacct",
+        "link": "http://man.linuxde.net/nstat_rtacct",
+        "desc": "监视SNMP计数器和网络接口状态"
+    },
+    {
+        "title": "lnstat",
+        "link": "http://man.linuxde.net/lnstat",
+        "desc": "显示Linux系统的网路状态"
+    },
+    {
+        "title": "arptables",
+        "link": "http://man.linuxde.net/arptables",
+        "desc": "管理ARP包过滤规则表"
+    },
+    {
+        "title": "arpd",
+        "link": "http://man.linuxde.net/arpd",
+        "desc": "收集免费ARP信息"
+    },
+    {
+        "title": "tcpdump",
+        "link": "http://man.linuxde.net/tcpdump",
+        "desc": "一款sniffer工具"
+    },
+    {
+        "title": "ip",
+        "link": "http://man.linuxde.net/ip",
+        "desc": "网络配置工具"
+    },
+    {
+        "title": "ip6tables-restore",
+        "link": "http://man.linuxde.net/ip6tables-restore",
+        "desc": "还原ip6tables表"
+    },
+    {
+        "title": "ip6tables-save",
+        "link": "http://man.linuxde.net/ip6tables-save",
+        "desc": "保存ip6tables表配置"
+    },
+    {
+        "title": "ip6tables",
+        "link": "http://man.linuxde.net/ip6tables",
+        "desc": "linux中防火墙软件"
+    },
+    {
+        "title": "iptables-restore",
+        "link": "http://man.linuxde.net/iptables-restore",
+        "desc": "还原iptables表的配置"
+    },
+    {
+        "title": "iptables-save",
+        "link": "http://man.linuxde.net/iptables-save",
+        "desc": "备份iptables的表配置"
+    },
+    {
+        "title": "iptables",
+        "link": "http://man.linuxde.net/iptables",
+        "desc": "Linux上常用的防火墙软件"
+    },
+    {
+        "title": "hping3",
+        "link": "http://man.linuxde.net/hping3",
+        "desc": "测试网络及主机的安全"
+    },
+    {
+        "title": "iperf",
+        "link": "http://man.linuxde.net/iperf",
+        "desc": "网络性能测试工具"
+    },
+    {
+        "title": "host",
+        "link": "http://man.linuxde.net/host",
+        "desc": "常用的分析域名查询工具"
+    },
+    {
+        "title": "tracepath",
+        "link": "http://man.linuxde.net/tracepath",
+        "desc": "追踪目的主机经过的路由信息"
+    },
+    {
+        "title": "arpwatch",
+        "link": "http://man.linuxde.net/arpwatch",
+        "desc": "监听网络上ARP的记录"
+    },
+    {
+        "title": "nslookup",
+        "link": "http://man.linuxde.net/nslookup",
+        "desc": "查询域名DNS信息的工具"
+    },
+    {
+        "title": "arping",
+        "link": "http://man.linuxde.net/arping",
+        "desc": "通过发送ARP协议报文测试网络"
+    },
+    {
+        "title": "nc/netcat",
+        "link": "http://man.linuxde.net/nc_netcat",
+        "desc": "用来设置路由器"
+    },
+    {
+        "title": "dig",
+        "link": "http://man.linuxde.net/dig",
+        "desc": "域名查询工具"
+    },
+    {
+        "title": "arp",
+        "link": "http://man.linuxde.net/arp",
+        "desc": "显示和修改IP到MAC转换表"
+    },
+    {
+        "title": "ping",
+        "link": "http://man.linuxde.net/ping",
+        "desc": "测试主机之间网络的连通性"
+    },
+    {
+        "title": "traceroute",
+        "link": "http://man.linuxde.net/traceroute",
+        "desc": "显示数据包到主机间的路径"
+    },
+    {
+        "title": "netstat",
+        "link": "http://man.linuxde.net/netstat",
+        "desc": "查看Linux中网络系统状态信息"
     },
     {
         "title": "ssh-copy-id",
@@ -803,71 +803,6 @@ export default [
         "title": "ssh",
         "link": "http://man.linuxde.net/ssh",
         "desc": "openssh套件中的客户端连接工具"
-    },
-    {
-        "title": "reject",
-        "link": "http://man.linuxde.net/reject",
-        "desc": "指示打印系统拒绝发往指定目标打印机的打印任务"
-    },
-    {
-        "title": "lpadmin",
-        "link": "http://man.linuxde.net/lpadmin",
-        "desc": "配置CUPS套件中的打印机和类"
-    },
-    {
-        "title": "cupsenable",
-        "link": "http://man.linuxde.net/cupsenable",
-        "desc": "启动指定的打印机"
-    },
-    {
-        "title": "accept",
-        "link": "http://man.linuxde.net/accept",
-        "desc": "指示打印系统接受发往指定目标打印机的打印任务"
-    },
-    {
-        "title": "lpstat",
-        "link": "http://man.linuxde.net/lpstat",
-        "desc": "显示CUPS中打印机的状态信息"
-    },
-    {
-        "title": "cupsdisable",
-        "link": "http://man.linuxde.net/cupsdisable",
-        "desc": "停止指定的打印机"
-    },
-    {
-        "title": "lpc",
-        "link": "http://man.linuxde.net/lpc",
-        "desc": "命令行方式打印机控制程序"
-    },
-    {
-        "title": "cancel",
-        "link": "http://man.linuxde.net/cancel",
-        "desc": "取消已存在的打印任务"
-    },
-    {
-        "title": "lp",
-        "link": "http://man.linuxde.net/lp",
-        "desc": "打印文件或修改排队的打印任务"
-    },
-    {
-        "title": "lpq",
-        "link": "http://man.linuxde.net/lpq",
-        "desc": "显示打印队列中的打印任务的状态信息"
-    },
-    {
-        "title": "eject",
-        "link": "http://man.linuxde.net/eject",
-        "desc": "用来退出抽取式设备"
-    },
-    {
-        "title": "lprm",
-        "link": "http://man.linuxde.net/lprm",
-        "desc": "删除打印队列中的打印任务"
-    },
-    {
-        "title": "lpr",
-        "link": "http://man.linuxde.net/lpr",
-        "desc": "将文件发送给指定打印机进行打印"
     },
     {
         "title": "mii-tool",
@@ -938,111 +873,6 @@ export default [
         "title": "route",
         "link": "http://man.linuxde.net/route",
         "desc": "显示并设置Linux中静态路由表"
-    },
-    {
-        "title": "mysqlimport",
-        "link": "http://man.linuxde.net/mysqlimport",
-        "desc": "为MySQL服务器用命令行方式导入数据"
-    },
-    {
-        "title": "ftpshut",
-        "link": "http://man.linuxde.net/ftpshut",
-        "desc": "在指定的时间关闭FTP服务器"
-    },
-    {
-        "title": "ftpcount",
-        "link": "http://man.linuxde.net/ftpcount",
-        "desc": "显示目前已FTP登入的用户人数"
-    },
-    {
-        "title": "exportfs",
-        "link": "http://man.linuxde.net/exportfs",
-        "desc": "管理NFS共享文件系统列表"
-    },
-    {
-        "title": "apachectl",
-        "link": "http://man.linuxde.net/apachectl",
-        "desc": "Apache服务器前端控制工具"
-    },
-    {
-        "title": "ab",
-        "link": "http://man.linuxde.net/ab",
-        "desc": "Apache服务器的性能测试工具"
-    },
-    {
-        "title": "squid",
-        "link": "http://man.linuxde.net/squid",
-        "desc": "squid服务器守护进程"
-    },
-    {
-        "title": "mysql",
-        "link": "http://man.linuxde.net/mysql",
-        "desc": "MySQL服务器客户端工具"
-    },
-    {
-        "title": "sendmail",
-        "link": "http://man.linuxde.net/sendmail",
-        "desc": "著名电子邮件服务器"
-    },
-    {
-        "title": "mysqlshow",
-        "link": "http://man.linuxde.net/mysqlshow",
-        "desc": "显示MySQL中数据库相关信息"
-    },
-    {
-        "title": "smbpasswd",
-        "link": "http://man.linuxde.net/smbpasswd",
-        "desc": "samba用户和密码管理工具"
-    },
-    {
-        "title": "squidclient",
-        "link": "http://man.linuxde.net/squidclient",
-        "desc": "squid服务器的客户端管理工具"
-    },
-    {
-        "title": "smbclient",
-        "link": "http://man.linuxde.net/smbclient",
-        "desc": "交互方式访问samba服务器"
-    },
-    {
-        "title": "showmount",
-        "link": "http://man.linuxde.net/showmount",
-        "desc": "显示NFS服务器加载的信息"
-    },
-    {
-        "title": "nfsstat",
-        "link": "http://man.linuxde.net/nfsstat",
-        "desc": "列出NFS客户端和服务器的工作状态"
-    },
-    {
-        "title": "mysqladmin",
-        "link": "http://man.linuxde.net/mysqladmin",
-        "desc": "MySQL服务器管理客户端"
-    },
-    {
-        "title": "ftpwho",
-        "link": "http://man.linuxde.net/ftpwho",
-        "desc": "显示当前每个ftp会话信息"
-    },
-    {
-        "title": "mysqldump",
-        "link": "http://man.linuxde.net/mysqldump",
-        "desc": "MySQL数据库中备份工具"
-    },
-    {
-        "title": "htdigest",
-        "link": "http://man.linuxde.net/htdigest",
-        "desc": "Apache服务器内置工具"
-    },
-    {
-        "title": "htpasswd",
-        "link": "http://man.linuxde.net/htpasswd",
-        "desc": "apache服务器创建密码认证文件"
-    },
-    {
-        "title": "ftptop",
-        "link": "http://man.linuxde.net/ftptop",
-        "desc": "proftpd服务器的连接状态"
     },
     {
         "title": "pssh",
@@ -1230,6 +1060,241 @@ export default [
         "desc": "检查文件的CRC是否正确"
     },
     {
+        "title": "mysqlimport",
+        "link": "http://man.linuxde.net/mysqlimport",
+        "desc": "为MySQL服务器用命令行方式导入数据"
+    },
+    {
+        "title": "ftpshut",
+        "link": "http://man.linuxde.net/ftpshut",
+        "desc": "在指定的时间关闭FTP服务器"
+    },
+    {
+        "title": "ftpcount",
+        "link": "http://man.linuxde.net/ftpcount",
+        "desc": "显示目前已FTP登入的用户人数"
+    },
+    {
+        "title": "exportfs",
+        "link": "http://man.linuxde.net/exportfs",
+        "desc": "管理NFS共享文件系统列表"
+    },
+    {
+        "title": "apachectl",
+        "link": "http://man.linuxde.net/apachectl",
+        "desc": "Apache服务器前端控制工具"
+    },
+    {
+        "title": "ab",
+        "link": "http://man.linuxde.net/ab",
+        "desc": "Apache服务器的性能测试工具"
+    },
+    {
+        "title": "squid",
+        "link": "http://man.linuxde.net/squid",
+        "desc": "squid服务器守护进程"
+    },
+    {
+        "title": "mysql",
+        "link": "http://man.linuxde.net/mysql",
+        "desc": "MySQL服务器客户端工具"
+    },
+    {
+        "title": "sendmail",
+        "link": "http://man.linuxde.net/sendmail",
+        "desc": "著名电子邮件服务器"
+    },
+    {
+        "title": "mysqlshow",
+        "link": "http://man.linuxde.net/mysqlshow",
+        "desc": "显示MySQL中数据库相关信息"
+    },
+    {
+        "title": "smbpasswd",
+        "link": "http://man.linuxde.net/smbpasswd",
+        "desc": "samba用户和密码管理工具"
+    },
+    {
+        "title": "squidclient",
+        "link": "http://man.linuxde.net/squidclient",
+        "desc": "squid服务器的客户端管理工具"
+    },
+    {
+        "title": "smbclient",
+        "link": "http://man.linuxde.net/smbclient",
+        "desc": "交互方式访问samba服务器"
+    },
+    {
+        "title": "showmount",
+        "link": "http://man.linuxde.net/showmount",
+        "desc": "显示NFS服务器加载的信息"
+    },
+    {
+        "title": "nfsstat",
+        "link": "http://man.linuxde.net/nfsstat",
+        "desc": "列出NFS客户端和服务器的工作状态"
+    },
+    {
+        "title": "mysqladmin",
+        "link": "http://man.linuxde.net/mysqladmin",
+        "desc": "MySQL服务器管理客户端"
+    },
+    {
+        "title": "ftpwho",
+        "link": "http://man.linuxde.net/ftpwho",
+        "desc": "显示当前每个ftp会话信息"
+    },
+    {
+        "title": "mysqldump",
+        "link": "http://man.linuxde.net/mysqldump",
+        "desc": "MySQL数据库中备份工具"
+    },
+    {
+        "title": "htdigest",
+        "link": "http://man.linuxde.net/htdigest",
+        "desc": "Apache服务器内置工具"
+    },
+    {
+        "title": "htpasswd",
+        "link": "http://man.linuxde.net/htpasswd",
+        "desc": "apache服务器创建密码认证文件"
+    },
+    {
+        "title": "ftptop",
+        "link": "http://man.linuxde.net/ftptop",
+        "desc": "proftpd服务器的连接状态"
+    },
+    {
+        "title": "dnf",
+        "link": "http://man.linuxde.net/dnf",
+        "desc": "新一代的RPM软件包管理器"
+    },
+    {
+        "title": "dpkg-reconfigure",
+        "link": "http://man.linuxde.net/dpkg-reconfigure",
+        "desc": "Debian Linux中重新配制一个已经安装的软件包"
+    },
+    {
+        "title": "dpkg",
+        "link": "http://man.linuxde.net/dpkg",
+        "desc": "Debian Linux系统上安装、创建和管理软件包"
+    },
+    {
+        "title": "apt-sortpkgs",
+        "link": "http://man.linuxde.net/apt-sortpkgs",
+        "desc": "Debian Linux下对软件包索引文件进行排序的工具"
+    },
+    {
+        "title": "apt-key",
+        "link": "http://man.linuxde.net/apt-key",
+        "desc": "管理Debian Linux系统中的软件包密钥"
+    },
+    {
+        "title": "aptitude",
+        "link": "http://man.linuxde.net/aptitude",
+        "desc": "Debian Linux系统中软件包管理工具"
+    },
+    {
+        "title": "apt-get",
+        "link": "http://man.linuxde.net/apt-get",
+        "desc": "Debian Linux发行版中的APT软件包管理工具"
+    },
+    {
+        "title": "ntsysv",
+        "link": "http://man.linuxde.net/ntsysv",
+        "desc": "集中管理系统的各种服务"
+    },
+    {
+        "title": "chkconfig",
+        "link": "http://man.linuxde.net/chkconfig",
+        "desc": "检查或设置系统的各种服务"
+    },
+    {
+        "title": "rpmsign",
+        "link": "http://man.linuxde.net/rpmsign",
+        "desc": "使用RPM软件包的签名管理工具"
+    },
+    {
+        "title": "rpmdb",
+        "link": "http://man.linuxde.net/rpmdb",
+        "desc": "初始化和重建RPM数据库"
+    },
+    {
+        "title": "yum",
+        "link": "http://man.linuxde.net/yum",
+        "desc": "基于RPM的软件包管理器"
+    },
+    {
+        "title": "rpm",
+        "link": "http://man.linuxde.net/rpm",
+        "desc": "RPM软件包的管理工具"
+    },
+    {
+        "title": "dpkg-trigger",
+        "link": "http://man.linuxde.net/dpkg-trigger",
+        "desc": "Debian Linux下的软件包触发器"
+    },
+    {
+        "title": "rcconf",
+        "link": "http://man.linuxde.net/rcconf",
+        "desc": "Debian Linux下的运行等级服务配置工具"
+    },
+    {
+        "title": "rpmbuild",
+        "link": "http://man.linuxde.net/rpmbuild",
+        "desc": "创建RPM的二进制软件包和源码软件包"
+    },
+    {
+        "title": "rpmverify",
+        "link": "http://man.linuxde.net/rpmverify",
+        "desc": "验证已安装的RPM软件包的正确性"
+    },
+    {
+        "title": "rpmquery",
+        "link": "http://man.linuxde.net/rpmquery",
+        "desc": "从RPM数据库中查询软件包信息"
+    },
+    {
+        "title": "patch",
+        "link": "http://man.linuxde.net/patch",
+        "desc": "为开放源代码软件安装补丁程序"
+    },
+    {
+        "title": "rpm2cpio",
+        "link": "http://man.linuxde.net/rpm2cpio",
+        "desc": "将RPM软件包转换为cpio格式的文件"
+    },
+    {
+        "title": "dpkg-statoverride",
+        "link": "http://man.linuxde.net/dpkg-statoverride",
+        "desc": "Debian Linux中覆盖文件的所有权和模式"
+    },
+    {
+        "title": "dpkg-preconfigure",
+        "link": "http://man.linuxde.net/dpkg-preconfigure",
+        "desc": "Debian Linux中软件包安装之前询问问题"
+    },
+    {
+        "title": "dpkg-split",
+        "link": "http://man.linuxde.net/dpkg-split",
+        "desc": "Debian Linux中将大软件包分割成小包"
+    },
+    {
+        "title": "dpkg-query",
+        "link": "http://man.linuxde.net/dpkg-query",
+        "desc": "Debian Linux中软件包的查询工具"
+    },
+    {
+        "title": "dpkg-divert",
+        "link": "http://man.linuxde.net/dpkg-divert",
+        "desc": "Debian Linux中创建并管理一个转向列表"
+    },
+    {
+        "title": "dpkg-deb",
+        "link": "http://man.linuxde.net/dpkg-deb",
+        "desc": "Debian Linux下的软件包管理工具"
+    },
+    {
         "title": "ldconfig",
         "link": "http://man.linuxde.net/ldconfig",
         "desc": "动态链接库管理命令"
@@ -1330,209 +1395,69 @@ export default [
         "desc": "汇编语言编译器"
     },
     {
-        "title": "strings",
-        "link": "http://man.linuxde.net/strings",
-        "desc": "在对象文件或二进制文件中查找可打印的字符串"
+        "title": "reject",
+        "link": "http://man.linuxde.net/reject",
+        "desc": "指示打印系统拒绝发往指定目标打印机的打印任务"
     },
     {
-        "title": "diff",
-        "link": "http://man.linuxde.net/diff",
-        "desc": "比较给定的两个文件的不同"
+        "title": "lpadmin",
+        "link": "http://man.linuxde.net/lpadmin",
+        "desc": "配置CUPS套件中的打印机和类"
     },
     {
-        "title": "cmp",
-        "link": "http://man.linuxde.net/cmp",
-        "desc": "比较两个文件是否有差异"
+        "title": "cupsenable",
+        "link": "http://man.linuxde.net/cupsenable",
+        "desc": "启动指定的打印机"
     },
     {
-        "title": "diff3",
-        "link": "http://man.linuxde.net/diff3",
-        "desc": "比较3个文件不同的地方"
+        "title": "accept",
+        "link": "http://man.linuxde.net/accept",
+        "desc": "指示打印系统接受发往指定目标打印机的打印任务"
     },
     {
-        "title": "locate/slocate",
-        "link": "http://man.linuxde.net/locate_slocate",
-        "desc": "查找文件或目录"
+        "title": "lpstat",
+        "link": "http://man.linuxde.net/lpstat",
+        "desc": "显示CUPS中打印机的状态信息"
     },
     {
-        "title": "which",
-        "link": "http://man.linuxde.net/which",
-        "desc": "查找并显示给定命令的绝对路径"
+        "title": "cupsdisable",
+        "link": "http://man.linuxde.net/cupsdisable",
+        "desc": "停止指定的打印机"
     },
     {
-        "title": "find",
-        "link": "http://man.linuxde.net/find",
-        "desc": "在指定目录下查找文件"
+        "title": "lpc",
+        "link": "http://man.linuxde.net/lpc",
+        "desc": "命令行方式打印机控制程序"
     },
     {
-        "title": "whereis",
-        "link": "http://man.linuxde.net/whereis",
-        "desc": "查找二进制程序、代码等相关文件路径"
+        "title": "cancel",
+        "link": "http://man.linuxde.net/cancel",
+        "desc": "取消已存在的打印任务"
     },
     {
-        "title": "dnf",
-        "link": "http://man.linuxde.net/dnf",
-        "desc": "新一代的RPM软件包管理器"
+        "title": "lp",
+        "link": "http://man.linuxde.net/lp",
+        "desc": "打印文件或修改排队的打印任务"
     },
     {
-        "title": "dpkg-reconfigure",
-        "link": "http://man.linuxde.net/dpkg-reconfigure",
-        "desc": "Debian Linux中重新配制一个已经安装的软件包"
+        "title": "lpq",
+        "link": "http://man.linuxde.net/lpq",
+        "desc": "显示打印队列中的打印任务的状态信息"
     },
     {
-        "title": "dpkg",
-        "link": "http://man.linuxde.net/dpkg",
-        "desc": "Debian Linux系统上安装、创建和管理软件包"
+        "title": "eject",
+        "link": "http://man.linuxde.net/eject",
+        "desc": "用来退出抽取式设备"
     },
     {
-        "title": "apt-sortpkgs",
-        "link": "http://man.linuxde.net/apt-sortpkgs",
-        "desc": "Debian Linux下对软件包索引文件进行排序的工具"
+        "title": "lprm",
+        "link": "http://man.linuxde.net/lprm",
+        "desc": "删除打印队列中的打印任务"
     },
     {
-        "title": "apt-key",
-        "link": "http://man.linuxde.net/apt-key",
-        "desc": "管理Debian Linux系统中的软件包密钥"
-    },
-    {
-        "title": "aptitude",
-        "link": "http://man.linuxde.net/aptitude",
-        "desc": "Debian Linux系统中软件包管理工具"
-    },
-    {
-        "title": "apt-get",
-        "link": "http://man.linuxde.net/apt-get",
-        "desc": "Debian Linux发行版中的APT软件包管理工具"
-    },
-    {
-        "title": "ntsysv",
-        "link": "http://man.linuxde.net/ntsysv",
-        "desc": "集中管理系统的各种服务"
-    },
-    {
-        "title": "chkconfig",
-        "link": "http://man.linuxde.net/chkconfig",
-        "desc": "检查或设置系统的各种服务"
-    },
-    {
-        "title": "rpmsign",
-        "link": "http://man.linuxde.net/rpmsign",
-        "desc": "使用RPM软件包的签名管理工具"
-    },
-    {
-        "title": "rpmdb",
-        "link": "http://man.linuxde.net/rpmdb",
-        "desc": "初始化和重建RPM数据库"
-    },
-    {
-        "title": "yum",
-        "link": "http://man.linuxde.net/yum",
-        "desc": "基于RPM的软件包管理器"
-    },
-    {
-        "title": "dpkg-trigger",
-        "link": "http://man.linuxde.net/dpkg-trigger",
-        "desc": "Debian Linux下的软件包触发器"
-    },
-    {
-        "title": "rpm",
-        "link": "http://man.linuxde.net/rpm",
-        "desc": "RPM软件包的管理工具"
-    },
-    {
-        "title": "rcconf",
-        "link": "http://man.linuxde.net/rcconf",
-        "desc": "Debian Linux下的运行等级服务配置工具"
-    },
-    {
-        "title": "rpmbuild",
-        "link": "http://man.linuxde.net/rpmbuild",
-        "desc": "创建RPM的二进制软件包和源码软件包"
-    },
-    {
-        "title": "rpmverify",
-        "link": "http://man.linuxde.net/rpmverify",
-        "desc": "验证已安装的RPM软件包的正确性"
-    },
-    {
-        "title": "rpmquery",
-        "link": "http://man.linuxde.net/rpmquery",
-        "desc": "从RPM数据库中查询软件包信息"
-    },
-    {
-        "title": "patch",
-        "link": "http://man.linuxde.net/patch",
-        "desc": "为开放源代码软件安装补丁程序"
-    },
-    {
-        "title": "rpm2cpio",
-        "link": "http://man.linuxde.net/rpm2cpio",
-        "desc": "将RPM软件包转换为cpio格式的文件"
-    },
-    {
-        "title": "dpkg-statoverride",
-        "link": "http://man.linuxde.net/dpkg-statoverride",
-        "desc": "Debian Linux中覆盖文件的所有权和模式"
-    },
-    {
-        "title": "dpkg-preconfigure",
-        "link": "http://man.linuxde.net/dpkg-preconfigure",
-        "desc": "Debian Linux中软件包安装之前询问问题"
-    },
-    {
-        "title": "dpkg-split",
-        "link": "http://man.linuxde.net/dpkg-split",
-        "desc": "Debian Linux中将大软件包分割成小包"
-    },
-    {
-        "title": "dpkg-query",
-        "link": "http://man.linuxde.net/dpkg-query",
-        "desc": "Debian Linux中软件包的查询工具"
-    },
-    {
-        "title": "dpkg-divert",
-        "link": "http://man.linuxde.net/dpkg-divert",
-        "desc": "Debian Linux中创建并管理一个转向列表"
-    },
-    {
-        "title": "dpkg-deb",
-        "link": "http://man.linuxde.net/dpkg-deb",
-        "desc": "Debian Linux下的软件包管理工具"
-    },
-    {
-        "title": "hexdump",
-        "link": "http://man.linuxde.net/hexdump",
-        "desc": "显示文件十六进制格式"
-    },
-    {
-        "title": "od",
-        "link": "http://man.linuxde.net/od",
-        "desc": "输出文件的八进制、十六进制等格式编码的字节"
-    },
-    {
-        "title": "cut",
-        "link": "http://man.linuxde.net/cut",
-        "desc": "连接文件并打印到标准输出设备上"
-    },
-    {
-        "title": "tail",
-        "link": "http://man.linuxde.net/tail",
-        "desc": "在屏幕上显示指定文件的末尾若干行"
-    },
-    {
-        "title": "head",
-        "link": "http://man.linuxde.net/head",
-        "desc": "在屏幕上显示指定文件的开头若干行"
-    },
-    {
-        "title": "less",
-        "link": "http://man.linuxde.net/less",
-        "desc": "分屏上下翻页浏览文件内容"
-    },
-    {
-        "title": "more",
-        "link": "http://man.linuxde.net/more",
-        "desc": "显示文件内容，每次显示一屏"
+        "title": "lpr",
+        "link": "http://man.linuxde.net/lpr",
+        "desc": "将文件发送给指定打印机进行打印"
     },
     {
         "title": "iconv",
@@ -1595,54 +1520,124 @@ export default [
         "desc": "连接文件并打印到标准输出设备上"
     },
     {
-        "title": "dos2unix",
-        "link": "http://man.linuxde.net/dos2unix",
-        "desc": "将DOS格式文本文件转换成Unix格式"
+        "title": "hexdump",
+        "link": "http://man.linuxde.net/hexdump",
+        "desc": "显示文件十六进制格式"
     },
     {
-        "title": "setfacl",
-        "link": "http://man.linuxde.net/setfacl",
-        "desc": "设置文件访问控制列表"
+        "title": "od",
+        "link": "http://man.linuxde.net/od",
+        "desc": "输出文件的八进制、十六进制等格式编码的字节"
     },
     {
-        "title": "umask",
-        "link": "http://man.linuxde.net/umask",
-        "desc": "用来设置限制新建文件权限的掩码"
+        "title": "cut",
+        "link": "http://man.linuxde.net/cut",
+        "desc": "连接文件并打印到标准输出设备上"
     },
     {
-        "title": "lsattr",
-        "link": "http://man.linuxde.net/lsattr",
-        "desc": "查看文件的第二扩展文件系统属性"
+        "title": "tail",
+        "link": "http://man.linuxde.net/tail",
+        "desc": "在屏幕上显示指定文件的末尾若干行"
     },
     {
-        "title": "chmod",
-        "link": "http://man.linuxde.net/chmod",
-        "desc": "用来变更文件或目录的权限"
+        "title": "head",
+        "link": "http://man.linuxde.net/head",
+        "desc": "在屏幕上显示指定文件的开头若干行"
     },
     {
-        "title": "chown",
-        "link": "http://man.linuxde.net/chown",
-        "desc": "用来变更文件或目录的拥有者或所属群组"
+        "title": "less",
+        "link": "http://man.linuxde.net/less",
+        "desc": "分屏上下翻页浏览文件内容"
     },
     {
-        "title": "chgrp",
-        "link": "http://man.linuxde.net/chgrp",
-        "desc": "用来变更文件或目录的所属群组"
+        "title": "more",
+        "link": "http://man.linuxde.net/more",
+        "desc": "显示文件内容，每次显示一屏"
     },
     {
-        "title": "chattr",
-        "link": "http://man.linuxde.net/chattr",
-        "desc": "用来改变文件属性"
+        "title": "strings",
+        "link": "http://man.linuxde.net/strings",
+        "desc": "在对象文件或二进制文件中查找可打印的字符串"
     },
     {
-        "title": "stat",
-        "link": "http://man.linuxde.net/stat",
-        "desc": "用于显示文件的状态信息"
+        "title": "diff",
+        "link": "http://man.linuxde.net/diff",
+        "desc": "比较给定的两个文件的不同"
     },
     {
-        "title": "file",
-        "link": "http://man.linuxde.net/file",
-        "desc": "用来探测给定文件的类型。"
+        "title": "cmp",
+        "link": "http://man.linuxde.net/cmp",
+        "desc": "比较两个文件是否有差异"
+    },
+    {
+        "title": "diff3",
+        "link": "http://man.linuxde.net/diff3",
+        "desc": "比较3个文件不同的地方"
+    },
+    {
+        "title": "locate/slocate",
+        "link": "http://man.linuxde.net/locate_slocate",
+        "desc": "查找文件或目录"
+    },
+    {
+        "title": "which",
+        "link": "http://man.linuxde.net/which",
+        "desc": "查找并显示给定命令的绝对路径"
+    },
+    {
+        "title": "find",
+        "link": "http://man.linuxde.net/find",
+        "desc": "在指定目录下查找文件"
+    },
+    {
+        "title": "whereis",
+        "link": "http://man.linuxde.net/whereis",
+        "desc": "查找二进制程序、代码等相关文件路径"
+    },
+    {
+        "title": "nano",
+        "link": "http://man.linuxde.net/nano",
+        "desc": "字符终端文本编辑器"
+    },
+    {
+        "title": "sed",
+        "link": "http://man.linuxde.net/sed",
+        "desc": "功能强大的流式文本编辑器"
+    },
+    {
+        "title": "pico",
+        "link": "http://man.linuxde.net/pico",
+        "desc": "功能强大全屏幕的文本编辑器"
+    },
+    {
+        "title": "emacs",
+        "link": "http://man.linuxde.net/emacs",
+        "desc": "功能强大的全屏文本编辑器"
+    },
+    {
+        "title": "jed",
+        "link": "http://man.linuxde.net/jed",
+        "desc": "主要用于编辑代码的编辑器"
+    },
+    {
+        "title": "joe",
+        "link": "http://man.linuxde.net/joe",
+        "desc": "强大的纯文本编辑器"
+    },
+    {
+        "title": "ed",
+        "link": "http://man.linuxde.net/ed",
+        "desc": "单行纯文本编辑器"
+    },
+    {
+        "title": "ex",
+        "link": "http://man.linuxde.net/ex",
+        "desc": "启动vim编辑器的ex编辑模式"
+    },
+    {
+        "title": "vi",
+        "link": "http://man.linuxde.net/vi",
+        "desc": "功能强大的纯文本编辑器"
     },
     {
         "title": "install",
@@ -1710,49 +1705,54 @@ export default [
         "desc": "切换用户当前工作目录"
     },
     {
-        "title": "nano",
-        "link": "http://man.linuxde.net/nano",
-        "desc": "字符终端文本编辑器"
+        "title": "dos2unix",
+        "link": "http://man.linuxde.net/dos2unix",
+        "desc": "将DOS格式文本文件转换成Unix格式"
     },
     {
-        "title": "sed",
-        "link": "http://man.linuxde.net/sed",
-        "desc": "功能强大的流式文本编辑器"
+        "title": "setfacl",
+        "link": "http://man.linuxde.net/setfacl",
+        "desc": "设置文件访问控制列表"
     },
     {
-        "title": "pico",
-        "link": "http://man.linuxde.net/pico",
-        "desc": "功能强大全屏幕的文本编辑器"
+        "title": "umask",
+        "link": "http://man.linuxde.net/umask",
+        "desc": "用来设置限制新建文件权限的掩码"
     },
     {
-        "title": "emacs",
-        "link": "http://man.linuxde.net/emacs",
-        "desc": "功能强大的全屏文本编辑器"
+        "title": "lsattr",
+        "link": "http://man.linuxde.net/lsattr",
+        "desc": "查看文件的第二扩展文件系统属性"
     },
     {
-        "title": "jed",
-        "link": "http://man.linuxde.net/jed",
-        "desc": "主要用于编辑代码的编辑器"
+        "title": "chmod",
+        "link": "http://man.linuxde.net/chmod",
+        "desc": "用来变更文件或目录的权限"
     },
     {
-        "title": "joe",
-        "link": "http://man.linuxde.net/joe",
-        "desc": "强大的纯文本编辑器"
+        "title": "chown",
+        "link": "http://man.linuxde.net/chown",
+        "desc": "用来变更文件或目录的拥有者或所属群组"
     },
     {
-        "title": "ed",
-        "link": "http://man.linuxde.net/ed",
-        "desc": "单行纯文本编辑器"
+        "title": "chgrp",
+        "link": "http://man.linuxde.net/chgrp",
+        "desc": "用来变更文件或目录的所属群组"
     },
     {
-        "title": "ex",
-        "link": "http://man.linuxde.net/ex",
-        "desc": "启动vim编辑器的ex编辑模式"
+        "title": "chattr",
+        "link": "http://man.linuxde.net/chattr",
+        "desc": "用来改变文件属性"
     },
     {
-        "title": "vi",
-        "link": "http://man.linuxde.net/vi",
-        "desc": "功能强大的纯文本编辑器"
+        "title": "stat",
+        "link": "http://man.linuxde.net/stat",
+        "desc": "用于显示文件的状态信息"
+    },
+    {
+        "title": "file",
+        "link": "http://man.linuxde.net/file",
+        "desc": "用来探测给定文件的类型。"
     },
     {
         "title": "cpio",
@@ -1855,14 +1855,14 @@ export default [
         "desc": "报告或忽略文件中的重复行"
     },
     {
-        "title": "tee",
-        "link": "http://man.linuxde.net/tee",
-        "desc": "把数据重定向到给定文件和屏幕上"
-    },
-    {
         "title": "paste",
         "link": "http://man.linuxde.net/paste",
         "desc": "将多个文件按列队列合并"
+    },
+    {
+        "title": "tee",
+        "link": "http://man.linuxde.net/tee",
+        "desc": "把数据重定向到给定文件和屏幕上"
     },
     {
         "title": "sort",
@@ -2000,14 +2000,14 @@ export default [
         "desc": "创一个bz2文件压缩包"
     },
     {
-        "title": "gunzip",
-        "link": "http://man.linuxde.net/gunzip",
-        "desc": "用来解压缩文件"
-    },
-    {
         "title": "bzdiff",
         "link": "http://man.linuxde.net/bzdiff",
         "desc": "直接比较两个.bz2压缩包中文件的不同"
+    },
+    {
+        "title": "gunzip",
+        "link": "http://man.linuxde.net/gunzip",
+        "desc": "用来解压缩文件"
     },
     {
         "title": "zip",
@@ -2253,6 +2253,31 @@ export default [
         "title": "systool",
         "link": "http://man.linuxde.net/systool",
         "desc": "显示基于总线、类和拓扑显示系统中设备的信息"
+    },
+    {
+        "title": "ftp",
+        "link": "http://man.linuxde.net/ftp",
+        "desc": "用来设置文件系统相关功能"
+    },
+    {
+        "title": "tftp",
+        "link": "http://man.linuxde.net/tftp",
+        "desc": "在本机和tftp服务器之间使用TFTP协议传输文件"
+    },
+    {
+        "title": "scp",
+        "link": "http://man.linuxde.net/scp",
+        "desc": "加密的方式在本地主机和远程主机之间复制文件"
+    },
+    {
+        "title": "ncftp",
+        "link": "http://man.linuxde.net/ncftp",
+        "desc": "是增强的的FTP工具"
+    },
+    {
+        "title": "rcp",
+        "link": "http://man.linuxde.net/rcp",
+        "desc": "使在两台Linux主机之间的文件复制操作更简单"
     },
     {
         "title": "inotifywait",
@@ -2613,30 +2638,5 @@ export default [
         "title": "parted",
         "link": "http://man.linuxde.net/parted",
         "desc": "磁盘分区和分区大小调整工具"
-    },
-    {
-        "title": "ftp",
-        "link": "http://man.linuxde.net/ftp",
-        "desc": "用来设置文件系统相关功能"
-    },
-    {
-        "title": "tftp",
-        "link": "http://man.linuxde.net/tftp",
-        "desc": "在本机和tftp服务器之间使用TFTP协议传输文件"
-    },
-    {
-        "title": "scp",
-        "link": "http://man.linuxde.net/scp",
-        "desc": "加密的方式在本地主机和远程主机之间复制文件"
-    },
-    {
-        "title": "ncftp",
-        "link": "http://man.linuxde.net/ncftp",
-        "desc": "是增强的的FTP工具"
-    },
-    {
-        "title": "rcp",
-        "link": "http://man.linuxde.net/rcp",
-        "desc": "使在两台Linux主机之间的文件复制操作更简单"
     }
 ]
