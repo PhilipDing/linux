@@ -2,7 +2,7 @@
   "name": "linux",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "丁诚 <cheng.ding@wz-inc.com>",
+  "author": "philipding",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
